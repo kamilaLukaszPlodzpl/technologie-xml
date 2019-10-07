@@ -1,0 +1,45 @@
+gamesList{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 16px;
+    display:block;
+    padding:50px;
+    column-count:2;
+}
+
+game{
+    display:block;
+    border-right: 10px solid #b0988b;
+    margin:5px;  
+    padding:20px;
+    background-color:#f0e2da;
+    background-size: 10px;
+}
+
+title{
+    display:block;
+    font-size: 20px;
+}
+
+price{
+    display:block;
+}
+
+genre{
+    display:block;
+}
+
+releaseDate{
+    display:block;
+}
+
+developer{
+    display:block;
+}
+
+platforms{
+    display:block;
+}
+
+publisher{
+    display:block;
+}

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <?xml-stylesheet href="style.css" type="text/css"?>
 
-<body>
+<gamesList>
     <game indexNumber="1">
  
         <title> God of War III </title>
@@ -23,8 +23,29 @@
         </description>
 
     </game>
+    <game indexNumber="2">
+ 
+        <title> Hitman 2 </title>
 
-    <requirements>
+        <price> 75,00 zł </price>
+
+        <genre> Stealth </genre>
+
+        <releaseDate> 13 November 2018 </releaseDate>
+
+        <developer> IO Interactive </developer>
+
+        <platforms> Microsoft Windows, PlayStation 4, Xbox One</platforms>
+
+        <publisher> Warner Bros. Interactive Entertainment </publisher>
+
+        <description>
+
+        </description>
+
+    </game>
+
+   <requirements>
         
         <cpu>
         </cpu>
@@ -40,4 +61,4 @@
 
     </requirements>
 
-</body>
+</gamesList>
