@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<?xml-stylesheet href="style.css" type="text/css"?>
+
+<body>
+    <game indexNumber="1">
+ 
+        <title> God of War III </title>
+
+        <price> 75,00 zł </price>
+
+        <genre> action-adventure, hack and slash </genre>
+
+        <releaseDate> 16 March 2010 </releaseDate>
+
+        <developer> SCE Santa Monica Studio </developer>
+
+        <platforms> PlayStation 3, PlayStation 4</platforms>
+
+        <publisher> Sony Computer Entertainment </publisher>
+
+        <description>
+
+        </description>
+
+    </game>
+
+    <requirements>
+        
+        <cpu>
+        </cpu>
+
+        <gpu>
+        </gpu>
+
+        <ram>
+        </ram>
+
+        <os>
+        </os>
+
+    </requirements>
+
+</body>
