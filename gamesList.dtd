@@ -1,0 +1,4 @@
+<!ELEMENT game (title,price,genre,releaseDate,developer,platforms,publisher,description)>
+<!ELEMENT title (#PCDATA)>
+<!ELEMENT price (#PCDATA)>
+<!ELEMENT genre (#PCDATA)>
