@@ -1,8 +1,7 @@
-
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <?xml-stylesheet href="style.css" type="text/css"?>
 
-<!DOCTYPE gamesList SYSTEM "gamesList.dtd"
+<!DOCTYPE gamesList SYSTEM "gamesList.dtd">
 
 <gamesList>
     <game indexNumber="1">

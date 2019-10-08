@@ -1,4 +1,17 @@
-<!ELEMENT game (title,price,genre,releaseDate,developer,platforms,publisher,description)>
-<!ELEMENT title (#PCDATA)>
-<!ELEMENT price (#PCDATA)>
-<!ELEMENT genre (#PCDATA)>
+<!DOCTYPE gamesList
+[
+    <!ELEMENT game (title,price,genre,releaseDate,developer,platforms,publisher,description)>
+        <!ATTLIST game indexNumber NMTOKEN #REQUIRED>
+        <!ELEMENT title (#PCDATA)>
+        <!ELEMENT price (#PCDATA)>
+        <!ELEMENT genre (#PCDATA)>
+        <!ELEMENT releaseDate (day,month,year)>
+        <!ELEMENT developer (#PCDATA)>
+        <!ELEMENT platforms (#PCDATA)>
+        <!ELEMENT publisher (#PCDATA)>
+        <!ELEMENT description (#PCDATA)>
+
+    <!ELEMENT day (#PCDATA)>
+    <!ELEMENT month (#PCDATA)>
+    <!ELEMENT year (#PCDATA)>
+]>
