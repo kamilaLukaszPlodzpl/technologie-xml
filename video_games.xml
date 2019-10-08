@@ -3,445 +3,322 @@
 
 <gamesList>
     <game indexNumber="1">
- 
         <title> God of War III </title>
-
         <price> 75,00 zł </price>
-
         <genre> action-adventure, hack and slash </genre>
-
-        <releaseDate> 16 March 2010 </releaseDate>
-
+        <releaseDate>
+            <day> 16 </day>
+            <month> Marzec </month>
+            <year> 2010 </year>
+        </releaseDate>
         <developer> SCE Santa Monica Studio </developer>
-
         <platforms> PlayStation 3, PlayStation 4</platforms>
-
         <publisher> Sony Computer Entertainment </publisher>
-
         <description>
-
         </description>
-
     </game>
 
     <game indexNumber="2">
- 
         <title> Hitman 2 </title>
-
         <price> 98,79 zł </price>
-
         <genre> Stealth </genre>
-
-        <releaseDate> 13 November 2018 </releaseDate>
-
+        <releaseDate>
+            <day> 16 </day>
+            <month> Marzec </month>
+            <year> 2010 </year>
+        </releaseDate>
         <developer> IO Interactive </developer>
-
         <platforms> Microsoft Windows, PlayStation 4, Xbox One</platforms>
-
         <publisher> Warner Bros. Interactive Entertainment </publisher>
-
         <description>
-
         </description>
-
     </game>
 
     <game indexNumber="3">
- 
         <title> Hitman 2 </title>
-
         <price> 98,79 zł </price>
-
         <genre> Stealth </genre>
-
-        <releaseDate> 13 November 2018 </releaseDate>
-
+        <releaseDate>
+            <day> 16 </day>
+            <month> Marzec </month>
+            <year> 2010 </year>
+        </releaseDate>
         <developer> IO Interactive </developer>
-
         <platforms> Microsoft Windows, PlayStation 4, Xbox One</platforms>
-
         <publisher> Warner Bros. Interactive Entertainment </publisher>
-
         <description>
-
         </description>
-
     </game>
 
     <game indexNumber="4">
- 
         <title> Hitman 2 </title>
-
         <price> 98,79 zł </price>
-
         <genre> Stealth </genre>
-
-        <releaseDate> 13 November 2018 </releaseDate>
-
+        <releaseDate>
+            <day> 16 </day>
+            <month> Marzec </month>
+            <year> 2010 </year>
+        </releaseDate>
         <developer> IO Interactive </developer>
-
         <platforms> Microsoft Windows, PlayStation 4, Xbox One</platforms>
-
         <publisher> Warner Bros. Interactive Entertainment </publisher>
-
         <description>
-
         </description>
-
     </game>
 
     <game indexNumber="5">
- 
         <title> Hitman 2 </title>
-
         <price> 98,79 zł </price>
-
         <genre> Stealth </genre>
-
-        <releaseDate> 13 November 2018 </releaseDate>
-
+        <releaseDate>
+            <day> 16 </day>
+            <month> Marzec </month>
+            <year> 2010 </year>
+        </releaseDate>
         <developer> IO Interactive </developer>
-
         <platforms> Microsoft Windows, PlayStation 4, Xbox One</platforms>
-
         <publisher> Warner Bros. Interactive Entertainment </publisher>
-
         <description>
-
         </description>
-
     </game>
 
     <game indexNumber="6">
- 
         <title> Hitman 2 </title>
-
         <price> 98,79 zł </price>
-
         <genre> Stealth </genre>
-
-        <releaseDate> 13 November 2018 </releaseDate>
-
+        <releaseDate>
+            <day> 16 </day>
+            <month> Marzec </month>
+            <year> 2010 </year>
+        </releaseDate>
         <developer> IO Interactive </developer>
-
         <platforms> Microsoft Windows, PlayStation 4, Xbox One</platforms>
-
         <publisher> Warner Bros. Interactive Entertainment </publisher>
-
         <description>
-
         </description>
-
     </game>
 
     <game indexNumber="7">
- 
         <title> Hitman 2 </title>
-
         <price> 98,79 zł </price>
-
         <genre> Stealth </genre>
-
-        <releaseDate> 13 November 2018 </releaseDate>
-
+        <releaseDate>
+            <day> 16 </day>
+            <month> Marzec </month>
+            <year> 2010 </year>
+        </releaseDate>
         <developer> IO Interactive </developer>
-
         <platforms> Microsoft Windows, PlayStation 4, Xbox One</platforms>
-
         <publisher> Warner Bros. Interactive Entertainment </publisher>
-
         <description>
-
         </description>
-
     </game>
 
     <game indexNumber="8">
- 
         <title> Hitman 2 </title>
-
         <price> 98,79 zł </price>
-
         <genre> Stealth </genre>
-
-        <releaseDate> 13 November 2018 </releaseDate>
-
+        <releaseDate>
+            <day> 16 </day>
+            <month> Marzec </month>
+            <year> 2010 </year>
+        </releaseDate>
         <developer> IO Interactive </developer>
-
         <platforms> Microsoft Windows, PlayStation 4, Xbox One</platforms>
-
         <publisher> Warner Bros. Interactive Entertainment </publisher>
-
         <description>
-
         </description>
-
     </game>
 
     <game indexNumber="9">
- 
         <title> Hitman 2 </title>
-
         <price> 98,79 zł </price>
-
         <genre> Stealth </genre>
-
-        <releaseDate> 13 November 2018 </releaseDate>
-
+        <releaseDate>
+            <day> 16 </day>
+            <month> Marzec </month>
+            <year> 2010 </year>
+        </releaseDate>
         <developer> IO Interactive </developer>
-
         <platforms> Microsoft Windows, PlayStation 4, Xbox One</platforms>
-
         <publisher> Warner Bros. Interactive Entertainment </publisher>
-
         <description>
-
         </description>
-
     </game>
 
     <game indexNumber="10">
- 
         <title> Hitman 2 </title>
-
         <price> 98,79 zł </price>
-
         <genre> Stealth </genre>
-
-        <releaseDate> 13 November 2018 </releaseDate>
-
+        <releaseDate>
+            <day> 16 </day>
+            <month> Marzec </month>
+            <year> 2010 </year>
+        </releaseDate>
         <developer> IO Interactive </developer>
-
         <platforms> Microsoft Windows, PlayStation 4, Xbox One</platforms>
-
         <publisher> Warner Bros. Interactive Entertainment </publisher>
-
         <description>
-
         </description>
-
     </game>
 
     <game indexNumber="11">
- 
         <title> Hitman 2 </title>
-
         <price> 98,79 zł </price>
-
         <genre> Stealth </genre>
-
-        <releaseDate> 13 November 2018 </releaseDate>
-
+        <releaseDate>
+            <day> 16 </day>
+            <month> Marzec </month>
+            <year> 2010 </year>
+        </releaseDate>
         <developer> IO Interactive </developer>
-
         <platforms> Microsoft Windows, PlayStation 4, Xbox One</platforms>
-
         <publisher> Warner Bros. Interactive Entertainment </publisher>
-
         <description>
-
         </description>
-
     </game>
 
     <game indexNumber="12">
- 
         <title> Hitman 2 </title>
-
         <price> 98,79 zł </price>
-
         <genre> Stealth </genre>
-
-        <releaseDate> 13 November 2018 </releaseDate>
-
+        <releaseDate>
+            <day> 16 </day>
+            <month> Marzec </month>
+            <year> 2010 </year>
+        </releaseDate>
         <developer> IO Interactive </developer>
-
         <platforms> Microsoft Windows, PlayStation 4, Xbox One</platforms>
-
         <publisher> Warner Bros. Interactive Entertainment </publisher>
-
         <description>
-
         </description>
-
     </game>
 
     <game indexNumber="13">
- 
         <title> Hitman 2 </title>
-
         <price> 98,79 zł </price>
-
         <genre> Stealth </genre>
-
-        <releaseDate> 13 November 2018 </releaseDate>
-
+        <releaseDate>
+            <day> 16 </day>
+            <month> Marzec </month>
+            <year> 2010 </year>
+        </releaseDate>
         <developer> IO Interactive </developer>
-
         <platforms> Microsoft Windows, PlayStation 4, Xbox One</platforms>
-
         <publisher> Warner Bros. Interactive Entertainment </publisher>
-
         <description>
-
         </description>
-
     </game>
 
     <game indexNumber="14">
- 
         <title> Hitman 2 </title>
-
         <price> 98,79 zł </price>
-
         <genre> Stealth </genre>
-
-        <releaseDate> 13 November 2018 </releaseDate>
-
+        <releaseDate>
+            <day> 16 </day>
+            <month> Marzec </month>
+            <year> 2010 </year>
+        </releaseDate>
         <developer> IO Interactive </developer>
-
         <platforms> Microsoft Windows, PlayStation 4, Xbox One</platforms>
-
         <publisher> Warner Bros. Interactive Entertainment </publisher>
-
         <description>
-
         </description>
-
     </game>
 
     <game indexNumber="15">
- 
         <title> Hitman 2 </title>
-
         <price> 98,79 zł </price>
-
         <genre> Stealth </genre>
-
-        <releaseDate> 13 November 2018 </releaseDate>
-
+        <releaseDate>
+            <day> 16 </day>
+            <month> Marzec </month>
+            <year> 2010 </year>
+        </releaseDate>
         <developer> IO Interactive </developer>
-
         <platforms> Microsoft Windows, PlayStation 4, Xbox One</platforms>
-
         <publisher> Warner Bros. Interactive Entertainment </publisher>
-
         <description>
-
         </description>
-
     </game>
 
     <game indexNumber="16">
- 
         <title> Hitman 2 </title>
-
         <price> 98,79 zł </price>
-
         <genre> Stealth </genre>
-
-        <releaseDate> 13 November 2018 </releaseDate>
-
+        <releaseDate>
+            <day> 16 </day>
+            <month> Marzec </month>
+            <year> 2010 </year>
+        </releaseDate>
         <developer> IO Interactive </developer>
-
         <platforms> Microsoft Windows, PlayStation 4, Xbox One</platforms>
-
         <publisher> Warner Bros. Interactive Entertainment </publisher>
-
         <description>
-
         </description>
-
     </game>
 
     <game indexNumber="17">
- 
         <title> Hitman 2 </title>
-
         <price> 98,79 zł </price>
-
         <genre> Stealth </genre>
-
-        <releaseDate> 13 November 2018 </releaseDate>
-
+        <releaseDate>
+            <day> 16 </day>
+            <month> Marzec </month>
+            <year> 2010 </year>
+        </releaseDate>
         <developer> IO Interactive </developer>
-
         <platforms> Microsoft Windows, PlayStation 4, Xbox One</platforms>
-
         <publisher> Warner Bros. Interactive Entertainment </publisher>
-
         <description>
-
         </description>
-
     </game>
 
     <game indexNumber="18">
- 
         <title> Hitman 2 </title>
-
         <price> 98,79 zł </price>
-
         <genre> Stealth </genre>
-
-        <releaseDate> 13 November 2018 </releaseDate>
-
+        <releaseDate>
+            <day> 16 </day>
+            <month> Marzec </month>
+            <year> 2010 </year>
+        </releaseDate>
         <developer> IO Interactive </developer>
-
         <platforms> Microsoft Windows, PlayStation 4, Xbox One</platforms>
-
         <publisher> Warner Bros. Interactive Entertainment </publisher>
-
         <description>
-
         </description>
-
     </game>
 
     <game indexNumber="19">
- 
         <title> Hitman 2 </title>
-
         <price> 98,79 zł </price>
-
         <genre> Stealth </genre>
-
-        <releaseDate> 13 November 2018 </releaseDate>
-
+        <releaseDate>
+            <day> 16 </day>
+            <month> Marzec </month>
+            <year> 2010 </year>
+        </releaseDate>
         <developer> IO Interactive </developer>
-
         <platforms> Microsoft Windows, PlayStation 4, Xbox One</platforms>
-
         <publisher> Warner Bros. Interactive Entertainment </publisher>
-
         <description>
-
         </description>
-
     </game>
 
     <game indexNumber="20">
- 
         <title> Hitman 2 </title>
-
         <price> 98,79 zł </price>
-
         <genre> Stealth </genre>
-
-        <releaseDate> 13 November 2018 </releaseDate>
-
+        <releaseDate>
+            <day> 16 </day>
+            <month> Marzec </month>
+            <year> 2010 </year>
+        </releaseDate>
         <developer> IO Interactive </developer>
-
         <platforms> Microsoft Windows, PlayStation 4, Xbox One</platforms>
-
         <publisher> Warner Bros. Interactive Entertainment </publisher>
-
         <description>
-
         </description>
-        
     </game>
-
-
-
 </gamesList>
