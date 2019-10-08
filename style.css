@@ -15,34 +15,35 @@ game{
     background-size: 10px;
 }
 
+game:first-child{
+    margin:0px;
+}
+
 title{
     display:block;
     font-size: 20px;
-	
-	
-	
 }
 
-price{
+price,genre,releaseDate,developer,platforms,publisher{
     display:block;
 }
 
-genre{
-    display:block;
-}
 
-releaseDate{
-    display:block;
-}
 
-developer{
-    display:block;
-}
 
-platforms{
-    display:block;
-}
 
-publisher{
-    display:block;
-}
+
+
+
+
+
+
+p {
+    display: none;
+    background-color: yellow;
+    padding: 20px;
+  }
+  
+  div:hover p {
+    display: block;
+  }

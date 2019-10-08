@@ -23,11 +23,12 @@
         </description>
 
     </game>
+
     <game indexNumber="2">
  
         <title> Hitman 2 </title>
 
-        <price> 75,00 zł </price>
+        <price> 98,79 zł </price>
 
         <genre> Stealth </genre>
 
@@ -45,20 +46,402 @@
 
     </game>
 
-   <requirements>
+    <game indexNumber="3">
+ 
+        <title> Hitman 2 </title>
+
+        <price> 98,79 zł </price>
+
+        <genre> Stealth </genre>
+
+        <releaseDate> 13 November 2018 </releaseDate>
+
+        <developer> IO Interactive </developer>
+
+        <platforms> Microsoft Windows, PlayStation 4, Xbox One</platforms>
+
+        <publisher> Warner Bros. Interactive Entertainment </publisher>
+
+        <description>
+
+        </description>
+
+    </game>
+
+    <game indexNumber="4">
+ 
+        <title> Hitman 2 </title>
+
+        <price> 98,79 zł </price>
+
+        <genre> Stealth </genre>
+
+        <releaseDate> 13 November 2018 </releaseDate>
+
+        <developer> IO Interactive </developer>
+
+        <platforms> Microsoft Windows, PlayStation 4, Xbox One</platforms>
+
+        <publisher> Warner Bros. Interactive Entertainment </publisher>
+
+        <description>
+
+        </description>
+
+    </game>
+
+    <game indexNumber="5">
+ 
+        <title> Hitman 2 </title>
+
+        <price> 98,79 zł </price>
+
+        <genre> Stealth </genre>
+
+        <releaseDate> 13 November 2018 </releaseDate>
+
+        <developer> IO Interactive </developer>
+
+        <platforms> Microsoft Windows, PlayStation 4, Xbox One</platforms>
+
+        <publisher> Warner Bros. Interactive Entertainment </publisher>
+
+        <description>
+
+        </description>
+
+    </game>
+
+    <game indexNumber="6">
+ 
+        <title> Hitman 2 </title>
+
+        <price> 98,79 zł </price>
+
+        <genre> Stealth </genre>
+
+        <releaseDate> 13 November 2018 </releaseDate>
+
+        <developer> IO Interactive </developer>
+
+        <platforms> Microsoft Windows, PlayStation 4, Xbox One</platforms>
+
+        <publisher> Warner Bros. Interactive Entertainment </publisher>
+
+        <description>
+
+        </description>
+
+    </game>
+
+    <game indexNumber="7">
+ 
+        <title> Hitman 2 </title>
+
+        <price> 98,79 zł </price>
+
+        <genre> Stealth </genre>
+
+        <releaseDate> 13 November 2018 </releaseDate>
+
+        <developer> IO Interactive </developer>
+
+        <platforms> Microsoft Windows, PlayStation 4, Xbox One</platforms>
+
+        <publisher> Warner Bros. Interactive Entertainment </publisher>
+
+        <description>
+
+        </description>
+
+    </game>
+
+    <game indexNumber="8">
+ 
+        <title> Hitman 2 </title>
+
+        <price> 98,79 zł </price>
+
+        <genre> Stealth </genre>
+
+        <releaseDate> 13 November 2018 </releaseDate>
+
+        <developer> IO Interactive </developer>
+
+        <platforms> Microsoft Windows, PlayStation 4, Xbox One</platforms>
+
+        <publisher> Warner Bros. Interactive Entertainment </publisher>
+
+        <description>
+
+        </description>
+
+    </game>
+
+    <game indexNumber="9">
+ 
+        <title> Hitman 2 </title>
+
+        <price> 98,79 zł </price>
+
+        <genre> Stealth </genre>
+
+        <releaseDate> 13 November 2018 </releaseDate>
+
+        <developer> IO Interactive </developer>
+
+        <platforms> Microsoft Windows, PlayStation 4, Xbox One</platforms>
+
+        <publisher> Warner Bros. Interactive Entertainment </publisher>
+
+        <description>
+
+        </description>
+
+    </game>
+
+    <game indexNumber="10">
+ 
+        <title> Hitman 2 </title>
+
+        <price> 98,79 zł </price>
+
+        <genre> Stealth </genre>
+
+        <releaseDate> 13 November 2018 </releaseDate>
+
+        <developer> IO Interactive </developer>
+
+        <platforms> Microsoft Windows, PlayStation 4, Xbox One</platforms>
+
+        <publisher> Warner Bros. Interactive Entertainment </publisher>
+
+        <description>
+
+        </description>
+
+    </game>
+
+    <game indexNumber="11">
+ 
+        <title> Hitman 2 </title>
+
+        <price> 98,79 zł </price>
+
+        <genre> Stealth </genre>
+
+        <releaseDate> 13 November 2018 </releaseDate>
+
+        <developer> IO Interactive </developer>
+
+        <platforms> Microsoft Windows, PlayStation 4, Xbox One</platforms>
+
+        <publisher> Warner Bros. Interactive Entertainment </publisher>
+
+        <description>
+
+        </description>
+
+    </game>
+
+    <game indexNumber="12">
+ 
+        <title> Hitman 2 </title>
+
+        <price> 98,79 zł </price>
+
+        <genre> Stealth </genre>
+
+        <releaseDate> 13 November 2018 </releaseDate>
+
+        <developer> IO Interactive </developer>
+
+        <platforms> Microsoft Windows, PlayStation 4, Xbox One</platforms>
+
+        <publisher> Warner Bros. Interactive Entertainment </publisher>
+
+        <description>
+
+        </description>
+
+    </game>
+
+    <game indexNumber="13">
+ 
+        <title> Hitman 2 </title>
+
+        <price> 98,79 zł </price>
+
+        <genre> Stealth </genre>
+
+        <releaseDate> 13 November 2018 </releaseDate>
+
+        <developer> IO Interactive </developer>
+
+        <platforms> Microsoft Windows, PlayStation 4, Xbox One</platforms>
+
+        <publisher> Warner Bros. Interactive Entertainment </publisher>
+
+        <description>
+
+        </description>
+
+    </game>
+
+    <game indexNumber="14">
+ 
+        <title> Hitman 2 </title>
+
+        <price> 98,79 zł </price>
+
+        <genre> Stealth </genre>
+
+        <releaseDate> 13 November 2018 </releaseDate>
+
+        <developer> IO Interactive </developer>
+
+        <platforms> Microsoft Windows, PlayStation 4, Xbox One</platforms>
+
+        <publisher> Warner Bros. Interactive Entertainment </publisher>
+
+        <description>
+
+        </description>
+
+    </game>
+
+    <game indexNumber="15">
+ 
+        <title> Hitman 2 </title>
+
+        <price> 98,79 zł </price>
+
+        <genre> Stealth </genre>
+
+        <releaseDate> 13 November 2018 </releaseDate>
+
+        <developer> IO Interactive </developer>
+
+        <platforms> Microsoft Windows, PlayStation 4, Xbox One</platforms>
+
+        <publisher> Warner Bros. Interactive Entertainment </publisher>
+
+        <description>
+
+        </description>
+
+    </game>
+
+    <game indexNumber="16">
+ 
+        <title> Hitman 2 </title>
+
+        <price> 98,79 zł </price>
+
+        <genre> Stealth </genre>
+
+        <releaseDate> 13 November 2018 </releaseDate>
+
+        <developer> IO Interactive </developer>
+
+        <platforms> Microsoft Windows, PlayStation 4, Xbox One</platforms>
+
+        <publisher> Warner Bros. Interactive Entertainment </publisher>
+
+        <description>
+
+        </description>
+
+    </game>
+
+    <game indexNumber="17">
+ 
+        <title> Hitman 2 </title>
+
+        <price> 98,79 zł </price>
+
+        <genre> Stealth </genre>
+
+        <releaseDate> 13 November 2018 </releaseDate>
+
+        <developer> IO Interactive </developer>
+
+        <platforms> Microsoft Windows, PlayStation 4, Xbox One</platforms>
+
+        <publisher> Warner Bros. Interactive Entertainment </publisher>
+
+        <description>
+
+        </description>
+
+    </game>
+
+    <game indexNumber="18">
+ 
+        <title> Hitman 2 </title>
+
+        <price> 98,79 zł </price>
+
+        <genre> Stealth </genre>
+
+        <releaseDate> 13 November 2018 </releaseDate>
+
+        <developer> IO Interactive </developer>
+
+        <platforms> Microsoft Windows, PlayStation 4, Xbox One</platforms>
+
+        <publisher> Warner Bros. Interactive Entertainment </publisher>
+
+        <description>
+
+        </description>
+
+    </game>
+
+    <game indexNumber="19">
+ 
+        <title> Hitman 2 </title>
+
+        <price> 98,79 zł </price>
+
+        <genre> Stealth </genre>
+
+        <releaseDate> 13 November 2018 </releaseDate>
+
+        <developer> IO Interactive </developer>
+
+        <platforms> Microsoft Windows, PlayStation 4, Xbox One</platforms>
+
+        <publisher> Warner Bros. Interactive Entertainment </publisher>
+
+        <description>
+
+        </description>
+
+    </game>
+
+    <game indexNumber="20">
+ 
+        <title> Hitman 2 </title>
+
+        <price> 98,79 zł </price>
+
+        <genre> Stealth </genre>
+
+        <releaseDate> 13 November 2018 </releaseDate>
+
+        <developer> IO Interactive </developer>
+
+        <platforms> Microsoft Windows, PlayStation 4, Xbox One</platforms>
+
+        <publisher> Warner Bros. Interactive Entertainment </publisher>
+
+        <description>
+
+        </description>
         
-        <cpu>
-        </cpu>
+    </game>
 
-        <gpu>
-        </gpu>
 
-        <ram>
-        </ram>
-
-        <os>
-        </os>
-
-    </requirements>
 
 </gamesList>
