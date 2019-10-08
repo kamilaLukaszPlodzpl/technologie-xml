@@ -1,8 +1,10 @@
 gamesList{
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-family: Georgia, serif;
     font-size: 16px;
     padding:50px;
     column-count:2;
+    background-image: url();
+
 }
 
 game{
@@ -11,17 +13,17 @@ game{
     margin:5px;  
     padding:20px;
     background-color:#f0e2da;
+    margin-bottom:15px;
 }
 
 game:first-child{
-    margin:0px;
-    margin-left: 5px;
-    margin-right:5px;
+    margin-top:0px;
 }
 
 title{
     display:block;
     font-weight: bold;
+    margin-bottom:15px;
 }
 
 price,genre,releaseDate,developer,platforms,publisher{
@@ -29,6 +31,9 @@ price,genre,releaseDate,developer,platforms,publisher{
 }
 price:before{
     content: "Cena:  "
+}
+price:after{
+    content: " zł"
 }
 genre:before{
     content: "Gatunek:  "
@@ -51,7 +56,10 @@ description {
     background-color: #5c4b36;
     padding: 20px;
   }
-  
+  coverArt{
+      display:none;
+      
+  }
   coverArt:hover description {
     display: block;
   }

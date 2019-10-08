@@ -4,8 +4,8 @@
 <gamesList>
     <game indexNumber="1">
         <title> God of War III </title>
-        <price> 75,00 zł </price>
-        <genre> action-adventure, hack and slash </genre>
+        <price> 75.00 </price>
+        <genre> hack and slash </genre>
         <releaseDate>
             <day> 16 </day>
             <month> Marzec </month>
@@ -14,54 +14,61 @@
         <developer> SCE Santa Monica Studio </developer>
         <platforms> PlayStation 3, PlayStation 4</platforms>
         <publisher> Sony Computer Entertainment </publisher>
+        <coverArt src="/coverart/God_of_War_III_cover_art.jpg" height="50" width="50"/>
         <description>
         </description>
     </game>
 
     <game indexNumber="2">
         <title> Hitman 2 </title>
-        <price> 98,79 zł </price>
-        <genre> Stealth </genre>
+        <price> 98.79 </price>
+        <genre> skradanka </genre>
         <releaseDate>
-            <day> 16 </day>
-            <month> Marzec </month>
-            <year> 2010 </year>
+            <day> 13 </day>
+            <month> Listopada </month>
+            <year> 2018 </year>
         </releaseDate>
         <developer> IO Interactive </developer>
         <platforms> Microsoft Windows, PlayStation 4, Xbox One</platforms>
         <publisher> Warner Bros. Interactive Entertainment </publisher>
+         <coverArt>
+        </coverArt>
         <description>
         </description>
     </game>
 
     <game indexNumber="3">
-        <title> Hitman 2 </title>
-        <price> 98,79 zł </price>
-        <genre> Stealth </genre>
+        <title> Minecraft: Java Edition </title>
+        <price> 99.99 </price>
+        <genre> gra survivalowa </genre>
         <releaseDate>
-            <day> 16 </day>
-            <month> Marzec </month>
-            <year> 2010 </year>
+            <day> 18 </day>
+            <month> Listopada </month>
+            <year> 2011 </year>
         </releaseDate>
-        <developer> IO Interactive </developer>
-        <platforms> Microsoft Windows, PlayStation 4, Xbox One</platforms>
-        <publisher> Warner Bros. Interactive Entertainment </publisher>
+        <developer> Mojang </developer>
+        <platforms> Microsoft Windows, macOS, Linux </platforms>
+        <publisher> Mojang </publisher>
+         <coverArt>
+        </coverArt>
         <description>
         </description>
     </game>
 
     <game indexNumber="4">
-        <title> Hitman 2 </title>
+        <title> Garry's Mod </title>
         <price> 98,79 zł </price>
         <genre> Stealth </genre>
         <releaseDate>
-            <day> 16 </day>
-            <month> Marzec </month>
-            <year> 2010 </year>
+            <day> 24 </day>
+            <month> Grudnia </month>
+            <year> 2004 </year>
         </releaseDate>
-        <developer> IO Interactive </developer>
-        <platforms> Microsoft Windows, PlayStation 4, Xbox One</platforms>
-        <publisher> Warner Bros. Interactive Entertainment </publisher>
+        <developer> Facepunch Studios </developer>
+        <platforms> Microsoft Windows, macOS, Linux</platforms>
+        <publisher> Valve Corporation </publisher>
+         <coverArt>
+        </coverArt>
         <description>
         </description>
     </game>
@@ -78,6 +85,8 @@
         <developer> IO Interactive </developer>
         <platforms> Microsoft Windows, PlayStation 4, Xbox One</platforms>
         <publisher> Warner Bros. Interactive Entertainment </publisher>
+         <coverArt>
+        </coverArt>
         <description>
         </description>
     </game>
@@ -94,6 +103,8 @@
         <developer> IO Interactive </developer>
         <platforms> Microsoft Windows, PlayStation 4, Xbox One</platforms>
         <publisher> Warner Bros. Interactive Entertainment </publisher>
+         <coverArt>
+        </coverArt>
         <description>
         </description>
     </game>
@@ -110,6 +121,8 @@
         <developer> IO Interactive </developer>
         <platforms> Microsoft Windows, PlayStation 4, Xbox One</platforms>
         <publisher> Warner Bros. Interactive Entertainment </publisher>
+         <coverArt>
+        </coverArt>
         <description>
         </description>
     </game>
@@ -126,6 +139,8 @@
         <developer> IO Interactive </developer>
         <platforms> Microsoft Windows, PlayStation 4, Xbox One</platforms>
         <publisher> Warner Bros. Interactive Entertainment </publisher>
+         <coverArt>
+        </coverArt>
         <description>
         </description>
     </game>
@@ -142,6 +157,8 @@
         <developer> IO Interactive </developer>
         <platforms> Microsoft Windows, PlayStation 4, Xbox One</platforms>
         <publisher> Warner Bros. Interactive Entertainment </publisher>
+         <coverArt>
+        </coverArt>
         <description>
         </description>
     </game>
@@ -158,6 +175,8 @@
         <developer> IO Interactive </developer>
         <platforms> Microsoft Windows, PlayStation 4, Xbox One</platforms>
         <publisher> Warner Bros. Interactive Entertainment </publisher>
+         <coverArt>
+        </coverArt>
         <description>
         </description>
     </game>
@@ -174,6 +193,8 @@
         <developer> IO Interactive </developer>
         <platforms> Microsoft Windows, PlayStation 4, Xbox One</platforms>
         <publisher> Warner Bros. Interactive Entertainment </publisher>
+         <coverArt>
+        </coverArt>
         <description>
         </description>
     </game>
@@ -190,6 +211,8 @@
         <developer> IO Interactive </developer>
         <platforms> Microsoft Windows, PlayStation 4, Xbox One</platforms>
         <publisher> Warner Bros. Interactive Entertainment </publisher>
+         <coverArt>
+        </coverArt>
         <description>
         </description>
     </game>
@@ -206,6 +229,8 @@
         <developer> IO Interactive </developer>
         <platforms> Microsoft Windows, PlayStation 4, Xbox One</platforms>
         <publisher> Warner Bros. Interactive Entertainment </publisher>
+         <coverArt>
+        </coverArt>
         <description>
         </description>
     </game>
@@ -222,6 +247,8 @@
         <developer> IO Interactive </developer>
         <platforms> Microsoft Windows, PlayStation 4, Xbox One</platforms>
         <publisher> Warner Bros. Interactive Entertainment </publisher>
+         <coverArt>
+        </coverArt>
         <description>
         </description>
     </game>
@@ -238,6 +265,8 @@
         <developer> IO Interactive </developer>
         <platforms> Microsoft Windows, PlayStation 4, Xbox One</platforms>
         <publisher> Warner Bros. Interactive Entertainment </publisher>
+         <coverArt>
+        </coverArt>
         <description>
         </description>
     </game>
@@ -254,6 +283,8 @@
         <developer> IO Interactive </developer>
         <platforms> Microsoft Windows, PlayStation 4, Xbox One</platforms>
         <publisher> Warner Bros. Interactive Entertainment </publisher>
+         <coverArt>
+        </coverArt>
         <description>
         </description>
     </game>
@@ -270,6 +301,8 @@
         <developer> IO Interactive </developer>
         <platforms> Microsoft Windows, PlayStation 4, Xbox One</platforms>
         <publisher> Warner Bros. Interactive Entertainment </publisher>
+         <coverArt>
+        </coverArt>
         <description>
         </description>
     </game>
@@ -286,6 +319,8 @@
         <developer> IO Interactive </developer>
         <platforms> Microsoft Windows, PlayStation 4, Xbox One</platforms>
         <publisher> Warner Bros. Interactive Entertainment </publisher>
+         <coverArt>
+        </coverArt>
         <description>
         </description>
     </game>
@@ -302,6 +337,8 @@
         <developer> IO Interactive </developer>
         <platforms> Microsoft Windows, PlayStation 4, Xbox One</platforms>
         <publisher> Warner Bros. Interactive Entertainment </publisher>
+         <coverArt>
+        </coverArt>
         <description>
         </description>
     </game>
@@ -318,6 +355,8 @@
         <developer> IO Interactive </developer>
         <platforms> Microsoft Windows, PlayStation 4, Xbox One</platforms>
         <publisher> Warner Bros. Interactive Entertainment </publisher>
+         <coverArt>
+        </coverArt>
         <description>
         </description>
     </game>
