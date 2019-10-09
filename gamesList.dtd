@@ -9,6 +9,8 @@
         <!ELEMENT developer (#PCDATA)>
         <!ELEMENT platforms (#PCDATA)>
         <!ELEMENT publisher (#PCDATA)>
+        <!ELEMENT coverArt (#PCDATA)>
+            <!ATTLIST coverArt src NMTOKEN #REQUIRED>
         <!ELEMENT description (#PCDATA)>
 
     <!ELEMENT day (#PCDATA)>
