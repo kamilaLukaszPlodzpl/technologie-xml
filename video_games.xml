@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <?xml-stylesheet href="style.css" type="text/css"?>
 
-<!DOCTYPE gamesList SYSTEM "gamesList.dtd">
+<!DOCTYPE gamesList SYSTEM "./gamesList.dtd">
 
 <gamesList>
     <game indexNumber="1">
         <title> God of War III </title>
-        <price> 75.00 </price>
+        <price> 239.90 </price>
         <genre> hack and slash </genre>
         <releaseDate>
             <day> 16 </day>
@@ -23,7 +23,7 @@
 
     <game indexNumber="2">
         <title> Hitman 2 </title>
-        <price> 98.79 </price>
+        <price> 249.00 </price>
         <genre> skradanka </genre>
         <releaseDate>
             <day> 13 </day>
@@ -182,20 +182,19 @@
         <description>
         </description>
     </game>
-    <!-- To w góre ok -->
 
     <game indexNumber="11">
-        <title> Hitman 2 </title>
-        <price> 98,79 </price>
-        <genre> Stealth </genre>
+        <title> Crysis 3 </title>
+        <price> 149,90 </price>
+        <genre> strzelanka </genre>
         <releaseDate>
-            <day> 16 </day>
-            <month> Marzec </month>
-            <year> 2010 </year>
+            <day> 19 </day>
+            <month> Luty </month>
+            <year> 2013 </year>
         </releaseDate>
-        <developer> IO Interactive </developer>
-        <platforms> Microsoft Windows, PlayStation 4, Xbox One</platforms>
-        <publisher> Warner Bros. Interactive Entertainment </publisher>
+        <developer> Crytek </developer>
+        <platforms> Microsoft Windows, PlayStation 3, Xbox 360 </platforms>
+        <publisher> Electronic Arts Inc. </publisher>
         <coverArt>
         </coverArt>
         <description>
@@ -203,17 +202,17 @@
     </game>
 
     <game indexNumber="12">
-        <title> Hitman 2 </title>
-        <price> 98,79 </price>
+        <title> Far Cry 3 </title>
+        <price> 139,90 </price>
         <genre> Stealth </genre>
         <releaseDate>
-            <day> 16 </day>
-            <month> Marzec </month>
-            <year> 2010 </year>
+            <day> 29 </day>
+            <month> Listopad </month>
+            <year> 2012 </year>
         </releaseDate>
-        <developer> IO Interactive </developer>
+        <developer> Ubisoft </developer>
         <platforms> Microsoft Windows, PlayStation 4, Xbox One</platforms>
-        <publisher> Warner Bros. Interactive Entertainment </publisher>
+        <publisher> Ubisoft </publisher>
         <coverArt>
         </coverArt>
         <description>
@@ -221,17 +220,17 @@
     </game>
 
     <game indexNumber="13">
-        <title> Hitman 2 </title>
+        <title> Assassin's Creed: Odyssey </title>
         <price> 98,79 </price>
         <genre> Stealth </genre>
         <releaseDate>
-            <day> 16 </day>
-            <month> Marzec </month>
-            <year> 2010 </year>
+            <day> 5 </day>
+            <month> Październik </month>
+            <year> 2018 </year>
         </releaseDate>
-        <developer> IO Interactive </developer>
+        <developer> Ubisoft </developer>
         <platforms> Microsoft Windows, PlayStation 4, Xbox One</platforms>
-        <publisher> Warner Bros. Interactive Entertainment </publisher>
+        <publisher> Ubisoft </publisher>
         <coverArt>
         </coverArt>
         <description>
@@ -239,7 +238,7 @@
     </game>
 
     <game indexNumber="14">
-        <title> Hitman 2 </title>
+        <title> The Elder Scrolls V: Skyrim </title>
         <price> 98,79 </price>
         <genre> Stealth </genre>
         <releaseDate>
@@ -247,16 +246,15 @@
             <month> Marzec </month>
             <year> 2010 </year>
         </releaseDate>
-        <developer> IO Interactive </developer>
-        <platforms> Microsoft Windows, PlayStation 4, Xbox One</platforms>
-        <publisher> Warner Bros. Interactive Entertainment </publisher>
+        <developer> Bethesda Softworks </developer>
+        <platforms> Microsoft Windows, PlayStation 3, Xbox 360</platforms>
+        <publisher> Bethesda Softworks </publisher>
         <coverArt>
         </coverArt>
         <description>
         </description>
     </game>
 
-    <!-- To w dół jest ok -->
     <game indexNumber="15">
         <title> Wiedźmin 3: Dziki Gon </title>
         <price> 152.59 </price>
