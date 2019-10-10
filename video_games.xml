@@ -27,7 +27,7 @@
         <genre> skradanka </genre>
         <releaseDate>
             <day> 13 </day>
-            <month> Listopada </month>
+            <month> Listopad </month>
             <year> 2018 </year>
         </releaseDate>
         <developer> IO Interactive </developer>
@@ -45,7 +45,7 @@
         <genre> gra survivalowa </genre>
         <releaseDate>
             <day> 18 </day>
-            <month> Listopada </month>
+            <month> Listopad </month>
             <year> 2011 </year>
         </releaseDate>
         <developer> Mojang </developer>
@@ -63,7 +63,7 @@
         <genre> piaskownica </genre>
         <releaseDate>
             <day> 24 </day>
-            <month> Grudnia </month>
+            <month> Grudzień </month>
             <year> 2004 </year>
         </releaseDate>
         <developer> Facepunch Studios </developer>
@@ -117,7 +117,7 @@
         <genre> wyścigi </genre>
         <releaseDate>
             <day> 2 </day>
-            <month> paź </month>
+            <month> Październik </month>
             <year> 2018 </year>
         </releaseDate>
         <developer> Playground Games </developer>
@@ -182,6 +182,7 @@
         <description>
         </description>
     </game>
+    <!-- To w góre ok -->
 
     <game indexNumber="11">
         <title> Hitman 2 </title>
@@ -255,6 +256,7 @@
         </description>
     </game>
 
+    <!-- To w dół jest ok -->
     <game indexNumber="15">
         <title> Wiedźmin 3: Dziki Gon </title>
         <price> 152.59 </price>
