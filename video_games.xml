@@ -78,15 +78,15 @@
     <game indexNumber="5">
         <title> John Wick Hex </title>
         <price> 69.00 </price>
-        <genre> Stealth </genre>
+        <genre> Strategia </genre>
         <releaseDate>
-            <day> 16 </day>
-            <month> Marzec </month>
-            <year> 2010 </year>
+            <day> 8 </day>
+            <month> Październik </month>
+            <year> 2019 </year>
         </releaseDate>
-        <developer> IO Interactive </developer>
-        <platforms> Microsoft Windows, PlayStation 4, Xbox One</platforms>
-        <publisher> Warner Bros. Interactive Entertainment </publisher>
+        <developer> Bithell Games </developer>
+        <platforms> Microsoft Windows </platforms>
+        <publisher> Good Shepherd Entertainment / Gambitious </publisher>
         <coverArt>
         </coverArt>
         <description>
@@ -94,17 +94,17 @@
     </game>
 
     <game indexNumber="6">
-        <title> Hitman 2 </title>
-        <price> 98,79 </price>
-        <genre> Stealth </genre>
+        <title> Doom </title>
+        <price> 30.99 </price>
+        <genre> stzelanka </genre>
         <releaseDate>
-            <day> 16 </day>
-            <month> Marzec </month>
-            <year> 2010 </year>
+            <day> 10 </day>
+            <month> Grudzień </month>
+            <year> 1993 </year>
         </releaseDate>
-        <developer> IO Interactive </developer>
-        <platforms> Microsoft Windows, PlayStation 4, Xbox One</platforms>
-        <publisher> Warner Bros. Interactive Entertainment </publisher>
+        <developer> id Software </developer>
+        <platforms> Microsoft Windows, PlayStation 4, PlayStation 3, Xbox One, Xbox 360, Nintendo Switch</platforms>
+        <publisher> id Software </publisher>
         <coverArt>
         </coverArt>
         <description>
@@ -112,17 +112,17 @@
     </game>
 
     <game indexNumber="7">
-        <title> Hitman 2 </title>
-        <price> 98,79 </price>
-        <genre> Stealth </genre>
+        <title> Forza Horizon 4 </title>
+        <price> 199,00 </price>
+        <genre> wyścigi </genre>
         <releaseDate>
-            <day> 16 </day>
-            <month> Marzec </month>
-            <year> 2010 </year>
+            <day> 2 </day>
+            <month> paź </month>
+            <year> 2018 </year>
         </releaseDate>
-        <developer> IO Interactive </developer>
-        <platforms> Microsoft Windows, PlayStation 4, Xbox One</platforms>
-        <publisher> Warner Bros. Interactive Entertainment </publisher>
+        <developer> Playground Games </developer>
+        <platforms> Microsoft Windows, Xbox One</platforms>
+        <publisher> Xbox Game Studios / Microsoft Studios </publisher>
         <coverArt>
         </coverArt>
         <description>
