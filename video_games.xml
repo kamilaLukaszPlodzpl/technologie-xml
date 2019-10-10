@@ -256,17 +256,17 @@
     </game>
 
     <game indexNumber="15">
-        <title> Hitman 2 </title>
-        <price> 98,79 </price>
-        <genre> Stealth </genre>
+        <title> Wiedźmin 3: Dziki Gon </title>
+        <price> 152.59 </price>
+        <genre> RPG </genre>
         <releaseDate>
-            <day> 16 </day>
-            <month> Marzec </month>
-            <year> 2010 </year>
+            <day> 19 </day>
+            <month> Maj </month>
+            <year> 2015 </year>
         </releaseDate>
-        <developer> IO Interactive </developer>
+        <developer> CD Projekt RED </developer>
         <platforms> Microsoft Windows, PlayStation 4, Xbox One</platforms>
-        <publisher> Warner Bros. Interactive Entertainment </publisher>
+        <publisher> CD Projekt RED </publisher>
         <coverArt>
         </coverArt>
         <description>
@@ -274,17 +274,17 @@
     </game>
 
     <game indexNumber="16">
-        <title> Hitman 2 </title>
-        <price> 98,79 </price>
-        <genre> Stealth </genre>
+        <title> Grand Theft Auto: San Andreas </title>
+        <price> 35.00 </price>
+        <genre> akcji </genre>
         <releaseDate>
-            <day> 16 </day>
-            <month> Marzec </month>
-            <year> 2010 </year>
+            <day> 25 </day>
+            <month> Październik </month>
+            <year> 2004 </year>
         </releaseDate>
-        <developer> IO Interactive </developer>
-        <platforms> Microsoft Windows, PlayStation 4, Xbox One</platforms>
-        <publisher> Warner Bros. Interactive Entertainment </publisher>
+        <developer> Rockstar Games </developer>
+        <platforms> Microsoft Windows, PlayStation 2, Xbox</platforms>
+        <publisher> Rockstar Games </publisher>
         <coverArt>
         </coverArt>
         <description>
@@ -292,17 +292,17 @@
     </game>
 
     <game indexNumber="17">
-        <title> Hitman 2 </title>
-        <price> 98,79 </price>
-        <genre> Stealth </genre>
+        <title> The Last of Us </title>
+        <price> 67.00 </price>
+        <genre> akcji </genre>
         <releaseDate>
-            <day> 16 </day>
-            <month> Marzec </month>
-            <year> 2010 </year>
+            <day> 14 </day>
+            <month> Czerwca </month>
+            <year> 2013 </year>
         </releaseDate>
-        <developer> IO Interactive </developer>
-        <platforms> Microsoft Windows, PlayStation 4, Xbox One</platforms>
-        <publisher> Warner Bros. Interactive Entertainment </publisher>
+        <developer> Naughty Dog </developer>
+        <platforms> PlayStation 3, PlayStation 4</platforms>
+        <publisher> Sony Interactive Entertainment </publisher>
         <coverArt>
         </coverArt>
         <description>
@@ -310,17 +310,17 @@
     </game>
 
     <game indexNumber="18">
-        <title> Hitman 2 </title>
-        <price> 98,79 </price>
-        <genre> Stealth </genre>
+        <title> The Sims 4 </title>
+        <price> 82.35 </price>
+        <genre> Symulacja </genre>
         <releaseDate>
-            <day> 16 </day>
-            <month> Marzec </month>
-            <year> 2010 </year>
+            <day> 2 </day>
+            <month> Września </month>
+            <year> 2014 </year>
         </releaseDate>
-        <developer> IO Interactive </developer>
+        <developer> EA Maxis </developer>
         <platforms> Microsoft Windows, PlayStation 4, Xbox One</platforms>
-        <publisher> Warner Bros. Interactive Entertainment </publisher>
+        <publisher> Electronic Arts Inc. </publisher>
         <coverArt>
         </coverArt>
         <description>
@@ -328,17 +328,17 @@
     </game>
 
     <game indexNumber="19">
-        <title> Hitman 2 </title>
-        <price> 98,79 </price>
-        <genre> Stealth </genre>
+        <title> Shadow of the Tomb Raider </title>
+        <price> 132.90 </price>
+        <genre> akcji </genre>
         <releaseDate>
-            <day> 16 </day>
-            <month> Marzec </month>
-            <year> 2010 </year>
+            <day> 14 </day>
+            <month> Września </month>
+            <year> 2018 </year>
         </releaseDate>
-        <developer> IO Interactive </developer>
+        <developer> Eidos Montreal </developer>
         <platforms> Microsoft Windows, PlayStation 4, Xbox One</platforms>
-        <publisher> Warner Bros. Interactive Entertainment </publisher>
+        <publisher> Square-Enix </publisher>
         <coverArt>
         </coverArt>
         <description>
@@ -346,17 +346,17 @@
     </game>
 
     <game indexNumber="20">
-        <title> Hitman 2 </title>
-        <price> 98,79 </price>
-        <genre> Stealth </genre>
+        <title> Dragon Age: Inkwizycja </title>
+        <price> 41.80 </price>
+        <genre> RPG </genre>
         <releaseDate>
-            <day> 16 </day>
-            <month> Marzec </month>
-            <year> 2010 </year>
+            <day> 18 </day>
+            <month> Listopad </month>
+            <year> 2014 </year>
         </releaseDate>
-        <developer> IO Interactive </developer>
+        <developer> BioWare Corporation </developer>
         <platforms> Microsoft Windows, PlayStation 4, Xbox One</platforms>
-        <publisher> Warner Bros. Interactive Entertainment </publisher>
+        <publisher> Electronic Arts Inc. </publisher>
         <coverArt>
         </coverArt>
         <description>
