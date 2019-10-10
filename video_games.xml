@@ -59,8 +59,8 @@
 
     <game indexNumber="4">
         <title> Garry's Mod </title>
-        <price> 98,79 zł </price>
-        <genre> Stealth </genre>
+        <price> 35,99 </price>
+        <genre> piaskownica </genre>
         <releaseDate>
             <day> 24 </day>
             <month> Grudnia </month>
@@ -76,8 +76,8 @@
     </game>
 
     <game indexNumber="5">
-        <title> Hitman 2 </title>
-        <price> 98,79 zł </price>
+        <title> John Wick Hex </title>
+        <price> 69.00 </price>
         <genre> Stealth </genre>
         <releaseDate>
             <day> 16 </day>
@@ -95,7 +95,7 @@
 
     <game indexNumber="6">
         <title> Hitman 2 </title>
-        <price> 98,79 zł </price>
+        <price> 98,79 </price>
         <genre> Stealth </genre>
         <releaseDate>
             <day> 16 </day>
@@ -113,7 +113,7 @@
 
     <game indexNumber="7">
         <title> Hitman 2 </title>
-        <price> 98,79 zł </price>
+        <price> 98,79 </price>
         <genre> Stealth </genre>
         <releaseDate>
             <day> 16 </day>
@@ -131,7 +131,7 @@
 
     <game indexNumber="8">
         <title> Hitman 2 </title>
-        <price> 98,79 zł </price>
+        <price> 98,79 </price>
         <genre> Stealth </genre>
         <releaseDate>
             <day> 16 </day>
@@ -149,7 +149,7 @@
 
     <game indexNumber="9">
         <title> Hitman 2 </title>
-        <price> 98,79 zł </price>
+        <price> 98,79 </price>
         <genre> Stealth </genre>
         <releaseDate>
             <day> 16 </day>
@@ -167,7 +167,7 @@
 
     <game indexNumber="10">
         <title> Hitman 2 </title>
-        <price> 98,79 zł </price>
+        <price> 98,79 </price>
         <genre> Stealth </genre>
         <releaseDate>
             <day> 16 </day>
@@ -185,7 +185,7 @@
 
     <game indexNumber="11">
         <title> Hitman 2 </title>
-        <price> 98,79 zł </price>
+        <price> 98,79 </price>
         <genre> Stealth </genre>
         <releaseDate>
             <day> 16 </day>
@@ -203,7 +203,7 @@
 
     <game indexNumber="12">
         <title> Hitman 2 </title>
-        <price> 98,79 zł </price>
+        <price> 98,79 </price>
         <genre> Stealth </genre>
         <releaseDate>
             <day> 16 </day>
@@ -221,7 +221,7 @@
 
     <game indexNumber="13">
         <title> Hitman 2 </title>
-        <price> 98,79 zł </price>
+        <price> 98,79 </price>
         <genre> Stealth </genre>
         <releaseDate>
             <day> 16 </day>
@@ -239,7 +239,7 @@
 
     <game indexNumber="14">
         <title> Hitman 2 </title>
-        <price> 98,79 zł </price>
+        <price> 98,79 </price>
         <genre> Stealth </genre>
         <releaseDate>
             <day> 16 </day>
@@ -257,7 +257,7 @@
 
     <game indexNumber="15">
         <title> Hitman 2 </title>
-        <price> 98,79 zł </price>
+        <price> 98,79 </price>
         <genre> Stealth </genre>
         <releaseDate>
             <day> 16 </day>
@@ -275,7 +275,7 @@
 
     <game indexNumber="16">
         <title> Hitman 2 </title>
-        <price> 98,79 zł </price>
+        <price> 98,79 </price>
         <genre> Stealth </genre>
         <releaseDate>
             <day> 16 </day>
@@ -293,7 +293,7 @@
 
     <game indexNumber="17">
         <title> Hitman 2 </title>
-        <price> 98,79 zł </price>
+        <price> 98,79 </price>
         <genre> Stealth </genre>
         <releaseDate>
             <day> 16 </day>
@@ -311,7 +311,7 @@
 
     <game indexNumber="18">
         <title> Hitman 2 </title>
-        <price> 98,79 zł </price>
+        <price> 98,79 </price>
         <genre> Stealth </genre>
         <releaseDate>
             <day> 16 </day>
@@ -329,7 +329,7 @@
 
     <game indexNumber="19">
         <title> Hitman 2 </title>
-        <price> 98,79 zł </price>
+        <price> 98,79 </price>
         <genre> Stealth </genre>
         <releaseDate>
             <day> 16 </day>
@@ -347,7 +347,7 @@
 
     <game indexNumber="20">
         <title> Hitman 2 </title>
-        <price> 98,79 zł </price>
+        <price> 98,79 </price>
         <genre> Stealth </genre>
         <releaseDate>
             <day> 16 </day>
