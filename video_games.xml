@@ -1,10 +1,30 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<?xml-stylesheet href="style.css" type="text/css"?>
+<?xml-stylesheet href="style.css" type="text/css;charset=UTF-8"?>
 
 <!DOCTYPE gamesList SYSTEM "./gamesList.dtd">
+<!--<!DOCTYPE gamesList [
+        <!ELEMENT gameList (game+)>
+        <!ELEMENT game (title,price,genre,releaseDate,developer,platforms,publisher,coverArt,description)>
+        <!ATTLIST game indexNumber ID #REQUIRED>
+        <!ELEMENT title (#PCDATA)>
+        <!ELEMENT price (#PCDATA)>
+        <!ELEMENT genre (#PCDATA)>
+        <!ELEMENT releaseDate (day,month,year)>
+        <!ELEMENT developer (#PCDATA)>
+        <!ELEMENT platforms (#PCDATA)>
+        <!ELEMENT publisher (#PCDATA)>
+        <!ELEMENT coverArt EMPTY>
+        <!ATTLIST coverArt src CDATA #REQUIRED>
+        <!ELEMENT description (#PCDATA)>
+
+        <!ELEMENT day (#PCDATA)>
+        <!ELEMENT month (#PCDATA)>
+        <!ELEMENT year (#PCDATA)>
+        ]>
+-->
 
 <gamesList>
-    <game indexNumber="1">
+    <game indexNumber="a1">
         <title> God of War III </title>
         <price> 239.90 </price>
         <genre> hack and slash </genre>
@@ -33,8 +53,7 @@
         <developer> IO Interactive </developer>
         <platforms> Microsoft Windows, PlayStation 4, Xbox One</platforms>
         <publisher> Warner Bros. Interactive Entertainment </publisher>
-        <coverArt>
-        </coverArt>
+        <coverArt/>
         <description>
         </description>
     </game>
@@ -51,8 +70,7 @@
         <developer> Mojang </developer>
         <platforms> Microsoft Windows, macOS, Linux </platforms>
         <publisher> Mojang </publisher>
-        <coverArt>
-        </coverArt>
+        <coverArt/>
         <description>
         </description>
     </game>
@@ -69,8 +87,7 @@
         <developer> Facepunch Studios </developer>
         <platforms> Microsoft Windows, macOS, Linux</platforms>
         <publisher> Valve Corporation </publisher>
-        <coverArt>
-        </coverArt>
+        <coverArt/>
         <description>
         </description>
     </game>
@@ -87,8 +104,7 @@
         <developer> Bithell Games </developer>
         <platforms> Microsoft Windows </platforms>
         <publisher> Good Shepherd Entertainment / Gambitious </publisher>
-        <coverArt>
-        </coverArt>
+        <coverArt/>
         <description>
         </description>
     </game>
@@ -105,8 +121,7 @@
         <developer> id Software </developer>
         <platforms> Microsoft Windows, PlayStation 4, PlayStation 3, Xbox One, Xbox 360, Nintendo Switch</platforms>
         <publisher> id Software </publisher>
-        <coverArt>
-        </coverArt>
+        <coverArt/>
         <description>
         </description>
     </game>
@@ -123,8 +138,7 @@
         <developer> Playground Games </developer>
         <platforms> Microsoft Windows, Xbox One</platforms>
         <publisher> Xbox Game Studios / Microsoft Studios </publisher>
-        <coverArt>
-        </coverArt>
+        <coverArt/>
         <description>
         </description>
     </game>
@@ -141,8 +155,7 @@
         <developer> Endnight Games </developer>
         <platforms> Microsoft Windows, PlayStation 4 </platforms>
         <publisher> Endnight Games </publisher>
-        <coverArt>
-        </coverArt>
+        <coverArt/>
         <description>
         </description>
     </game>
@@ -159,8 +172,7 @@
         <developer> Freejam </developer>
         <platforms> Microsoft Windows </platforms>
         <publisher> Freejam </publisher>
-        <coverArt>
-        </coverArt>
+        <coverArt/>
         <description>
         </description>
     </game>
@@ -177,8 +189,7 @@
         <developer> IO Interactive </developer>
         <platforms> Valve Software </platforms>
         <publisher> Sierra </publisher>
-        <coverArt>
-        </coverArt>
+        <coverArt/>
         <description>
         </description>
     </game>
@@ -195,8 +206,7 @@
         <developer> Crytek </developer>
         <platforms> Microsoft Windows, PlayStation 3, Xbox 360 </platforms>
         <publisher> Electronic Arts Inc. </publisher>
-        <coverArt>
-        </coverArt>
+        <coverArt/>
         <description>
         </description>
     </game>
@@ -213,8 +223,7 @@
         <developer> Ubisoft </developer>
         <platforms> Microsoft Windows, PlayStation 4, Xbox One</platforms>
         <publisher> Ubisoft </publisher>
-        <coverArt>
-        </coverArt>
+        <coverArt/>
         <description>
         </description>
     </game>
@@ -231,8 +240,7 @@
         <developer> Ubisoft </developer>
         <platforms> Microsoft Windows, PlayStation 4, Xbox One</platforms>
         <publisher> Ubisoft </publisher>
-        <coverArt>
-        </coverArt>
+        <coverArt/>
         <description>
         </description>
     </game>
@@ -249,8 +257,7 @@
         <developer> Bethesda Softworks </developer>
         <platforms> Microsoft Windows, PlayStation 3, Xbox 360</platforms>
         <publisher> Bethesda Softworks </publisher>
-        <coverArt>
-        </coverArt>
+        <coverArt/>
         <description>
         </description>
     </game>
@@ -267,8 +274,7 @@
         <developer> CD Projekt RED </developer>
         <platforms> Microsoft Windows, PlayStation 4, Xbox One</platforms>
         <publisher> CD Projekt RED </publisher>
-        <coverArt>
-        </coverArt>
+        <coverArt/>
         <description>
         </description>
     </game>
@@ -285,8 +291,7 @@
         <developer> Rockstar Games </developer>
         <platforms> Microsoft Windows, PlayStation 2, Xbox</platforms>
         <publisher> Rockstar Games </publisher>
-        <coverArt>
-        </coverArt>
+        <coverArt/>
         <description>
         </description>
     </game>
@@ -303,8 +308,7 @@
         <developer> Naughty Dog </developer>
         <platforms> PlayStation 3, PlayStation 4</platforms>
         <publisher> Sony Interactive Entertainment </publisher>
-        <coverArt>
-        </coverArt>
+        <coverArt/>
         <description>
         </description>
     </game>
@@ -321,8 +325,7 @@
         <developer> EA Maxis </developer>
         <platforms> Microsoft Windows, PlayStation 4, Xbox One</platforms>
         <publisher> Electronic Arts Inc. </publisher>
-        <coverArt>
-        </coverArt>
+        <coverArt/>
         <description>
         </description>
     </game>
@@ -339,8 +342,7 @@
         <developer> Eidos Montreal </developer>
         <platforms> Microsoft Windows, PlayStation 4, Xbox One</platforms>
         <publisher> Square-Enix </publisher>
-        <coverArt>
-        </coverArt>
+        <coverArt/>
         <description>
         </description>
     </game>
@@ -357,8 +359,7 @@
         <developer> BioWare Corporation </developer>
         <platforms> Microsoft Windows, PlayStation 4, Xbox One</platforms>
         <publisher> Electronic Arts Inc. </publisher>
-        <coverArt>
-        </coverArt>
+        <coverArt/>
         <description>
         </description>
     </game>

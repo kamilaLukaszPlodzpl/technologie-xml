@@ -2,18 +2,25 @@ gamesList{
     font-family: Georgia, serif;
     font-size: 16px;
     padding:50px;
-    column-count:2;
     background-image: url();
+    column-count: 1;
+    box-sizing: border-box;
 
 }
 
+@media only screen and (min-width: 720px) {
+    gamesList{
+        column-count: 2;
+    }
+}
 game{
+    page-break-inside: avoid;
     display:block;
     border-right: 12px solid #b0988b;
     margin:5px;  
     padding:20px;
+    box-sizing: border-box;
     background-color:#f0e2da;
-    margin-bottom:15px;
 }
 
 game:first-child{
@@ -51,15 +58,3 @@ platforms:before{
     content:"Platformy:  "
 }
 
-description {
-    display: none;
-    background-color: #5c4b36;
-    padding: 20px;
-  }
-  coverArt{
-      display:none;
-      
-  }
-  coverArt:hover description {
-    display: block;
-  }

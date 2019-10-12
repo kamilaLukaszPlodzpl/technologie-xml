@@ -1,7 +1,7 @@
-<!DOCTYPE gamesList
-[
-    <!ELEMENT game (title,price,genre,releaseDate,developer,platforms,publisher,description)>
-        <!ATTLIST game indexNumber NMTOKEN #REQUIRED>
+<!DOCTYPE gamesList [
+        <!ELEMENT gameList (game+)>
+        <!ELEMENT game (title,price,genre,releaseDate,developer,platforms,publisher,coverArt,description)>
+        <!ATTLIST game indexNumber ID #REQUIRED>
         <!ELEMENT title (#PCDATA)>
         <!ELEMENT price (#PCDATA)>
         <!ELEMENT genre (#PCDATA)>
@@ -9,11 +9,11 @@
         <!ELEMENT developer (#PCDATA)>
         <!ELEMENT platforms (#PCDATA)>
         <!ELEMENT publisher (#PCDATA)>
-        <!ELEMENT coverArt (#PCDATA)>
-            <!ATTLIST coverArt src NMTOKEN #REQUIRED>
+        <!ELEMENT coverArt EMPTY>
+        <!ATTLIST coverArt src CDATA #REQUIRED>
         <!ELEMENT description (#PCDATA)>
 
-    <!ELEMENT day (#PCDATA)>
-    <!ELEMENT month (#PCDATA)>
-    <!ELEMENT year (#PCDATA)>
-]>
+        <!ELEMENT day (#PCDATA)>
+        <!ELEMENT month (#PCDATA)>
+        <!ELEMENT year (#PCDATA)>
+    ]>
