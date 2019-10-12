@@ -1,17 +1,18 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <?xml-stylesheet href="style.css" type="text/css;charset=UTF-8"?>
+<?xml-stylesheet href="style.css" type="text/css"?>
 
 <!DOCTYPE gamesList SYSTEM "./gamesList.dtd">
 <!--<!DOCTYPE gamesList [
         <!ELEMENT gameList (game+)>
-        <!ELEMENT game (title,price,genre,releaseDate,developer,platforms,publisher,coverArt,description)>
-        <!ATTLIST game indexNumber ID #REQUIRED>
+        <!ELEMENT game (title,price,genre,releaseDate,developer,relatedPlatforms,publisher,coverArt,description)>
+        <!ATTLIST game id ID #REQUIRED>
         <!ELEMENT title (#PCDATA)>
         <!ELEMENT price (#PCDATA)>
         <!ELEMENT genre (#PCDATA)>
         <!ELEMENT releaseDate (day,month,year)>
         <!ELEMENT developer (#PCDATA)>
-        <!ELEMENT platforms (#PCDATA)>
+        <!ELEMENT relatedPlatforms (#PCDATA)>
         <!ELEMENT publisher (#PCDATA)>
         <!ELEMENT coverArt EMPTY>
         <!ATTLIST coverArt src CDATA #REQUIRED>
@@ -22,345 +23,456 @@
         <!ELEMENT year (#PCDATA)>
         ]>
 -->
+<root>
+    <platforms>
+        <platform id="1">
+            PlayStation 3
+        </platform>
+        <platform id="2">
+            PlayStation 4
+        </platform>
+        <platform id="3">
+            PlayStation 2
+        </platform>
+        <platform id="4">
+            Microsoft Windows
+        </platform>
+        <platform id="5">
+            Xbox One
+        </platform>
+        <platform id="6">
+            macOS
+        </platform>
+        <platform id="7">
+            Linux
+        </platform>
+        <platform id="8">
+            Xbox 360
+        </platform>
+        <platform id="9">
+            Nintendo Switch
+        </platform>
+        <platform id="10">
+            Xbox
+        </platform>
+        <platform id="11">
+            Android
+        </platform>
+    </platforms>
+    <games>
+        <game id="1">
+            <title> God of War III </title>
+            <price> 239.90 </price>
+            <genre> hack and slash </genre>
+            <releaseDate>
+                <day> 16 </day>
+                <month> Marzec </month>
+                <year> 2010 </year>
+            </releaseDate>
+            <developer> SCE Santa Monica Studio </developer>
+            <relatedPlatforms>
+                <platform id="1"/>
+                <platform id="2"/>
+            </relatedPlatforms>
+            <publisher> Sony Computer Entertainment </publisher>
+            <coverArt src="/coverart/God_of_War_III_cover_art.jpg"/>
+            <description>
+            </description>
+        </game>
 
-<gamesList>
-    <game indexNumber="a1">
-        <title> God of War III </title>
-        <price> 239.90 </price>
-        <genre> hack and slash </genre>
-        <releaseDate>
-            <day> 16 </day>
-            <month> Marzec </month>
-            <year> 2010 </year>
-        </releaseDate>
-        <developer> SCE Santa Monica Studio </developer>
-        <platforms> PlayStation 3, PlayStation 4</platforms>
-        <publisher> Sony Computer Entertainment </publisher>
-        <coverArt src="/coverart/God_of_War_III_cover_art.jpg"/>
-        <description>
-        </description>
-    </game>
+        <game id="2">
+            <title> Hitman 2 </title>
+            <price> 249.00 </price>
+            <genre> skradanka </genre>
+            <releaseDate>
+                <day> 13 </day>
+                <month> Listopad </month>
+                <year> 2018 </year>
+            </releaseDate>
+            <developer> IO Interactive </developer>
+            <relatedPlatforms>
+                <platform id="2"/>
+                <platform id="4"/>
+                <platform id="5"/>
+            </relatedPlatforms>
+            <publisher> Warner Bros. Interactive Entertainment </publisher>
+            <coverArt/>
+            <description>
+            </description>
+        </game>
 
-    <game indexNumber="2">
-        <title> Hitman 2 </title>
-        <price> 249.00 </price>
-        <genre> skradanka </genre>
-        <releaseDate>
-            <day> 13 </day>
-            <month> Listopad </month>
-            <year> 2018 </year>
-        </releaseDate>
-        <developer> IO Interactive </developer>
-        <platforms> Microsoft Windows, PlayStation 4, Xbox One</platforms>
-        <publisher> Warner Bros. Interactive Entertainment </publisher>
-        <coverArt/>
-        <description>
-        </description>
-    </game>
+        <game id="3">
+            <title> Minecraft: Java Edition </title>
+            <price> 99.99 </price>
+            <genre> gra survivalowa </genre>
+            <releaseDate>
+                <day> 18 </day>
+                <month> Listopad </month>
+                <year> 2011 </year>
+            </releaseDate>
+            <developer> Mojang </developer>
+            <relatedPlatforms>
+                <platform id="4"/>
+                <plaform id="6"/> 
+                <plaform id="7"/> 
+             </relatedPlatforms>
+            <publisher> Mojang </publisher>
+            <coverArt/>
+            <description>
+            </description>
+        </game>
 
-    <game indexNumber="3">
-        <title> Minecraft: Java Edition </title>
-        <price> 99.99 </price>
-        <genre> gra survivalowa </genre>
-        <releaseDate>
-            <day> 18 </day>
-            <month> Listopad </month>
-            <year> 2011 </year>
-        </releaseDate>
-        <developer> Mojang </developer>
-        <platforms> Microsoft Windows, macOS, Linux </platforms>
-        <publisher> Mojang </publisher>
-        <coverArt/>
-        <description>
-        </description>
-    </game>
+        <game id="4">
+            <title> Garry's Mod </title>
+            <price> 35,99 </price>
+            <genre> piaskownica </genre>
+            <releaseDate>
+                <day> 24 </day>
+                <month> Grudzień </month>
+                <year> 2004 </year>
+            </releaseDate>
+            <developer> Facepunch Studios </developer>
+            <relatedPlatforms> 
+                <platform id="4"/>
+                <plaform id="6"/> 
+                <plaform id="7"/>
+            </relatedPlatforms>
+            <publisher> Valve Corporation </publisher>
+            <coverArt/>
+            <description>
+            </description>
+        </game>
 
-    <game indexNumber="4">
-        <title> Garry's Mod </title>
-        <price> 35,99 </price>
-        <genre> piaskownica </genre>
-        <releaseDate>
-            <day> 24 </day>
-            <month> Grudzień </month>
-            <year> 2004 </year>
-        </releaseDate>
-        <developer> Facepunch Studios </developer>
-        <platforms> Microsoft Windows, macOS, Linux</platforms>
-        <publisher> Valve Corporation </publisher>
-        <coverArt/>
-        <description>
-        </description>
-    </game>
+        <game id="5">
+            <title> John Wick Hex </title>
+            <price> 69.00 </price>
+            <genre> Strategia </genre>
+            <releaseDate>
+                <day> 8 </day>
+                <month> Październik </month>
+                <year> 2019 </year>
+            </releaseDate>
+            <developer> Bithell Games </developer>
+            <relatedPlatforms>
+                <platform id="4"/>
+            </relatedPlatforms>
+            <publisher> Good Shepherd Entertainment / Gambitious </publisher>
+            <coverArt/>
+            <description>
+            </description>
+        </game>
 
-    <game indexNumber="5">
-        <title> John Wick Hex </title>
-        <price> 69.00 </price>
-        <genre> Strategia </genre>
-        <releaseDate>
-            <day> 8 </day>
-            <month> Październik </month>
-            <year> 2019 </year>
-        </releaseDate>
-        <developer> Bithell Games </developer>
-        <platforms> Microsoft Windows </platforms>
-        <publisher> Good Shepherd Entertainment / Gambitious </publisher>
-        <coverArt/>
-        <description>
-        </description>
-    </game>
+        <game id="6">
+            <title> Doom </title>
+            <price> 30.99 </price>
+            <genre> stzelanka </genre>
+            <releaseDate>
+                <day> 10 </day>
+                <month> Grudzień </month>
+                <year> 1993 </year>
+            </releaseDate>
+            <developer> id Software </developer>
+            <relatedPlatforms>
+                <platform id="4"/>
+                <platform id="2"/>
+                <platform id="1"/>
+                <platform id="5"/>
+                <platform id="8"/>
+                <platform id="9"/>
+            </relatedPlatforms>
+            <publisher> id Software </publisher>
+            <coverArt/>
+            <description>
+            </description>
+        </game>
 
-    <game indexNumber="6">
-        <title> Doom </title>
-        <price> 30.99 </price>
-        <genre> stzelanka </genre>
-        <releaseDate>
-            <day> 10 </day>
-            <month> Grudzień </month>
-            <year> 1993 </year>
-        </releaseDate>
-        <developer> id Software </developer>
-        <platforms> Microsoft Windows, PlayStation 4, PlayStation 3, Xbox One, Xbox 360, Nintendo Switch</platforms>
-        <publisher> id Software </publisher>
-        <coverArt/>
-        <description>
-        </description>
-    </game>
+        <game id="7">
+            <title> Forza Horizon 4 </title>
+            <price> 199,00 </price>
+            <genre> wyścigi </genre>
+            <releaseDate>
+                <day> 2 </day>
+                <month> Październik </month>
+                <year> 2018 </year>
+            </releaseDate>
+            <developer> Playground Games </developer>
+            <relatedPlatforms>
+                <platform id="4"/>
+                <platform id="5"/>
+            </relatedPlatforms>
+            <publisher> Xbox Game Studios / Microsoft Studios </publisher>
+            <coverArt/>
+            <description>
+            </description>
+        </game>
 
-    <game indexNumber="7">
-        <title> Forza Horizon 4 </title>
-        <price> 199,00 </price>
-        <genre> wyścigi </genre>
-        <releaseDate>
-            <day> 2 </day>
-            <month> Październik </month>
-            <year> 2018 </year>
-        </releaseDate>
-        <developer> Playground Games </developer>
-        <platforms> Microsoft Windows, Xbox One</platforms>
-        <publisher> Xbox Game Studios / Microsoft Studios </publisher>
-        <coverArt/>
-        <description>
-        </description>
-    </game>
+        <game id="8">
+            <title> The Forest </title>
+            <price> 71,99 </price>
+            <genre> Stealth </genre>
+            <releaseDate>
+                <day> 16 </day>
+                <month> Marzec </month>
+                <year> 2010 </year>
+            </releaseDate>
+            <developer> Endnight Games </developer>
+            <relatedPlatforms>
+                <platform id="4"/>
+                <platform id="2"/>
+            </relatedPlatforms>
+            <publisher> Endnight Games </publisher>
+            <coverArt/>
+            <description>
+            </description>
+        </game>
 
-    <game indexNumber="8">
-        <title> The Forest </title>
-        <price> 71,99 </price>
-        <genre> Stealth </genre>
-        <releaseDate>
-            <day> 16 </day>
-            <month> Marzec </month>
-            <year> 2010 </year>
-        </releaseDate>
-        <developer> Endnight Games </developer>
-        <platforms> Microsoft Windows, PlayStation 4 </platforms>
-        <publisher> Endnight Games </publisher>
-        <coverArt/>
-        <description>
-        </description>
-    </game>
+        <game id="9">
+            <title> RoboCraft </title>
+            <price> 0,00 </price>
+            <genre> MMO </genre>
+            <releaseDate>
+                <day> 19 </day>
+                <month> Grudzień </month>
+                <year> 2013 </year>
+            </releaseDate>
+            <developer> Freejam </developer>
+            <relatedPlatforms>
+                <platform id="4"/>
+            </relatedPlatforms>
+            <publisher> Freejam </publisher>
+            <coverArt/>
+            <description>
+            </description>
+        </game>
 
-    <game indexNumber="9">
-        <title> RoboCraft </title>
-        <price> 0,00 </price>
-        <genre> MMO </genre>
-        <releaseDate>
-            <day> 19 </day>
-            <month> Grudzień </month>
-            <year> 2013 </year>
-        </releaseDate>
-        <developer> Freejam </developer>
-        <platforms> Microsoft Windows </platforms>
-        <publisher> Freejam </publisher>
-        <coverArt/>
-        <description>
-        </description>
-    </game>
+        <game id="10">
+            <title> Half-Life 2 </title>
+            <price> 139,90 </price>
+            <genre> strzelanka </genre>
+            <releaseDate>
+                <day> 16 </day>
+                <month> Listopad </month>
+                <year> 2004 </year>
+            </releaseDate>
+            <developer> Valve Software </developer>
+            <relatedPlatforms> 
+                <platform id="4"/> 
+                <platform id="10"/> 
+                <platform id="11"/> 
+            </relatedPlatforms>
+            <publisher> Sierra </publisher>
+            <coverArt/>
+            <description>
+            </description>
+        </game>
 
-    <game indexNumber="10">
-        <title> Half-Life 2 </title>
-        <price> 139,90 </price>
-        <genre> strzelanka </genre>
-        <releaseDate>
-            <day> 16 </day>
-            <month> Listopad </month>
-            <year> 2004 </year>
-        </releaseDate>
-        <developer> IO Interactive </developer>
-        <platforms> Valve Software </platforms>
-        <publisher> Sierra </publisher>
-        <coverArt/>
-        <description>
-        </description>
-    </game>
+        <game id="11">
+            <title> Crysis 3 </title>
+            <price> 149,90 </price>
+            <genre> strzelanka </genre>
+            <releaseDate>
+                <day> 19 </day>
+                <month> Luty </month>
+                <year> 2013 </year>
+            </releaseDate>
+            <developer> Crytek </developer>
+            <relatedPlatforms>
+                <platform id="4"/>
+                <platform id="1"/>
+                <platform id="8"/> 
+            </relatedPlatforms>
+            <publisher> Electronic Arts Inc. </publisher>
+            <coverArt/>
+            <description>
+            </description>
+        </game>
 
-    <game indexNumber="11">
-        <title> Crysis 3 </title>
-        <price> 149,90 </price>
-        <genre> strzelanka </genre>
-        <releaseDate>
-            <day> 19 </day>
-            <month> Luty </month>
-            <year> 2013 </year>
-        </releaseDate>
-        <developer> Crytek </developer>
-        <platforms> Microsoft Windows, PlayStation 3, Xbox 360 </platforms>
-        <publisher> Electronic Arts Inc. </publisher>
-        <coverArt/>
-        <description>
-        </description>
-    </game>
+        <game id="12">
+            <title> Far Cry 3 </title>
+            <price> 139,90 </price>
+            <genre> Stealth </genre>
+            <releaseDate>
+                <day> 29 </day>
+                <month> Listopad </month>
+                <year> 2012 </year>
+            </releaseDate>
+            <developer> Ubisoft </developer>
+            <relatedPlatforms>
+                <platform id="4"/>
+                <platform id="2"/>
+                <platform id="5"/>
+            </relatedPlatforms>
+            <publisher> Ubisoft </publisher>
+            <coverArt/>
+            <description>
+            </description>
+        </game>
 
-    <game indexNumber="12">
-        <title> Far Cry 3 </title>
-        <price> 139,90 </price>
-        <genre> Stealth </genre>
-        <releaseDate>
-            <day> 29 </day>
-            <month> Listopad </month>
-            <year> 2012 </year>
-        </releaseDate>
-        <developer> Ubisoft </developer>
-        <platforms> Microsoft Windows, PlayStation 4, Xbox One</platforms>
-        <publisher> Ubisoft </publisher>
-        <coverArt/>
-        <description>
-        </description>
-    </game>
+        <game id="13">
+            <title> Assassin's Creed: Odyssey </title>
+            <price> 98,79 </price>
+            <genre> Stealth </genre>
+            <releaseDate>
+                <day> 5 </day>
+                <month> Październik </month>
+                <year> 2018 </year>
+            </releaseDate>
+            <developer> Ubisoft </developer>
+            <relatedPlatforms>
+                <platform id="4"/>
+                <platform id="2"/>
+                <platform id="5"/>
+            </relatedPlatforms>
+            <publisher> Ubisoft </publisher>
+            <coverArt/>
+            <description>
+            </description>
+        </game>
 
-    <game indexNumber="13">
-        <title> Assassin's Creed: Odyssey </title>
-        <price> 98,79 </price>
-        <genre> Stealth </genre>
-        <releaseDate>
-            <day> 5 </day>
-            <month> Październik </month>
-            <year> 2018 </year>
-        </releaseDate>
-        <developer> Ubisoft </developer>
-        <platforms> Microsoft Windows, PlayStation 4, Xbox One</platforms>
-        <publisher> Ubisoft </publisher>
-        <coverArt/>
-        <description>
-        </description>
-    </game>
+        <game id="14">
+            <title> The Elder Scrolls V: Skyrim </title>
+            <price> 98,79 </price>
+            <genre> RPG </genre>
+            <releaseDate>
+                <day> 16 </day>
+                <month> Marzec </month>
+                <year> 2010 </year>
+            </releaseDate>
+            <developer> Bethesda Softworks </developer>
+            <relatedPlatforms>
+                <platform id="4"/>
+                <platform id="1"/>
+                <platform id="8"/>
+            </relatedPlatforms>
+            <publisher> Bethesda Softworks </publisher>
+            <coverArt/>
+            <description>
+            </description>
+        </game>
 
-    <game indexNumber="14">
-        <title> The Elder Scrolls V: Skyrim </title>
-        <price> 98,79 </price>
-        <genre> Stealth </genre>
-        <releaseDate>
-            <day> 16 </day>
-            <month> Marzec </month>
-            <year> 2010 </year>
-        </releaseDate>
-        <developer> Bethesda Softworks </developer>
-        <platforms> Microsoft Windows, PlayStation 3, Xbox 360</platforms>
-        <publisher> Bethesda Softworks </publisher>
-        <coverArt/>
-        <description>
-        </description>
-    </game>
+        <game id="15">
+            <title> Wiedźmin 3: Dziki Gon </title>
+            <price> 152.59 </price>
+            <genre> RPG </genre>
+            <releaseDate>
+                <day> 19 </day>
+                <month> Maj </month>
+                <year> 2015 </year>
+            </releaseDate>
+            <developer> CD Projekt RED </developer>
+            <relatedPlatforms>
+                <platform id="4"/>
+                <platform id="2"/>
+                <platform id="5"/>
+            </relatedPlatforms>
+            <publisher> CD Projekt RED </publisher>
+            <coverArt/>
+            <description>
+            </description>
+        </game>
 
-    <game indexNumber="15">
-        <title> Wiedźmin 3: Dziki Gon </title>
-        <price> 152.59 </price>
-        <genre> RPG </genre>
-        <releaseDate>
-            <day> 19 </day>
-            <month> Maj </month>
-            <year> 2015 </year>
-        </releaseDate>
-        <developer> CD Projekt RED </developer>
-        <platforms> Microsoft Windows, PlayStation 4, Xbox One</platforms>
-        <publisher> CD Projekt RED </publisher>
-        <coverArt/>
-        <description>
-        </description>
-    </game>
+        <game id="16">
+            <title> Grand Theft Auto: San Andreas </title>
+            <price> 35.00 </price>
+            <genre> akcji </genre>
+            <releaseDate>
+                <day> 25 </day>
+                <month> Październik </month>
+                <year> 2004 </year>
+            </releaseDate>
+            <developer> Rockstar Games </developer>
+            <relatedPlatforms>
+                <platform id="4"/>
+                <platform id="3"/>
+                <platform id="10"/>
+            </relatedPlatforms>
+            <publisher> Rockstar Games </publisher>
+            <coverArt/>
+            <description>
+            </description>
+        </game>
 
-    <game indexNumber="16">
-        <title> Grand Theft Auto: San Andreas </title>
-        <price> 35.00 </price>
-        <genre> akcji </genre>
-        <releaseDate>
-            <day> 25 </day>
-            <month> Październik </month>
-            <year> 2004 </year>
-        </releaseDate>
-        <developer> Rockstar Games </developer>
-        <platforms> Microsoft Windows, PlayStation 2, Xbox</platforms>
-        <publisher> Rockstar Games </publisher>
-        <coverArt/>
-        <description>
-        </description>
-    </game>
+        <game id="17">
+            <title> The Last of Us </title>
+            <price> 67.00 </price>
+            <genre> akcji </genre>
+            <releaseDate>
+                <day> 14 </day>
+                <month> Czerwca </month>
+                <year> 2013 </year>
+            </releaseDate>
+            <developer> Naughty Dog </developer>
+            <relatedPlatforms>
+                <platform id="1"/>
+                <platform id="2"/>
+            </relatedPlatforms>
+            <publisher> Sony Interactive Entertainment </publisher>
+            <coverArt/>
+            <description>
+            </description>
+        </game>
 
-    <game indexNumber="17">
-        <title> The Last of Us </title>
-        <price> 67.00 </price>
-        <genre> akcji </genre>
-        <releaseDate>
-            <day> 14 </day>
-            <month> Czerwca </month>
-            <year> 2013 </year>
-        </releaseDate>
-        <developer> Naughty Dog </developer>
-        <platforms> PlayStation 3, PlayStation 4</platforms>
-        <publisher> Sony Interactive Entertainment </publisher>
-        <coverArt/>
-        <description>
-        </description>
-    </game>
+        <game id="18">
+            <title> The Sims 4 </title>
+            <price> 82.35 </price>
+            <genre> Symulacja </genre>
+            <releaseDate>
+                <day> 2 </day>
+                <month> Września </month>
+                <year> 2014 </year>
+            </releaseDate>
+            <developer> EA Maxis </developer>
+            <relatedPlatforms>
+                <platform id="4"/>
+                <platform id="2"/>
+                <platform id="5"/>
+            </relatedPlatforms>
+            <publisher> Electronic Arts Inc. </publisher>
+            <coverArt/>
+            <description>
+            </description>
+        </game>
 
-    <game indexNumber="18">
-        <title> The Sims 4 </title>
-        <price> 82.35 </price>
-        <genre> Symulacja </genre>
-        <releaseDate>
-            <day> 2 </day>
-            <month> Września </month>
-            <year> 2014 </year>
-        </releaseDate>
-        <developer> EA Maxis </developer>
-        <platforms> Microsoft Windows, PlayStation 4, Xbox One</platforms>
-        <publisher> Electronic Arts Inc. </publisher>
-        <coverArt/>
-        <description>
-        </description>
-    </game>
+        <game id="19">
+            <title> Shadow of the Tomb Raider </title>
+            <price> 132.90 </price>
+            <genre> akcji </genre>
+            <releaseDate>
+                <day> 14 </day>
+                <month> Września </month>
+                <year> 2018 </year>
+            </releaseDate>
+            <developer> Eidos Montreal </developer>
+            <relatedPlatforms>
+                <platform id="4"/>
+                <platform id="2"/>
+                <platform id="5"/>
+            </relatedPlatforms>
+            <publisher> Square-Enix </publisher>
+            <coverArt/>
+            <description>
+            </description>
+        </game>
 
-    <game indexNumber="19">
-        <title> Shadow of the Tomb Raider </title>
-        <price> 132.90 </price>
-        <genre> akcji </genre>
-        <releaseDate>
-            <day> 14 </day>
-            <month> Września </month>
-            <year> 2018 </year>
-        </releaseDate>
-        <developer> Eidos Montreal </developer>
-        <platforms> Microsoft Windows, PlayStation 4, Xbox One</platforms>
-        <publisher> Square-Enix </publisher>
-        <coverArt/>
-        <description>
-        </description>
-    </game>
-
-    <game indexNumber="20">
-        <title> Dragon Age: Inkwizycja </title>
-        <price> 41.80 </price>
-        <genre> RPG </genre>
-        <releaseDate>
-            <day> 18 </day>
-            <month> Listopad </month>
-            <year> 2014 </year>
-        </releaseDate>
-        <developer> BioWare Corporation </developer>
-        <platforms> Microsoft Windows, PlayStation 4, Xbox One</platforms>
-        <publisher> Electronic Arts Inc. </publisher>
-        <coverArt/>
-        <description>
-        </description>
-    </game>
-</gamesList>
+        <game id="20">
+            <title> Dragon Age: Inkwizycja </title>
+            <price> 41.80 </price>
+            <genre> RPG </genre>
+            <releaseDate>
+                <day> 18 </day>
+                <month> Listopad </month>
+                <year> 2014 </year>
+            </releaseDate>
+            <developer> BioWare Corporation </developer>
+            <relatedPlatforms>
+                <platform id="4"/>
+                <platform id="2"/>
+                <platform id="5"/>
+            </relatedPlatforms>
+            <publisher> Electronic Arts Inc. </publisher>
+            <coverArt/>
+            <description>
+            </description>
+        </game>
+    </games>
+</root>

@@ -1,20 +1,43 @@
-gamesList{
+@keyframes bg-animation {
+    0% {
+      }
+    50% {
+        background: rgb(235,210,160);
+        background: linear-gradient(180deg, rgba(235,210,160,1) 0%, rgba(106,102,82,1) 100%);
+    }
+    100% {
+        background: rgb(235,210,160);
+        background: linear-gradient(0deg, rgba(235,210,160,1) 0%, rgba(106,102,82,1) 100%);
+    }
+}
+
+root{
     font-family: Georgia, serif;
     font-size: 16px;
     padding:50px;
-    background-image: url();
+    box-sizing: border-box;
+    background: rgb(235,210,160);
+    background: linear-gradient(180deg, rgba(235,210,160,1) 0%, rgba(106,102,82,1) 100%);
+}
+games{
     column-count: 1;
     box-sizing: border-box;
-
+   
+/*
+    animation-play-state: running;
+    animation-name: bg-animation;
+    animation-iteration-count: infinite;
+    animation-duration: 3s;
+*/
 }
 
 @media only screen and (min-width: 720px) {
-    gamesList{
+    games{
         column-count: 2;
     }
 }
 @media only screen and (min-width: 1400px) {
-    gamesList{
+    games{
         column-count: 3;
     }
 }
@@ -25,7 +48,11 @@ game{
     margin:5px;  
     padding:20px;
     box-sizing: border-box;
-    background-color:#f0e2da;
+    background-color:#f0e2da;    
+}
+
+game:hover{
+    background-color: #E0D4CC;
 }
 
 game:first-child{
