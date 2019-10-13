@@ -63,15 +63,15 @@ game:hover{
 game:first-child{
     margin-top:0px;
 }
-
-title{
+price,genre,releaseDate,developer,publisher,relatedPlatforms,title{
     display:block;
+    width: 50%;
+    position: relative;
+    left: 40%;
+}
+title{
     font-weight: bold;
     margin-bottom:15px;
-}
-
-relatedPlatforms{
-    display:block;
 }
 
 relatedPlatforms:before{
@@ -79,15 +79,44 @@ relatedPlatforms:before{
 }
 
 relatedPlatforms>platform{
-    display:list-item;
+    display: list-item;
     height: 1rem;  
+    margin-left: 3px;
+    list-style-position: inside;
 }
+
 relatedPlatforms>platform[id="1"]:after{
     content: "PlayStation 3"
 }
-
-price,genre,releaseDate,developer,publisher{
-    display:block;
+relatedPlatforms>platform[id="2"]:after{
+    content: "PlayStation 4"
+}
+relatedPlatforms>platform[id="3"]:after{
+    content: "PlayStation 2"
+}
+relatedPlatforms>platform[id="4"]:after{
+    content: "Microsoft Windows"
+}
+relatedPlatforms>platform[id="5"]:after{
+    content: "Xbox One"
+}
+relatedPlatforms>platform[id="6"]:after{
+    content: "macOS"
+}
+relatedPlatforms>platform[id="7"]:after{
+    content: "Linux"
+}
+relatedPlatforms>platform[id="8"]:after{
+    content: "Xbox 360"
+}
+relatedPlatforms>platform[id="9"]:after{
+    content: "Nintendo Switch"
+}
+relatedPlatforms>platform[id="10"]:after{
+    content: "Xbox"
+}
+relatedPlatforms>platform[id="11"]:after{
+    content: "Android"
 }
 
 price:before{
@@ -113,6 +142,11 @@ developer:before{
 publisher:before{
     content: "Wydawca:  "
 }
-
+coverArt{
+    background-image:"/coverart/God_of_War_III_cover_art.jpg";
+    display: block;
+    position: relative;
+    top:5%;
+}
 
 
