@@ -23,6 +23,23 @@
         <!ELEMENT year (#PCDATA)>
         ]>
 -->
+
+
+<!--
+    hack and slash
+    skradanka
+    survival
+    piaskownica
+    strategia
+    stzelanka
+    wyścigi
+    skradanka
+    MMO
+    RPG
+    akcji
+    symulacja
+-->
+
 <root>
     <platforms>
         <platform id="1">
@@ -104,7 +121,7 @@
         <game id="3">
             <title> Minecraft: Java Edition </title>
             <price> 99.99 </price>
-            <genre> gra survivalowa </genre>
+            <genre> survival </genre>
             <releaseDate>
                 <day> 18 </day>
                 <month> Listopad </month>
@@ -146,7 +163,7 @@
         <game id="5">
             <title> John Wick Hex </title>
             <price> 69.00 </price>
-            <genre> Strategia </genre>
+            <genre> strategia </genre>
             <releaseDate>
                 <day> 8 </day>
                 <month> Październik </month>
@@ -209,7 +226,7 @@
         <game id="8">
             <title> The Forest </title>
             <price> 71,99 </price>
-            <genre> Stealth </genre>
+            <genre> survival </genre>
             <releaseDate>
                 <day> 16 </day>
                 <month> Marzec </month>
@@ -290,7 +307,7 @@
         <game id="12">
             <title> Far Cry 3 </title>
             <price> 139,90 </price>
-            <genre> Stealth </genre>
+            <genre> piaskownica </genre>
             <releaseDate>
                 <day> 29 </day>
                 <month> Listopad </month>
@@ -311,7 +328,7 @@
         <game id="13">
             <title> Assassin's Creed: Odyssey </title>
             <price> 98,79 </price>
-            <genre> Stealth </genre>
+            <genre> skradanka </genre>
             <releaseDate>
                 <day> 5 </day>
                 <month> Październik </month>
@@ -411,11 +428,10 @@
             <description>
             </description>
         </game>
-
         <game id="18">
             <title> The Sims 4 </title>
             <price> 82.35 </price>
-            <genre> Symulacja </genre>
+            <genre> symulacja </genre>
             <releaseDate>
                 <day> 2 </day>
                 <month> Września </month>
