@@ -1,4 +1,4 @@
-@keyframes bg-animation {
+/*@keyframes bg-animation {
     0% {
       }
     50% {
@@ -10,6 +10,7 @@
         background: linear-gradient(0deg, rgba(235,210,160,1) 0%, rgba(106,102,82,1) 100%);
     }
 }
+*/
 
 root{
     font-family: Georgia, serif;
@@ -19,10 +20,13 @@ root{
     background: rgb(235,210,160);
     background: linear-gradient(180deg, rgba(235,210,160,1) 0%, rgba(106,102,82,1) 100%);
 }
+platforms{
+    display:none;
+}
+
 games{
     column-count: 1;
     box-sizing: border-box;
-   
 /*
     animation-play-state: running;
     animation-name: bg-animation;
@@ -41,6 +45,7 @@ games{
         column-count: 3;
     }
 }
+
 game{
     page-break-inside: avoid;
     display:block;
@@ -65,28 +70,43 @@ title{
     margin-bottom:15px;
 }
 
-price,genre,releaseDate,developer,platforms,publisher{
+relatedPlatforms{
     display:block;
 }
+
+relatedPlatforms:before{
+   content: "Platformy: "
+}
+
+relatedPlatforms>platform{
+    display:list-item;
+}
+
+price,genre,releaseDate,developer,publisher{
+    display:block;
+}
+
 price:before{
     content: "Cena:  "
 }
+
 price:after{
     content: " zł"
 }
+
 genre:before{
     content: "Gatunek:  "
 }
+
 releaseDate:before{
     content: "Data wydania:  "
 }
+
 developer:before{
     content: "Producent:  "
 }
+
 publisher:before{
     content: "Wydawca:  "
-}
-platforms:before{
-    content:"Platformy:  "
 }
 
