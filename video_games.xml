@@ -1,45 +1,18 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <?xml-stylesheet href="style.css" type="text/css;charset=UTF-8"?>
 <?xml-stylesheet href="style.css" type="text/css"?>
-
-<!DOCTYPE gamesList SYSTEM "./gamesList.dtd">
-<!--<!DOCTYPE gamesList [
-        <!ELEMENT gameList (game+)>
-        <!ELEMENT game (title,price,genre,releaseDate,developer,relatedPlatforms,publisher,coverArt,description)>
-        <!ATTLIST game id ID #REQUIRED>
-        <!ELEMENT title (#PCDATA)>
-        <!ELEMENT price (#PCDATA)>
-        <!ELEMENT genre (#PCDATA)>
-        <!ELEMENT releaseDate (day,month,year)>
-        <!ELEMENT developer (#PCDATA)>
-        <!ELEMENT relatedPlatforms (#PCDATA)>
-        <!ELEMENT publisher (#PCDATA)>
-        <!ELEMENT coverArt EMPTY>
-        <!ATTLIST coverArt src CDATA #REQUIRED>
-        <!ELEMENT description (#PCDATA)>
-
-        <!ELEMENT day (#PCDATA)>
-        <!ELEMENT month (#PCDATA)>
-        <!ELEMENT year (#PCDATA)>
-        ]>
--->
-
-
-<!--
-    hack and slash
-    skradanka
-    survival
-    piaskownica
-    strategia
-    stzelanka
-    wyścigi
-    skradanka
-    MMO
-    RPG
-    akcji
-    symulacja
--->
-
+<!DOCTYPE root [
+    <!ELEMENT root (platforms,games)>
+    <!ELEMENT platforms (platform*)>
+        <!ELEMENT platform (#PCDATA)><!-- String miał być -->
+        <!ATTLIST platform id NMTOKEN #REQUIRED>
+    <!ELEMENT games (game*)>
+        <!ELEMENT game (
+            title,price,genre,
+            releaseDate,developer,developer,
+            relatedPlatforms,publisher,coverArt
+            )>
+]>
 <root>
     <platforms>
         <platform id="1">
@@ -93,8 +66,6 @@
             </relatedPlatforms>
             <publisher> Sony Computer Entertainment </publisher>
             <coverArt src="/coverart/God_of_War_III_cover_art.jpg"/>
-            <description>
-            </description>
         </game>
 
         <game id="2">
@@ -114,8 +85,6 @@
             </relatedPlatforms>
             <publisher> Warner Bros. Interactive Entertainment </publisher>
             <coverArt/>
-            <description>
-            </description>
         </game>
 
         <game id="3">
@@ -135,13 +104,11 @@
              </relatedPlatforms>
             <publisher> Mojang </publisher>
             <coverArt/>
-            <description>
-            </description>
         </game>
 
         <game id="4">
             <title> Garry's Mod </title>
-            <price> 35,99 </price>
+            <price> 35.99 </price>
             <genre> piaskownica </genre>
             <releaseDate>
                 <day> 24 </day>
@@ -156,8 +123,6 @@
             </relatedPlatforms>
             <publisher> Valve Corporation </publisher>
             <coverArt/>
-            <description>
-            </description>
         </game>
 
         <game id="5">
@@ -175,8 +140,6 @@
             </relatedPlatforms>
             <publisher> Good Shepherd Entertainment / Gambitious </publisher>
             <coverArt/>
-            <description>
-            </description>
         </game>
 
         <game id="6">
@@ -199,13 +162,11 @@
             </relatedPlatforms>
             <publisher> id Software </publisher>
             <coverArt/>
-            <description>
-            </description>
         </game>
 
         <game id="7">
             <title> Forza Horizon 4 </title>
-            <price> 199,00 </price>
+            <price> 199.00 </price>
             <genre> wyścigi </genre>
             <releaseDate>
                 <day> 2 </day>
@@ -219,13 +180,11 @@
             </relatedPlatforms>
             <publisher> Xbox Game Studios / Microsoft Studios </publisher>
             <coverArt/>
-            <description>
-            </description>
         </game>
 
         <game id="8">
             <title> The Forest </title>
-            <price> 71,99 </price>
+            <price> 71.99 </price>
             <genre> survival </genre>
             <releaseDate>
                 <day> 16 </day>
@@ -239,13 +198,11 @@
             </relatedPlatforms>
             <publisher> Endnight Games </publisher>
             <coverArt/>
-            <description>
-            </description>
         </game>
 
         <game id="9">
             <title> RoboCraft </title>
-            <price> 0,00 </price>
+            <price> 0.00 </price>
             <genre> MMO </genre>
             <releaseDate>
                 <day> 19 </day>
@@ -258,13 +215,11 @@
             </relatedPlatforms>
             <publisher> Freejam </publisher>
             <coverArt/>
-            <description>
-            </description>
         </game>
 
         <game id="10">
             <title> Half-Life 2 </title>
-            <price> 139,90 </price>
+            <price> 139.90 </price>
             <genre> strzelanka </genre>
             <releaseDate>
                 <day> 16 </day>
@@ -279,13 +234,11 @@
             </relatedPlatforms>
             <publisher> Sierra </publisher>
             <coverArt/>
-            <description>
-            </description>
         </game>
 
         <game id="11">
             <title> Crysis 3 </title>
-            <price> 149,90 </price>
+            <price> 149.90 </price>
             <genre> strzelanka </genre>
             <releaseDate>
                 <day> 19 </day>
@@ -300,13 +253,11 @@
             </relatedPlatforms>
             <publisher> Electronic Arts Inc. </publisher>
             <coverArt/>
-            <description>
-            </description>
         </game>
 
         <game id="12">
             <title> Far Cry 3 </title>
-            <price> 139,90 </price>
+            <price> 139.90 </price>
             <genre> piaskownica </genre>
             <releaseDate>
                 <day> 29 </day>
@@ -321,13 +272,11 @@
             </relatedPlatforms>
             <publisher> Ubisoft </publisher>
             <coverArt/>
-            <description>
-            </description>
         </game>
 
         <game id="13">
             <title> Assassin's Creed: Odyssey </title>
-            <price> 98,79 </price>
+            <price> 98.79 </price>
             <genre> skradanka </genre>
             <releaseDate>
                 <day> 5 </day>
@@ -342,13 +291,11 @@
             </relatedPlatforms>
             <publisher> Ubisoft </publisher>
             <coverArt/>
-            <description>
-            </description>
         </game>
 
         <game id="14">
             <title> The Elder Scrolls V: Skyrim </title>
-            <price> 98,79 </price>
+            <price> 98.79 </price>
             <genre> RPG </genre>
             <releaseDate>
                 <day> 16 </day>
@@ -363,8 +310,6 @@
             </relatedPlatforms>
             <publisher> Bethesda Softworks </publisher>
             <coverArt/>
-            <description>
-            </description>
         </game>
 
         <game id="15">
@@ -384,8 +329,6 @@
             </relatedPlatforms>
             <publisher> CD Projekt RED </publisher>
             <coverArt/>
-            <description>
-            </description>
         </game>
 
         <game id="16">
@@ -405,8 +348,6 @@
             </relatedPlatforms>
             <publisher> Rockstar Games </publisher>
             <coverArt/>
-            <description>
-            </description>
         </game>
 
         <game id="17">
@@ -425,8 +366,6 @@
             </relatedPlatforms>
             <publisher> Sony Interactive Entertainment </publisher>
             <coverArt/>
-            <description>
-            </description>
         </game>
         <game id="18">
             <title> The Sims 4 </title>
@@ -445,8 +384,6 @@
             </relatedPlatforms>
             <publisher> Electronic Arts Inc. </publisher>
             <coverArt/>
-            <description>
-            </description>
         </game>
 
         <game id="19">
@@ -466,8 +403,6 @@
             </relatedPlatforms>
             <publisher> Square-Enix </publisher>
             <coverArt/>
-            <description>
-            </description>
         </game>
 
         <game id="20">
@@ -487,8 +422,6 @@
             </relatedPlatforms>
             <publisher> Electronic Arts Inc. </publisher>
             <coverArt/>
-            <description>
-            </description>
         </game>
     </games>
 </root>
