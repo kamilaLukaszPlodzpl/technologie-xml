@@ -78,7 +78,11 @@
                 <platform id="2"/>
             </relatedPlatforms>
             <publisher> Sony Computer Entertainment </publisher>
+<<<<<<< HEAD
+            <coverArt src="1.jpg"/>
+=======
             <coverArt src="C:\Users\kamila\source\repos\technologie-xml\coverart\God_of_War_III_cover_art.jpg"/>
+>>>>>>> kama
         </game>
 
         <game id="2">
