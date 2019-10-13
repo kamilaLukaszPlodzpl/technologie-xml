@@ -57,7 +57,9 @@ game{
     margin:5px;  
     padding:20px;
     box-sizing: border-box;
-    background-color:#f0e2da;    
+    background-color:#f0e2da;
+    min-height: 230px;
+    width:100%;
 }
 game:hover{
     background-color: #E0D4CC;
@@ -68,9 +70,8 @@ game:first-child{
 
 price,genre,releaseDate,developer,publisher,relatedPlatforms,title{
     display:block;
-    width: 50%;
-    position: relative;
-    left: 50%;
+    box-sizing: border-box;
+    max-width: 50%;
 }
 
 title{
@@ -144,12 +145,16 @@ publisher:before{
     content: "Wydawca:  "
 }
 coverArt{
+    box-sizing: border-box;
     display: block;
-    position: relative;
-    top:5%;
+    max-width: 50%;
+    min-height: 200px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
 }
-coverArt[src="1.jpg"]{
-    background-image: url("./coverart/1.jpg");
+coverArt[src="id1.jpg"]{
+    background-image: url("./coverart/id1.jpg");
 }
 
 
