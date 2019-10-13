@@ -80,6 +80,10 @@ relatedPlatforms:before{
 
 relatedPlatforms>platform{
     display:list-item;
+    height: 1rem;  
+}
+relatedPlatforms>platform[id="1"]:after{
+    content: "PlayStation 3"
 }
 
 price,genre,releaseDate,developer,publisher{
@@ -109,4 +113,6 @@ developer:before{
 publisher:before{
     content: "Wydawca:  "
 }
+
+
 
