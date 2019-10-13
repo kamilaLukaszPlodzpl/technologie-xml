@@ -59,6 +59,7 @@ game{
     box-sizing: border-box;
     background-color:#f0e2da;
     min-height: 230px;
+    max-height: 18rem;
     width:100%;
 }
 game:hover{
@@ -72,6 +73,8 @@ price,genre,releaseDate,developer,publisher,relatedPlatforms,title{
     display:block;
     box-sizing: border-box;
     max-width: 50%;
+    position: relative;
+    left:50%;
 }
 
 title{
@@ -147,14 +150,75 @@ publisher:before{
 coverArt{
     box-sizing: border-box;
     display: block;
-    max-width: 50%;
+    max-width: 48%;
     min-height: 200px;
+    position: relative;
+    top:-200px;
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
 }
+
 coverArt[src="id1.jpg"]{
     background-image: url("./coverart/id1.jpg");
 }
+coverArt[src="id2.jpg"]{
+    background-image: url("./coverart/id2.jpg");
+}
+coverArt[src="id3.jpg"]{
+    background-image: url("./coverart/id3.jpg");
+}
+coverArt[src="id4.jpg"]{
+    background-image: url("./coverart/id4.jpg");
+}
+coverArt[src="id5.jpg"]{
+    background-image: url("./coverart/id5.jpg");
+}
+coverArt[src="id6.jpg"]{
+    background-image: url("./coverart/id6.jpg");
+}
+coverArt[src="id7.jpg"]{
+    background-image: url("./coverart/id7.jpg");
+}
+coverArt[src="id8.jpg"]{
+    background-image: url("./coverart/id8.jpg");
+}
+coverArt[src="id9.jpg"]{
+    background-image: url("./coverart/id9.jpg");
+}
+coverArt[src="id10.jpg"]{
+    background-image: url("./coverart/id10.jpg");
+}
+coverArt[src="id11.jpg"]{
+    background-image: url("./coverart/id11.jpg");
+}
+coverArt[src="id12.jpg"]{
+    background-image: url("./coverart/id12.jpg");
+}
+coverArt[src="id13.jpg"]{
+    background-image: url("./coverart/id13.jpg");
+}
+coverArt[src="id14.jpg"]{
+    background-image: url("./coverart/id14.jpg");
+}
+coverArt[src="id15.jpg"]{
+    background-image: url("./coverart/id15.jpg");
+}
+coverArt[src="id16.jpg"]{
+    background-image: url("./coverart/id16.jpg");
+}
+coverArt[src="id17.jpg"]{
+    background-image: url("./coverart/id17.jpg");
+}
+coverArt[src="id18.jpg"]{
+    background-image: url("./coverart/id18.jpg");
+}
+coverArt[src="id19.jpg"]{
+    background-image: url("./coverart/id19.jpg");
+}
+coverArt[src="id20.jpg"]{
+    background-image: url("./coverart/id20.jpg");
+}
+
 
 

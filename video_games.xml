@@ -98,7 +98,7 @@
                 <platform id="5"/>
             </relatedPlatforms>
             <publisher> Warner Bros. Interactive Entertainment </publisher>
-            <coverArt/>
+            <coverArt src="id2.jpg"/>
         </game>
 
         <game id="3">
@@ -117,7 +117,7 @@
                 <platform id="7"/> 
              </relatedPlatforms>
             <publisher> Mojang </publisher>
-            <coverArt/>
+            <coverArt src="id3.jpg"/>
         </game>
 
         <game id="4">
@@ -136,7 +136,7 @@
                 <platform id="7"/>
             </relatedPlatforms>
             <publisher> Valve Corporation </publisher>
-            <coverArt/>
+            <coverArt src="id4.jpg"/>
         </game>
 
         <game id="5">
@@ -153,7 +153,7 @@
                 <platform id="4"/>
             </relatedPlatforms>
             <publisher> Good Shepherd Entertainment / Gambitious </publisher>
-            <coverArt/>
+            <coverArt src="id5.jpg"/>
         </game>
 
         <game id="6">
@@ -175,7 +175,7 @@
                 <platform id="9"/>
             </relatedPlatforms>
             <publisher> id Software </publisher>
-            <coverArt/>
+            <coverArt src="id6.jpg"/>
         </game>
 
         <game id="7">
@@ -193,7 +193,7 @@
                 <platform id="5"/>
             </relatedPlatforms>
             <publisher> Xbox Game Studios / Microsoft Studios </publisher>
-            <coverArt/>
+            <coverArt src="id7.jpg"/>
         </game>
 
         <game id="8">
@@ -211,7 +211,7 @@
                 <platform id="2"/>
             </relatedPlatforms>
             <publisher> Endnight Games </publisher>
-            <coverArt/>
+            <coverArt src="id8.jpg"/>
         </game>
 
         <game id="9">
@@ -228,7 +228,7 @@
                 <platform id="4"/>
             </relatedPlatforms>
             <publisher> Freejam </publisher>
-            <coverArt/>
+            <coverArt src="id9.jpg"/>
         </game>
 
         <game id="10">
@@ -247,7 +247,7 @@
                 <platform id="11"/> 
             </relatedPlatforms>
             <publisher> Sierra </publisher>
-            <coverArt/>
+            <coverArt src="id10.jpg"/>
         </game>
 
         <game id="11">
@@ -266,7 +266,7 @@
                 <platform id="8"/> 
             </relatedPlatforms>
             <publisher> Electronic Arts Inc. </publisher>
-            <coverArt/>
+            <coverArt src="id11.jpg"/>
         </game>
 
         <game id="12">
@@ -285,7 +285,7 @@
                 <platform id="5"/>
             </relatedPlatforms>
             <publisher> Ubisoft </publisher>
-            <coverArt/>
+            <coverArt src="id12.jpg"/>
         </game>
 
         <game id="13">
@@ -304,7 +304,7 @@
                 <platform id="5"/>
             </relatedPlatforms>
             <publisher> Ubisoft </publisher>
-            <coverArt/>
+            <coverArt src="id13.jpg"/>
         </game>
 
         <game id="14">
@@ -323,7 +323,7 @@
                 <platform id="8"/>
             </relatedPlatforms>
             <publisher> Bethesda Softworks </publisher>
-            <coverArt/>
+            <coverArt src="id14.jpg"/>
         </game>
 
         <game id="15">
@@ -342,7 +342,7 @@
                 <platform id="5"/>
             </relatedPlatforms>
             <publisher> CD Projekt RED </publisher>
-            <coverArt/>
+            <coverArt src="id15.jpg"/>
         </game>
 
         <game id="16">
@@ -361,7 +361,7 @@
                 <platform id="10"/>
             </relatedPlatforms>
             <publisher> Rockstar Games </publisher>
-            <coverArt/>
+            <coverArt src="id16.jpg"/>
         </game>
 
         <game id="17">
@@ -379,7 +379,7 @@
                 <platform id="2"/>
             </relatedPlatforms>
             <publisher> Sony Interactive Entertainment </publisher>
-            <coverArt/>
+            <coverArt src="id17.jpg"/>
         </game>
         <game id="18">
             <title> The Sims 4 </title>
@@ -397,7 +397,7 @@
                 <platform id="5"/>
             </relatedPlatforms>
             <publisher> Electronic Arts Inc. </publisher>
-            <coverArt/>
+            <coverArt src="id18.jpg"/>
         </game>
 
         <game id="19">
@@ -416,7 +416,7 @@
                 <platform id="5"/>
             </relatedPlatforms>
             <publisher> Square-Enix </publisher>
-            <coverArt/>
+            <coverArt src="id19.jpg"/>
         </game>
 
         <game id="20">
@@ -435,7 +435,7 @@
                 <platform id="5"/>
             </relatedPlatforms>
             <publisher> Electronic Arts Inc. </publisher>
-            <coverArt/>
+            <coverArt src="id20.jpg"/>
         </game>
     </games>
 </root>
