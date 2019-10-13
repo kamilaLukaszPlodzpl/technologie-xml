@@ -99,8 +99,8 @@
             <developer> Mojang </developer>
             <relatedPlatforms>
                 <platform id="4"/>
-                <plaform id="6"/> 
-                <plaform id="7"/> 
+                <platform id="6"/> 
+                <platform id="7"/> 
              </relatedPlatforms>
             <publisher> Mojang </publisher>
             <coverArt/>
@@ -118,8 +118,8 @@
             <developer> Facepunch Studios </developer>
             <relatedPlatforms> 
                 <platform id="4"/>
-                <plaform id="6"/> 
-                <plaform id="7"/>
+                <platform id="6"/> 
+                <platform id="7"/>
             </relatedPlatforms>
             <publisher> Valve Corporation </publisher>
             <coverArt/>
