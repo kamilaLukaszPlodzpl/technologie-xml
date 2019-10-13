@@ -70,7 +70,7 @@ price,genre,releaseDate,developer,publisher,relatedPlatforms,title{
     display:block;
     width: 50%;
     position: relative;
-    left: 40%;
+    left: 50%;
 }
 
 title{
@@ -142,12 +142,6 @@ developer:before{
 
 publisher:before{
     content: "Wydawca:  "
-}
-coverArt{
-    background-image:"/coverart/God_of_War_III_cover_art.jpg";
-    display: block;
-    position: relative;
-    top:5%;
 }
 
 
