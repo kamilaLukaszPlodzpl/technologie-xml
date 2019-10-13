@@ -144,10 +144,12 @@ publisher:before{
     content: "Wydawca:  "
 }
 coverArt{
-    background-image:"/coverart/God_of_War_III_cover_art.jpg";
     display: block;
     position: relative;
     top:5%;
+}
+coverArt[src="1.jpg"]{
+    background-image: url("./coverart/1.jpg");
 }
 
 
