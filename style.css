@@ -52,13 +52,15 @@ games{
 
 game{
     page-break-inside: avoid;
-    display: block;
+    display: grid;
+    grid-template-columns: 40% 60%;
+    grid-template-rows: auto auto auto auto auto auto auto;
+    grid-gap: 5px 5px;
     border-right: 12px solid #b0988b;
     margin: 5px;  
     padding: 20px;
     box-sizing: border-box;
     background-color: #f0e2da;
-    width: 100%;
 }
 game:hover{
     background-color: #E0D4CC;
@@ -68,10 +70,33 @@ game:first-child{
     margin-top: 0px;
 }
 
-price, genre, releaseDate, developer, publisher, relatedPlatforms, title {
-    display: block;
+title, price, genre, releaseDate, developer, publisher, relatedPlatforms {
     box-sizing: border-box;
-    max-width: 50%;
+}
+
+title {
+    grid-area: 1 / 2 / span 1 / span 1;
+}
+price {
+    grid-area: 2 / 2 / span 1 / span 1;
+}
+genre {
+    grid-area: 3 / 2 / span 1 / span 1;
+}
+releaseDate {
+    grid-area: 4 / 2 / span 1 / span 1;
+}
+developer {
+    grid-area: 5 / 2 / span 1 / span 1;
+}
+publisher {
+    grid-area: 6 / 2 / span 1 / span 1;
+}
+relatedPlatforms {
+    grid-area: 7 / 2 / span 5 / span 1;
+}
+coverArt{
+    grid-area: 2 / 1 / span 9 / span 1;
 }
 
 title{
@@ -148,8 +173,6 @@ publisher:before{
 }
 coverArt{
     box-sizing: border-box;
-    display: block;
-    max-width: 50%;
     min-height: 200px;
     background-repeat: no-repeat;
     background-position: center;
