@@ -178,7 +178,6 @@ coverArt{
     background-position: center;
     background-size: contain;
 }
-
 coverArt[src="id1.jpg"]{
     background-image: url("./coverart/id1.jpg");
 }
@@ -239,6 +238,3 @@ coverArt[src="id19.jpg"]{
 coverArt[src="id20.jpg"]{
     background-image: url("./coverart/id20.jpg");
 }
-
-
-
