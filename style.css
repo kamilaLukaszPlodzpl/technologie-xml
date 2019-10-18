@@ -21,7 +21,7 @@
 root{
     display: block;
     margin: 0px;
-    padding: 50px 25px;
+    padding: 50px 0px 0px;
     width: 100%;
     border: 0px;
     font-family: Georgia, serif;
@@ -45,6 +45,7 @@ genres{
 games{
     display: block;
     column-count: 1;
+    padding: 0px 20px;
 }
 
 @media only screen and (min-width: 720px) {
@@ -297,3 +298,23 @@ coverArt[src="id19.jpg"]{
 coverArt[src="id20.jpg"]{
     background-image: url("./coverart/id20.jpg");
 }
+
+authors{
+    display:block;
+    background-color: #b0988b;
+    margin-top:3%;
+    background-size: 5%;
+    font-size:12px;
+    padding:5px;
+    padding-bottom:2%;
+}
+authors::before{
+    content:"Autorzy: ";
+}
+person{
+    display: block;
+}
+name,surname,index{
+    display: inline;
+}
+
