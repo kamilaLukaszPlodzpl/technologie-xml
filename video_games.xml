@@ -3,28 +3,28 @@
 <?xml-stylesheet href="style.css" type="text/css"?>
 <!DOCTYPE root [
     <!ELEMENT root (platforms,games)>
-    <!ELEMENT platforms (platform*)>
-        <!ELEMENT platform (#PCDATA)><!-- String miał być -->
-            <!ATTLIST platform id NMTOKEN #REQUIRED>
-    <!ELEMENT games (game*)>
-        <!ELEMENT game (
-            title,price,genre,
-            releaseDate,developer,
-            relatedPlatforms,publisher,coverArt
-            )>
-            <!ATTLIST game id NMTOKEN #REQUIRED>
-            <!ELEMENT title (#PCDATA)><!-- String miał być -->
-            <!ELEMENT price (#PCDATA)><!-- float point number miał być -->
-            <!ELEMENT genre (#PCDATA)><!-- String miał być -->
-            <!ELEMENT releaseDate (day,month,year)>
-                <!ELEMENT day (#PCDATA)><!-- liczba -->
-                <!ELEMENT month (#PCDATA)><!-- liczba -->
-                <!ELEMENT year (#PCDATA)><!-- liczba -->
-            <!ELEMENT developer (#PCDATA)><!-- String miał być -->
-            <!ELEMENT relatedPlatforms (platform*)>
-            <!ELEMENT publisher (#PCDATA)><!-- String miał być -->
-            <!ELEMENT coverArt EMPTY>
-                <!ATTLIST coverArt src CDATA #REQUIRED>
+        <!ELEMENT platforms (platform+)>
+            <!ELEMENT platform (#PCDATA)><!-- String miał być -->
+                <!ATTLIST platform id NMTOKEN #REQUIRED>
+        <!ELEMENT games (game+)>
+            <!ELEMENT game (
+                title,price?,genre,
+                releaseDate,developer,
+                relatedPlatforms,publisher,coverArt
+                )>
+                <!ATTLIST game id NMTOKEN #REQUIRED>
+                <!ELEMENT title (#PCDATA)><!-- String miał być -->
+                <!ELEMENT price (#PCDATA)><!-- float point number miał być -->
+                <!ELEMENT genre (#PCDATA)><!-- String miał być -->
+                <!ELEMENT releaseDate (day,month,year)>
+                    <!ELEMENT day (#PCDATA)><!-- liczba -->
+                    <!ELEMENT month (#PCDATA)><!-- liczba -->
+                    <!ELEMENT year (#PCDATA)><!-- liczba -->
+                <!ELEMENT developer (#PCDATA)><!-- String miał być -->
+                <!ELEMENT relatedPlatforms (platform+)>
+                <!ELEMENT publisher (#PCDATA)><!-- String miał być -->
+                <!ELEMENT coverArt EMPTY>
+                    <!ATTLIST coverArt src CDATA #REQUIRED>
 ]>
 <root>
     <platforms>
