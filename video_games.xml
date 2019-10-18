@@ -2,14 +2,9 @@
 <?xml-stylesheet href="style.css" type="text/css;charset=UTF-8"?>
 <?xml-stylesheet href="style.css" type="text/css"?>
 <!DOCTYPE root [
-    <!ELEMENT root (data,authors)>
+    <!ELEMENT root (description,data,authors)>        
 
-    <!ELEMENT authors (person+)>
-        <!ELEMENT person (name,surname,index)>
-            <!ELEMENT name (#PCDATA)><!-- String miał być -->
-            <!ELEMENT surname (#PCDATA)><!-- String miał być -->
-            <!ELEMENT index (#PCDATA)><!-- liczba -->
-        
+    <!ELEMENT description (#PCDATA)>
 
     <!ELEMENT data (platforms,genres,games)>
         <!ELEMENT platforms (platform+)>
@@ -40,8 +35,18 @@
                 <!ELEMENT publisher (#PCDATA)><!-- String miał być -->
                 <!ELEMENT coverArt EMPTY>
                     <!ATTLIST coverArt src CDATA #REQUIRED>
+                    
+    <!ELEMENT authors (person+)>
+        <!ELEMENT person (name,surname,index)>
+            <!ELEMENT name (#PCDATA)><!-- String miał być -->
+            <!ELEMENT surname (#PCDATA)><!-- String miał być -->
+            <!ELEMENT index (#PCDATA)><!-- liczba -->
+
 ]>
 <root>
+    <description>
+        Spis gier
+    </description>
     <data>
         <platforms>
             <platform id="p1">PlayStation 3</platform>
