@@ -5,14 +5,14 @@
     <!ELEMENT root (platforms,games)>
         <!ELEMENT platforms (platform+)>
             <!ELEMENT platform (#PCDATA)><!-- String miał być -->
-                <!ATTLIST platform id NMTOKEN #REQUIRED>
+                <!ATTLIST platform id ID #REQUIRED>
         <!ELEMENT games (game+)>
             <!ELEMENT game (
                 title,price?,genre,
                 releaseDate,developer,
                 relatedPlatforms,publisher,coverArt
                 )>
-                <!ATTLIST game id NMTOKEN #REQUIRED>
+                <!ATTLIST game id ID #REQUIRED>
                 <!ELEMENT title (#PCDATA)><!-- String miał być -->
                 <!ELEMENT price (#PCDATA)><!-- float point number miał być -->
                 <!ELEMENT genre (#PCDATA)><!-- String miał być -->
@@ -22,48 +22,28 @@
                     <!ELEMENT year (#PCDATA)><!-- liczba -->
                 <!ELEMENT developer (#PCDATA)><!-- String miał być -->
                 <!ELEMENT relatedPlatforms (relatedPlatform+)>
+                    <!ELEMENT relatedPlatform EMPTY>
+                    <!ATTLIST relatedPlatform id IDREF #REQUIRED>
                 <!ELEMENT publisher (#PCDATA)><!-- String miał być -->
                 <!ELEMENT coverArt EMPTY>
                     <!ATTLIST coverArt src CDATA #REQUIRED>
 ]>
 <root>
     <platforms>
-        <platform id="1">
-            PlayStation 3
-        </platform>
-        <platform id="2">
-            PlayStation 4
-        </platform>
-        <platform id="3">
-            PlayStation 2
-        </platform>
-        <platform id="4">
-            Microsoft Windows
-        </platform>
-        <platform id="5">
-            Xbox One
-        </platform>
-        <platform id="6">
-            macOS
-        </platform>
-        <platform id="7">
-            Linux
-        </platform>
-        <platform id="8">
-            Xbox 360
-        </platform>
-        <platform id="9">
-            Nintendo Switch
-        </platform>
-        <platform id="10">
-            Xbox
-        </platform>
-        <platform id="11">
-            Android
-        </platform>
+        <platform id="p1">PlayStation 3</platform>
+        <platform id="p2">PlayStation 4</platform>
+        <platform id="p3">PlayStation 2</platform>
+        <platform id="p4">Microsoft Windows</platform>
+        <platform id="p5">Xbox One</platform>
+        <platform id="p6">macOS</platform>
+        <platform id="p7">Linux</platform>
+        <platform id="p8">Xbox 360</platform>
+        <platform id="p9">Nintendo Switch</platform>
+        <platform id="p10">Xbox</platform>
+        <platform id="p11">Android</platform>
     </platforms>
     <games>
-        <game id="1">
+        <game id="game1">
             <title> God of War III </title>
             <price> 239.90 </price>
             <genre> hack and slash </genre>
@@ -74,15 +54,15 @@
             </releaseDate>
             <developer> SCE Santa Monica Studio </developer>
             <relatedPlatforms>
-                <relatedPlatform id="1"/>
-                <relatedPlatform id="2"/>
+                <relatedPlatform id="p1"/>
+                <relatedPlatform id="p2"/>
             </relatedPlatforms>
             <publisher> Sony Computer Entertainment </publisher>
-            <coverArt src="./coverart/id1.jpg"/>
+            <coverArt src="id1.jpg"/>
         </game>
 
 
-        <game id="2">
+        <game id="game2">
             <title> Hitman 2 </title>
             <price> 249.00 </price>
             <genre> skradanka </genre>
@@ -93,15 +73,15 @@
             </releaseDate>
             <developer> IO Interactive </developer>
             <relatedPlatforms>
-                <relatedPlatform id="2"/>
-                <relatedPlatform id="4"/>
-                <relatedPlatform id="5"/>
+                <relatedPlatform id="p2"/>
+                <relatedPlatform id="p4"/>
+                <relatedPlatform id="p5"/>
             </relatedPlatforms>
             <publisher> Warner Bros. Interactive Entertainment </publisher>
             <coverArt src="id2.jpg"/>
         </game>
 
-        <game id="3">
+        <game id="game3">
             <title> Minecraft: Java Edition </title>
             <price> 99.99 </price>
             <genre> survival </genre>
@@ -112,15 +92,15 @@
             </releaseDate>
             <developer> Mojang </developer>
             <relatedPlatforms>
-                <relatedPlatform id="4"/>
-                <relatedPlatform id="6"/> 
-                <relatedPlatform id="7"/> 
+                <relatedPlatform id="p4"/>
+                <relatedPlatform id="p6"/> 
+                <relatedPlatform id="p7"/> 
              </relatedPlatforms>
             <publisher> Mojang </publisher>
             <coverArt src="id3.jpg"/>
         </game>
 
-        <game id="4">
+        <game id="game4">
             <title> Garry's Mod </title>
             <price> 35.99 </price>
             <genre> piaskownica </genre>
@@ -131,15 +111,15 @@
             </releaseDate>
             <developer> Facepunch Studios </developer>
             <relatedPlatforms> 
-                <relatedPlatform id="4"/>
-                <relatedPlatform id="6"/> 
-                <relatedPlatform id="7"/>
+                <relatedPlatform id="p4"/>
+                <relatedPlatform id="p6"/> 
+                <relatedPlatform id="p7"/>
             </relatedPlatforms>
             <publisher> Valve Corporation </publisher>
             <coverArt src="id4.jpg"/>
         </game>
 
-        <game id="5">
+        <game id="game5">
             <title> John Wick Hex </title>
             <price> 69.00 </price>
             <genre> strategia </genre>
@@ -150,13 +130,13 @@
             </releaseDate>
             <developer> Bithell Games </developer>
             <relatedPlatforms>
-                <relatedPlatform id="4"/>
+                <relatedPlatform id="p4"/>
             </relatedPlatforms>
             <publisher> Good Shepherd Entertainment / Gambitious </publisher>
             <coverArt src="id5.jpg"/>
         </game>
 
-        <game id="6">
+        <game id="game6">
             <title> Doom </title>
             <price> 30.99 </price>
             <genre> stzelanka </genre>
@@ -167,18 +147,18 @@
             </releaseDate>
             <developer> id Software </developer>
             <relatedPlatforms>
-                <relatedPlatform id="4"/>
-                <relatedPlatform id="2"/>
-                <relatedPlatform id="1"/>
-                <relatedPlatform id="5"/>
-                <relatedPlatform id="8"/>
-                <relatedPlatform id="9"/>
+                <relatedPlatform id="p4"/>
+                <relatedPlatform id="p2"/>
+                <relatedPlatform id="p1"/>
+                <relatedPlatform id="p5"/>
+                <relatedPlatform id="p8"/>
+                <relatedPlatform id="p9"/>
             </relatedPlatforms>
             <publisher> id Software </publisher>
             <coverArt src="id6.jpg"/>
         </game>
 
-        <game id="7">
+        <game id="game7">
             <title> Forza Horizon 4 </title>
             <price> 199.00 </price>
             <genre> wyścigi </genre>
@@ -189,14 +169,14 @@
             </releaseDate>
             <developer> Playground Games </developer>
             <relatedPlatforms>
-                <relatedPlatform id="4"/>
-                <relatedPlatform id="5"/>
+                <relatedPlatform id="p4"/>
+                <relatedPlatform id="p5"/>
             </relatedPlatforms>
             <publisher> Xbox Game Studios / Microsoft Studios </publisher>
             <coverArt src="id7.jpg"/>
         </game>
 
-        <game id="8">
+        <game id="game8">
             <title> The Forest </title>
             <price> 71.99 </price>
             <genre> survival </genre>
@@ -207,14 +187,14 @@
             </releaseDate>
             <developer> Endnight Games </developer>
             <relatedPlatforms>
-                <relatedPlatform id="4"/>
-                <relatedPlatform id="2"/>
+                <relatedPlatform id="p4"/>
+                <relatedPlatform id="p2"/>
             </relatedPlatforms>
             <publisher> Endnight Games </publisher>
             <coverArt src="id8.jpg"/>
         </game>
 
-        <game id="9">
+        <game id="game9">
             <title> RoboCraft </title>
             <price> 0.00 </price>
             <genre> MMO </genre>
@@ -225,13 +205,13 @@
             </releaseDate>
             <developer> Freejam </developer>
             <relatedPlatforms>
-                <relatedPlatform id="4"/>
+                <relatedPlatform id="p4"/>
             </relatedPlatforms>
             <publisher> Freejam </publisher>
             <coverArt src="id9.jpg"/>
         </game>
 
-        <game id="10">
+        <game id="game10">
             <title> Half-Life 2 </title>
             <price> 139.90 </price>
             <genre> strzelanka </genre>
@@ -242,15 +222,15 @@
             </releaseDate>
             <developer> Valve Software </developer>
             <relatedPlatforms> 
-                <relatedPlatform id="4"/> 
-                <relatedPlatform id="10"/> 
-                <relatedPlatform id="11"/> 
+                <relatedPlatform id="p4"/> 
+                <relatedPlatform id="p10"/> 
+                <relatedPlatform id="p11"/> 
             </relatedPlatforms>
             <publisher> Sierra </publisher>
             <coverArt src="id10.jpg"/>
         </game>
 
-        <game id="11">
+        <game id="game11">
             <title> Crysis 3 </title>
             <price> 149.90 </price>
             <genre> strzelanka </genre>
@@ -261,15 +241,15 @@
             </releaseDate>
             <developer> Crytek </developer>
             <relatedPlatforms>
-                <relatedPlatform id="4"/>
-                <relatedPlatform id="1"/>
-                <relatedPlatform id="8"/> 
+                <relatedPlatform id="p4"/>
+                <relatedPlatform id="p1"/>
+                <relatedPlatform id="p8"/> 
             </relatedPlatforms>
             <publisher> Electronic Arts Inc. </publisher>
             <coverArt src="id11.jpg"/>
         </game>
 
-        <game id="12">
+        <game id="game12">
             <title> Far Cry 3 </title>
             <price> 139.90 </price>
             <genre> piaskownica </genre>
@@ -280,15 +260,15 @@
             </releaseDate>
             <developer> Ubisoft </developer>
             <relatedPlatforms>
-                <relatedPlatform id="4"/>
-                <relatedPlatform id="2"/>
-                <relatedPlatform id="5"/>
+                <relatedPlatform id="p4"/>
+                <relatedPlatform id="p2"/>
+                <relatedPlatform id="p5"/>
             </relatedPlatforms>
             <publisher> Ubisoft </publisher>
             <coverArt src="id12.jpg"/>
         </game>
 
-        <game id="13">
+        <game id="game13">
             <title> Assassin's Creed: Odyssey </title>
             <price> 98.79 </price>
             <genre> skradanka </genre>
@@ -299,15 +279,15 @@
             </releaseDate>
             <developer> Ubisoft </developer>
             <relatedPlatforms>
-                <relatedPlatform id="4"/>
-                <relatedPlatform id="2"/>
-                <relatedPlatform id="5"/>
+                <relatedPlatform id="p4"/>
+                <relatedPlatform id="p2"/>
+                <relatedPlatform id="p5"/>
             </relatedPlatforms>
             <publisher> Ubisoft </publisher>
             <coverArt src="id13.jpg"/>
         </game>
 
-        <game id="14">
+        <game id="game14">
             <title> The Elder Scrolls V: Skyrim </title>
             <price> 98.79 </price>
             <genre> RPG </genre>
@@ -318,15 +298,15 @@
             </releaseDate>
             <developer> Bethesda Softworks </developer>
             <relatedPlatforms>
-                <relatedPlatform id="4"/>
-                <relatedPlatform id="1"/>
-                <relatedPlatform id="8"/>
+                <relatedPlatform id="p4"/>
+                <relatedPlatform id="p1"/>
+                <relatedPlatform id="p8"/>
             </relatedPlatforms>
             <publisher> Bethesda Softworks </publisher>
             <coverArt src="id14.jpg"/>
         </game>
 
-        <game id="15">
+        <game id="game15">
             <title> Wiedźmin 3: Dziki Gon </title>
             <price> 152.59 </price>
             <genre> RPG </genre>
@@ -337,15 +317,15 @@
             </releaseDate>
             <developer> CD Projekt RED </developer>
             <relatedPlatforms>
-                <relatedPlatform id="4"/>
-                <relatedPlatform id="2"/>
-                <relatedPlatform id="5"/>
+                <relatedPlatform id="p4"/>
+                <relatedPlatform id="p2"/>
+                <relatedPlatform id="p5"/>
             </relatedPlatforms>
             <publisher> CD Projekt RED </publisher>
             <coverArt src="id15.jpg"/>
         </game>
 
-        <game id="16">
+        <game id="game16">
             <title> Grand Theft Auto: San Andreas </title>
             <price> 35.00 </price>
             <genre> akcji </genre>
@@ -356,15 +336,15 @@
             </releaseDate>
             <developer> Rockstar Games </developer>
             <relatedPlatforms>
-                <relatedPlatform id="4"/>
-                <relatedPlatform id="3"/>
-                <relatedPlatform id="10"/>
+                <relatedPlatform id="p4"/>
+                <relatedPlatform id="p3"/>
+                <relatedPlatform id="p10"/>
             </relatedPlatforms>
             <publisher> Rockstar Games </publisher>
             <coverArt src="id16.jpg"/>
         </game>
 
-        <game id="17">
+        <game id="game17">
             <title> The Last of Us </title>
             <price> 67.00 </price>
             <genre> akcji </genre>
@@ -375,13 +355,13 @@
             </releaseDate>
             <developer> Naughty Dog </developer>
             <relatedPlatforms>
-                <relatedPlatform id="1"/>
-                <relatedPlatform id="2"/>
+                <relatedPlatform id="p1"/>
+                <relatedPlatform id="p2"/>
             </relatedPlatforms>
             <publisher> Sony Interactive Entertainment </publisher>
             <coverArt src="id17.jpg"/>
         </game>
-        <game id="18">
+        <game id="game18">
             <title> The Sims 4 </title>
             <price> 82.35 </price>
             <genre> symulacja </genre>
@@ -392,15 +372,15 @@
             </releaseDate>
             <developer> EA Maxis </developer>
             <relatedPlatforms>
-                <relatedPlatform id="4"/>
-                <relatedPlatform id="2"/>
-                <relatedPlatform id="5"/>
+                <relatedPlatform id="p4"/>
+                <relatedPlatform id="p2"/>
+                <relatedPlatform id="p5"/>
             </relatedPlatforms>
             <publisher> Electronic Arts Inc. </publisher>
             <coverArt src="id18.jpg"/>
         </game>
 
-        <game id="19">
+        <game id="game19">
             <title> Shadow of the Tomb Raider </title>
             <price> 132.90 </price>
             <genre> akcji </genre>
@@ -411,15 +391,15 @@
             </releaseDate>
             <developer> Eidos Montreal </developer>
             <relatedPlatforms>
-                <relatedPlatform id="4"/>
-                <relatedPlatform id="2"/>
-                <relatedPlatform id="5"/>
+                <relatedPlatform id="p4"/>
+                <relatedPlatform id="p2"/>
+                <relatedPlatform id="p5"/>
             </relatedPlatforms>
             <publisher> Square-Enix </publisher>
             <coverArt src="id19.jpg"/>
         </game>
 
-        <game id="20">
+        <game id="game20">
             <title> Dragon Age: Inkwizycja </title>
             <price> 41.80 </price>
             <genre> RPG </genre>
@@ -430,9 +410,9 @@
             </releaseDate>
             <developer> BioWare Corporation </developer>
             <relatedPlatforms>
-                <relatedPlatform id="4"/>
-                <relatedPlatform id="2"/>
-                <relatedPlatform id="5"/>
+                <relatedPlatform id="p4"/>
+                <relatedPlatform id="p2"/>
+                <relatedPlatform id="p5"/>
             </relatedPlatforms>
             <publisher> Electronic Arts Inc. </publisher>
             <coverArt src="id20.jpg"/>
