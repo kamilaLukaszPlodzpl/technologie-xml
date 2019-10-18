@@ -2,20 +2,24 @@
 <?xml-stylesheet href="style.css" type="text/css;charset=UTF-8"?>
 <?xml-stylesheet href="style.css" type="text/css"?>
 <!DOCTYPE root [
-    <!ELEMENT root (platforms,games)>
+    <!ELEMENT root (platforms,genres,games)>
         <!ELEMENT platforms (platform+)>
             <!ELEMENT platform (#PCDATA)><!-- String miał być -->
                 <!ATTLIST platform id ID #REQUIRED>
+        <!ELEMENT genres (genre+)>
+            <!ELEMENT genre (#PCDATA)><!-- String miał być -->
+                <!ATTLIST genre id ID #REQUIRED>
         <!ELEMENT games (game+)>
             <!ELEMENT game (
-                title,price?,genre,
+                title,price?,relatedGenre,
                 releaseDate,developer,
                 relatedPlatforms,publisher,coverArt
                 )>
                 <!ATTLIST game id ID #REQUIRED>
                 <!ELEMENT title (#PCDATA)><!-- String miał być -->
                 <!ELEMENT price (#PCDATA)><!-- float point number miał być -->
-                <!ELEMENT genre (#PCDATA)><!-- String miał być -->
+                <!ELEMENT relatedGenre EMPTY>
+                    <!ATTLIST relatedGenre id IDREF #REQUIRED>
                 <!ELEMENT releaseDate (day,month,year)>
                     <!ELEMENT day (#PCDATA)><!-- liczba -->
                     <!ELEMENT month (#PCDATA)><!-- liczba -->
@@ -59,7 +63,7 @@
         <game id="game1">
             <title> God of War III </title>
             <price> 239.90 </price>
-            <genre_id id="g1" />
+            <relatedGenre id="g1" />
             <releaseDate>
                 <day> 16 </day>
                 <month> Marzec </month>
@@ -78,7 +82,7 @@
         <game id="game2">
             <title> Hitman 2 </title>
             <price> 249.00 </price>
-            <genre_id id="g2"/>
+            <relatedGenre id="g2"/>
             <releaseDate>
                 <day> 13 </day>
                 <month> Listopad </month>
@@ -97,7 +101,7 @@
         <game id="game3">
             <title> Minecraft: Java Edition </title>
             <price> 99.99 </price>
-            <genre_id id="g3"/>
+            <relatedGenre id="g3"/>
             <releaseDate>
                 <day> 18 </day>
                 <month> Listopad </month>
@@ -116,7 +120,7 @@
         <game id="game4">
             <title> Garry's Mod </title>
             <price> 35.99 </price>
-            <genre_id id="g4"/>
+            <relatedGenre id="g4"/>
             <releaseDate>
                 <day> 24 </day>
                 <month> Grudzień </month>
@@ -135,7 +139,7 @@
         <game id="game5">
             <title> John Wick Hex </title>
             <price> 69.00 </price>
-            <genre_id id="g5"/>
+            <relatedGenre id="g5"/>
             <releaseDate>
                 <day> 8 </day>
                 <month> Październik </month>
@@ -152,7 +156,7 @@
         <game id="game6">
             <title> Doom </title>
             <price> 30.99 </price>
-            <genre_id id="g6"/>
+            <relatedGenre id="g6"/>
             <releaseDate>
                 <day> 10 </day>
                 <month> Grudzień </month>
@@ -174,7 +178,7 @@
         <game id="game7">
             <title> Forza Horizon 4 </title>
             <price> 199.00 </price>
-            <genre_id id="g7"/>
+            <relatedGenre id="g7"/>
             <releaseDate>
                 <day> 2 </day>
                 <month> Październik </month>
@@ -192,7 +196,7 @@
         <game id="game8">
             <title> The Forest </title>
             <price> 71.99 </price>
-            <genre_id id="g3"/>
+            <relatedGenre id="g3"/>
             <releaseDate>
                 <day> 16 </day>
                 <month> Marzec </month>
@@ -210,7 +214,7 @@
         <game id="game9">
             <title> RoboCraft </title>
             <price> 0.00 </price>
-           <genre_id id="g8"/>
+           <relatedGenre id="g8"/>
             <releaseDate>
                 <day> 19 </day>
                 <month> Grudzień </month>
@@ -227,7 +231,7 @@
         <game id="game10">
             <title> Half-Life 2 </title>
             <price> 139.90 </price>
-            <genre_id id="g6"/>
+            <relatedGenre id="g6"/>
             <releaseDate>
                 <day> 16 </day>
                 <month> Listopad </month>
@@ -246,7 +250,7 @@
         <game id="game11">
             <title> Crysis 3 </title>
             <price> 149.90 </price>
-            <genre_id id="g6"/>
+            <relatedGenre id="g6"/>
             <releaseDate>
                 <day> 19 </day>
                 <month> Luty </month>
@@ -265,7 +269,7 @@
         <game id="game12">
             <title> Far Cry 3 </title>
             <price> 139.90 </price>
-            <genre_id id="g4"/>
+            <relatedGenre id="g4"/>
             <releaseDate>
                 <day> 29 </day>
                 <month> Listopad </month>
@@ -284,7 +288,7 @@
         <game id="game13">
             <title> Assassin's Creed: Odyssey </title>
             <price> 98.79 </price>
-            <genre_id id="g2"/>
+            <relatedGenre id="g2"/>
             <releaseDate>
                 <day> 5 </day>
                 <month> Październik </month>
@@ -303,7 +307,7 @@
         <game id="game14">
             <title> The Elder Scrolls V: Skyrim </title>
             <price> 98.79 </price>
-            <genre_id id="g11"/>
+            <relatedGenre id="g11"/>
             <releaseDate>
                 <day> 16 </day>
                 <month> Marzec </month>
@@ -322,7 +326,7 @@
         <game id="game15">
             <title> Wiedźmin 3: Dziki Gon </title>
             <price> 152.59 </price>
-            <genre_id id="g11"/>
+            <relatedGenre id="g11"/>
             <releaseDate>
                 <day> 19 </day>
                 <month> Maj </month>
@@ -341,7 +345,7 @@
         <game id="game16">
             <title> Grand Theft Auto: San Andreas </title>
             <price> 35.00 </price>
-            <genre_id id="g10"/>
+            <relatedGenre id="g10"/>
             <releaseDate>
                 <day> 25 </day>
                 <month> Październik </month>
@@ -360,7 +364,7 @@
         <game id="game17">
             <title> The Last of Us </title>
             <price> 67.00 </price>
-            <genre_id id="g10"/>
+            <relatedGenre id="g10"/>
             <releaseDate>
                 <day> 14 </day>
                 <month> Czerwca </month>
@@ -377,7 +381,7 @@
         <game id="game18">
             <title> The Sims 4 </title>
             <price> 82.35 </price>
-            <genre_id id="g9"/>
+            <relatedGenre id="g9"/>
             <releaseDate>
                 <day> 2 </day>
                 <month> Września </month>
@@ -396,7 +400,7 @@
         <game id="game19">
             <title> Shadow of the Tomb Raider </title>
             <price> 132.90 </price>
-            <genre_id id="g10"/>
+            <relatedGenre id="g10"/>
             <releaseDate>
                 <day> 14 </day>
                 <month> Września </month>
@@ -415,7 +419,7 @@
         <game id="game20">
             <title> Dragon Age: Inkwizycja </title>
             <price> 41.80 </price>
-            <genre_id id="g11"/>
+            <relatedGenre id="g11"/>
             <releaseDate>
                 <day> 18 </day>
                 <month> Listopad </month>
