@@ -19,6 +19,7 @@
 */
 
 root{
+    display: block;
     margin: 0px;
     padding: 50px 25px;
     width: 100%;
@@ -28,6 +29,11 @@ root{
     box-sizing: border-box;
     background: rgb(235,210,160);
     background: linear-gradient(180deg, rgba(235,210,160,1) 0%, rgba(106,102,82,1) 100%);
+}
+data{
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
 }
 
 platforms{
@@ -76,29 +82,47 @@ title, price, relatedGenre, releaseDate, developer, publisher, relatedPlatforms 
     box-sizing: border-box;
 }
 
-title {
+game > title {
     grid-area: 1 / 2 / span 1 / span 1;
 }
-price {
+game > price {
     grid-area: 2 / 2 / span 1 / span 1;
 }
-relatedGenre {
+game > relatedGenre {
+    grid-area: 2 / 2 / span 1 / span 1;
+}game > releaseDate {
     grid-area: 3 / 2 / span 1 / span 1;
 }
-releaseDate {
+game > developer {
     grid-area: 4 / 2 / span 1 / span 1;
 }
-developer {
+game > publisher {
     grid-area: 5 / 2 / span 1 / span 1;
 }
-publisher {
+game > relatedPlatforms {
+    grid-area: 6 / 2 / span 5 / span 1;
+}
+game > coverArt{
+    grid-area: 1 / 1 / span 11 / span 1;
+}
+
+game > price ~ relatedGenre{
+    grid-area: 3 / 2 / span 1 / span 1;
+}
+game > price ~ releaseDate {
+    grid-area: 4 / 2 / span 1 / span 1;
+}
+game > price ~ developer {
+    grid-area: 5 / 2 / span 1 / span 1;
+}
+game > price ~ publisher {
     grid-area: 6 / 2 / span 1 / span 1;
 }
-relatedPlatforms {
+game > price ~ relatedPlatforms {
     grid-area: 7 / 2 / span 5 / span 1;
 }
-coverArt{
-    grid-area: 2 / 1 / span 9 / span 1;
+game > price ~ coverArt{
+    grid-area: 1 / 1 / span 10 / span 1;
 }
 
 title{

@@ -223,8 +223,7 @@
 
             <game id="game9">
                 <title> RoboCraft </title>
-                <price> 0.00 </price>
-            <relatedGenre id="g8"/>
+                <relatedGenre id="g8"/>
                 <releaseDate>
                     <day> 19 </day>
                     <month> Grudzień </month>
