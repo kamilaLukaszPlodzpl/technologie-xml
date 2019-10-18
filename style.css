@@ -33,7 +33,9 @@ root{
 platforms{
     display: none;
 }
-
+genres{
+    display: none;
+}
 games{
     display: block;
     column-count: 1;
@@ -70,7 +72,7 @@ game:first-child{
     margin-top: 0px;
 }
 
-title, price, genre, releaseDate, developer, publisher, relatedPlatforms {
+title, price, relatedGenre, releaseDate, developer, publisher, relatedPlatforms {
     box-sizing: border-box;
 }
 
@@ -80,7 +82,7 @@ title {
 price {
     grid-area: 2 / 2 / span 1 / span 1;
 }
-genre {
+relatedGenre {
     grid-area: 3 / 2 / span 1 / span 1;
 }
 releaseDate {
@@ -108,44 +110,44 @@ relatedPlatforms:before{
    content: "Platformy: "
 }
 
-relatedPlatforms>platform{
+relatedPlatform{
     display: list-item;
     min-height: 1rem; 
     margin-left: 3px;
     list-style-position: inside;
 }
 
-relatedPlatforms>platform[id="1"]:after{
+relatedPlatform[id="p1"]:after{
     content: "PlayStation 3"
 }
-relatedPlatforms>platform[id="2"]:after{
+relatedPlatform[id="p2"]:after{
     content: "PlayStation 4"
 }
-relatedPlatforms>platform[id="3"]:after{
+relatedPlatform[id="p3"]:after{
     content: "PlayStation 2"
 }
-relatedPlatforms>platform[id="4"]:after{
+relatedPlatform[id="p4"]:after{
     content: "Microsoft Windows"
 }
-relatedPlatforms>platform[id="5"]:after{
+relatedPlatform[id="p5"]:after{
     content: "Xbox One"
 }
-relatedPlatforms>platform[id="6"]:after{
+relatedPlatform[id="p6"]:after{
     content: "macOS"
 }
-relatedPlatforms>platform[id="7"]:after{
+relatedPlatform[id="p7"]:after{
     content: "Linux"
 }
-relatedPlatforms>platform[id="8"]:after{
+relatedPlatform[id="p8"]:after{
     content: "Xbox 360"
 }
-relatedPlatforms>platform[id="9"]:after{
+relatedPlatform[id="p9"]:after{
     content: "Nintendo Switch"
 }
-relatedPlatforms>platform[id="10"]:after{
+relatedPlatform[id="p10"]:after{
     content: "Xbox"
 }
-relatedPlatforms>platform[id="11"]:after{
+relatedPlatform[id="p11"]:after{
     content: "Android"
 }
 
@@ -156,8 +158,41 @@ price:after{
     content: " zł"
 }
 
-genre:before{
+relatedGenre:before{
     content: "Gatunek:  "
+}
+relatedGenre[id="g1"]:after{
+    content: "hack and slash"
+}
+relatedGenre[id="g2"]:after{
+    content: "skradanka"
+}
+relatedGenre[id="g3"]:after{
+    content: "survival"
+}
+relatedGenre[id="g4"]:after{
+    content: "piaskownica"
+}
+relatedGenre[id="g5"]:after{
+    content: "strategia"
+}
+relatedGenre[id="g6"]:after{
+    content: "strzelanka"
+}
+relatedGenre[id="g7"]:after{
+    content: "wyścigi"
+}
+relatedGenre[id="g8"]:after{
+    content: "MMO"
+}
+relatedGenre[id="g9"]:after{
+    content: "symulacja"
+}
+relatedGenre[id="g10"]:after{
+    content: "akcji"
+}
+relatedGenre[id="g11"]:after{
+    content: "RPG"
 }
 
 releaseDate:before{
