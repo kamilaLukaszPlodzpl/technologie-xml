@@ -1,48 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <?xml-stylesheet href="style.css" type="text/css;charset=UTF-8"?>
 <?xml-stylesheet href="style.css" type="text/css"?>
-<!DOCTYPE root [
-    <!ELEMENT root (description,data,authors)>        
-
-    <!ELEMENT description (#PCDATA)>
-
-    <!ELEMENT data (platforms,genres,games)>
-        <!ELEMENT platforms (platform+)>
-            <!ELEMENT platform (#PCDATA)><!-- String miał być -->
-                <!ATTLIST platform id ID #REQUIRED>
-        <!ELEMENT genres (genre+)>
-            <!ELEMENT genre (#PCDATA)><!-- String miał być -->
-                <!ATTLIST genre id ID #REQUIRED>
-        <!ELEMENT games (game+)>
-            <!ELEMENT game (
-                title,price?,relatedGenre,
-                releaseDate,developer,
-                relatedPlatforms,publisher,coverArt
-                )>
-                <!ATTLIST game id ID #REQUIRED>
-                <!ELEMENT title (#PCDATA)><!-- String miał być -->
-                <!ELEMENT price (#PCDATA)><!-- float point number miał być -->
-                <!ELEMENT relatedGenre EMPTY>
-                    <!ATTLIST relatedGenre id IDREF #REQUIRED>
-                <!ELEMENT releaseDate (day,month,year)>
-                    <!ELEMENT day (#PCDATA)><!-- liczba -->
-                    <!ELEMENT month (#PCDATA)><!-- liczba -->
-                    <!ELEMENT year (#PCDATA)><!-- liczba -->
-                <!ELEMENT developer (#PCDATA)><!-- String miał być -->
-                <!ELEMENT relatedPlatforms (relatedPlatform+)>
-                    <!ELEMENT relatedPlatform EMPTY>
-                    <!ATTLIST relatedPlatform id IDREF #REQUIRED>
-                <!ELEMENT publisher (#PCDATA)><!-- String miał być -->
-                <!ELEMENT coverArt EMPTY>
-                    <!ATTLIST coverArt src CDATA #REQUIRED>
-                    
-    <!ELEMENT authors (person+)>
-        <!ELEMENT person (name,surname,index)>
-            <!ELEMENT name (#PCDATA)><!-- String miał być -->
-            <!ELEMENT surname (#PCDATA)><!-- String miał być -->
-            <!ELEMENT index (#PCDATA)><!-- liczba -->
-
-]>
+<!DOCTYPE root SYSTEM "root.dtd">
 <root>
     <description>
         Spis gier
