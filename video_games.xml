@@ -43,6 +43,7 @@
 		</pegiDescriptors>
 		
         <games>
+
             <game id="game1">
                 <title language="angielski">God of War III</title>
                 <price currency="zł">239.90</price>
@@ -225,7 +226,11 @@
             </game>
 
             <game id="game9">
+<<<<<<< HEAD
                 <title language="angielski">RoboCraft</title>
+=======
+                <title>RoboCraft</title>
+>>>>>>> 5aeb3dd5b5dacbdb55dadc2a510ac4e27445b39f
                 <relatedGenre id="g8"/>
                 <releaseDate>
                     <day>19</day>
@@ -270,11 +275,11 @@
                 <price currency="zł"> 149.90 </price>
                 <relatedGenre id="g6"/>
                 <releaseDate>
-                    <day> 19 </day>
-                    <month> Luty </month>
-                    <year> 2013 </year>
+                    <day>19</day>
+                    <month>Luty</month>
+                    <year>2013</year>
                 </releaseDate>
-                <developer> Crytek </developer>
+                <developer>Crytek</developer>
                 <relatedPlatforms>
                     <relatedPlatform id="p4"/>
                     <relatedPlatform id="p1"/>
@@ -419,11 +424,11 @@
                 <price currency="zł"> 67.00 </price>
                 <relatedGenre id="g10"/>
                 <releaseDate>
-                    <day> 14 </day>
-                    <month> Czerwca </month>
-                    <year> 2013 </year>
+                    <day>14</day>
+                    <month>Czerwca</month>
+                    <year>2013</year>
                 </releaseDate>
-                <developer> Naughty Dog </developer>
+                <developer>Naughty Dog</developer>
                 <relatedPlatforms>
                     <relatedPlatform id="p1"/>
                     <relatedPlatform id="p2"/>
@@ -437,6 +442,7 @@
 				</PEGI>
                 <coverArt src="id17.jpg"/>
             </game>
+
             <game id="game18">
                 <title language="angielski">The Sims 4</title>
                 <price currency="zł">82.35</price>
@@ -490,11 +496,11 @@
                 <price currency="zł"> 41.80 </price>
                 <relatedGenre id="g11"/>
                 <releaseDate>
-                    <day> 18 </day>
-                    <month> Listopad </month>
-                    <year> 2014 </year>
+                    <day>18</day>
+                    <month>Listopad</month>
+                    <year>2014</year>
                 </releaseDate>
-                <developer> BioWare Corporation </developer>
+                <developer>BioWare Corporation</developer>
                 <relatedPlatforms>
                     <relatedPlatform id="p4"/>
                     <relatedPlatform id="p2"/>
