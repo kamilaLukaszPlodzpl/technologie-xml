@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Caveat&display=swap');
 /*@keyframes bg-animation {
     0% {
       }
@@ -18,25 +20,41 @@
     animation-duration: 3s;
 */
 
+
 root{
+
+    --text-color: black;
+    --bg-border-color: #0F4C99;
+    --bg-main-color: #5287CC;
+    --bg-game-color: #FFCFBF;
+    --bg-game-hover-color: #CC5D52;
+    display: block;
     margin: 0px;
-    padding: 50px 25px;
     width: 100%;
     border: 0px;
-    font-family: Georgia, serif;
+    font-family: 'Roboto', sans-serif, Georgia, serif !important;
     font-size: 16px;
     box-sizing: border-box;
-    background: rgb(235,210,160);
-    background: linear-gradient(180deg, rgba(235,210,160,1) 0%, rgba(106,102,82,1) 100%);
+    color: var(--text-color);
+    background-color: var(--bg-main-color);
+    overflow-x: hidden;
+}
+data{
+    padding-top: 150px;
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    padding-bottom: 20px;
 }
 
-platforms{
+platforms,genres,pegiDescriptors{
     display: none;
 }
 
 games{
     display: block;
     column-count: 1;
+    padding: 0px 20px;
 }
 
 @media only screen and (min-width: 720px) {
@@ -52,26 +70,85 @@ games{
 
 game{
     page-break-inside: avoid;
-    display: block;
-    border-right: 12px solid #b0988b;
-    margin: 5px;  
+    display: grid;
+    grid-template-columns: 40% 60%;
+    grid-template-rows: auto auto auto auto auto auto auto;
+    grid-gap: 5px 5px;
+    margin: 15px 5px;  
     padding: 20px;
     box-sizing: border-box;
-    background-color: #f0e2da;
-    width: 100%;
+    background-color: var(--bg-game-color);
+
+    border-radius: 31px 31px 31px 31px;
+    -moz-border-radius: 31px 31px 31px 31px;
+    -webkit-border-radius: 31px 31px 31px 31px;
+    border: 2px dashed var(--bg-border-color);
+
+    -webkit-box-shadow: 0px 0px 18px 7px var(--bg-border-color);
+    -moz-box-shadow: 0px 0px 18px 7px var(--bg-border-color);
+    box-shadow: 0px 0px 18px 7px var(--bg-border-color);
+
 }
 game:hover{
-    background-color: #E0D4CC;
+    background-color: var(--bg-game-hover-color);
     box-shadow: inset 0 0 10px #000000;
 }
 game:first-child{
     margin-top: 0px;
 }
 
-price, genre, releaseDate, developer, publisher, relatedPlatforms, title {
-    display: block;
+title, price, relatedGenre, releaseDate, developer, publisher, relatedPlatforms, rating {
     box-sizing: border-box;
-    max-width: 50%;
+}
+
+game > title {
+    grid-area: 1 / 2 / span 1 / span 1;
+}
+game > price {
+    grid-area: 2 / 2 / span 1 / span 1;
+}
+game > relatedGenre {
+    grid-area: 2 / 2 / span 1 / span 1;
+}
+game > releaseDate {
+    grid-area: 3 / 2 / span 1 / span 1;
+}
+game > developer {
+    grid-area: 4 / 2 / span 1 / span 1;
+}
+game > publisher {
+    grid-area: 5 / 2 / span 1 / span 1;
+}
+game > relatedPlatforms {
+    grid-area: 6 / 2 / span 5 / span 1;
+}
+game > rating {
+    grid-area: 11 / 2 / span 1 / span 1;
+}
+game > coverArt{
+    grid-area: 1 / 1 / span 11 / span 1;
+}
+
+game > price ~ relatedGenre{
+    grid-area: 3 / 2 / span 1 / span 1;
+}
+game > price ~ releaseDate {
+    grid-area: 4 / 2 / span 1 / span 1;
+}
+game > price ~ developer {
+    grid-area: 5 / 2 / span 1 / span 1;
+}
+game > price ~ publisher {
+    grid-area: 6 / 2 / span 1 / span 1;
+}
+game > price ~ relatedPlatforms {
+    grid-area: 7 / 2 / span 5 / span 1;
+}
+game > price ~ rating {
+    grid-area: 13 / 2 / span 1 / span 1;
+}
+game > price ~ coverArt{
+    grid-area: 1 / 1 / span 10 / span 1;
 }
 
 title{
@@ -83,44 +160,44 @@ relatedPlatforms:before{
    content: "Platformy: "
 }
 
-relatedPlatforms>platform{
+relatedPlatform{
     display: list-item;
     min-height: 1rem; 
     margin-left: 3px;
     list-style-position: inside;
 }
 
-relatedPlatforms>platform[id="1"]:after{
+relatedPlatform[id="p1"]:after{
     content: "PlayStation 3"
 }
-relatedPlatforms>platform[id="2"]:after{
+relatedPlatform[id="p2"]:after{
     content: "PlayStation 4"
 }
-relatedPlatforms>platform[id="3"]:after{
+relatedPlatform[id="p3"]:after{
     content: "PlayStation 2"
 }
-relatedPlatforms>platform[id="4"]:after{
+relatedPlatform[id="p4"]:after{
     content: "Microsoft Windows"
 }
-relatedPlatforms>platform[id="5"]:after{
+relatedPlatform[id="p5"]:after{
     content: "Xbox One"
 }
-relatedPlatforms>platform[id="6"]:after{
+relatedPlatform[id="p6"]:after{
     content: "macOS"
 }
-relatedPlatforms>platform[id="7"]:after{
+relatedPlatform[id="p7"]:after{
     content: "Linux"
 }
-relatedPlatforms>platform[id="8"]:after{
+relatedPlatform[id="p8"]:after{
     content: "Xbox 360"
 }
-relatedPlatforms>platform[id="9"]:after{
+relatedPlatform[id="p9"]:after{
     content: "Nintendo Switch"
 }
-relatedPlatforms>platform[id="10"]:after{
+relatedPlatform[id="p10"]:after{
     content: "Xbox"
 }
-relatedPlatforms>platform[id="11"]:after{
+relatedPlatform[id="p11"]:after{
     content: "Android"
 }
 
@@ -131,8 +208,41 @@ price:after{
     content: " zł"
 }
 
-genre:before{
+relatedGenre:before{
     content: "Gatunek:  "
+}
+relatedGenre[id="g1"]:after{
+    content: "hack and slash"
+}
+relatedGenre[id="g2"]:after{
+    content: "skradanka"
+}
+relatedGenre[id="g3"]:after{
+    content: "survival"
+}
+relatedGenre[id="g4"]:after{
+    content: "piaskownica"
+}
+relatedGenre[id="g5"]:after{
+    content: "strategia"
+}
+relatedGenre[id="g6"]:after{
+    content: "strzelanka"
+}
+relatedGenre[id="g7"]:after{
+    content: "wyścigi"
+}
+relatedGenre[id="g8"]:after{
+    content: "MMO"
+}
+relatedGenre[id="g9"]:after{
+    content: "symulacja"
+}
+relatedGenre[id="g10"]:after{
+    content: "akcji"
+}
+relatedGenre[id="g11"]:after{
+    content: "RPG"
 }
 
 releaseDate:before{
@@ -148,14 +258,11 @@ publisher:before{
 }
 coverArt{
     box-sizing: border-box;
-    display: block;
-    max-width: 50%;
     min-height: 200px;
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
 }
-
 coverArt[src="id1.jpg"]{
     background-image: url("./coverart/id1.jpg");
 }
@@ -218,4 +325,48 @@ coverArt[src="id20.jpg"]{
 }
 
 
+description{
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    display:block;
+    background-color: var(--bg-game-color);
+    font-weight: bold;
+    padding:20px 20px 20px 20px;
+    font-size: 4em;
+    font-family: 'Caveat', cursive;
+
+    border-color: var(--bg-border-color);
+    border-style: dashed;
+    border-width: 0 0 2px 0;
+}
+
+authors{
+    width: 100%;
+    display:block;
+    background-color: var(--bg-game-color);
+    margin-top:50px;
+    background-size: 5%;
+    font-weight: bold;
+    padding:20px 20px 20px 20px;
+
+    border-color: var(--bg-border-color);
+    border-style: dashed;
+    border-width: 2px 0 0 0;
+    -webkit-box-shadow: 0px 0px 18px 7px var(--bg-border-color);
+    -moz-box-shadow: 0px 0px 18px 7px var(--bg-border-color);
+    box-shadow: 0px 0px 18px 7px var(--bg-border-color);
+
+    font-size: 1em;
+    text-align: right;
+
+}
+person{
+    display: block;
+    padding-right: 30px;
+}
+name,surname,index{
+    display: inline;
+}
 
