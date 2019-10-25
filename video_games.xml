@@ -21,17 +21,17 @@
             <platform id="p11">Android</platform>
         </platforms>
         <genres>
-            <genre id="g1"> hack and slash </genre>
-            <genre id="g2"> skradanka </genre>
-            <genre id="g3"> survival </genre>
-            <genre id="g4"> piaskownica </genre>
-            <genre id="g5"> strategia </genre>
-            <genre id="g6"> strzelanka </genre>
-            <genre id="g7"> wyścigi </genre>
-            <genre id="g8"> MMO </genre> 
-            <genre id="g9"> symulacja </genre> 
-            <genre id="g10"> akcji </genre>
-            <genre id="g11"> RPG </genre>
+            <genre id="g1">hack and slash</genre>
+            <genre id="g2">skradanka</genre>
+            <genre id="g3">survival</genre>
+            <genre id="g4">piaskownica</genre>
+            <genre id="g5">strategia</genre>
+            <genre id="g6">strzelanka</genre>
+            <genre id="g7">wyścigi</genre>
+            <genre id="g8">MMO</genre> 
+            <genre id="g9">symulacja</genre> 
+            <genre id="g10">akcji</genre>
+            <genre id="g11">RPG</genre>
         </genres>
 		<pegiDescriptors>
 			<pegiDescriptor id="d1">violence</pegiDescriptor>
@@ -44,16 +44,17 @@
 		</pegiDescriptors>
 		
         <games>
+
             <game id="game1">
                 <title> God of War III </title>
                 <price currency="zł"> 239.90 </price>
                 <relatedGenre id="g1" />
                 <releaseDate>
-                    <day> 16 </day>
-                    <month> Marzec </month>
-                    <year> 2010 </year>
+                    <day>16</day>
+                    <month>Marzec</month>
+                    <year>2010</year>
                 </releaseDate>
-                <developer> SCE Santa Monica Studio </developer>
+                <developer>SCE Santa Monica Studio</developer>
                 <relatedPlatforms>
                     <relatedPlatform id="p1"/>
                     <relatedPlatform id="p2"/>
@@ -70,11 +71,11 @@
                 <price currency="zł"> 249.00 </price>
                 <relatedGenre id="g2"/>
                 <releaseDate>
-                    <day> 13 </day>
-                    <month> Listopad </month>
-                    <year> 2018 </year>
+                    <day>13</day>
+                    <month>Listopad</month>
+                    <year>2018</year>
                 </releaseDate>
-                <developer> IO Interactive </developer>
+                <developer>IO Interactive</developer>
                 <relatedPlatforms>
                     <relatedPlatform id="p2"/>
                     <relatedPlatform id="p4"/>
@@ -92,11 +93,11 @@
                 <price currency="zł"> 99.99 </price>
                 <relatedGenre id="g3"/>
                 <releaseDate>
-                    <day> 18 </day>
-                    <month> Listopad </month>
-                    <year> 2011 </year>
+                    <day>18</day>
+                    <month>Listopad</month>
+                    <year>2011</year>
                 </releaseDate>
-                <developer> Mojang </developer>
+                <developer>Mojang</developer>
                 <relatedPlatforms>
                     <relatedPlatform id="p4"/>
                     <relatedPlatform id="p6"/> 
@@ -114,11 +115,11 @@
                 <price currency="zł"> 35.99 </price>
                 <relatedGenre id="g4"/>
                 <releaseDate>
-                    <day> 24 </day>
-                    <month> Grudzień </month>
-                    <year> 2004 </year>
+                    <day>24</day>
+                    <month>Grudzień</month>
+                    <year>2004</year>
                 </releaseDate>
-                <developer> Facepunch Studios </developer>
+                <developer>Facepunch Studios</developer>
                 <relatedPlatforms> 
                     <relatedPlatform id="p4"/>
                     <relatedPlatform id="p6"/> 
@@ -136,11 +137,11 @@
                 <price currency="zł"> 69.00 </price>
                 <relatedGenre id="g5"/>
                 <releaseDate>
-                    <day> 8 </day>
-                    <month> Październik </month>
-                    <year> 2019 </year>
+                    <day>8</day>
+                    <month>Październik</month>
+                    <year>2019</year>
                 </releaseDate>
-                <developer> Bithell Games </developer>
+                <developer>Bithell Games</developer>
                 <relatedPlatforms>
                     <relatedPlatform id="p4"/>
                 </relatedPlatforms>
@@ -156,11 +157,11 @@
                 <price currency="zł"> 30.99 </price>
                 <relatedGenre id="g6"/>
                 <releaseDate>
-                    <day> 10 </day>
-                    <month> Grudzień </month>
-                    <year> 1993 </year>
+                    <day>10</day>
+                    <month>Grudzień</month>
+                    <year>1993</year>
                 </releaseDate>
-                <developer> id Software </developer>
+                <developer>id Software</developer>
                 <relatedPlatforms>
                     <relatedPlatform id="p4"/>
                     <relatedPlatform id="p2"/>
@@ -181,11 +182,11 @@
                 <price currency="zł"> 199.00 </price>
                 <relatedGenre id="g7"/>
                 <releaseDate>
-                    <day> 2 </day>
-                    <month> Październik </month>
-                    <year> 2018 </year>
+                    <day>2</day>
+                    <month>Październik</month>
+                    <year>2018</year>
                 </releaseDate>
-                <developer> Playground Games </developer>
+                <developer>Playground Games</developer>
                 <relatedPlatforms>
                     <relatedPlatform id="p4"/>
                     <relatedPlatform id="p5"/>
@@ -202,11 +203,11 @@
                 <price currency="zł"> 71.99 </price>
                 <relatedGenre id="g3"/>
                 <releaseDate>
-                    <day> 16 </day>
-                    <month> Marzec </month>
-                    <year> 2010 </year>
+                    <day>16</day>
+                    <month>Marzec</month>
+                    <year>2010</year>
                 </releaseDate>
-                <developer> Endnight Games </developer>
+                <developer>Endnight Games</developer>
                 <relatedPlatforms>
                     <relatedPlatform id="p4"/>
                     <relatedPlatform id="p2"/>
@@ -219,14 +220,14 @@
             </game>
 
             <game id="game9">
-                <title> RoboCraft </title>
+                <title>RoboCraft</title>
                 <relatedGenre id="g8"/>
                 <releaseDate>
-                    <day> 19 </day>
-                    <month> Grudzień </month>
-                    <year> 2013 </year>
+                    <day>19</day>
+                    <month>Grudzień</month>
+                    <year>2013</year>
                 </releaseDate>
-                <developer> Freejam </developer>
+                <developer>Freejam</developer>
                 <relatedPlatforms>
                     <relatedPlatform id="p4"/>
                 </relatedPlatforms>
@@ -242,11 +243,11 @@
                 <price currency="zł"> 139.90 </price>
                 <relatedGenre id="g6"/>
                 <releaseDate>
-                    <day> 16 </day>
-                    <month> Listopad </month>
-                    <year> 2004 </year>
+                    <day>16</day>
+                    <month>Listopad</month>
+                    <year>2004</year>
                 </releaseDate>
-                <developer> Valve Software </developer>
+                <developer>Valve Software</developer>
                 <relatedPlatforms> 
                     <relatedPlatform id="p4"/> 
                     <relatedPlatform id="p10"/> 
@@ -264,11 +265,11 @@
                 <price currency="zł"> 149.90 </price>
                 <relatedGenre id="g6"/>
                 <releaseDate>
-                    <day> 19 </day>
-                    <month> Luty </month>
-                    <year> 2013 </year>
+                    <day>19</day>
+                    <month>Luty</month>
+                    <year>2013</year>
                 </releaseDate>
-                <developer> Crytek </developer>
+                <developer>Crytek</developer>
                 <relatedPlatforms>
                     <relatedPlatform id="p4"/>
                     <relatedPlatform id="p1"/>
@@ -286,11 +287,11 @@
                 <price currency="zł"> 139.90 </price>
                 <relatedGenre id="g4"/>
                 <releaseDate>
-                    <day> 29 </day>
-                    <month> Listopad </month>
-                    <year> 2012 </year>
+                    <day>29</day>
+                    <month>Listopad</month>
+                    <year>2012</year>
                 </releaseDate>
-                <developer> Ubisoft </developer>
+                <developer>Ubisoft</developer>
                 <relatedPlatforms>
                     <relatedPlatform id="p4"/>
                     <relatedPlatform id="p2"/>
@@ -308,11 +309,11 @@
                 <price currency="zł"> 98.79 </price>
                 <relatedGenre id="g2"/>
                 <releaseDate>
-                    <day> 5 </day>
-                    <month> Październik </month>
-                    <year> 2018 </year>
+                    <day>5</day>
+                    <month>Październik</month>
+                    <year>2018</year>
                 </releaseDate>
-                <developer> Ubisoft </developer>
+                <developer>Ubisoft</developer>
                 <relatedPlatforms>
                     <relatedPlatform id="p4"/>
                     <relatedPlatform id="p2"/>
@@ -330,11 +331,11 @@
                 <price currency="zł"> 98.79 </price>
                 <relatedGenre id="g11"/>
                 <releaseDate>
-                    <day> 16 </day>
-                    <month> Marzec </month>
-                    <year> 2010 </year>
+                    <day>16</day>
+                    <month>Marzec</month>
+                    <year>2010</year>
                 </releaseDate>
-                <developer> Bethesda Softworks </developer>
+                <developer>Bethesda Softworks</developer>
                 <relatedPlatforms>
                     <relatedPlatform id="p4"/>
                     <relatedPlatform id="p1"/>
@@ -352,11 +353,11 @@
                 <price currency="zł"> 152.59 </price>
                 <relatedGenre id="g11"/>
                 <releaseDate>
-                    <day> 19 </day>
-                    <month> Maj </month>
-                    <year> 2015 </year>
+                    <day>19</day>
+                    <month>Maj</month>
+                    <year>2015</year>
                 </releaseDate>
-                <developer> CD Projekt RED </developer>
+                <developer>CD Projekt RED</developer>
                 <relatedPlatforms>
                     <relatedPlatform id="p4"/>
                     <relatedPlatform id="p2"/>
@@ -374,11 +375,11 @@
                 <price currency="zł"> 35.00 </price>
                 <relatedGenre id="g10"/>
                 <releaseDate>
-                    <day> 25 </day>
-                    <month> Październik </month>
-                    <year> 2004 </year>
+                    <day>25</day>
+                    <month>Październik</month>
+                    <year>2004</year>
                 </releaseDate>
-                <developer> Rockstar Games </developer>
+                <developer>Rockstar Games</developer>
                 <relatedPlatforms>
                     <relatedPlatform id="p4"/>
                     <relatedPlatform id="p3"/>
@@ -396,11 +397,11 @@
                 <price currency="zł"> 67.00 </price>
                 <relatedGenre id="g10"/>
                 <releaseDate>
-                    <day> 14 </day>
-                    <month> Czerwca </month>
-                    <year> 2013 </year>
+                    <day>14</day>
+                    <month>Czerwca</month>
+                    <year>2013</year>
                 </releaseDate>
-                <developer> Naughty Dog </developer>
+                <developer>Naughty Dog</developer>
                 <relatedPlatforms>
                     <relatedPlatform id="p1"/>
                     <relatedPlatform id="p2"/>
@@ -411,16 +412,17 @@
 				</PEGI>
                 <coverArt src="id17.jpg"/>
             </game>
+
             <game id="game18">
                 <title> The Sims 4 </title>
                 <price currency="zł"> 82.35 </price>
                 <relatedGenre id="g9"/>
                 <releaseDate>
-                    <day> 2 </day>
-                    <month> Września </month>
-                    <year> 2014 </year>
+                    <day>2</day>
+                    <month>Września</month>
+                    <year>2014</year>
                 </releaseDate>
-                <developer> EA Maxis </developer>
+                <developer>EA Maxis</developer>
                 <relatedPlatforms>
                     <relatedPlatform id="p4"/>
                     <relatedPlatform id="p2"/>
@@ -438,11 +440,11 @@
                 <price currency="zł"> 132.90 </price>
                 <relatedGenre id="g10"/>
                 <releaseDate>
-                    <day> 14 </day>
-                    <month> Września </month>
-                    <year> 2018 </year>
+                    <day>14</day>
+                    <month>Września</month>
+                    <year>2018</year>
                 </releaseDate>
-                <developer> Eidos Montreal </developer>
+                <developer>Eidos Montreal</developer>
                 <relatedPlatforms>
                     <relatedPlatform id="p4"/>
                     <relatedPlatform id="p2"/>
@@ -460,11 +462,11 @@
                 <price currency="zł"> 41.80 </price>
                 <relatedGenre id="g11"/>
                 <releaseDate>
-                    <day> 18 </day>
-                    <month> Listopad </month>
-                    <year> 2014 </year>
+                    <day>18</day>
+                    <month>Listopad</month>
+                    <year>2014</year>
                 </releaseDate>
-                <developer> BioWare Corporation </developer>
+                <developer>BioWare Corporation</developer>
                 <relatedPlatforms>
                     <relatedPlatform id="p4"/>
                     <relatedPlatform id="p2"/>

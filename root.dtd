@@ -2,38 +2,48 @@
 
 <!ELEMENT description (#PCDATA)>
 
-<!ELEMENT data (platforms,genres,games)>
+<!ELEMENT data (platforms,genres,pegiDescriptors,games)><!-- CHECK IT -->
+    <!ATTLIST data dataSource CDATA><!-- CHECK IT -->
     <!ELEMENT platforms (platform+)>
-        <!ELEMENT platform (#PCDATA)><!-- String miał być -->
+        <!ELEMENT platform (#PCDATA)><!-- string  -->
             <!ATTLIST platform id ID #REQUIRED>
     <!ELEMENT genres (genre+)>
-        <!ELEMENT genre (#PCDATA)><!-- String miał być -->
+        <!ELEMENT genre (#PCDATA)><!-- string -->
             <!ATTLIST genre id ID #REQUIRED>
+    <!ELEMENT pegiDescriptors (pegiDescriptor)><!-- CHECK IT -->
+        <!ELEMENT pegiDescriptor (#PCDATA)><!-- CHECK IT -->
+            <!ATTLIST pegiDescriptor id ID #REQUIRED><!-- CHECK IT -->
     <!ELEMENT games (game+)>
         <!ELEMENT game (
             title,price?,relatedGenre,
             releaseDate,developer,
-            relatedPlatforms,publisher,coverArt
-            )>
+            relatedPlatforms,publisher,rating,
+            PEGI,coverArt
+            )><!-- CHECK IT -->
             <!ATTLIST game id ID #REQUIRED>
-            <!ELEMENT title (#PCDATA)><!-- String miał być -->
-            <!ELEMENT price (#PCDATA)><!-- float point number miał być -->
+            <!ELEMENT title (#PCDATA)><!-- string -->
+            <!ELEMENT price (#PCDATA)><!-- float -->
+                <!ATTLIST price currency CDATA><!-- CHECK IT -->
             <!ELEMENT relatedGenre EMPTY>
                 <!ATTLIST relatedGenre id IDREF #REQUIRED>
             <!ELEMENT releaseDate (day,month,year)>
-                <!ELEMENT day (#PCDATA)><!-- liczba -->
-                <!ELEMENT month (#PCDATA)><!-- liczba -->
-                <!ELEMENT year (#PCDATA)><!-- liczba -->
-            <!ELEMENT developer (#PCDATA)><!-- String miał być -->
+                <!ELEMENT day (#PCDATA)><!-- integer -->
+                <!ELEMENT month (#PCDATA)><!-- integer -->
+                <!ELEMENT year (#PCDATA)><!-- integer -->
+            <!ELEMENT developer (#PCDATA)><!-- string -->
             <!ELEMENT relatedPlatforms (relatedPlatform+)>
                 <!ELEMENT relatedPlatform EMPTY>
                 <!ATTLIST relatedPlatform id IDREF #REQUIRED>
-            <!ELEMENT publisher (#PCDATA)><!-- String miał być -->
+            <!ELEMENT publisher (#PCDATA)><!-- string -->
+            <!ELEMENT rating (#PCDATA)><!-- CHECK IT -->
+                <!ATTLIST rating source CDATA><!-- CHECK IT -->
+            <!ELEMENT PEGI (#PCDATA)><!-- CHECK IT -->
+                <!ATTLIST PEGI label CDATA><!-- CHECK IT -->
             <!ELEMENT coverArt EMPTY>
                 <!ATTLIST coverArt src CDATA #REQUIRED>
                 
 <!ELEMENT authors (person+)>
     <!ELEMENT person (name,surname,index)>
-        <!ELEMENT name (#PCDATA)><!-- String miał być -->
-        <!ELEMENT surname (#PCDATA)><!-- String miał być -->
-        <!ELEMENT index (#PCDATA)><!-- liczba -->
+        <!ELEMENT name (#PCDATA)><!-- string -->
+        <!ELEMENT surname (#PCDATA)><!-- string -->
+        <!ELEMENT index (#PCDATA)><!-- integer -->
