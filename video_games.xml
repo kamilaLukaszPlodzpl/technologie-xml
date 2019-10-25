@@ -226,11 +226,7 @@
             </game>
 
             <game id="game9">
-<<<<<<< HEAD
                 <title language="angielski">RoboCraft</title>
-=======
-                <title>RoboCraft</title>
->>>>>>> 5aeb3dd5b5dacbdb55dadc2a510ac4e27445b39f
                 <relatedGenre id="g8"/>
                 <releaseDate>
                     <day>19</day>
@@ -271,8 +267,8 @@
             </game>
 
             <game id="game11">
-                <title language="angielski"> Crysis 3 </title>
-                <price currency="zł"> 149.90 </price>
+                <title language="angielski">Crysis 3</title>
+                <price currency="zł">149.90</price>
                 <relatedGenre id="g6"/>
                 <releaseDate>
                     <day>19</day>
@@ -420,8 +416,8 @@
             </game>
 
             <game id="game17">
-                <title language="angielski"> The Last of Us </title>
-                <price currency="zł"> 67.00 </price>
+                <title language="angielski">The Last of Us</title>
+                <price currency="zł">67.00</price>
                 <relatedGenre id="g10"/>
                 <releaseDate>
                     <day>14</day>
@@ -433,7 +429,7 @@
                     <relatedPlatform id="p1"/>
                     <relatedPlatform id="p2"/>
                 </relatedPlatforms>
-                <publisher> Sony Interactive Entertainment </publisher>
+                <publisher>Sony Interactive Entertainment</publisher>
 				<rating soruce="Metacritics" max="10">9.1</rating>
 				<PEGI label="18"> 
                     <relatedPegi id="d1"/>
@@ -493,7 +489,7 @@
 
             <game id="game20">
                 <title language="polski">Dragon Age: Inkwizycja</title>
-                <price currency="zł"> 41.80 </price>
+                <price currency="zł">41.80</price>
                 <relatedGenre id="g11"/>
                 <releaseDate>
                     <day>18</day>
@@ -506,7 +502,7 @@
                     <relatedPlatform id="p2"/>
                     <relatedPlatform id="p5"/>
                 </relatedPlatforms>
-                <publisher> Electronic Arts Inc. </publisher>
+                <publisher>Electronic Arts Inc.</publisher>
 				<rating soruce="Metacritics" max="10">7.4</rating>
 				<PEGI label="18">
                     <relatedPegi id="d1"/>
