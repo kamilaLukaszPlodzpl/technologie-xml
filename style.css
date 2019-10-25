@@ -1,28 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Caveat&display=swap');
-/*@keyframes bg-animation {
-    0% {
-      }
-    50% {
-        background: rgb(235,210,160);
-        background: linear-gradient(180deg, rgba(235,210,160,1) 0%, rgba(106,102,82,1) 100%);
-    }
-    100% {
-        background: rgb(235,210,160);
-        background: linear-gradient(0deg, rgba(235,210,160,1) 0%, rgba(106,102,82,1) 100%);
-    }
-}
-*/
-/*
-    animation-play-state: running;
-    animation-name: bg-animation;
-    animation-iteration-count: infinite;
-    animation-duration: 3s;
-*/
-
 
 root{
-
     --text-color: black;
     --bg-border-color: #0F4C99;
     --bg-main-color: #5287CC;
@@ -46,11 +25,9 @@ data{
     box-sizing: border-box;
     padding-bottom: 20px;
 }
-
 platforms,genres,pegiDescriptors{
     display: none;
 }
-
 games{
     display: block;
     column-count: 1;
@@ -87,8 +64,8 @@ game{
     -webkit-box-shadow: 0px 0px 18px 7px var(--bg-border-color);
     -moz-box-shadow: 0px 0px 18px 7px var(--bg-border-color);
     box-shadow: 0px 0px 18px 7px var(--bg-border-color);
-
 }
+
 game:hover{
     background-color: var(--bg-game-hover-color);
     box-shadow: inset 0 0 10px #000000;
@@ -97,7 +74,7 @@ game:first-child{
     margin-top: 0px;
 }
 
-title, price, relatedGenre, releaseDate, developer, publisher, relatedPlatforms, rating {
+title, price, relatedGenre, releaseDate, developer, publisher, relatedPlatforms, rating, PEGI {
     box-sizing: border-box;
 }
 
@@ -125,8 +102,11 @@ game > relatedPlatforms {
 game > rating {
     grid-area: 11 / 2 / span 1 / span 1;
 }
+game > PEGI {
+    grid-area: 12 / 2 / span 3 / span 1;
+}
 game > coverArt{
-    grid-area: 1 / 1 / span 11 / span 1;
+    grid-area: 1 / 1 / span 14 / span 1;
 }
 
 game > price ~ relatedGenre{
@@ -145,10 +125,13 @@ game > price ~ relatedPlatforms {
     grid-area: 7 / 2 / span 5 / span 1;
 }
 game > price ~ rating {
-    grid-area: 13 / 2 / span 1 / span 1;
+    grid-area: 12 / 2 / span 1 / span 1;
+}
+game > price ~ PEGI {
+    grid-area: 13 / 2 / span 3 / span 1;
 }
 game > price ~ coverArt{
-    grid-area: 1 / 1 / span 10 / span 1;
+    grid-area: 1 / 1 / span 15 / span 1;
 }
 
 title{
@@ -156,56 +139,11 @@ title{
     margin-bottom: 15px;
 }
 
-relatedPlatforms:before{
-   content: "Platformy: "
-}
-
-relatedPlatform{
-    display: list-item;
-    min-height: 1rem; 
-    margin-left: 3px;
-    list-style-position: inside;
-}
-
-relatedPlatform[id="p1"]:after{
-    content: "PlayStation 3"
-}
-relatedPlatform[id="p2"]:after{
-    content: "PlayStation 4"
-}
-relatedPlatform[id="p3"]:after{
-    content: "PlayStation 2"
-}
-relatedPlatform[id="p4"]:after{
-    content: "Microsoft Windows"
-}
-relatedPlatform[id="p5"]:after{
-    content: "Xbox One"
-}
-relatedPlatform[id="p6"]:after{
-    content: "macOS"
-}
-relatedPlatform[id="p7"]:after{
-    content: "Linux"
-}
-relatedPlatform[id="p8"]:after{
-    content: "Xbox 360"
-}
-relatedPlatform[id="p9"]:after{
-    content: "Nintendo Switch"
-}
-relatedPlatform[id="p10"]:after{
-    content: "Xbox"
-}
-relatedPlatform[id="p11"]:after{
-    content: "Android"
-}
-
 price:before{
     content: "Cena:  "
 }
 price:after{
-    content: " zł"
+    content: attr(currency);
 }
 
 relatedGenre:before{
@@ -256,6 +194,87 @@ developer:before{
 publisher:before{
     content: "Wydawca:  "
 }
+
+relatedPlatforms:before{
+   content: "Platformy: "
+}
+
+relatedPlatform{
+    display: list-item;
+    min-height: 1rem; 
+    margin-left: 3px;
+    list-style-position: inside;
+}
+
+relatedPlatform[id="p1"]:after{
+    content: "PlayStation 3"
+}
+relatedPlatform[id="p2"]:after{
+    content: "PlayStation 4"
+}
+relatedPlatform[id="p3"]:after{
+    content: "PlayStation 2"
+}
+relatedPlatform[id="p4"]:after{
+    content: "Microsoft Windows"
+}
+relatedPlatform[id="p5"]:after{
+    content: "Xbox One"
+}
+relatedPlatform[id="p6"]:after{
+    content: "macOS"
+}
+relatedPlatform[id="p7"]:after{
+    content: "Linux"
+}
+relatedPlatform[id="p8"]:after{
+    content: "Xbox 360"
+}
+relatedPlatform[id="p9"]:after{
+    content: "Nintendo Switch"
+}
+relatedPlatform[id="p10"]:after{
+    content: "Xbox"
+}
+relatedPlatform[id="p11"]:after{
+    content: "Android"
+}
+
+rating:before{
+    content: "Ocena:  "
+}
+
+PEGI:before{
+    content: "Ograniczenia wiekowe: " attr(label);
+}
+relatedPegi{
+    display: inline-block;
+    box-sizing: border-box;
+    height: 50px;
+    width: 50px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;  
+}
+relatedPegi[id="d1"]{
+    background-image: url("./pegi/pegi1.webp");
+}
+relatedPegi[id="d2"]{
+    background-image: url("./pegi/pegi2.webp");
+}
+relatedPegi[id="d3"]{
+    background-image: url("./pegi/pegi3.webp");
+}
+relatedPegi[id="d4"]{
+    background-image: url("./pegi/pegi4.webp");
+}
+relatedPegi[id="d5"]{
+    background-image: url("./pegi/pegi5.webp");
+}
+relatedPegi[id="d6"]{
+    background-image: url("./pegi/pegi6.webp");
+}
+
 coverArt{
     box-sizing: border-box;
     min-height: 200px;
