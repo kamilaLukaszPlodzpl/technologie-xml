@@ -3,7 +3,7 @@
 <!ELEMENT description (#PCDATA)>
 
 <!ELEMENT data (platforms,genres,pegiDescriptors,games)><!-- CHECK IT -->
-    <!ATTLIST data dataSource CDATA><!-- CHECK IT -->
+    <!ATTLIST data dataSource CDATA #REQUIRED><!-- CHECK IT -->
     <!ELEMENT platforms (platform+)>
         <!ELEMENT platform (#PCDATA)><!-- string  -->
             <!ATTLIST platform id ID #REQUIRED>
@@ -23,7 +23,7 @@
             <!ATTLIST game id ID #REQUIRED>
             <!ELEMENT title (#PCDATA)><!-- string -->
             <!ELEMENT price (#PCDATA)><!-- float -->
-                <!ATTLIST price currency CDATA><!-- CHECK IT -->
+                <!ATTLIST price currency CDATA #REQUIRED><!-- CHECK IT -->
             <!ELEMENT relatedGenre EMPTY>
                 <!ATTLIST relatedGenre id IDREF #REQUIRED>
             <!ELEMENT releaseDate (day,month,year)>
@@ -36,9 +36,9 @@
                 <!ATTLIST relatedPlatform id IDREF #REQUIRED>
             <!ELEMENT publisher (#PCDATA)><!-- string -->
             <!ELEMENT rating (#PCDATA)><!-- CHECK IT -->
-                <!ATTLIST rating source CDATA><!-- CHECK IT -->
+                <!ATTLIST rating source CDATA #REQUIRED><!-- CHECK IT -->
             <!ELEMENT PEGI (#PCDATA)><!-- CHECK IT -->
-                <!ATTLIST PEGI label CDATA><!-- CHECK IT -->
+                <!ATTLIST PEGI label CDATA #REQUIRED><!-- CHECK IT -->
             <!ELEMENT coverArt EMPTY>
                 <!ATTLIST coverArt src CDATA #REQUIRED>
                 

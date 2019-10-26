@@ -245,7 +245,9 @@ rating:before{
 }
 
 PEGI:before{
+    display: block;
     content: "Ograniczenia wiekowe: " attr(label);
+    padding: 0 0 5px 0;
 }
 relatedPegi{
     display: inline-block;
@@ -253,9 +255,12 @@ relatedPegi{
     height: 50px;
     width: 50px;
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: center center;
     background-size: contain;  
+    
 }
+
+
 relatedPegi[id="d1"]{
     background-image: url("./pegi/pegi1.webp");
 }
