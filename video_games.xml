@@ -59,7 +59,7 @@
                     <relatedPlatform id="p2"/>
                 </relatedPlatforms>
                 <publisher>Sony Computer Entertainment</publisher>
-				<rating soruce="Gry-Online" max="10">9.1</rating>
+				<rating source="Gry-Online" max="10">9.1</rating>
 				<PEGI label="18"> 
                     <relatedPegi id="d1"/>
 				</PEGI>
@@ -82,7 +82,7 @@
                     <relatedPlatform id="p5"/>
                 </relatedPlatforms>
                 <publisher>Warner Bros. Interactive Entertainment</publisher>
-				<rating soruce="Gry-Online" max="10">7.6</rating>
+				<rating source="Gry-Online" max="10">7.6</rating>
 				<PEGI label="18"> 
                     <relatedPegi id="d1"/>
                     <relatedPegi id="d2"/>
@@ -106,7 +106,7 @@
                     <relatedPlatform id="p7"/> 
                 </relatedPlatforms>
                 <publisher>Mojang</publisher>
-				<rating soruce="Metacritics" max="10">7.6</rating>
+				<rating source="Metacritics" max="10">7.6</rating>
 				<PEGI label="7"> 
                     <relatedPegi id="d3"/>
                     <relatedPegi id="d1"/>
@@ -131,7 +131,7 @@
                     <relatedPlatform id="p7"/>
                 </relatedPlatforms>
                 <publisher>Valve Corporation</publisher>
-				<rating soruce="Gry-Online" max="10">9.1</rating>
+				<rating source="Gry-Online" max="10">9.1</rating>
 				<PEGI label="brak"> 
 				</PEGI>
                 <coverArt src="id4.jpg"/>
@@ -151,7 +151,7 @@
                     <relatedPlatform id="p4"/>
                 </relatedPlatforms>
                 <publisher>Good Shepherd Entertainment / Gambitious</publisher>
-				<rating soruce="IGN Entertainmentr" max="10">6.8</rating>
+				<rating source="IGN Entertainmentr" max="10">6.8</rating>
 				<PEGI label="brak danych"/> 
                 <coverArt src="id5.jpg"/>
             </game>
@@ -175,7 +175,7 @@
                     <relatedPlatform id="p9"/>
                 </relatedPlatforms>
                 <publisher>id Software</publisher>
-				<rating soruce="Metacritics" max="10">8.4</rating>
+				<rating source="Metacritics" max="10">8.4</rating>
 				<PEGI label="18"> 
                     <relatedPegi id="d1"/>
                     <relatedPegi id="d2"/>
@@ -198,7 +198,7 @@
                     <relatedPlatform id="p5"/>
                 </relatedPlatforms>
                 <publisher>Xbox Game Studios / Microsoft Studios</publisher>
-				<rating soruce="Gry-Online" max="10">8.5</rating>
+				<rating source="Gry-Online" max="10">8.5</rating>
 				<PEGI label="3"/> 
                 <coverArt src="id7.jpg"/>
             </game>
@@ -218,7 +218,7 @@
                     <relatedPlatform id="p2"/>
                 </relatedPlatforms>
                 <publisher>Endnight Games</publisher>
-				<rating soruce="Metacritics" max="10">7.3</rating>
+				<rating source="Metacritics" max="10">7.3</rating>
 				<PEGI label="18"> 
                     <relatedPegi id="d1"/>
 				</PEGI>
@@ -238,7 +238,7 @@
                     <relatedPlatform id="p4"/>
                 </relatedPlatforms>
                 <publisher>Freejam</publisher>
-				<rating soruce="Steam" max="10">7.0</rating>
+				<rating source="Steam" max="10">7.0</rating>
 				<PEGI label="brak"/> 
                 <coverArt src="id9.jpg"/>
             </game>
@@ -259,7 +259,7 @@
                     <relatedPlatform id="p11"/> 
                 </relatedPlatforms>
                 <publisher>Sierra</publisher>
-				<rating soruce="Steam" max="10">10.0</rating>
+				<rating source="Steam" max="10">10.0</rating>
 				<PEGI label="16"> 
                     <relatedPegi id="d1"/>
 				</PEGI>
@@ -282,7 +282,7 @@
                     <relatedPlatform id="p8"/> 
                 </relatedPlatforms>
                 <publisher> Electronic Arts Inc. </publisher>
-				<rating soruce="Metacritics" max="10">6.6</rating>
+				<rating source="Metacritics" max="10">6.6</rating>
 				<PEGI label="16"> 
                     <relatedPegi id="d1"/>
                     <relatedPegi id="d2"/>
@@ -307,7 +307,7 @@
                     <relatedPlatform id="p5"/>
                 </relatedPlatforms>
                 <publisher>Ubisoft</publisher>
-				<rating soruce="Gry-Online" max="10">8.8</rating>
+				<rating source="Gry-Online" max="10">8.8</rating>
 				<PEGI label="18"> 
                     <relatedPegi id="d1"/>
                     <relatedPegi id="d2"/>
@@ -333,7 +333,7 @@
                     <relatedPlatform id="p5"/>
                 </relatedPlatforms>
                 <publisher>Ubisoft</publisher>
-				<rating soruce="Gry-Online" max="10">7.2</rating>
+				<rating source="Gry-Online" max="10">7.2</rating>
 				<PEGI label="18">
                     <relatedPegi id="d1"/>
                     <relatedPegi id="d2"/>
@@ -358,7 +358,7 @@
                     <relatedPlatform id="p8"/>
                 </relatedPlatforms>
                 <publisher>Bethesda Softworks</publisher>
-				<rating soruce="Steam" max="10">9.0</rating>
+				<rating source="Steam" max="10">9.0</rating>
 				<PEGI label="18"> 
                     <relatedPegi id="d1"/>
 				</PEGI>
@@ -381,7 +381,7 @@
                     <relatedPlatform id="p5"/>
                 </relatedPlatforms>
                 <publisher>CD Projekt RED</publisher>
-				<rating soruce="Gry-Online" max="10">9.2</rating>
+				<rating source="Gry-Online" max="10">9.2</rating>
 				<PEGI label="18">
                     <relatedPegi id="d1"/>
                     <relatedPegi id="d2"/>
@@ -407,7 +407,7 @@
                     <relatedPlatform id="p10"/>
                 </relatedPlatforms>
                 <publisher>Rockstar Games</publisher>
-				<rating soruce="Common Sense Media" max="5">4</rating>
+				<rating source="Common Sense Media" max="5">4</rating>
 				<PEGI label="18"> 
                     <relatedPegi id="d1"/>
                     <relatedPegi id="d2"/>
@@ -430,7 +430,7 @@
                     <relatedPlatform id="p2"/>
                 </relatedPlatforms>
                 <publisher>Sony Interactive Entertainment</publisher>
-				<rating soruce="Metacritics" max="10">9.1</rating>
+				<rating source="Metacritics" max="10">9.1</rating>
 				<PEGI label="18"> 
                     <relatedPegi id="d1"/>
                     <relatedPegi id="d2"/>
@@ -455,7 +455,7 @@
                     <relatedPlatform id="p5"/>
                 </relatedPlatforms>
                 <publisher>Electronic Arts Inc.</publisher>
-				<rating soruce="Metacritics" max="10">3.7</rating>
+				<rating source="Metacritics" max="10">3.7</rating>
 				<PEGI label="12"> 
                     <relatedPegi id="d2"/>
                     <relatedPegi id="d5"/>
@@ -479,7 +479,7 @@
                     <relatedPlatform id="p5"/>
                 </relatedPlatforms>
                 <publisher>Square-Enix</publisher>
-				<rating soruce="Gry-Online" max="10">9.1</rating>
+				<rating source="Gry-Online" max="10">9.1</rating>
 				<PEGI label="18"> 
                     <relatedPegi id="d1"/>
                     <relatedPegi id="d2"/>
@@ -503,7 +503,7 @@
                     <relatedPlatform id="p5"/>
                 </relatedPlatforms>
                 <publisher>Electronic Arts Inc.</publisher>
-				<rating soruce="Metacritics" max="10">7.4</rating>
+				<rating source="Metacritics" max="10">7.4</rating>
 				<PEGI label="18">
                     <relatedPegi id="d1"/>
                     <relatedPegi id="d2"/>

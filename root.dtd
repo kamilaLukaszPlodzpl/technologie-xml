@@ -2,45 +2,51 @@
 
 <!ELEMENT description (#PCDATA)>
 
-<!ELEMENT data (platforms,genres,pegiDescriptors,games)><!-- CHECK IT -->
-    <!ATTLIST data dataSource CDATA #REQUIRED><!-- CHECK IT -->
+<!ELEMENT data (platforms,genres,pegiDescriptors,games)>
+    <!ATTLIST data dataSource CDATA #REQUIRED>
+
     <!ELEMENT platforms (platform+)>
         <!ELEMENT platform (#PCDATA)><!-- string  -->
             <!ATTLIST platform id ID #REQUIRED>
     <!ELEMENT genres (genre+)>
         <!ELEMENT genre (#PCDATA)><!-- string -->
             <!ATTLIST genre id ID #REQUIRED>
-    <!ELEMENT pegiDescriptors (pegiDescriptor)><!-- CHECK IT -->
-        <!ELEMENT pegiDescriptor (#PCDATA)><!-- CHECK IT -->
-            <!ATTLIST pegiDescriptor id ID #REQUIRED><!-- CHECK IT -->
+    <!ELEMENT pegiDescriptors (pegiDescriptor+)><!-- string -->
+        <!ELEMENT pegiDescriptor (#PCDATA)>
+            <!ATTLIST pegiDescriptor id ID #REQUIRED>
+
     <!ELEMENT games (game+)>
         <!ELEMENT game (
             title,price?,relatedGenre,
             releaseDate,developer,
             relatedPlatforms,publisher,rating,
             PEGI,coverArt
-            )><!-- CHECK IT -->
+            )>
             <!ATTLIST game id ID #REQUIRED>
             <!ELEMENT title (#PCDATA)><!-- string -->
+                <!ATTLIST title language CDATA #IMPLIED>
             <!ELEMENT price (#PCDATA)><!-- float -->
-                <!ATTLIST price currency CDATA #REQUIRED><!-- CHECK IT -->
+                <!ATTLIST price currency CDATA #REQUIRED>
             <!ELEMENT relatedGenre EMPTY>
                 <!ATTLIST relatedGenre id IDREF #REQUIRED>
             <!ELEMENT releaseDate (day,month,year)>
                 <!ELEMENT day (#PCDATA)><!-- integer -->
-                <!ELEMENT month (#PCDATA)><!-- integer -->
+                <!ELEMENT month (#PCDATA)><!-- string -->
                 <!ELEMENT year (#PCDATA)><!-- integer -->
             <!ELEMENT developer (#PCDATA)><!-- string -->
             <!ELEMENT relatedPlatforms (relatedPlatform+)>
                 <!ELEMENT relatedPlatform EMPTY>
-                <!ATTLIST relatedPlatform id IDREF #REQUIRED>
+                    <!ATTLIST relatedPlatform id IDREF #REQUIRED>
             <!ELEMENT publisher (#PCDATA)><!-- string -->
-            <!ELEMENT rating (#PCDATA)><!-- CHECK IT -->
-                <!ATTLIST rating source CDATA #REQUIRED><!-- CHECK IT -->
-            <!ELEMENT PEGI (#PCDATA)><!-- CHECK IT -->
-                <!ATTLIST PEGI label CDATA #REQUIRED><!-- CHECK IT -->
+            <!ELEMENT rating (#PCDATA)><!-- float -->
+                <!ATTLIST rating source CDATA #REQUIRED>
+                <!ATTLIST rating max CDATA #REQUIRED>
+            <!ELEMENT PEGI (relatedPegi*)>
+                <!ATTLIST PEGI label CDATA #IMPLIED>
+                <!ELEMENT relatedPegi EMPTY>
+                    <!ATTLIST relatedPegi id IDREF #REQUIRED>
             <!ELEMENT coverArt EMPTY>
-                <!ATTLIST coverArt src CDATA #REQUIRED>
+                <!ATTLIST coverArt src CDATA #REQUIRED><!--url-->
                 
 <!ELEMENT authors (person+)>
     <!ELEMENT person (name,surname,index)>
