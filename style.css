@@ -76,6 +76,7 @@ game:first-child{
 
 title, price, relatedGenre, releaseDate, developer, publisher, relatedPlatforms, rating, PEGI {
     box-sizing: border-box;
+    padding: 0 0 0 10px;
 }
 
 game > title {
@@ -103,7 +104,7 @@ game > rating {
     grid-area: 11 / 2 / span 1 / span 1;
 }
 game > PEGI {
-    grid-area: 12 / 2 / span 3 / span 1;
+    grid-area: 12 / 2 / span 2 / span 1;
 }
 game > coverArt{
     grid-area: 1 / 1 / span 14 / span 1;
@@ -128,7 +129,7 @@ game > price ~ rating {
     grid-area: 12 / 2 / span 1 / span 1;
 }
 game > price ~ PEGI {
-    grid-area: 13 / 2 / span 3 / span 1;
+    grid-area: 13 / 2 / span 2 / span 1;
 }
 game > price ~ coverArt{
     grid-area: 1 / 1 / span 15 / span 1;
@@ -243,17 +244,21 @@ relatedPlatform[id="p11"]:after{
 rating:before{
     content: "Ocena:  "
 }
+rating:after{
+    content: "/" attr(max) " według " attr(source);
+}
 
 PEGI:before{
     display: block;
-    content: "Ograniczenia wiekowe: " attr(label);
+    content: "Ograniczenia wiekowe PEGI: " attr(label);
     padding: 0 0 5px 0;
 }
 relatedPegi{
     display: inline-block;
     box-sizing: border-box;
-    height: 50px;
-    width: 50px;
+    border: 1px solid black;
+    height: 40px;
+    width: 40px;
     background-repeat: no-repeat;
     background-position: center center;
     background-size: contain;  

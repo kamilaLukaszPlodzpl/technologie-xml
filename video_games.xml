@@ -132,7 +132,7 @@
                 </relatedPlatforms>
                 <publisher>Valve Corporation</publisher>
 				<rating source="Gry-Online" max="10">9.1</rating>
-				<PEGI label="brak"> 
+				<PEGI label="odpowiednia dla każdego wieku"> 
 				</PEGI>
                 <coverArt src="id4.jpg"/>
             </game>
@@ -151,7 +151,7 @@
                     <relatedPlatform id="p4"/>
                 </relatedPlatforms>
                 <publisher>Good Shepherd Entertainment / Gambitious</publisher>
-				<rating source="IGN Entertainmentr" max="10">6.8</rating>
+				<rating source="IGN Entertainment" max="10">6.8</rating>
 				<PEGI label="brak danych"/> 
                 <coverArt src="id5.jpg"/>
             </game>
@@ -239,7 +239,7 @@
                 </relatedPlatforms>
                 <publisher>Freejam</publisher>
 				<rating source="Steam" max="10">7.0</rating>
-				<PEGI label="brak"/> 
+				<PEGI label="odpowiednia dla każdego wieku"/> 
                 <coverArt src="id9.jpg"/>
             </game>
 
