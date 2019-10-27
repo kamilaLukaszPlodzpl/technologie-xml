@@ -43,7 +43,6 @@
 		</pegiDescriptors>
 		
         <games>
-
             <game id="game1">
                 <title language="angielski">God of War III</title>
                 <price currency="zł">239.90</price>
