@@ -1,52 +1,30 @@
 <?xml version="1.0"?>
 
 
-<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+		   targetNamespace="http://www.videogames.org/xsdefinition"
+		   xmlns:struct="http://www.videogames.org/xsdefinition"
+		   xmlns:custom="http://www.videogames.org/xsdtypes">
+
+	<xs:import schemaLocation="types.xsd" namespace="http://www.videogames.org/xsdtypes"/>
+
 	<xs:element name="root">
 		<xs:complexType>
 			<xs:sequence>
-				<xs:element name="description"/>
-				<xs:element name="data" type="content"/>
+				<xs:element name="description" type="xs:string"/>
+				<xs:element name="data">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="platforms"/>
+							<xs:element name="genres"/>
+							<xs:element name="pegiDescriptors"/>
+							<xs:element name="games"/>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
 				<xs:element name="authors"/>
 			</xs:sequence>
-		</xs:complexType>
+		</xs:complexType >
 	</xs:element>
-	
-	<xs:complexType name="content">
-		<xs:sequence>
-			<xs:element name="platforms"/>
-			<xs:element name="genres"/>
-			<xs:element name="pegiDescriptors"/>
-			<xs:element name="games"/>
-		</xs:sequence>
-	</xs:complexType>
-
-	<xs:complexType name="gameInfo">
-		<xs:sequence>
-			<xs:element name="title"/>
-			<xs:element name="price"/>
-			<xs:element name="relatedGenre"/>
-			<xs:element name="releaseDate"/>
-			<xs:element name="developer"/>
-			<xs:element name="relatedPlatforms"/>
-			<xs:element name="publisher"/>
-			<xs:element name="rating"/>
-			<xs:element name="PEGI"/>
-			<xs:element name="coverArt"/>
-		</xs:sequence>
-	</xs:complexType>
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 </xs:schema>

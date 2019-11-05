@@ -1,0 +1,36 @@
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+		   xmlns:custom="http://www.videogames.org/xsdtypes"
+		   targetNamespace="http://www.videogames.org/xsdtypes">
+
+	<xs:complexType name="date">
+		<xs:sequence>
+			<xs:element name="day"/>
+			<xs:element name="month"/>
+			<xs:element name="year"/>
+		</xs:sequence>
+	</xs:complexType>
+
+	<xs:complexType name="gameInfo">
+		<xs:sequence>
+			<xs:element name="title"/>
+			<xs:element name="price"/>
+			<xs:element name="relatedGenre"/>
+			<xs:element name="releaseDate"/>
+			<xs:element name="developer"/>
+			<xs:element name="relatedPlatforms"/>
+			<xs:element name="publisher"/>
+			<xs:element name="rating"/>
+			<xs:element name="PEGI"/>
+			<xs:element name="coverArt"/>
+		</xs:sequence>
+	</xs:complexType>
+
+	<xs:complexType name="personInfo">
+		<xs:sequence>
+			<xs:element name="name"/>
+			<xs:element name="surname"/>
+			<xs:element name="index"/>
+		</xs:sequence>
+	</xs:complexType>
+
+</xs:schema>
