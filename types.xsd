@@ -2,11 +2,50 @@
 		   xmlns:types="types"
 		   targetNamespace="types">
 
-	<xs:complexType name="date">
+<!-- Deklaracje typów prostych -->
+
+	<xs:simpleType name="Day">
+		<xs:restriction base="xs:positiveInteger">
+			<xs:pattern value="[0-31]"/>
+		</xs:restriction>
+	</xs:simpleType>
+
+	<xs:simpleType name="Month">
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="Styczeń"/>
+			<xs:enumeration value="Luty"/>
+			<xs:enumeration value="Marzec"/>
+			<xs:enumeration value="Kwiecień"/>
+			<xs:enumeration value="Maj"/>
+			<xs:enumeration value="Czerwiec"/>
+			<xs:enumeration value="Lipiec"/>
+			<xs:enumeration value="Sierpień"/>
+			<xs:enumeration value="Wrzesień"/>
+			<xs:enumeration value="Październik"/>
+			<xs:enumeration value="Listopad"/>
+			<xs:enumeration value="Grudzień"/>
+
+			<xs:whiteSpace value="collapse"/>
+		</xs:restriction>
+	</xs:simpleType>
+
+	<xs:simpleType name="Year">
+		<xs:restriction base="xs:positiveInteger">
+			<xs:minInclusive value="1900"/>
+			<xs:maxInclusive value="2020"/>
+			<xs:totalDigits value="4"/>
+		</xs:restriction>
+	</xs:simpleType>
+
+	
+
+<!--Deklaracje typów złożonych -->
+
+	<xs:complexType name="Date">
 		<xs:sequence>
-			<xs:element name="day"/>
-			<xs:element name="month"/>
-			<xs:element name="year"/>
+			<xs:element name="day" type="types:Day"/>
+			<xs:element name="month" type="types:Month"/>
+			<xs:element name="year" type="types:Year"/>
 		</xs:sequence>
 	</xs:complexType>
 
