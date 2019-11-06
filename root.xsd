@@ -9,26 +9,71 @@
 	<xs:include schemaLocation="types.xsd"/>
 
 	<xs:element name="root">
+		<xs:annotation>
+			<xs:documentation>
+				Główny element dokumentu xml
+			</xs:documentation>
+		</xs:annotation>
 		<xs:complexType>
 			<xs:sequence>
 				<xs:element name="description" type="xs:string"/>
 				<xs:element name="data">
 					<xs:complexType>
+						<xs:attribute name="dataSource" type="xs:anyURI"></xs:attribute>
 						<xs:sequence>
-							<xs:element name="platforms"/>
-							<xs:element name="genres"/>
-							<xs:element name="pegiDescriptors"/>
-							<xs:element name="games">
+							<xs:element name="platforms">
 								<xs:complexType>
 									<xs:sequence>
-										<xs:element name="game" type="types:game"/>
+										<xs:element name="platform" type="types:platform" minOccurs="0" maxOccurs="unbounded"/>
 									</xs:sequence>
+								</xs:complexType>
+							</xs:element>
+							<xs:element name="genres">
+								<xs:complexType>
+									<xs:sequence>
+										<xs:element name="genre" type="types:genre" minOccurs="0" maxOccurs="unbounded"/>
+									</xs:sequence>
+								</xs:complexType>
+							</xs:element>
+							<xs:element name="pegiDescriptors">
+								<xs:complexType>
+									<xs:sequence>
+										<xs:element name="pegiDescriptor" type="types:pegiDescriptor" minOccurs="0" maxOccurs="unbounded"/>
+									</xs:sequence>
+								</xs:complexType>
+							</xs:element>
+							<xs:element name="games">
+								<xs:complexType>
+										<xs:sequence>
+											<xs:element name="game" minOccurs="0" maxOccurs="unbounded">
+												<xs:complexType>
+													<xs:sequence>
+														<xs:element name="title" type="xs:string"/>
+														<xs:element name="price"/><!-- TODO: set type -->
+														<xs:element name="relatedGenre"/><!-- TODO: set type -->
+														<xs:element name="releaseDate" type="types:date"/>
+														<xs:element name="developer" type="xs:string"/>
+														<xs:element name="relatedPlatforms"/><!-- TODO: set type -->
+														<xs:element name="publisher" type="xs:string"/>
+														<xs:element name="rating"/><!-- TODO: set type -->
+														<xs:element name="PEGI"/><!-- TODO: set type -->
+														<xs:element name="coverArt"/><!-- TODO: set type -->
+													</xs:sequence>
+												</xs:complexType>
+											</xs:element>
+										</xs:sequence>
 								</xs:complexType>
 							</xs:element>
 						</xs:sequence>
 					</xs:complexType>
 				</xs:element>
-				<xs:element name="authors"/>
+				<xs:element name="authors">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="person" type="types:person" minOccurs="0" maxOccurs="unbounded"/>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
 			</xs:sequence>
 		</xs:complexType >
 	</xs:element>

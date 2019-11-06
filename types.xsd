@@ -10,22 +10,7 @@
 		</xs:sequence>
 	</xs:complexType>
 
-	<xs:complexType name="gameInfo">
-		<xs:sequence>
-			<xs:element name="title"/>
-			<xs:element name="price"/>
-			<xs:element name="relatedGenre"/>
-			<xs:element name="releaseDate"/>
-			<xs:element name="developer"/>
-			<xs:element name="relatedPlatforms"/>
-			<xs:element name="publisher"/>
-			<xs:element name="rating"/>
-			<xs:element name="PEGI"/>
-			<xs:element name="coverArt"/>
-		</xs:sequence>
-	</xs:complexType>
-
-	<xs:complexType name="personInfo">
+	<xs:complexType name="person">
 		<xs:sequence>
 			<xs:element name="name"/>
 			<xs:element name="surname"/>
