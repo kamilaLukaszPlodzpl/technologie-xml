@@ -2,11 +2,11 @@
 
 
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
-		   targetNamespace="http://www.videogames.org/xsdefinition"
-		   xmlns:struct="http://www.videogames.org/xsdefinition"
-		   xmlns:custom="http://www.videogames.org/xsdtypes">
+		   xmlns:types="types"
+		   targetNamespace="root"
+		   xmlns:root="root">
 
-	<xs:import schemaLocation="types.xsd" namespace="http://www.videogames.org/xsdtypes"/>
+	<xs:include schemaLocation="types.xsd"/>
 
 	<xs:element name="root">
 		<xs:complexType>
@@ -18,7 +18,13 @@
 							<xs:element name="platforms"/>
 							<xs:element name="genres"/>
 							<xs:element name="pegiDescriptors"/>
-							<xs:element name="games"/>
+							<xs:element name="games">
+								<xs:complexType>
+									<xs:sequence>
+										<xs:element name="game" type="types:game"/>
+									</xs:sequence>
+								</xs:complexType>
+							</xs:element>
 						</xs:sequence>
 					</xs:complexType>
 				</xs:element>

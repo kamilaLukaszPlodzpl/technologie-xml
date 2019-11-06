@@ -1,6 +1,6 @@
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
-		   xmlns:custom="http://www.videogames.org/xsdtypes"
-		   targetNamespace="http://www.videogames.org/xsdtypes">
+		   xmlns:types="types"
+		   targetNamespace="types">
 
 	<xs:complexType name="date">
 		<xs:sequence>

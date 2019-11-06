@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <?xml-stylesheet href="style.css" type="text/css;charset=UTF-8"?>
 <?xml-stylesheet href="style.css" type="text/css"?>
-<!DOCTYPE root SYSTEM "root.dtd">
-<root>
+<root:root xmlns:root="root.xsd" xmlns="http://java.sun.com/JSP/Page">
     <description>
         Spis gier
     </description>
@@ -524,4 +523,4 @@
             <index>224384</index>
         </person>
     </authors>
-</root>
+</root:root>
