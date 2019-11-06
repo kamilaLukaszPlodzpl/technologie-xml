@@ -49,7 +49,7 @@
 		</xs:sequence>
 	</xs:complexType>
 
-	<xs:complexType name="person">
+	<xs:complexType name="Person">
 		<xs:sequence>
 			<xs:element name="name"/>
 			<xs:element name="surname"/>

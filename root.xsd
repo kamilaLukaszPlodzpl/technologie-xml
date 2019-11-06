@@ -51,7 +51,7 @@
 														<xs:element name="title" type="xs:string"/>
 														<xs:element name="price"/><!-- TODO: set type -->
 														<xs:element name="relatedGenre"/><!-- TODO: set type -->
-														<xs:element name="releaseDate" type="types:date"/>
+														<xs:element name="releaseDate" type="types:Date"/>
 														<xs:element name="developer" type="xs:string"/>
 														<xs:element name="relatedPlatforms"/><!-- TODO: set type -->
 														<xs:element name="publisher" type="xs:string"/>
@@ -70,7 +70,7 @@
 				<xs:element name="authors">
 					<xs:complexType>
 						<xs:sequence>
-							<xs:element name="person" type="types:person" minOccurs="0" maxOccurs="unbounded"/>
+							<xs:element name="person" type="types:Person" minOccurs="0" maxOccurs="unbounded"/>
 						</xs:sequence>
 					</xs:complexType>
 				</xs:element>
