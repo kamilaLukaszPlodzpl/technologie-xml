@@ -17,10 +17,10 @@
 			<xs:enumeration value="Marzec"/>
 			<xs:enumeration value="Kwiecień"/>
 			<xs:enumeration value="Maj"/>
-			<xs:enumeration value="Czerwiec"/>
+			<xs:enumeration value="Czerwca"/>
 			<xs:enumeration value="Lipiec"/>
 			<xs:enumeration value="Sierpień"/>
-			<xs:enumeration value="Wrzesień"/>
+			<xs:enumeration value="Września"/>
 			<xs:enumeration value="Październik"/>
 			<xs:enumeration value="Listopad"/>
 			<xs:enumeration value="Grudzień"/>
@@ -37,7 +37,12 @@
 		</xs:restriction>
 	</xs:simpleType>
 
-	
+	<xs:simpleType name="Index">
+		<xs:restriction base="xs:positiveInteger">
+			<xs:totalDigits value="6"/>
+		</xs:restriction>
+	</xs:simpleType>
+
 
 <!--Deklaracje typów złożonych -->
 
@@ -51,10 +56,31 @@
 
 	<xs:complexType name="Person">
 		<xs:sequence>
-			<xs:element name="name"/>
-			<xs:element name="surname"/>
-			<xs:element name="index"/>
+			<xs:element name="name" type="xs:string" minOccurs="1"/>
+			<xs:element name="surname" type="xs:string" minOccurs="1"/>
+			<xs:element name="index" type="types:Index" minOccurs="1"/>
 		</xs:sequence>
+	</xs:complexType>
+
+	<xs:complexType name="Platform">
+		<xs:attribute name="id" type="xs:ID"/>
+		<xs:simpleContent>
+			<xs:restriction base="xs:string"/>
+		</xs:simpleContent>
+	</xs:complexType>
+
+	<xs:complexType name="Genre">
+		<xs:attribute name="id" type="xs:ID"/>
+		<xs:simpleContent>
+			<xs:restriction base="xs:string"/>
+		</xs:simpleContent>
+	</xs:complexType>
+
+	<xs:complexType name="PegiDescriptor">
+		<xs:attribute name="id" type="xs:ID"/>
+		<xs:simpleContent>
+			<xs:restriction base="xs:string"/>
+		</xs:simpleContent>
 	</xs:complexType>
 
 </xs:schema>
