@@ -63,6 +63,8 @@
 			<xs:element name="person" type="types:Person" minOccurs="0" maxOccurs="unbounded"/>
 		</xs:sequence>
 	</xs:complexType>
+
+</xs:schema>
 <!--
 	<xs:complexType>
 		<xs:complexContent>
@@ -117,4 +119,3 @@
 
 
 
-</xs:schema>
