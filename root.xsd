@@ -7,6 +7,7 @@
 		   xmlns:root="root">
 
 	<xs:include schemaLocation="types.xsd"/>
+	<!--definicja elementu root-->
 
 	<xs:element name="root">
 		<xs:annotation>
@@ -17,137 +18,103 @@
 		<xs:complexType>
 			<xs:sequence>
 				<xs:element name="description" type="xs:string"/>
-				<xs:element name="data">
-					<xs:complexType>
-						<xs:attribute name="dataSource" type="xs:anyURI"></xs:attribute>
-						<xs:sequence>
-							<xs:element name="platforms">
-								<xs:complexType>
-									<xs:sequence>
-										<xs:element name="platform" type="types:Platform" minOccurs="0" maxOccurs="unbounded">
-											<xs:key name="platformID">
-												<xs:selector xpath=""></xs:selector>
-												<xs:field xpath=""></xs:field>
-											</xs:key>
-
-										</xs:element>
-									</xs:sequence>
-								</xs:complexType>
-							</xs:element>
-							<xs:element name="genres">
-								<xs:complexType>
-									<xs:sequence>
-										<xs:element name="genre" type="types:Genre" minOccurs="0" maxOccurs="unbounded">
-											<xs:key name="genreID">
-												<xs:selector xpath=""></xs:selector>
-												<xs:field xpath=""></xs:field>
-											</xs:key>
-										</xs:element>
-
-									</xs:sequence>
-								</xs:complexType>
-							</xs:element>
-							<xs:element name="pegiDescriptors">
-								<xs:complexType>
-									<xs:sequence>
-										<xs:element name="pegiDescriptor" type="types:PegiDescriptor" minOccurs="0" maxOccurs="unbounded">
-											<xs:key name="pegiID">
-												<xs:selector xpath=""></xs:selector>
-												<xs:field xpath=""></xs:field>
-											</xs:key>
-										</xs:element>
-									</xs:sequence>
-								</xs:complexType>
-							</xs:element>
-							<xs:element name="games">
-								<xs:complexType>
-										<xs:sequence>
-											<xs:element name="game" minOccurs="0" maxOccurs="unbounded">
-												<xs:complexType>
-													<xs:attribute name="id" type="xs:token"/>
-													<xs:sequence>
-														<xs:element name="title">
-															<xs:complexType>
-																<xs:attribute name="language"/>
-															</xs:complexType>
-														</xs:element>
-														<xs:element name="price">
-															<xs:complexType>
-																<xs:attribute name="currency"/>
-															</xs:complexType>
-														</xs:element><!-- TODO: set type -->
-														<xs:element name="relatedGenre">
-															<xs:complexType>
-																<xs:attribute name="id"/>
-															</xs:complexType>
-															<xs:keyref name="refGenre" refer="genreID">
-																<xs:selector xpath=""></xs:selector>
-																<xs:field xpath=""></xs:field>
-															</xs:keyref>
-														</xs:element><!-- TODO: set type -->
-														<xs:element name="releaseDate" type="types:Date"/>
-														<xs:element name="developer" type="xs:string"/>
-														<xs:element name="relatedPlatforms">
-															<xs:complexType>
-																<xs:sequence>
-																	<xs:element name="relatedPlatform" minOccurs="1" maxOccurs="unbounded">
-																		<xs:complexType>
-																			<xs:attribute name="id"/>
-																		</xs:complexType>
-																		<xs:keyref name="refplatform" refer="platformID">
-																			<xs:selector xpath=""></xs:selector>
-																			<xs:field xpath=""></xs:field>
-																		</xs:keyref>
-																	</xs:element>
-																</xs:sequence>
-															</xs:complexType>
-														</xs:element><!-- TODO: set type -->
-														<xs:element name="publisher" type="xs:string"/>
-														<xs:element name="rating">
-															<xs:complexType>
-																<xs:attribute name="source"/>
-																<xs:attribute name="max"/>
-															</xs:complexType>
-														</xs:element><!-- TODO: set type -->
-														<xs:element name="PEGI">
-															<xs:complexType>
-																<xs:attribute name="label"/>
-																<xs:sequence>
-																	<xs:element name="relatedPegi">
-																		<xs:keyref name="pegiref" refer="pegiID">
-																			<xs:selector xpath=""></xs:selector>
-																			<xs:field xpath=""></xs:field>
-																		</xs:keyref>
-																		<xs:complexType>
-																			<xs:attribute name="id"/>
-																		</xs:complexType>
-																	</xs:element>
-																</xs:sequence>
-															</xs:complexType>
-														</xs:element><!-- TODO: set type -->
-														<xs:element name="coverArt">
-															<xs:complexType>
-																<xs:attribute name="src" type="xs:anyURI"/>
-															</xs:complexType>
-														</xs:element><!-- TODO: set type -->
-													</xs:sequence>
-												</xs:complexType>
-											</xs:element>
-										</xs:sequence>
-								</xs:complexType>
-							</xs:element>
-						</xs:sequence>
-					</xs:complexType>
-				</xs:element>
-				<xs:element name="authors">
-					<xs:complexType>
-						<xs:sequence>
-							<xs:element name="person" type="types:Person" minOccurs="0" maxOccurs="unbounded"/>
-						</xs:sequence>
-					</xs:complexType>
-				</xs:element>
+				<xs:element name="data" type="root:Data"/>
+				<xs:element name="authors" type="root:Authors"/>
 			</xs:sequence>
 		</xs:complexType >
 	</xs:element>
+
+	<!-- globalne deklaracje-->
+	<xs:complexType name="Data">
+		<xs:sequence>
+			<xs:element name="platforms">
+				<xs:complexType>
+					<xs:sequence>
+						<xs:element name="platform" type="types:Platform"/>
+					</xs:sequence>
+				</xs:complexType>
+			</xs:element>
+			<xs:element name="genres">
+				<xs:complexType>
+					<xs:sequence>
+						<xs:element name="genre" type="types:Genre"/>
+					</xs:sequence>
+				</xs:complexType>
+			</xs:element>
+			<xs:element name="pegiDescriptors">
+				<xs:complexType>
+					<xs:sequence>
+						<xs:element name="pegiDescriptor" type="types:PegiDescriptor"/>
+					</xs:sequence>
+				</xs:complexType>
+			</xs:element>
+			<xs:element name="games">
+				<xs:complexType>
+					<xs:sequence>
+						<xs:element name="game" type="types:Game"/>
+					</xs:sequence>
+				</xs:complexType>
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+
+	<xs:complexType name="Authors">
+		<xs:sequence>
+			<xs:element name="person" type="types:Person" minOccurs="0" maxOccurs="unbounded"/>
+		</xs:sequence>
+	</xs:complexType>
+<!--
+	<xs:complexType>
+		<xs:complexContent>
+			<xs:restriction base="xs:attribute">
+				<xs:attribute name="dataSource" type="xs:anyURI"/>
+			</xs:restriction>
+		</xs:complexContent>
+		<xs:sequence>
+			<xs:element name="platforms">
+				<xs:complexType>
+					<xs:sequence>
+						<xs:element name="platform" type="types:Platform" minOccurs="0" maxOccurs="unbounded">
+							<xs:key name="platformID">
+								<xs:selector xpath=""></xs:selector>
+								<xs:field xpath=""></xs:field>
+							</xs:key>
+						</xs:element>
+					</xs:sequence>
+				</xs:complexType>
+			</xs:element>
+			<xs:element name="genres">
+				<xs:complexType>
+					<xs:sequence>
+						<xs:element name="genre" type="types:Genre" minOccurs="0" maxOccurs="unbounded">
+							<xs:key name="genreID">
+								<xs:selector xpath=""></xs:selector>
+								<xs:field xpath=""></xs:field>
+							</xs:key>
+						</xs:element>
+
+					</xs:sequence>
+				</xs:complexType>
+			</xs:element>
+			<xs:element name="pegiDescriptors">
+				<xs:complexType>
+					<xs:sequence>
+						<xs:element name="pegiDescriptor" type="types:PegiDescriptor" minOccurs="0" maxOccurs="unbounded">
+							<xs:key name="pegiID">
+								<xs:selector xpath=""></xs:selector>
+								<xs:field xpath=""></xs:field>
+							</xs:key>
+						</xs:element>
+					</xs:sequence>
+				</xs:complexType>
+			</xs:element>
+			<xs:element name="games">
+				<xs:complexType>
+					<xs:sequence>
+						<xs:element name="game" minOccurs="0" maxOccurs="unbounded">
+
+</xs:element> -->
+
+
 
 </xs:schema>

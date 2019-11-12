@@ -56,17 +56,16 @@
 
 	<xs:complexType name="Person">
 		<xs:sequence>
-			<xs:element name="name" type="xs:string" minOccurs="1"/>
-			<xs:element name="surname" type="xs:string" minOccurs="1"/>
-			<xs:element name="index" type="types:Index" minOccurs="1"/>
+			<xs:element name="name" type="xs:string"/>
+			<xs:element name="surname" type="xs:string"/>
+			<xs:element name="index" type="types:Index"/>
 		</xs:sequence>
 	</xs:complexType>
 
 	<xs:complexType name="Platform">
-		<xs:attribute name="id" type="xs:ID"/>
-		<xs:simpleContent>
+		<xs:complexContent>
 			<xs:restriction base="xs:string"/>
-		</xs:simpleContent>
+		</xs:complexContent>
 	</xs:complexType>
 
 	<xs:complexType name="Genre">
@@ -82,5 +81,80 @@
 			<xs:restriction base="xs:string"/>
 		</xs:simpleContent>
 	</xs:complexType>
+
+	<xs:complexType name="Game">
+		<xs:complexContent>
+		<xs:attribute name="id" type="xs:token"/>
+		<xs:sequence>
+			<xs:element name="title">
+				<xs:complexType>
+					<xs:attribute name="language"/>
+				</xs:complexType>
+			</xs:element>
+			<xs:element name="price">
+				<xs:complexType>
+					<xs:attribute name="currency"/>
+				</xs:complexType>
+			</xs:element>
+			<xs:element name="relatedGenre">
+				<xs:complexType>
+					<xs:attribute name="id"/>
+				</xs:complexType>
+				<xs:keyref name="refGenre" refer="genreID">
+					<xs:selector xpath=""></xs:selector>
+					<xs:field xpath=""></xs:field>
+				</xs:keyref>
+			</xs:element>
+			<xs:element name="releaseDate" type="types:Date"/>
+			<xs:element name="developer" type="xs:string"/>
+			<xs:element name="relatedPlatforms">
+				<xs:complexType>
+					<xs:sequence>
+						<xs:element name="relatedPlatform" minOccurs="1" maxOccurs="unbounded">
+							<xs:complexType>
+								<xs:attribute name="id"/>
+							</xs:complexType>
+							<xs:keyref name="refplatform" refer="platformID">
+								<xs:selector xpath=""></xs:selector>
+								<xs:field xpath=""></xs:field>
+							</xs:keyref>
+						</xs:element>
+					</xs:sequence>
+				</xs:complexType>
+			</xs:element>
+			<xs:element name="publisher" type="xs:string"/>
+			<xs:element name="rating">
+				<xs:complexType>
+					<xs:attribute name="source"/>
+					<xs:attribute name="max"/>
+				</xs:complexType>
+			</xs:element>
+			<xs:element name="PEGI">
+				<xs:complexType>
+					<xs:attribute name="label"/>
+					<xs:sequence>
+						<xs:element name="relatedPegi">
+							<xs:keyref name="pegiref" refer="pegiID">
+								<xs:selector xpath=""></xs:selector>
+								<xs:field xpath=""></xs:field>
+							</xs:keyref>
+							<xs:complexType>
+								<xs:attribute name="id"/>
+							</xs:complexType>
+						</xs:element>
+					</xs:sequence>
+				</xs:complexType>
+			</xs:element>
+			<xs:element name="coverArt">
+				<xs:complexType>
+					<xs:attribute name="src" type="xs:anyURI"/>
+				</xs:complexType>
+			</xs:element>
+		</xs:sequence>
+		</xs:complexContent>
+	</xs:complexType>
+
+
+
 
 </xs:schema>
