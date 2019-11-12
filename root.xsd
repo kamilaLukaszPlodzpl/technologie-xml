@@ -1,68 +1,66 @@
 <?xml version="1.0"?>
 
-
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
 		   xmlns:types="types"
-		   targetNamespace="root"
-		   xmlns:root="root">
+		   xmlns:root="root"
+		   targetNamespace="root">
+<xs:include schemaLocation="types.xsd"/>
+<!--definicja elementu root-->
 
-	<xs:include schemaLocation="types.xsd"/>
-	<!--definicja elementu root-->
-
-	<xs:element name="root">
-		<xs:annotation>
-			<xs:documentation>
-				Główny element dokumentu xml
-			</xs:documentation>
-		</xs:annotation>
-		<xs:complexType>
-			<xs:sequence>
-				<xs:element name="description" type="xs:string"/>
-				<xs:element name="data" type="root:Data"/>
-				<xs:element name="authors" type="root:Authors"/>
-			</xs:sequence>
-		</xs:complexType >
-	</xs:element>
-
-	<!-- globalne deklaracje-->
-	<xs:complexType name="Data">
+<xs:element name="root">
+	<xs:annotation>
+		<xs:documentation>
+			Główny element dokumentu xml
+		</xs:documentation>
+	</xs:annotation>
+	<xs:complexType>
 		<xs:sequence>
-			<xs:element name="platforms">
-				<xs:complexType>
-					<xs:sequence>
-						<xs:element name="platform" type="types:Platform"/>
-					</xs:sequence>
-				</xs:complexType>
-			</xs:element>
-			<xs:element name="genres">
-				<xs:complexType>
-					<xs:sequence>
-						<xs:element name="genre" type="types:Genre"/>
-					</xs:sequence>
-				</xs:complexType>
-			</xs:element>
-			<xs:element name="pegiDescriptors">
-				<xs:complexType>
-					<xs:sequence>
-						<xs:element name="pegiDescriptor" type="types:PegiDescriptor"/>
-					</xs:sequence>
-				</xs:complexType>
-			</xs:element>
-			<xs:element name="games">
-				<xs:complexType>
-					<xs:sequence>
-						<xs:element name="game" type="types:Game"/>
-					</xs:sequence>
-				</xs:complexType>
-			</xs:element>
+			<xs:element name="description" type="xs:string" minOccurs="1" maxOccurs="1"/>
+			<xs:element name="data" type="root:Data"/>
+			<xs:element name="authors" type="root:Authors"/>
 		</xs:sequence>
-	</xs:complexType>
+	</xs:complexType >
+</xs:element>
 
-	<xs:complexType name="Authors">
-		<xs:sequence>
-			<xs:element name="person" type="types:Person" minOccurs="0" maxOccurs="unbounded"/>
-		</xs:sequence>
-	</xs:complexType>
+<xs:complexType name="Data">
+	<xs:sequence>
+		<xs:element name="platforms">
+			<xs:complexType>
+				<xs:sequence>
+					<xs:element name="platform" type="types:Platform" minOccurs="1" maxOccurs="unbounded"/>
+				</xs:sequence>
+			</xs:complexType>
+		</xs:element>
+		<xs:element name="genres">
+			<xs:complexType>
+				<xs:sequence>
+					<xs:element name="genre" type="types:Genre" minOccurs="1" maxOccurs="unbounded"/>
+				</xs:sequence>
+			</xs:complexType>
+		</xs:element>
+		<xs:element name="pegiDescriptors">
+			<xs:complexType>
+				<xs:sequence>
+					<xs:element name="pegiDescriptor" type="types:PegiDescriptor" minOccurs="1" maxOccurs="unbounded"/>
+				</xs:sequence>
+			</xs:complexType>
+		</xs:element>
+		<xs:element name="games">
+			<xs:complexType>
+				<xs:sequence>
+					<xs:element name="game" type="types:Game" minOccurs="1" maxOccurs="unbounded"/>
+				</xs:sequence>
+			</xs:complexType>
+		</xs:element>
+	</xs:sequence>
+	<xs:attribute name="dataSource" type="xs:anyURI"/>
+</xs:complexType>
+
+<xs:complexType name="Authors">
+	<xs:sequence>
+		<xs:element name="person" type="types:Person" minOccurs="1" maxOccurs="unbounded"/>
+	</xs:sequence>
+</xs:complexType>
 <!--
 	<xs:complexType>
 		<xs:complexContent>

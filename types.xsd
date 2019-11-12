@@ -1,3 +1,5 @@
+<?xml version="1.0"?>
+
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
 		   xmlns:types="types"
 		   targetNamespace="types">
@@ -6,7 +8,7 @@
 
 	<xs:simpleType name="Day">
 		<xs:restriction base="xs:positiveInteger">
-			<xs:pattern value="[0-31]"/>
+			<xs:pattern value="[1-31]"/>
 		</xs:restriction>
 	</xs:simpleType>
 
@@ -24,7 +26,6 @@
 			<xs:enumeration value="Październik"/>
 			<xs:enumeration value="Listopad"/>
 			<xs:enumeration value="Grudzień"/>
-
 			<xs:whiteSpace value="collapse"/>
 		</xs:restriction>
 	</xs:simpleType>
@@ -56,35 +57,37 @@
 
 	<xs:complexType name="Person">
 		<xs:sequence>
-			<xs:element name="name" type="xs:string"/>
-			<xs:element name="surname" type="xs:string"/>
-			<xs:element name="index" type="types:Index"/>
+			<xs:element name="name" type="xs:string"/><!-- TODO -->
+			<xs:element name="surname" type="xs:string"/><!-- TODO -->
+			<xs:element name="index" type="types:Index"/><!-- TODO -->
 		</xs:sequence>
 	</xs:complexType>
 
 	<xs:complexType name="Platform">
-		<xs:complexContent>
-			<xs:restriction base="xs:string"/>
-		</xs:complexContent>
+		<xs:simpleContent>
+			<xs:restriction base="xs:string">
+				<xs:attribute name="id" type="xs:ID"/><!-- TODO -->
+			</xs:restriction>
+		</xs:simpleContent>
 	</xs:complexType>
 
 	<xs:complexType name="Genre">
-		<xs:attribute name="id" type="xs:ID"/>
 		<xs:simpleContent>
-			<xs:restriction base="xs:string"/>
+			<xs:restriction base="xs:string">
+				<xs:attribute name="id" type="xs:ID"/><!-- TODO -->
+			</xs:restriction>
 		</xs:simpleContent>
 	</xs:complexType>
 
 	<xs:complexType name="PegiDescriptor">
-		<xs:attribute name="id" type="xs:ID"/>
 		<xs:simpleContent>
-			<xs:restriction base="xs:string"/>
+			<xs:restriction base="xs:string">
+				<xs:attribute name="id" type="xs:ID"/>
+			</xs:restriction>
 		</xs:simpleContent>
 	</xs:complexType>
 
 	<xs:complexType name="Game">
-		<xs:complexContent>
-		<xs:attribute name="id" type="xs:token"/>
 		<xs:sequence>
 			<xs:element name="title">
 				<xs:complexType>
@@ -100,10 +103,13 @@
 				<xs:complexType>
 					<xs:attribute name="id"/>
 				</xs:complexType>
+				<!-- TODO -->
+				<!--
 				<xs:keyref name="refGenre" refer="genreID">
 					<xs:selector xpath=""></xs:selector>
 					<xs:field xpath=""></xs:field>
 				</xs:keyref>
+				-->
 			</xs:element>
 			<xs:element name="releaseDate" type="types:Date"/>
 			<xs:element name="developer" type="xs:string"/>
@@ -114,10 +120,14 @@
 							<xs:complexType>
 								<xs:attribute name="id"/>
 							</xs:complexType>
+
+							<!-- TODO -->
+							<!--
 							<xs:keyref name="refplatform" refer="platformID">
 								<xs:selector xpath=""></xs:selector>
 								<xs:field xpath=""></xs:field>
 							</xs:keyref>
+							-->
 						</xs:element>
 					</xs:sequence>
 				</xs:complexType>
@@ -131,18 +141,21 @@
 			</xs:element>
 			<xs:element name="PEGI">
 				<xs:complexType>
-					<xs:attribute name="label"/>
 					<xs:sequence>
 						<xs:element name="relatedPegi">
+							<!-- TODO -->
+							<!--
 							<xs:keyref name="pegiref" refer="pegiID">
 								<xs:selector xpath=""></xs:selector>
 								<xs:field xpath=""></xs:field>
 							</xs:keyref>
+							-->
 							<xs:complexType>
 								<xs:attribute name="id"/>
 							</xs:complexType>
 						</xs:element>
 					</xs:sequence>
+					<xs:attribute name="label"/>
 				</xs:complexType>
 			</xs:element>
 			<xs:element name="coverArt">
@@ -151,7 +164,7 @@
 				</xs:complexType>
 			</xs:element>
 		</xs:sequence>
-		</xs:complexContent>
+		<xs:attribute name="id" type="xs:token"/>
 	</xs:complexType>
 
 

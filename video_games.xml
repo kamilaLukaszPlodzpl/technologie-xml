@@ -2,7 +2,7 @@
 <?xml-stylesheet href="style.css" type="text/css;charset=UTF-8"?>
 <?xml-stylesheet href="style.css" type="text/css"?>
 
-<root:root xmlns:root="root.xsd" xmlns="http://java.sun.com/JSP/Page">
+<root:root xmlns:root="root.xsd" xmlns="root">
     <description>
         Spis gier
     </description>
