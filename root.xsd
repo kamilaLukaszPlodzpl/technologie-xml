@@ -8,6 +8,17 @@
 <!--definicja elementu root-->
 
 <xs:element name="root">
+
+	<xs:key name="keyPlatform">
+		<xs:selector xpath="./root:data/root:platforms/root:platform"/>
+		<xs:field xpath="@id"/>
+	</xs:key>
+	
+	<xs:keyref name="keyRefPlatform" refer="muza:keyPlatform">
+		<xs:selector xpath="./root:data/root:games/root:game/root:relatedPlatforms/root:relatedPlatform"/>
+		<xs:field xpath="@id"/>
+	</xs:keyref>
+
 	<xs:annotation>
 		<xs:documentation>
 			Główny element dokumentu xml
