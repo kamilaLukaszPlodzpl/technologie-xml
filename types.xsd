@@ -1,10 +1,11 @@
 <?xml version="1.0"?>
 
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
-		   xmlns:types="types"
-		   targetNamespace="types"
-		   xmlns:enum="enum">
-	<xs:include schemaLocation="enumerations.xsd"/>
+		   xmlns:types="types.xsd"
+		   targetNamespace="types.xsd"
+		   xmlns:enum="enum.xsd">
+
+	<xs:import schemaLocation="enumerations.xsd" namespace="enum.xsd"/>
 
 <!-- Deklaracje typów prostych -->
 
@@ -50,11 +51,11 @@
 		<xs:sequence>
 			<xs:element name="platform">
 				<xs:complexType>
-					<xs:complexContent>
+					<xs:simpleContent>
 						<xs:extension base="enum:Platform">
 							<xs:attribute name="id" type="xs:ID"/>
 						</xs:extension>
-					</xs:complexContent>
+					</xs:simpleContent>
 				</xs:complexType>
 			</xs:element>
 		</xs:sequence>
@@ -64,11 +65,11 @@
 		<xs:sequence>
 			<xs:element name="genre">
 				<xs:complexType>
-					<xs:complexContent>
+					<xs:simpleContent>
 						<xs:extension base="enum:Genre">
 							<xs:attribute name="id" type="xs:ID"/>
 						</xs:extension>
-					</xs:complexContent>
+					</xs:simpleContent>
 				</xs:complexType>
 			</xs:element>
 		</xs:sequence>
@@ -78,11 +79,11 @@
 		<xs:sequence>
 			<xs:element name="pegiDescriptor">
 				<xs:complexType>
-					<xs:complexContent>
+					<xs:simpleContent>
 						<xs:extension base="enum:pegiDescriptor">
 							<xs:attribute name="id" type="xs:ID"/>
 						</xs:extension>
-					</xs:complexContent>
+					</xs:simpleContent>
 				</xs:complexType>
 			</xs:element>
 		</xs:sequence>
