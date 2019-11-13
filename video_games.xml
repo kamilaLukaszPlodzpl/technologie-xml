@@ -516,6 +516,9 @@
             </game>
         </games>
     </data>
+    <description>
+        Spis gier
+    </description>
     <authors>
         <person>
             <name>Kamila</name>
@@ -529,4 +532,4 @@
         </person>
     </authors>
 
-</root>
+</GameList>
