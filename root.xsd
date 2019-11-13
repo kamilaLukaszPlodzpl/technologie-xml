@@ -1,23 +1,25 @@
 <?xml version="1.0"?>
 
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
-		   xmlns:types="types"
-		   xmlns:root="root"
-		   targetNamespace="root">
-<xs:include schemaLocation="types.xsd"/>
+		   xmlns:types="types.xsd"
+		   xmlns:root="root.xsd"
+		   targetNamespace="root.xsd">
+
+	<xs:import schemaLocation="types.xsd" namespace="types.xsd"/>
+	<xs:import schemaLocation="enumerations.xsd" namespace="enum.xsd"/>
 
 <!--definicja elementu root-->
 
 <xs:element name="root">
 
-	<xs:annotation>
+	<!--<xs:annotation>
 		<xs:documentation>
 			Główny element dokumentu xml
 		</xs:documentation>
-	</xs:annotation>
+	</xs:annotation> -->
 	<xs:complexType>
 		<xs:sequence>
-			<xs:element name="description" type="xs:string"/>
+			<xs:element name="description" type="xs:string" fixed="Spis gier"/>
 			<xs:element name="data" type="root:Data"/>
 			<xs:element name="authors" type="root:Authors"/>
 		</xs:sequence>

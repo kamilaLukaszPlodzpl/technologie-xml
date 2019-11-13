@@ -1,6 +1,5 @@
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
-           xmlns:en="enum"
-           targetNamespace="enum">
+           targetNamespace="enum.xsd">
 
     <xs:simpleType name="Month">
         <xs:restriction base="xs:string">
