@@ -2,13 +2,13 @@
 <?xml-stylesheet href="style.css" type="text/css;charset=UTF-8"?>
 <?xml-stylesheet href="style.css" type="text/css"?>
 
-<root xmlns="root.xsd"
-      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-      xsi:schemaLocation="root.xsd root.xsd">
+<root
+    xmlns="video_games"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="video_games video_games.xsd"
+>
 
-    <description>
-        Spis gier
-    </description>
+    <description>Spis gier</description>
 
     <data dataSource="https://www.gry-online.pl/gry/">
         <platforms>

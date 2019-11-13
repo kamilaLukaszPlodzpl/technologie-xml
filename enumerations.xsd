@@ -1,41 +1,26 @@
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
-           targetNamespace="enum.xsd">
+           xmlns="enumerations"
+           targetNamespace="enumerations"
+>
 
-    <xs:simpleType name="Month">
+
+    <!-- Wyliczeniowe -->
+    <xs:simpleType name="PlatformEnumType">
         <xs:restriction base="xs:string">
-            <xs:enumeration value="Styczeń"/>
-            <xs:enumeration value="Luty"/>
-            <xs:enumeration value="Marzec"/>
-            <xs:enumeration value="Kwiecień"/>
-            <xs:enumeration value="Maj"/>
-            <xs:enumeration value="Czerwca"/>
-            <xs:enumeration value="Lipiec"/>
-            <xs:enumeration value="Sierpień"/>
-            <xs:enumeration value="Września"/>
-            <xs:enumeration value="Październik"/>
-            <xs:enumeration value="Listopad"/>
-            <xs:enumeration value="Grudzień"/>
-            <xs:whiteSpace value="collapse"/>
+            <xs:enumeration value="PlayStation 3"/>
+            <xs:enumeration value="PlayStation 4"/>
+            <xs:enumeration value="PlayStation 2"/>
+            <xs:enumeration value="Microsoft Windows" />
+            <xs:enumeration value="Xbox One" />
+            <xs:enumeration value="macOS" />
+            <xs:enumeration value="Linux" />
+            <xs:enumeration value="Xbox 360" />
+            <xs:enumeration value="Nintendo Switch" />
+            <xs:enumeration value="Xbox" />
+            <xs:enumeration value="Android" />
         </xs:restriction>
     </xs:simpleType>
-
-    <xs:simpleType name="Platform">
-            <xs:restriction base="xs:string">
-                <xs:enumeration value="PlayStation 3"/>
-                <xs:enumeration value="PlayStation 4"/>
-                <xs:enumeration value="PlayStation 2"/>
-                <xs:enumeration value="Microsoft Windows" />
-                <xs:enumeration value="Xbox One" />
-                <xs:enumeration value="macOS" />
-                <xs:enumeration value="Linux" />
-                <xs:enumeration value="Xbox 360" />
-                <xs:enumeration value="Nintendo Switch" />
-                <xs:enumeration value="Xbox" />
-                <xs:enumeration value="Android" />
-            </xs:restriction>
-    </xs:simpleType>
-
-    <xs:simpleType name="Genre">
+    <xs:simpleType name="GenreEnumType">
         <xs:restriction base="xs:string">
             <xs:enumeration value="hack and slash"/>
             <xs:enumeration value="skradanka"/>
@@ -50,8 +35,7 @@
             <xs:enumeration value="RPG" />
         </xs:restriction>
     </xs:simpleType>
-
-    <xs:simpleType name="pegiDescriptor">
+    <xs:simpleType name="PegiDescriptorEnumType">
         <xs:restriction base="xs:string">
             <xs:enumeration value="przemoc"/>
             <xs:enumeration value="wulgarny język"/>
@@ -59,6 +43,23 @@
             <xs:enumeration value="hazard" />
             <xs:enumeration value="seks" />
             <xs:enumeration value="online" />
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name="MonthEnumType">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="Styczeń"/>
+            <xs:enumeration value="Luty"/>
+            <xs:enumeration value="Marzec"/>
+            <xs:enumeration value="Kwiecień"/>
+            <xs:enumeration value="Maj"/>
+            <xs:enumeration value="Czerwca"/>
+            <xs:enumeration value="Lipiec"/>
+            <xs:enumeration value="Sierpień"/>
+            <xs:enumeration value="Września"/>
+            <xs:enumeration value="Październik"/>
+            <xs:enumeration value="Listopad"/>
+            <xs:enumeration value="Grudzień"/>
+            <xs:whiteSpace value="collapse"/>
         </xs:restriction>
     </xs:simpleType>
 

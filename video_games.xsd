@@ -1,0 +1,275 @@
+<?xml version="1.0"?>
+
+<xs:schema
+        xmlns:xs="http://www.w3.org/2001/XMLSchema"
+        xmlns="video_games"
+        xmlns:en="enumerations"
+        targetNamespace="video_games"
+>
+<xs:import schemaLocation="enumerations.xsd" namespace="enumerations"/>
+
+<!-- Deklaracje -->
+<!-- Głowne elementy -->
+<xs:element name="root" type="RootType">
+
+    <xs:key name="keyPlatform">
+        <xs:selector xpath=".//root/data/platforms/platform"/>
+        <xs:field xpath="@id"/>
+    </xs:key>
+    <xs:key name="keyGenre">
+        <xs:selector xpath=".//root/data/genres/genre"/>
+        <xs:field xpath="@id"/>
+    </xs:key>
+    <xs:key name="keyPegiDescriptors">
+        <xs:selector xpath=".//root/data/pegiDescriptors/pegiDescriptor"/>
+        <xs:field xpath="@id"/>
+    </xs:key>
+
+    <xs:keyref name="keyRefPlatform" refer="keyPlatform">
+        <xs:selector xpath=".//root/data/games/game/PEGI/relatedPegi"/>
+        <xs:field xpath="@id"/>
+    </xs:keyref>
+    <xs:keyref name="keyRefGenre" refer="keyGenre">
+        <xs:selector xpath=".//root/data/games/game/relatedGenre"/>
+        <xs:field xpath="@id"/>
+    </xs:keyref>
+    <xs:keyref name="keyRefPegiDescriptors" refer="keyPegiDescriptors">
+        <xs:selector xpath=".//root/data/games/game/relatedPlatforms/relatedPlatform"/>
+        <xs:field xpath="@id"/>
+    </xs:keyref>
+</xs:element>
+
+<xs:complexType name="RootType">
+    <xs:sequence>
+        <xs:element name="description" type="DescriptionType"/>
+        <xs:element name="data" type="DataType"/>
+        <xs:element name="authors" type="AuthorsType"/>
+    </xs:sequence>
+</xs:complexType>
+
+<xs:simpleType name="DescriptionType">
+    <xs:restriction base="xs:string"/><!-- TODO: Fix it -->
+</xs:simpleType>
+<xs:complexType name="DataType">
+    <xs:sequence>
+        <xs:element name="platforms" type="PlatformsType"/>
+        <xs:element name="genres" type="GenresType"/>
+        <xs:element name="pegiDescriptors" type="PegiDescriptorsType"/>
+        <xs:element name="games" type="GamesType"/>
+    </xs:sequence>
+    <xs:attribute name="dataSource" type="xs:anyURI"/>
+</xs:complexType>
+<xs:complexType name="AuthorsType">
+    <xs:sequence>
+        <xs:element name="person" type="PersonType" maxOccurs="unbounded"/>
+    </xs:sequence>
+</xs:complexType>
+<!-- Typy wewnątrz DataType -->
+<xs:complexType name="PlatformsType">
+    <xs:sequence>
+        <xs:element name="platform" type="PlatformType" maxOccurs="unbounded"/>
+    </xs:sequence>
+</xs:complexType>
+    <xs:complexType name="PlatformType">
+        <xs:simpleContent>
+            <xs:extension base="en:PlatformEnumType">
+                <xs:attribute name="id" type="IdType"/>
+            </xs:extension>
+        </xs:simpleContent>
+    </xs:complexType>
+
+<xs:complexType name="GenresType">
+    <xs:sequence>
+        <xs:element name="genre" type="GenreType" maxOccurs="unbounded"/>
+    </xs:sequence>
+</xs:complexType>
+    <xs:complexType name="GenreType">
+        <xs:simpleContent>
+            <xs:extension base="en:GenreEnumType">
+                <xs:attribute name="id" type="IdType"/>
+            </xs:extension>
+        </xs:simpleContent>
+    </xs:complexType>
+
+<xs:complexType name="PegiDescriptorsType">
+    <xs:sequence>
+        <xs:element name="pegiDescriptor" type="PegiDescriptorType" maxOccurs="unbounded"/>
+    </xs:sequence>
+</xs:complexType>
+    <xs:complexType name="PegiDescriptorType">
+        <xs:simpleContent>
+            <xs:extension base="en:PegiDescriptorEnumType">
+                <xs:attribute name="id" type="IdType"/>
+            </xs:extension>
+        </xs:simpleContent>
+    </xs:complexType>
+
+<xs:complexType name="GamesType">
+    <xs:sequence>
+        <xs:element name="game" type="GameType" maxOccurs="unbounded"/>
+    </xs:sequence>
+</xs:complexType>
+    <xs:complexType name="GameType">
+        <xs:sequence>
+            <xs:element name="title" type="TitleType"/>
+            <xs:element name="price" type="PriceType" minOccurs="0"/>
+            <xs:element name="relatedGenre" type="RelatedGenreType"/>
+            <xs:element name="releaseDate" type="DateType"/>
+            <xs:element name="developer" type="DeveloperType"/>
+            <xs:element name="relatedPlatforms" type="RelatedPlatformsType"/>
+            <xs:element name="publisher" type="PublisherType"/>
+            <xs:element name="rating" type="RatingType"/>
+            <xs:element name="PEGI" type="PegiType"/>
+            <xs:element name="coverArt" type="CoverArtType"/>
+        </xs:sequence>
+        <xs:attribute name="id" type="IdType"/>
+    </xs:complexType>
+<!-- Typy wewnątrz GameType -->
+
+<xs:complexType name="TitleType">
+    <xs:simpleContent>
+        <xs:extension base="TitleContentType">
+            <xs:attribute name="language" type="LanguageType"/>
+        </xs:extension>
+    </xs:simpleContent>
+</xs:complexType>
+    <xs:simpleType name="TitleContentType">
+        <xs:restriction base="xs:string">
+            <xs:whiteSpace value="collapse"/>
+            <xs:minLength value="1"/>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name="LanguageType">
+        <xs:restriction base="xs:string">
+            <xs:whiteSpace value="replace"/>
+            <xs:minLength value="1"/>
+            <xs:pattern value="([a-z])*"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+<xs:complexType name="PriceType">
+    <xs:simpleContent>
+        <xs:extension base="PriceContentType">
+            <xs:attribute name="currency" type="CurrencyType"/>
+        </xs:extension>
+    </xs:simpleContent>
+</xs:complexType>
+    <xs:simpleType name="PriceContentType">
+        <xs:restriction base="xs:decimal">
+            <xs:whiteSpace value="collapse"/>
+            <xs:fractionDigits value="2"/>
+            <xs:minInclusive value="0"/>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name="CurrencyType">
+        <xs:restriction base="xs:string">
+            <xs:whiteSpace value="replace"/>
+            <xs:minLength value="1"/>
+            <xs:pattern value="([a-z])*"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+<xs:complexType name="RelatedGenreType">
+    <xs:attribute name="id" type="IdType"/>
+</xs:complexType>
+
+<xs:simpleType name="DeveloperType">
+    <xs:restriction base="xs:string">
+        <xs:whiteSpace value="collapse"/>
+        <xs:minLength value="1"/>
+    </xs:restriction>
+</xs:simpleType>
+
+<xs:complexType name="RelatedPlatformsType">
+    <xs:sequence>
+        <xs:element name="relatedPlatform" type="RelatedPlatformType" maxOccurs="unbounded"/>
+    </xs:sequence>
+</xs:complexType>
+    <xs:complexType name="RelatedPlatformType">
+        <xs:attribute name="id" type="IdType"/>
+    </xs:complexType>
+    
+<xs:simpleType name="PublisherType">
+    <xs:restriction base="xs:string"/>
+</xs:simpleType>
+<xs:complexType name="RatingType">
+    <xs:simpleContent>
+        <xs:extension base="RatingContentType">
+            <xs:attribute name="source" type="xs:string"/>
+            <xs:attribute name="max" type="RatingMaxAttributeType"/>
+        </xs:extension>
+    </xs:simpleContent>
+</xs:complexType>
+    <xs:simpleType name="RatingContentType">
+        <xs:restriction base="xs:decimal">
+            <xs:minInclusive value="0"/>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name="RatingMaxAttributeType">
+        <xs:restriction base="xs:positiveInteger"/>
+    </xs:simpleType>
+    
+<xs:complexType name="PegiType">
+    <xs:sequence>
+        <xs:element name="relatedPegi" type="RelatedPegiType" minOccurs="0" maxOccurs="unbounded"/>
+    </xs:sequence>
+    <xs:attribute name="label" type="IdType"/>
+</xs:complexType>
+    <xs:complexType name="RelatedPegiType">
+        <xs:attribute name="id" type="IdType"/>
+    </xs:complexType>
+
+<xs:complexType name="CoverArtType">
+    <xs:attribute name="src" type="xs:anyURI"/>
+</xs:complexType>
+
+<!-- Typy wewnątrz AuthorsType -->
+<xs:complexType name="PersonType">
+    <xs:all>
+        <xs:element name="name" type="PersonNameType"/>
+        <xs:element name="surname" type="PersonSurnameType"/>
+        <xs:element name="index" type="StudentIndexType"/>
+    </xs:all>
+</xs:complexType>
+    <xs:simpleType name="PersonNameType">
+        <xs:restriction base="xs:string"/>
+    </xs:simpleType>
+    <xs:simpleType name="PersonSurnameType">
+        <xs:restriction base="xs:string"/>
+    </xs:simpleType>
+    <xs:simpleType name="StudentIndexType">
+        <xs:restriction base="xs:positiveInteger">
+            <xs:totalDigits value="6"/>
+            <xs:minInclusive value="100000"/>
+            <xs:maxInclusive value="999999"/>
+        </xs:restriction>
+    </xs:simpleType>
+<!-- Typy wspólne -->
+<xs:simpleType name="IdType">
+    <xs:restriction base="xs:ID">
+    </xs:restriction>
+</xs:simpleType>
+<xs:simpleType name="TextType">
+    <xs:restriction base="xs:string">
+        <xs:whiteSpace value="preserve"/>
+    </xs:restriction>
+</xs:simpleType>
+<xs:complexType name="DateType">
+    <xs:sequence>
+        <xs:element name="day" type="DayType"/>
+        <xs:element name="month" type="en:MonthEnumType"/>
+        <xs:element name="year" type="YearType"/>
+    </xs:sequence>
+</xs:complexType>
+    <xs:simpleType name="DayType">
+        <xs:restriction base="xs:positiveInteger">
+            <xs:maxInclusive value="31"/>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name="YearType">
+        <xs:restriction base="xs:positiveInteger">
+            <xs:totalDigits value="4"/>
+        </xs:restriction>
+    </xs:simpleType>
+<!-- Koniec deklaracji -->
+</xs:schema>
