@@ -1,21 +1,22 @@
 <?xml version="1.0"?>
 
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
-		   xmlns:types="types.xsd"
-		   targetNamespace="types.xsd"
-		   xmlns:enum="enum.xsd">
+		   xmlns:types="typesDef"
+		   targetNamespace="typesDef"
+		   xmlns:enum="enumerationType"
+		   elementFormDefault="qualified">
 
-	<xs:import schemaLocation="enumerations.xsd" namespace="enum.xsd"/>
+	<xs:import schemaLocation="enumerations.xsd" namespace="enumerationType"/>
 
 <!-- Deklaracje typów prostych -->
 
-	<xs:simpleType name="Day">
+	<xs:simpleType name="DayType">
 		<xs:restriction base="xs:positiveInteger">
 			<xs:pattern value="[1-31]"/>
 		</xs:restriction>
 	</xs:simpleType>
 
-	<xs:simpleType name="Year">
+	<xs:simpleType name="YearType">
 		<xs:restriction base="xs:positiveInteger">
 			<xs:minInclusive value="1900"/>
 			<xs:maxInclusive value="2020"/>
@@ -23,27 +24,27 @@
 		</xs:restriction>
 	</xs:simpleType>
 
-	<xs:simpleType name="Index">
+	<xs:simpleType name="IndexType">
 		<xs:restriction base="xs:positiveInteger">
 			<xs:totalDigits value="6"/>
 			<xs:pattern value="224/d{3}"/>
 		</xs:restriction>
 	</xs:simpleType>
 
-	<xs:simpleType name="Text">
+	<xs:simpleType name="TextType">
 		<xs:restriction base="xs:string">
 			<xs:whiteSpace value="preserve"/>
 			<xs:pattern value="[A-Z].+"/>
 		</xs:restriction>
 	</xs:simpleType>
 
-	<xs:simpleType name="Jpg">
+	<xs:simpleType name="JpgType">
 		<xs:restriction base="xs:anyURI">
 			<xs:pattern value="id/djpg"/>
 		</xs:restriction>
 	</xs:simpleType>
 
-	<xs:simpleType name="Label">
+	<xs:simpleType name="LabelType">
 		<xs:restriction base="xs:string">
 			<xs:pattern value="18|16|12|7|3|odpowiednia dla każdego wieku|brak danych"/>
 		</xs:restriction>
@@ -51,28 +52,28 @@
 
 <!--Deklaracje typów złożonych -->
 
-	<xs:complexType name="Date">
+	<xs:complexType name="DateType">
 		<xs:sequence>
-			<xs:element name="day" type="types:Day"/>
-			<xs:element name="month" type="enum:Month"/>
-			<xs:element name="year" type="types:Year"/>
+			<xs:element name="day" type="types:DayType"/>
+			<xs:element name="month" type="enum:MonthList"/>
+			<xs:element name="year" type="types:YearType"/>
 		</xs:sequence>
 	</xs:complexType>
 
-	<xs:complexType name="Person">
+	<xs:complexType name="PersonType">
 		<xs:sequence>
-			<xs:element name="name" type="types:Text"/>
-			<xs:element name="surname" type="types:Text"/>
-			<xs:element name="index" type="types:Index"/>
+			<xs:element name="name" type="types:TextType"/>
+			<xs:element name="surname" type="types:TextType"/>
+			<xs:element name="index" type="types:IndexType"/>
 		</xs:sequence>
 	</xs:complexType>
 
-	<xs:complexType name="Platforms">
+	<xs:complexType name="PlatformsType">
 		<xs:sequence>
 			<xs:element name="platform">
 				<xs:complexType>
 					<xs:simpleContent>
-						<xs:extension base="enum:Platform">
+						<xs:extension base="enum:PlatformList">
 							<xs:attribute name="id" type="xs:ID"/>
 						</xs:extension>
 					</xs:simpleContent>
@@ -81,12 +82,12 @@
 		</xs:sequence>
 	</xs:complexType>
 
-	<xs:complexType name="Genres">
+	<xs:complexType name="GenresType">
 		<xs:sequence>
 			<xs:element name="genre">
 				<xs:complexType>
 					<xs:simpleContent>
-						<xs:extension base="enum:Genre">
+						<xs:extension base="enum:GenreList">
 							<xs:attribute name="id" type="xs:ID"/>
 						</xs:extension>
 					</xs:simpleContent>
@@ -95,12 +96,12 @@
 		</xs:sequence>
 	</xs:complexType>
 
-	<xs:complexType name="PegiDescriptors">
+	<xs:complexType name="PegiDescriptorsType">
 		<xs:sequence>
 			<xs:element name="pegiDescriptor">
 				<xs:complexType>
 					<xs:simpleContent>
-						<xs:extension base="enum:pegiDescriptor">
+						<xs:extension base="enum:pegiDescriptorList">
 							<xs:attribute name="id" type="xs:ID"/>
 						</xs:extension>
 					</xs:simpleContent>
@@ -109,12 +110,12 @@
 		</xs:sequence>
 	</xs:complexType>
 
-	<xs:complexType name="Game">
+	<xs:complexType name="GameType">
 		<xs:sequence>
 			<xs:element name="title">
 				<xs:complexType>
 					<xs:simpleContent>
-						<xs:extension base="types:Text">
+						<xs:extension base="types:TextType">
 							<xs:attribute name="language" type="xs:string"/>
 						</xs:extension>
 					</xs:simpleContent>
@@ -134,12 +135,12 @@
 					<xs:attribute name="id"/>
 				</xs:complexType>
 			</xs:element>
-			<xs:element name="releaseDate" type="types:Date"/>
-			<xs:element name="developer" type="types:Text"/>
+			<xs:element name="releaseDate" type="types:DateType"/>
+			<xs:element name="developer" type="types:TextType"/>
 			<xs:element name="relatedPlatforms">
 				<xs:complexType>
 					<xs:sequence>
-						<xs:element name="relatedPlatform" minOccurs="1" maxOccurs="unbounded">
+						<xs:element name="relatedPlatform">
 							<xs:complexType>
 								<xs:attribute name="id"/>
 							</xs:complexType>
@@ -147,7 +148,7 @@
 					</xs:sequence>
 				</xs:complexType>
 			</xs:element>
-			<xs:element name="publisher" type="types:Text"/>
+			<xs:element name="publisher" type="types:TextType"/>
 			<xs:element name="rating">
 				<xs:complexType>
 					<xs:simpleContent>
@@ -167,12 +168,12 @@
 							</xs:complexType>
 						</xs:element>
 					</xs:sequence>
-					<xs:attribute name="label" type="types:Label"/>
+					<xs:attribute name="label" type="types:LabelType"/>
 				</xs:complexType>
 			</xs:element>
 			<xs:element name="coverArt">
 				<xs:complexType>
-					<xs:attribute name="src" type="types:Jpg"/>
+					<xs:attribute name="src" type="types:JpgType"/>
 				</xs:complexType>
 			</xs:element>
 		</xs:sequence>

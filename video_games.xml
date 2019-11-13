@@ -2,13 +2,9 @@
 <?xml-stylesheet href="style.css" type="text/css;charset=UTF-8"?>
 <?xml-stylesheet href="style.css" type="text/css"?>
 
-<root xmlns="root.xsd"
+<GameList xmlns= "custom_namespace"
       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-      xsi:schemaLocation="root.xsd root.xsd">
-
-    <description>
-        Spis gier
-    </description>
+      xsi:schemaLocation="custom_namespace root.xsd" >
 
     <data dataSource="https://www.gry-online.pl/gry/">
         <platforms>
@@ -516,6 +512,9 @@
             </game>
         </games>
     </data>
+    <description>
+        Spis gier
+    </description>
     <authors>
         <person>
             <name>Kamila</name>
@@ -529,4 +528,4 @@
         </person>
     </authors>
 
-</root>
+</GameList>

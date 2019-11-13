@@ -1,7 +1,11 @@
-<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
-           targetNamespace="enum.xsd">
+<?xml version="1.0"?>
 
-    <xs:simpleType name="Month">
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+           targetNamespace="enumerationType"
+            xmlns:enum ="enumerationType"
+           elementFormDefault="qualified">
+
+    <xs:simpleType name="MonthList">
         <xs:restriction base="xs:string">
             <xs:enumeration value="Styczeń"/>
             <xs:enumeration value="Luty"/>
@@ -19,7 +23,7 @@
         </xs:restriction>
     </xs:simpleType>
 
-    <xs:simpleType name="Platform">
+    <xs:simpleType name="PlatformList">
             <xs:restriction base="xs:string">
                 <xs:enumeration value="PlayStation 3"/>
                 <xs:enumeration value="PlayStation 4"/>
@@ -35,7 +39,7 @@
             </xs:restriction>
     </xs:simpleType>
 
-    <xs:simpleType name="Genre">
+    <xs:simpleType name="GenreList">
         <xs:restriction base="xs:string">
             <xs:enumeration value="hack and slash"/>
             <xs:enumeration value="skradanka"/>
@@ -51,7 +55,7 @@
         </xs:restriction>
     </xs:simpleType>
 
-    <xs:simpleType name="pegiDescriptor">
+    <xs:simpleType name="pegiDescriptorList">
         <xs:restriction base="xs:string">
             <xs:enumeration value="przemoc"/>
             <xs:enumeration value="wulgarny język"/>
