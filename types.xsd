@@ -28,7 +28,6 @@
 		</xs:restriction>
 	</xs:simpleType>
 
-
 <!--Deklaracje typów złożonych -->
 
 	<xs:complexType name="Date">
@@ -47,28 +46,46 @@
 		</xs:sequence>
 	</xs:complexType>
 
-	<xs:complexType name="Platform">
-		<xs:simpleContent>
-			<xs:restriction base="xs:string">
-				<xs:attribute name="id" type="xs:ID"/><!-- TODO -->
-			</xs:restriction>
-		</xs:simpleContent>
+	<xs:complexType name="Platforms">
+		<xs:sequence>
+			<xs:element name="platform">
+				<xs:complexType>
+					<xs:complexContent>
+						<xs:extension base="enum:Platform">
+							<xs:attribute name="id" type="xs:ID"/>
+						</xs:extension>
+					</xs:complexContent>
+				</xs:complexType>
+			</xs:element>
+		</xs:sequence>
 	</xs:complexType>
 
-	<xs:complexType name="Genre">
-		<xs:simpleContent>
-			<xs:restriction base="xs:string">
-				<xs:attribute name="id" type="xs:ID"/><!-- TODO -->
-			</xs:restriction>
-		</xs:simpleContent>
+	<xs:complexType name="Genres">
+		<xs:sequence>
+			<xs:element name="genre">
+				<xs:complexType>
+					<xs:complexContent>
+						<xs:extension base="enum:Genre">
+							<xs:attribute name="id" type="xs:ID"/>
+						</xs:extension>
+					</xs:complexContent>
+				</xs:complexType>
+			</xs:element>
+		</xs:sequence>
 	</xs:complexType>
 
-	<xs:complexType name="PegiDescriptor">
-		<xs:simpleContent>
-			<xs:restriction base="xs:string">
-				<xs:attribute name="id" type="xs:ID"/>
-			</xs:restriction>
-		</xs:simpleContent>
+	<xs:complexType name="PegiDescriptors">
+		<xs:sequence>
+			<xs:element name="pegiDescriptor">
+				<xs:complexType>
+					<xs:complexContent>
+						<xs:extension base="enum:pegiDescriptor">
+							<xs:attribute name="id" type="xs:ID"/>
+						</xs:extension>
+					</xs:complexContent>
+				</xs:complexType>
+			</xs:element>
+		</xs:sequence>
 	</xs:complexType>
 
 	<xs:complexType name="Game">

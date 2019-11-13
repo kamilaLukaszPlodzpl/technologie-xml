@@ -52,7 +52,7 @@
         </xs:restriction>
     </xs:simpleType>
 
-    <xs:simpleType name="pegiDescriptors">
+    <xs:simpleType name="pegiDescriptor">
         <xs:restriction base="xs:string">
             <xs:enumeration value="przemoc"/>
             <xs:enumeration value="wulgarny język"/>
@@ -62,4 +62,5 @@
             <xs:enumeration value="online" />
         </xs:restriction>
     </xs:simpleType>
+
 </xs:schema>
