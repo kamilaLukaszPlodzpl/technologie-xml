@@ -9,8 +9,6 @@
 
 <xs:element name="root">
 
-<<<<<<< HEAD
-=======
 	<xs:key name="keyPlatform">
 		<xs:selector xpath="./root:data/root:platforms/root:platform"/>
 		<xs:field xpath="@id"/>
@@ -21,7 +19,6 @@
 		<xs:field xpath="@id"/>
 	</xs:keyref>
 
->>>>>>> 4cfec7afab8608473f15456626975e485c49ff0e
 	<xs:annotation>
 		<xs:documentation>
 			Główny element dokumentu xml
@@ -87,8 +84,4 @@
 		<xs:element name="person" type="types:Person" minOccurs="1" maxOccurs="unbounded"/>
 	</xs:sequence>
 </xs:complexType>
-</xs:schema>
-
-
-
 </xs:schema>
