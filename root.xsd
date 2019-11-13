@@ -17,7 +17,7 @@
 
 	<xs:complexType>
 		<xs:sequence>
-			<xs:element name="description" type="xs:string" minOccurs="1" maxOccurs="1"/>
+			<xs:element name="description" type="xs:string"/>
 			<xs:element name="data" type="root:Data"/>
 			<xs:element name="authors" type="root:Authors"/>
 		</xs:sequence>
@@ -40,28 +40,28 @@
 		<xs:element name="platforms">
 			<xs:complexType>
 				<xs:sequence>
-					<xs:element name="platform" type="types:Platform" minOccurs="1" maxOccurs="unbounded"/>
+					<xs:element name="platform" type="types:Platform" maxOccurs="unbounded"/>
 				</xs:sequence>
 			</xs:complexType>
 		</xs:element>
 		<xs:element name="genres">
 			<xs:complexType>
 				<xs:sequence>
-					<xs:element name="genre" type="types:Genre" minOccurs="1" maxOccurs="unbounded"/>
+					<xs:element name="genre" type="types:Genre" maxOccurs="unbounded"/>
 				</xs:sequence>
 			</xs:complexType>
 		</xs:element>
 		<xs:element name="pegiDescriptors">
 			<xs:complexType>
 				<xs:sequence>
-					<xs:element name="pegiDescriptor" type="types:PegiDescriptor" minOccurs="1" maxOccurs="unbounded"/>
+					<xs:element name="pegiDescriptor" type="types:PegiDescriptor" maxOccurs="unbounded"/>
 				</xs:sequence>
 			</xs:complexType>
 		</xs:element>
 		<xs:element name="games">
 			<xs:complexType>
 				<xs:sequence>
-					<xs:element name="game" type="types:Game" minOccurs="1" maxOccurs="unbounded"/>
+					<xs:element name="game" type="types:Game" maxOccurs="unbounded"/>
 				</xs:sequence>
 			</xs:complexType>
 		</xs:element>
@@ -71,7 +71,7 @@
 
 <xs:complexType name="Authors">
 	<xs:sequence>
-		<xs:element name="person" type="types:Person" minOccurs="1" maxOccurs="unbounded"/>
+		<xs:element name="person" type="types:Person" maxOccurs="unbounded"/>
 	</xs:sequence>
 </xs:complexType>
 </xs:schema>
