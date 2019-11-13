@@ -26,6 +26,26 @@
 	<xs:simpleType name="Index">
 		<xs:restriction base="xs:positiveInteger">
 			<xs:totalDigits value="6"/>
+			<xs:pattern value="224/d{3}"/>
+		</xs:restriction>
+	</xs:simpleType>
+
+	<xs:simpleType name="Text">
+		<xs:restriction base="xs:string">
+			<xs:whiteSpace value="preserve"/>
+			<xs:pattern value="[A-Z].+"/>
+		</xs:restriction>
+	</xs:simpleType>
+
+	<xs:simpleType name="Jpg">
+		<xs:restriction base="xs:anyURI">
+			<xs:pattern value="id/djpg"/>
+		</xs:restriction>
+	</xs:simpleType>
+
+	<xs:simpleType name="Label">
+		<xs:restriction base="xs:string">
+			<xs:pattern value="18|16|12|7|3|odpowiednia dla każdego wieku|brak danych"/>
 		</xs:restriction>
 	</xs:simpleType>
 
@@ -41,9 +61,9 @@
 
 	<xs:complexType name="Person">
 		<xs:sequence>
-			<xs:element name="name" type="xs:string"/><!-- TODO -->
-			<xs:element name="surname" type="xs:string"/><!-- TODO -->
-			<xs:element name="index" type="types:Index"/><!-- TODO -->
+			<xs:element name="name" type="types:Text"/>
+			<xs:element name="surname" type="types:Text"/>
+			<xs:element name="index" type="types:Index"/>
 		</xs:sequence>
 	</xs:complexType>
 
@@ -93,28 +113,29 @@
 		<xs:sequence>
 			<xs:element name="title">
 				<xs:complexType>
-					<xs:attribute name="language"/>
+					<xs:simpleContent>
+						<xs:extension base="types:Text">
+							<xs:attribute name="language" type="xs:string"/>
+						</xs:extension>
+					</xs:simpleContent>
 				</xs:complexType>
 			</xs:element>
 			<xs:element name="price">
 				<xs:complexType>
-					<xs:attribute name="currency"/>
+					<xs:simpleContent>
+						<xs:extension base="xs:decimal">
+							<xs:attribute name="currency" type="xs:token"/>
+						</xs:extension>
+					</xs:simpleContent>
 				</xs:complexType>
 			</xs:element>
 			<xs:element name="relatedGenre">
 				<xs:complexType>
 					<xs:attribute name="id"/>
 				</xs:complexType>
-				<!-- TODO -->
-				<!--
-				<xs:keyref name="refGenre" refer="genreID">
-					<xs:selector xpath=""></xs:selector>
-					<xs:field xpath=""></xs:field>
-				</xs:keyref>
-				-->
 			</xs:element>
 			<xs:element name="releaseDate" type="types:Date"/>
-			<xs:element name="developer" type="xs:string"/>
+			<xs:element name="developer" type="types:Text"/>
 			<xs:element name="relatedPlatforms">
 				<xs:complexType>
 					<xs:sequence>
@@ -122,54 +143,40 @@
 							<xs:complexType>
 								<xs:attribute name="id"/>
 							</xs:complexType>
-
-							<!-- TODO -->
-							<!--
-							<xs:keyref name="refplatform" refer="platformID">
-								<xs:selector xpath=""></xs:selector>
-								<xs:field xpath=""></xs:field>
-							</xs:keyref>
-							-->
 						</xs:element>
 					</xs:sequence>
 				</xs:complexType>
 			</xs:element>
-			<xs:element name="publisher" type="xs:string"/>
+			<xs:element name="publisher" type="types:Text"/>
 			<xs:element name="rating">
 				<xs:complexType>
-					<xs:attribute name="source"/>
-					<xs:attribute name="max"/>
+					<xs:simpleContent>
+						<xs:extension base="xs:decimal">
+							<xs:attribute name="source"/>
+							<xs:attribute name="max"/>
+						</xs:extension>
+					</xs:simpleContent>
 				</xs:complexType>
 			</xs:element>
 			<xs:element name="PEGI">
 				<xs:complexType>
 					<xs:sequence>
 						<xs:element name="relatedPegi">
-							<!-- TODO -->
-							<!--
-							<xs:keyref name="pegiref" refer="pegiID">
-								<xs:selector xpath=""></xs:selector>
-								<xs:field xpath=""></xs:field>
-							</xs:keyref>
-							-->
 							<xs:complexType>
 								<xs:attribute name="id"/>
 							</xs:complexType>
 						</xs:element>
 					</xs:sequence>
-					<xs:attribute name="label"/>
+					<xs:attribute name="label" type="types:Label"/>
 				</xs:complexType>
 			</xs:element>
 			<xs:element name="coverArt">
 				<xs:complexType>
-					<xs:attribute name="src" type="xs:anyURI"/>
+					<xs:attribute name="src" type="types:Jpg"/>
 				</xs:complexType>
 			</xs:element>
 		</xs:sequence>
 		<xs:attribute name="id" type="xs:token"/>
 	</xs:complexType>
-
-
-
 
 </xs:schema>
