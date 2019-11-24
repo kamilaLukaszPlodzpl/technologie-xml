@@ -45,10 +45,10 @@
     <!-- Lista gier, wybieramy dzieci elementu games -->
     <xsl:template match="//*[name()='games']/*">
         <xsl:element name="game">
-            <xsl:element name="language">
-                <xsl:value-of select="*[name()= 'title']/@language"/>
-            </xsl:element>
             <xsl:element name="title">
+                <xsl:attribute name="language">
+                    <xsl:value-of select="*[name()= 'title']/@language"/>
+                </xsl:attribute>
                 <xsl:value-of select="*[name()= 'title']"/>
             </xsl:element>
             <xsl:element name="price">
@@ -75,8 +75,7 @@
                 </xsl:attribute>
                 <xsl:variable name="maxRating" select="*[name() = 'rating']/@max"/>
                 <xsl:variable name="rating" select="*[name() = 'rating']"/>
-                <xsl:value-of select="($rating * 100) div $maxRating"/>
-                <xsl:value-of select="' %'"/>
+                <xsl:value-of select="concat(($rating * 100) div $maxRating,' %')"/>
             </xsl:element>
             <!-- TODO: Implement PEGI -->
             <!--<rating source="Metacritics" max="10">7.6</rating>-->
@@ -84,9 +83,7 @@
     </xsl:template>
 
     <xsl:template match="*[name() = 'price']">
-        <xsl:value-of select="."/>
-        <xsl:value-of select="' '"/>
-        <xsl:value-of select="@currency"/>
+        <xsl:value-of select="concat(.,' ',@currency)"/>
     </xsl:template>
 
 </xsl:stylesheet>

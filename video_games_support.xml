@@ -8,8 +8,7 @@
         <description>Spis gier</description>
         <gameList>
             <game>
-                <language>angielski</language>
-                <title>God of War III</title>
+                <title language="angielski">God of War III</title>
                 <price>239.90 zł</price>
                 <genre>g1</genre>
                 <relasedDate>
@@ -22,8 +21,7 @@
                 <percentageRating source="Gry-Online">91 %</percentageRating>
             </game>
             <game>
-                <language>angielski</language>
-                <title>Hitman 2</title>
+                <title language="angielski">Hitman 2</title>
                 <price>249.00 zł</price>
                 <genre>g2</genre>
                 <relasedDate>
@@ -36,8 +34,7 @@
                 <percentageRating source="Gry-Online">76 %</percentageRating>
             </game>
             <game>
-                <language>angielski</language>
-                <title>Minecraft: Java Edition</title>
+                <title language="angielski">Minecraft: Java Edition</title>
                 <price>99.99 zł</price>
                 <genre>g3</genre>
                 <relasedDate>
@@ -50,8 +47,7 @@
                 <percentageRating source="Metacritics">76 %</percentageRating>
             </game>
             <game>
-                <language>angielski</language>
-                <title>Garry's Mod</title>
+                <title language="angielski">Garry's Mod</title>
                 <price>35.99 zł</price>
                 <genre>g4</genre>
                 <relasedDate>
@@ -64,8 +60,7 @@
                 <percentageRating source="Gry-Online">91 %</percentageRating>
             </game>
             <game>
-                <language>angielski</language>
-                <title>John Wick Hex</title>
+                <title language="angielski">John Wick Hex</title>
                 <price>69.00 zł</price>
                 <genre>g5</genre>
                 <relasedDate>
@@ -78,8 +73,7 @@
                 <percentageRating source="IGN Entertainment">68 %</percentageRating>
             </game>
             <game>
-                <language>angielski</language>
-                <title>Doom</title>
+                <title language="angielski">Doom</title>
                 <price>30.99 zł</price>
                 <genre>g6</genre>
                 <relasedDate>
@@ -92,8 +86,7 @@
                 <percentageRating source="Metacritics">84 %</percentageRating>
             </game>
             <game>
-                <language>angielski</language>
-                <title>Forza Horizon 4</title>
+                <title language="angielski">Forza Horizon 4</title>
                 <price>199.00 zł</price>
                 <genre>g7</genre>
                 <relasedDate>
@@ -106,8 +99,7 @@
                 <percentageRating source="Gry-Online">85 %</percentageRating>
             </game>
             <game>
-                <language>angielski</language>
-                <title>The Forest</title>
+                <title language="angielski">The Forest</title>
                 <price>71.99 zł</price>
                 <genre>g3</genre>
                 <relasedDate>
@@ -120,8 +112,7 @@
                 <percentageRating source="Metacritics">73 %</percentageRating>
             </game>
             <game>
-                <language>angielski</language>
-                <title>RoboCraft</title>
+                <title language="angielski">RoboCraft</title>
                 <price/>
                 <genre>g8</genre>
                 <relasedDate>
@@ -134,8 +125,7 @@
                 <percentageRating source="Steam">70 %</percentageRating>
             </game>
             <game>
-                <language>angielski</language>
-                <title>Half-Life 2</title>
+                <title language="angielski">Half-Life 2</title>
                 <price>139.90 zł</price>
                 <genre>g6</genre>
                 <relasedDate>
@@ -148,8 +138,7 @@
                 <percentageRating source="Steam">100 %</percentageRating>
             </game>
             <game>
-                <language>angielski</language>
-                <title>Crysis 3</title>
+                <title language="angielski">Crysis 3</title>
                 <price>149.90 zł</price>
                 <genre>g6</genre>
                 <relasedDate>
@@ -162,8 +151,7 @@
                 <percentageRating source="Metacritics">66 %</percentageRating>
             </game>
             <game>
-                <language>angielski</language>
-                <title>Far Cry 3</title>
+                <title language="angielski">Far Cry 3</title>
                 <price>139.90 zł</price>
                 <genre>g4</genre>
                 <relasedDate>
@@ -176,8 +164,7 @@
                 <percentageRating source="Gry-Online">88.00000000000001 %</percentageRating>
             </game>
             <game>
-                <language>angielski</language>
-                <title>Assassin's Creed: Odyssey</title>
+                <title language="angielski">Assassin's Creed: Odyssey</title>
                 <price>98.79 zł</price>
                 <genre>g2</genre>
                 <relasedDate>
@@ -190,8 +177,7 @@
                 <percentageRating source="Gry-Online">72 %</percentageRating>
             </game>
             <game>
-                <language>angielski</language>
-                <title>The Elder Scrolls V: Skyrim</title>
+                <title language="angielski">The Elder Scrolls V: Skyrim</title>
                 <price>98.79 zł</price>
                 <genre>g11</genre>
                 <relasedDate>
@@ -204,8 +190,7 @@
                 <percentageRating source="Steam">90 %</percentageRating>
             </game>
             <game>
-                <language>polski</language>
-                <title>Wiedźmin 3: Dziki Gon</title>
+                <title language="polski">Wiedźmin 3: Dziki Gon</title>
                 <price>152.59 zł</price>
                 <genre>g11</genre>
                 <relasedDate>
@@ -218,8 +203,7 @@
                 <percentageRating source="Gry-Online">91.99999999999999 %</percentageRating>
             </game>
             <game>
-                <language>angielski</language>
-                <title>Grand Theft Auto: San Andreas</title>
+                <title language="angielski">Grand Theft Auto: San Andreas</title>
                 <price>35.00 zł</price>
                 <genre>g10</genre>
                 <relasedDate>
@@ -232,8 +216,7 @@
                 <percentageRating source="Common Sense Media">80 %</percentageRating>
             </game>
             <game>
-                <language>angielski</language>
-                <title>The Last of Us</title>
+                <title language="angielski">The Last of Us</title>
                 <price>67.00 zł</price>
                 <genre>g10</genre>
                 <relasedDate>
@@ -246,8 +229,7 @@
                 <percentageRating source="Metacritics">91 %</percentageRating>
             </game>
             <game>
-                <language>angielski</language>
-                <title>The Sims 4</title>
+                <title language="angielski">The Sims 4</title>
                 <price>82.35 zł</price>
                 <genre>g9</genre>
                 <relasedDate>
@@ -260,8 +242,7 @@
                 <percentageRating source="Metacritics">37 %</percentageRating>
             </game>
             <game>
-                <language>angielski</language>
-                <title>Shadow of the Tomb Raider</title>
+                <title language="angielski">Shadow of the Tomb Raider</title>
                 <price>132.90 zł</price>
                 <genre>g10</genre>
                 <relasedDate>
@@ -274,8 +255,7 @@
                 <percentageRating source="Gry-Online">91 %</percentageRating>
             </game>
             <game>
-                <language>polski</language>
-                <title>Dragon Age: Inkwizycja</title>
+                <title language="polski">Dragon Age: Inkwizycja</title>
                 <price>41.80 zł</price>
                 <genre>g11</genre>
                 <relasedDate>
