@@ -6,7 +6,7 @@
         xmlns:en="enumerations"
         targetNamespace="video_games"
 >
-<xs:import schemaLocation="enumerations.xsd" namespace="enumerations"/>
+<xs:import schemaLocation="./enumerations.xsd" namespace="enumerations"/>
 
 <!-- Deklaracje -->
 <!-- Głowne elementy -->

@@ -1,0 +1,301 @@
+<?xml version="1.0" encoding="UTF-8"?><root>
+    <stats>
+        <gameCount>20</gameCount>
+        <platformCount>11</platformCount>
+        <genreCount>11</genreCount>
+    </stats>
+    <raport>
+        <description>Spis gier</description>
+        <gameList>
+            <game>
+                <language>angielski</language>
+                <title>God of War III</title>
+                <price>239.90 zł</price>
+                <genre>g1</genre>
+                <relasedDate>
+                    16
+                    Marzec
+                    2010
+                </relasedDate>
+                <developer>SCE Santa Monica Studio</developer>
+                <publisher>Sony Computer Entertainment</publisher>
+                <percentageRating source="Gry-Online">91 %</percentageRating>
+            </game>
+            <game>
+                <language>angielski</language>
+                <title>Hitman 2</title>
+                <price>249.00 zł</price>
+                <genre>g2</genre>
+                <relasedDate>
+                    13
+                    Listopad
+                    2018
+                </relasedDate>
+                <developer>IO Interactive</developer>
+                <publisher>Warner Bros. Interactive Entertainment</publisher>
+                <percentageRating source="Gry-Online">76 %</percentageRating>
+            </game>
+            <game>
+                <language>angielski</language>
+                <title>Minecraft: Java Edition</title>
+                <price>99.99 zł</price>
+                <genre>g3</genre>
+                <relasedDate>
+                    18
+                    Listopad
+                    2011
+                </relasedDate>
+                <developer>Mojang</developer>
+                <publisher>Mojang</publisher>
+                <percentageRating source="Metacritics">76 %</percentageRating>
+            </game>
+            <game>
+                <language>angielski</language>
+                <title>Garry's Mod</title>
+                <price>35.99 zł</price>
+                <genre>g4</genre>
+                <relasedDate>
+                    24
+                    Grudzień
+                    2004
+                </relasedDate>
+                <developer>Facepunch Studios</developer>
+                <publisher>Valve Corporation</publisher>
+                <percentageRating source="Gry-Online">91 %</percentageRating>
+            </game>
+            <game>
+                <language>angielski</language>
+                <title>John Wick Hex</title>
+                <price>69.00 zł</price>
+                <genre>g5</genre>
+                <relasedDate>
+                    8
+                    Październik
+                    2019
+                </relasedDate>
+                <developer>Bithell Games</developer>
+                <publisher>Good Shepherd Entertainment / Gambitious</publisher>
+                <percentageRating source="IGN Entertainment">68 %</percentageRating>
+            </game>
+            <game>
+                <language>angielski</language>
+                <title>Doom</title>
+                <price>30.99 zł</price>
+                <genre>g6</genre>
+                <relasedDate>
+                    10
+                    Grudzień
+                    1993
+                </relasedDate>
+                <developer>id Software</developer>
+                <publisher>id Software</publisher>
+                <percentageRating source="Metacritics">84 %</percentageRating>
+            </game>
+            <game>
+                <language>angielski</language>
+                <title>Forza Horizon 4</title>
+                <price>199.00 zł</price>
+                <genre>g7</genre>
+                <relasedDate>
+                    2
+                    Październik
+                    2018
+                </relasedDate>
+                <developer>Playground Games</developer>
+                <publisher>Xbox Game Studios / Microsoft Studios</publisher>
+                <percentageRating source="Gry-Online">85 %</percentageRating>
+            </game>
+            <game>
+                <language>angielski</language>
+                <title>The Forest</title>
+                <price>71.99 zł</price>
+                <genre>g3</genre>
+                <relasedDate>
+                    16
+                    Marzec
+                    2010
+                </relasedDate>
+                <developer>Endnight Games</developer>
+                <publisher>Endnight Games</publisher>
+                <percentageRating source="Metacritics">73 %</percentageRating>
+            </game>
+            <game>
+                <language>angielski</language>
+                <title>RoboCraft</title>
+                <price/>
+                <genre>g8</genre>
+                <relasedDate>
+                    19
+                    Grudzień
+                    2013
+                </relasedDate>
+                <developer>Freejam</developer>
+                <publisher>Freejam</publisher>
+                <percentageRating source="Steam">70 %</percentageRating>
+            </game>
+            <game>
+                <language>angielski</language>
+                <title>Half-Life 2</title>
+                <price>139.90 zł</price>
+                <genre>g6</genre>
+                <relasedDate>
+                    16
+                    Listopad
+                    2004
+                </relasedDate>
+                <developer>Valve Software</developer>
+                <publisher>Sierra</publisher>
+                <percentageRating source="Steam">100 %</percentageRating>
+            </game>
+            <game>
+                <language>angielski</language>
+                <title>Crysis 3</title>
+                <price>149.90 zł</price>
+                <genre>g6</genre>
+                <relasedDate>
+                    19
+                    Luty
+                    2013
+                </relasedDate>
+                <developer>Crytek</developer>
+                <publisher> Electronic Arts Inc. </publisher>
+                <percentageRating source="Metacritics">66 %</percentageRating>
+            </game>
+            <game>
+                <language>angielski</language>
+                <title>Far Cry 3</title>
+                <price>139.90 zł</price>
+                <genre>g4</genre>
+                <relasedDate>
+                    29
+                    Listopad
+                    2012
+                </relasedDate>
+                <developer>Ubisoft</developer>
+                <publisher>Ubisoft</publisher>
+                <percentageRating source="Gry-Online">88.00000000000001 %</percentageRating>
+            </game>
+            <game>
+                <language>angielski</language>
+                <title>Assassin's Creed: Odyssey</title>
+                <price>98.79 zł</price>
+                <genre>g2</genre>
+                <relasedDate>
+                    5
+                    Październik
+                    2018
+                </relasedDate>
+                <developer>Ubisoft</developer>
+                <publisher>Ubisoft</publisher>
+                <percentageRating source="Gry-Online">72 %</percentageRating>
+            </game>
+            <game>
+                <language>angielski</language>
+                <title>The Elder Scrolls V: Skyrim</title>
+                <price>98.79 zł</price>
+                <genre>g11</genre>
+                <relasedDate>
+                    16
+                    Marzec
+                    2010
+                </relasedDate>
+                <developer>Bethesda Softworks</developer>
+                <publisher>Bethesda Softworks</publisher>
+                <percentageRating source="Steam">90 %</percentageRating>
+            </game>
+            <game>
+                <language>polski</language>
+                <title>Wiedźmin 3: Dziki Gon</title>
+                <price>152.59 zł</price>
+                <genre>g11</genre>
+                <relasedDate>
+                    19
+                    Maj
+                    2015
+                </relasedDate>
+                <developer>CD Projekt RED</developer>
+                <publisher>CD Projekt RED</publisher>
+                <percentageRating source="Gry-Online">91.99999999999999 %</percentageRating>
+            </game>
+            <game>
+                <language>angielski</language>
+                <title>Grand Theft Auto: San Andreas</title>
+                <price>35.00 zł</price>
+                <genre>g10</genre>
+                <relasedDate>
+                    25
+                    Październik
+                    2004
+                </relasedDate>
+                <developer>Rockstar Games</developer>
+                <publisher>Rockstar Games</publisher>
+                <percentageRating source="Common Sense Media">80 %</percentageRating>
+            </game>
+            <game>
+                <language>angielski</language>
+                <title>The Last of Us</title>
+                <price>67.00 zł</price>
+                <genre>g10</genre>
+                <relasedDate>
+                    14
+                    Czerwca
+                    2013
+                </relasedDate>
+                <developer>Naughty Dog</developer>
+                <publisher>Sony Interactive Entertainment</publisher>
+                <percentageRating source="Metacritics">91 %</percentageRating>
+            </game>
+            <game>
+                <language>angielski</language>
+                <title>The Sims 4</title>
+                <price>82.35 zł</price>
+                <genre>g9</genre>
+                <relasedDate>
+                    2
+                    Września
+                    2014
+                </relasedDate>
+                <developer>EA Maxis</developer>
+                <publisher>Electronic Arts Inc.</publisher>
+                <percentageRating source="Metacritics">37 %</percentageRating>
+            </game>
+            <game>
+                <language>angielski</language>
+                <title>Shadow of the Tomb Raider</title>
+                <price>132.90 zł</price>
+                <genre>g10</genre>
+                <relasedDate>
+                    14
+                    Września
+                    2018
+                </relasedDate>
+                <developer>Eidos Montreal</developer>
+                <publisher>Square-Enix</publisher>
+                <percentageRating source="Gry-Online">91 %</percentageRating>
+            </game>
+            <game>
+                <language>polski</language>
+                <title>Dragon Age: Inkwizycja</title>
+                <price>41.80 zł</price>
+                <genre>g11</genre>
+                <relasedDate>
+                    18
+                    Listopad
+                    2014
+                </relasedDate>
+                <developer>BioWare Corporation</developer>
+                <publisher>Electronic Arts Inc.</publisher>
+                <percentageRating source="Metacritics">74 %</percentageRating>
+            </game>
+        </gameList>
+        <authors>
+            Kamila
+            Kossyn
+            224338
+        
+            Łukasz
+            Narloch
+            224384
+        </authors>
+    </raport>
+</root>
