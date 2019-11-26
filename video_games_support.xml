@@ -1,281 +1,503 @@
 <?xml version="1.0" encoding="UTF-8"?><root>
-    <stats>
-        <gameCount>20</gameCount>
-        <platformCount>11</platformCount>
-        <genreCount>11</genreCount>
-    </stats>
     <raport>
         <description>Spis gier</description>
         <gameList>
             <game>
                 <title language="angielski">God of War III</title>
                 <price>239.90 zł</price>
-                <genre>g1</genre>
-                <relasedDate>
-                    16
-                    Marzec
-                    2010
-                </relasedDate>
+                <genre>hack and slash</genre>
+                <releaseDate>16 Marzec 2010</releaseDate>
                 <developer>SCE Santa Monica Studio</developer>
+                <platforms>
+                    <item>PlayStation 3</item>
+                    <item>PlayStation 4</item>
+                </platforms>
                 <publisher>Sony Computer Entertainment</publisher>
-                <percentageRating source="Gry-Online">91 %</percentageRating>
+                <rating>
+                    <source>Gry-Online</source>
+                    <percentageRating>91</percentageRating>
+                </rating>
+                <PEGI>
+                    <label>18</label>
+                    <list>
+                        <item>przemoc</item>
+                    </list>
+                </PEGI>
+                <coverArt>./coverart/id1.jpg</coverArt>
             </game>
             <game>
                 <title language="angielski">Hitman 2</title>
                 <price>249.00 zł</price>
-                <genre>g2</genre>
-                <relasedDate>
-                    13
-                    Listopad
-                    2018
-                </relasedDate>
+                <genre>skradanka</genre>
+                <releaseDate>13 Listopad 2018</releaseDate>
                 <developer>IO Interactive</developer>
+                <platforms>
+                    <item>PlayStation 4</item>
+                    <item>Microsoft Windows</item>
+                    <item>Xbox One</item>
+                </platforms>
                 <publisher>Warner Bros. Interactive Entertainment</publisher>
-                <percentageRating source="Gry-Online">76 %</percentageRating>
+                <rating>
+                    <source>Gry-Online</source>
+                    <percentageRating>76</percentageRating>
+                </rating>
+                <PEGI>
+                    <label>18</label>
+                    <list>
+                        <item>przemoc</item>
+                        <item>wulgarny język</item>
+                    </list>
+                </PEGI>
+                <coverArt>./coverart/id2.jpg</coverArt>
             </game>
             <game>
                 <title language="angielski">Minecraft: Java Edition</title>
                 <price>99.99 zł</price>
-                <genre>g3</genre>
-                <relasedDate>
-                    18
-                    Listopad
-                    2011
-                </relasedDate>
+                <genre>survival</genre>
+                <releaseDate>18 Listopad 2011</releaseDate>
                 <developer>Mojang</developer>
+                <platforms>
+                    <item>Microsoft Windows</item>
+                    <item>macOS</item>
+                    <item>Linux</item>
+                </platforms>
                 <publisher>Mojang</publisher>
-                <percentageRating source="Metacritics">76 %</percentageRating>
+                <rating>
+                    <source>Metacritics</source>
+                    <percentageRating>76</percentageRating>
+                </rating>
+                <PEGI>
+                    <label>7</label>
+                    <list>
+                        <item>strach</item>
+                        <item>przemoc</item>
+                        <item>online</item>
+                    </list>
+                </PEGI>
+                <coverArt>./coverart/id3.jpg</coverArt>
             </game>
             <game>
                 <title language="angielski">Garry's Mod</title>
                 <price>35.99 zł</price>
-                <genre>g4</genre>
-                <relasedDate>
-                    24
-                    Grudzień
-                    2004
-                </relasedDate>
+                <genre>piaskownica</genre>
+                <releaseDate>24 Grudzień 2004</releaseDate>
                 <developer>Facepunch Studios</developer>
+                <platforms>
+                    <item>Microsoft Windows</item>
+                    <item>macOS</item>
+                    <item>Linux</item>
+                </platforms>
                 <publisher>Valve Corporation</publisher>
-                <percentageRating source="Gry-Online">91 %</percentageRating>
+                <rating>
+                    <source>Gry-Online</source>
+                    <percentageRating>91</percentageRating>
+                </rating>
+                <PEGI>
+                    <label>odpowiednia dla każdego wieku</label>
+                    <list/>
+                </PEGI>
+                <coverArt>./coverart/id4.jpg</coverArt>
             </game>
             <game>
                 <title language="angielski">John Wick Hex</title>
                 <price>69.00 zł</price>
-                <genre>g5</genre>
-                <relasedDate>
-                    8
-                    Październik
-                    2019
-                </relasedDate>
+                <genre>strategia</genre>
+                <releaseDate>8 Październik 2019</releaseDate>
                 <developer>Bithell Games</developer>
+                <platforms>
+                    <item>Microsoft Windows</item>
+                </platforms>
                 <publisher>Good Shepherd Entertainment / Gambitious</publisher>
-                <percentageRating source="IGN Entertainment">68 %</percentageRating>
+                <rating>
+                    <source>IGN Entertainment</source>
+                    <percentageRating>68</percentageRating>
+                </rating>
+                <PEGI>
+                    <label>brak danych</label>
+                    <list/>
+                </PEGI>
+                <coverArt>./coverart/id5.jpg</coverArt>
             </game>
             <game>
                 <title language="angielski">Doom</title>
                 <price>30.99 zł</price>
-                <genre>g6</genre>
-                <relasedDate>
-                    10
-                    Grudzień
-                    1993
-                </relasedDate>
+                <genre>strzelanka</genre>
+                <releaseDate>10 Grudzień 1993</releaseDate>
                 <developer>id Software</developer>
+                <platforms>
+                    <item>Microsoft Windows</item>
+                    <item>PlayStation 4</item>
+                    <item>PlayStation 3</item>
+                    <item>Xbox One</item>
+                    <item>Xbox 360</item>
+                    <item>Nintendo Switch</item>
+                </platforms>
                 <publisher>id Software</publisher>
-                <percentageRating source="Metacritics">84 %</percentageRating>
+                <rating>
+                    <source>Metacritics</source>
+                    <percentageRating>84</percentageRating>
+                </rating>
+                <PEGI>
+                    <label>18</label>
+                    <list>
+                        <item>przemoc</item>
+                        <item>wulgarny język</item>
+                    </list>
+                </PEGI>
+                <coverArt>./coverart/id6.jpg</coverArt>
             </game>
             <game>
                 <title language="angielski">Forza Horizon 4</title>
                 <price>199.00 zł</price>
-                <genre>g7</genre>
-                <relasedDate>
-                    2
-                    Październik
-                    2018
-                </relasedDate>
+                <genre>wyścigi</genre>
+                <releaseDate>2 Październik 2018</releaseDate>
                 <developer>Playground Games</developer>
+                <platforms>
+                    <item>Microsoft Windows</item>
+                    <item>Xbox One</item>
+                </platforms>
                 <publisher>Xbox Game Studios / Microsoft Studios</publisher>
-                <percentageRating source="Gry-Online">85 %</percentageRating>
+                <rating>
+                    <source>Gry-Online</source>
+                    <percentageRating>85</percentageRating>
+                </rating>
+                <PEGI>
+                    <label>3</label>
+                    <list/>
+                </PEGI>
+                <coverArt>./coverart/id7.jpg</coverArt>
             </game>
             <game>
                 <title language="angielski">The Forest</title>
                 <price>71.99 zł</price>
-                <genre>g3</genre>
-                <relasedDate>
-                    16
-                    Marzec
-                    2010
-                </relasedDate>
+                <genre>survival</genre>
+                <releaseDate>16 Marzec 2010</releaseDate>
                 <developer>Endnight Games</developer>
+                <platforms>
+                    <item>Microsoft Windows</item>
+                    <item>PlayStation 4</item>
+                </platforms>
                 <publisher>Endnight Games</publisher>
-                <percentageRating source="Metacritics">73 %</percentageRating>
+                <rating>
+                    <source>Metacritics</source>
+                    <percentageRating>73</percentageRating>
+                </rating>
+                <PEGI>
+                    <label>18</label>
+                    <list>
+                        <item>przemoc</item>
+                    </list>
+                </PEGI>
+                <coverArt>./coverart/id8.jpg</coverArt>
             </game>
             <game>
                 <title language="angielski">RoboCraft</title>
-                <price/>
-                <genre>g8</genre>
-                <relasedDate>
-                    19
-                    Grudzień
-                    2013
-                </relasedDate>
+                <genre>MMO</genre>
+                <releaseDate>19 Grudzień 2013</releaseDate>
                 <developer>Freejam</developer>
+                <platforms>
+                    <item>Microsoft Windows</item>
+                </platforms>
                 <publisher>Freejam</publisher>
-                <percentageRating source="Steam">70 %</percentageRating>
+                <rating>
+                    <source>Steam</source>
+                    <percentageRating>70</percentageRating>
+                </rating>
+                <PEGI>
+                    <label>odpowiednia dla każdego wieku</label>
+                    <list/>
+                </PEGI>
+                <coverArt>./coverart/id9.jpg</coverArt>
             </game>
             <game>
                 <title language="angielski">Half-Life 2</title>
                 <price>139.90 zł</price>
-                <genre>g6</genre>
-                <relasedDate>
-                    16
-                    Listopad
-                    2004
-                </relasedDate>
+                <genre>strzelanka</genre>
+                <releaseDate>16 Listopad 2004</releaseDate>
                 <developer>Valve Software</developer>
+                <platforms>
+                    <item>Microsoft Windows</item>
+                    <item>Xbox</item>
+                    <item>Android</item>
+                </platforms>
                 <publisher>Sierra</publisher>
-                <percentageRating source="Steam">100 %</percentageRating>
+                <rating>
+                    <source>Steam</source>
+                    <percentageRating>100</percentageRating>
+                </rating>
+                <PEGI>
+                    <label>16</label>
+                    <list>
+                        <item>przemoc</item>
+                    </list>
+                </PEGI>
+                <coverArt>./coverart/id10.jpg</coverArt>
             </game>
             <game>
                 <title language="angielski">Crysis 3</title>
                 <price>149.90 zł</price>
-                <genre>g6</genre>
-                <relasedDate>
-                    19
-                    Luty
-                    2013
-                </relasedDate>
+                <genre>strzelanka</genre>
+                <releaseDate>19 Luty 2013</releaseDate>
                 <developer>Crytek</developer>
+                <platforms>
+                    <item>Microsoft Windows</item>
+                    <item>PlayStation 3</item>
+                    <item>Xbox 360</item>
+                </platforms>
                 <publisher> Electronic Arts Inc. </publisher>
-                <percentageRating source="Metacritics">66 %</percentageRating>
+                <rating>
+                    <source>Metacritics</source>
+                    <percentageRating>66</percentageRating>
+                </rating>
+                <PEGI>
+                    <label>16</label>
+                    <list>
+                        <item>przemoc</item>
+                        <item>wulgarny język</item>
+                        <item>online</item>
+                    </list>
+                </PEGI>
+                <coverArt>./coverart/id11.jpg</coverArt>
             </game>
             <game>
                 <title language="angielski">Far Cry 3</title>
                 <price>139.90 zł</price>
-                <genre>g4</genre>
-                <relasedDate>
-                    29
-                    Listopad
-                    2012
-                </relasedDate>
+                <genre>piaskownica</genre>
+                <releaseDate>29 Listopad 2012</releaseDate>
                 <developer>Ubisoft</developer>
+                <platforms>
+                    <item>Microsoft Windows</item>
+                    <item>PlayStation 4</item>
+                    <item>Xbox One</item>
+                </platforms>
                 <publisher>Ubisoft</publisher>
-                <percentageRating source="Gry-Online">88.00000000000001 %</percentageRating>
+                <rating>
+                    <source>Gry-Online</source>
+                    <percentageRating>88.00000000000001</percentageRating>
+                </rating>
+                <PEGI>
+                    <label>18</label>
+                    <list>
+                        <item>przemoc</item>
+                        <item>wulgarny język</item>
+                        <item>hazard</item>
+                        <item>online</item>
+                    </list>
+                </PEGI>
+                <coverArt>./coverart/id12.jpg</coverArt>
             </game>
             <game>
                 <title language="angielski">Assassin's Creed: Odyssey</title>
                 <price>98.79 zł</price>
-                <genre>g2</genre>
-                <relasedDate>
-                    5
-                    Październik
-                    2018
-                </relasedDate>
+                <genre>skradanka</genre>
+                <releaseDate>5 Październik 2018</releaseDate>
                 <developer>Ubisoft</developer>
+                <platforms>
+                    <item>Microsoft Windows</item>
+                    <item>PlayStation 4</item>
+                    <item>Xbox One</item>
+                </platforms>
                 <publisher>Ubisoft</publisher>
-                <percentageRating source="Gry-Online">72 %</percentageRating>
+                <rating>
+                    <source>Gry-Online</source>
+                    <percentageRating>72</percentageRating>
+                </rating>
+                <PEGI>
+                    <label>18</label>
+                    <list>
+                        <item>przemoc</item>
+                        <item>wulgarny język</item>
+                        <item>seks</item>
+                    </list>
+                </PEGI>
+                <coverArt>./coverart/id13.jpg</coverArt>
             </game>
             <game>
                 <title language="angielski">The Elder Scrolls V: Skyrim</title>
                 <price>98.79 zł</price>
-                <genre>g11</genre>
-                <relasedDate>
-                    16
-                    Marzec
-                    2010
-                </relasedDate>
+                <genre>RPG</genre>
+                <releaseDate>16 Marzec 2010</releaseDate>
                 <developer>Bethesda Softworks</developer>
+                <platforms>
+                    <item>Microsoft Windows</item>
+                    <item>PlayStation 3</item>
+                    <item>Xbox 360</item>
+                </platforms>
                 <publisher>Bethesda Softworks</publisher>
-                <percentageRating source="Steam">90 %</percentageRating>
+                <rating>
+                    <source>Steam</source>
+                    <percentageRating>90</percentageRating>
+                </rating>
+                <PEGI>
+                    <label>18</label>
+                    <list>
+                        <item>przemoc</item>
+                    </list>
+                </PEGI>
+                <coverArt>./coverart/id14.jpg</coverArt>
             </game>
             <game>
                 <title language="polski">Wiedźmin 3: Dziki Gon</title>
                 <price>152.59 zł</price>
-                <genre>g11</genre>
-                <relasedDate>
-                    19
-                    Maj
-                    2015
-                </relasedDate>
+                <genre>RPG</genre>
+                <releaseDate>19 Maj 2015</releaseDate>
                 <developer>CD Projekt RED</developer>
+                <platforms>
+                    <item>Microsoft Windows</item>
+                    <item>PlayStation 4</item>
+                    <item>Xbox One</item>
+                </platforms>
                 <publisher>CD Projekt RED</publisher>
-                <percentageRating source="Gry-Online">91.99999999999999 %</percentageRating>
+                <rating>
+                    <source>Gry-Online</source>
+                    <percentageRating>91.99999999999999</percentageRating>
+                </rating>
+                <PEGI>
+                    <label>18</label>
+                    <list>
+                        <item>przemoc</item>
+                        <item>wulgarny język</item>
+                        <item>hazard</item>
+                        <item>seks</item>
+                    </list>
+                </PEGI>
+                <coverArt>./coverart/id15.jpg</coverArt>
             </game>
             <game>
                 <title language="angielski">Grand Theft Auto: San Andreas</title>
                 <price>35.00 zł</price>
-                <genre>g10</genre>
-                <relasedDate>
-                    25
-                    Październik
-                    2004
-                </relasedDate>
+                <genre>akcji</genre>
+                <releaseDate>25 Październik 2004</releaseDate>
                 <developer>Rockstar Games</developer>
+                <platforms>
+                    <item>Microsoft Windows</item>
+                    <item>PlayStation 2</item>
+                    <item>Xbox</item>
+                </platforms>
                 <publisher>Rockstar Games</publisher>
-                <percentageRating source="Common Sense Media">80 %</percentageRating>
+                <rating>
+                    <source>Common Sense Media</source>
+                    <percentageRating>80</percentageRating>
+                </rating>
+                <PEGI>
+                    <label>18</label>
+                    <list>
+                        <item>przemoc</item>
+                        <item>wulgarny język</item>
+                    </list>
+                </PEGI>
+                <coverArt>./coverart/id16.jpg</coverArt>
             </game>
             <game>
                 <title language="angielski">The Last of Us</title>
                 <price>67.00 zł</price>
-                <genre>g10</genre>
-                <relasedDate>
-                    14
-                    Czerwca
-                    2013
-                </relasedDate>
+                <genre>akcji</genre>
+                <releaseDate>14 Czerwca 2013</releaseDate>
                 <developer>Naughty Dog</developer>
+                <platforms>
+                    <item>PlayStation 3</item>
+                    <item>PlayStation 4</item>
+                </platforms>
                 <publisher>Sony Interactive Entertainment</publisher>
-                <percentageRating source="Metacritics">91 %</percentageRating>
+                <rating>
+                    <source>Metacritics</source>
+                    <percentageRating>91</percentageRating>
+                </rating>
+                <PEGI>
+                    <label>18</label>
+                    <list>
+                        <item>przemoc</item>
+                        <item>wulgarny język</item>
+                        <item>online</item>
+                    </list>
+                </PEGI>
+                <coverArt>./coverart/id17.jpg</coverArt>
             </game>
             <game>
                 <title language="angielski">The Sims 4</title>
                 <price>82.35 zł</price>
-                <genre>g9</genre>
-                <relasedDate>
-                    2
-                    Września
-                    2014
-                </relasedDate>
+                <genre>symulacja</genre>
+                <releaseDate>2 Września 2014</releaseDate>
                 <developer>EA Maxis</developer>
+                <platforms>
+                    <item>Microsoft Windows</item>
+                    <item>PlayStation 4</item>
+                    <item>Xbox One</item>
+                </platforms>
                 <publisher>Electronic Arts Inc.</publisher>
-                <percentageRating source="Metacritics">37 %</percentageRating>
+                <rating>
+                    <source>Metacritics</source>
+                    <percentageRating>37</percentageRating>
+                </rating>
+                <PEGI>
+                    <label>12</label>
+                    <list>
+                        <item>wulgarny język</item>
+                        <item>seks</item>
+                    </list>
+                </PEGI>
+                <coverArt>./coverart/id18.jpg</coverArt>
             </game>
             <game>
                 <title language="angielski">Shadow of the Tomb Raider</title>
                 <price>132.90 zł</price>
-                <genre>g10</genre>
-                <relasedDate>
-                    14
-                    Września
-                    2018
-                </relasedDate>
+                <genre>akcji</genre>
+                <releaseDate>14 Września 2018</releaseDate>
                 <developer>Eidos Montreal</developer>
+                <platforms>
+                    <item>Microsoft Windows</item>
+                    <item>PlayStation 4</item>
+                    <item>Xbox One</item>
+                </platforms>
                 <publisher>Square-Enix</publisher>
-                <percentageRating source="Gry-Online">91 %</percentageRating>
+                <rating>
+                    <source>Gry-Online</source>
+                    <percentageRating>91</percentageRating>
+                </rating>
+                <PEGI>
+                    <label>18</label>
+                    <list>
+                        <item>przemoc</item>
+                        <item>wulgarny język</item>
+                    </list>
+                </PEGI>
+                <coverArt>./coverart/id19.jpg</coverArt>
             </game>
             <game>
                 <title language="polski">Dragon Age: Inkwizycja</title>
                 <price>41.80 zł</price>
-                <genre>g11</genre>
-                <relasedDate>
-                    18
-                    Listopad
-                    2014
-                </relasedDate>
+                <genre>RPG</genre>
+                <releaseDate>18 Listopad 2014</releaseDate>
                 <developer>BioWare Corporation</developer>
+                <platforms>
+                    <item>Microsoft Windows</item>
+                    <item>PlayStation 4</item>
+                    <item>Xbox One</item>
+                </platforms>
                 <publisher>Electronic Arts Inc.</publisher>
-                <percentageRating source="Metacritics">74 %</percentageRating>
+                <rating>
+                    <source>Metacritics</source>
+                    <percentageRating>74</percentageRating>
+                </rating>
+                <PEGI>
+                    <label>18</label>
+                    <list>
+                        <item>przemoc</item>
+                        <item>wulgarny język</item>
+                        <item>online</item>
+                    </list>
+                </PEGI>
+                <coverArt>./coverart/id20.jpg</coverArt>
             </game>
         </gameList>
         <authors>
-            Kamila
-            Kossyn
-            224338
-        
-            Łukasz
-            Narloch
-            224384
+            <person/>
+            <person/>
         </authors>
     </raport>
+    <stats>
+        <gameCount>20</gameCount>
+        <platformCount>11</platformCount>
+        <genreCount>11</genreCount>
+    </stats>
 </root>
