@@ -37,7 +37,7 @@
             </xsl:element>
             <!-- Lista gier -->
             <xsl:element name="gameList">
-                <xsl:apply-templates select="//*[name()='games']/*"/>
+                <xsl:apply-templates select="//*[name()='games']"/>
             </xsl:element>
             <!-- Lista autorów listy -->
             <xsl:element name="authors">
@@ -47,15 +47,28 @@
     </xsl:template>
 
     <!-- Lista gier, wybieramy dzieci elementu games -->
-    <xsl:template match="//*[name()='games']/*">
+    <xsl:template match="//*[name()='games']">
+        <xsl:apply-templates/>
+    </xsl:template>
+
+    <xsl:template match="*[name()='game']">
         <xsl:element name="game">
             <xsl:apply-templates select="*[name()='title']"/>
             <xsl:apply-templates select="*[name()='price']"/>
             <xsl:apply-templates select="*[name()='relatedGenre']"/>
-            <xsl:apply-templates select="*[name()= 'releaseDate']"/>
-            <xsl:apply-templates select="*[name()='developer']"/>
+            <xsl:apply-templates select="*[name()='releaseDate']"/>
             <xsl:apply-templates select="*[name()='relatedPlatforms']"/>
-            <xsl:apply-templates select="*[name()='publisher']"/>
+            <xsl:variable name="developer" select="*[name()='developer']"/>
+            <xsl:variable name="publisher" select="*[name()='publisher']"/>
+            <xsl:choose>
+                <xsl:when test="$developer = $publisher">
+                    <xsl:call-template name="devloperPublisher"/>
+                </xsl:when>
+                <xsl:otherwise>
+                    <xsl:apply-templates select="*[name()='developer']"/>
+                    <xsl:apply-templates select="*[name()='publisher']"/>
+                </xsl:otherwise>
+            </xsl:choose>
             <xsl:apply-templates select="*[name()='rating']"/>
             <xsl:apply-templates select="*[name()='PEGI']"/>
             <xsl:apply-templates select="*[name()='coverArt']"/>
@@ -93,11 +106,6 @@
         </xsl:element>
     </xsl:template>
 
-    <xsl:template match="*[name()='developer']">
-        <xsl:element name="developer">
-            <xsl:value-of select="."/>
-        </xsl:element>
-    </xsl:template>
     <xsl:template match="*[name()='relatedPlatforms']">
         <xsl:element name="platforms">
             <xsl:for-each select="*">
@@ -110,11 +118,24 @@
             </xsl:for-each>
         </xsl:element>
     </xsl:template>
+    <xsl:template match="*[name()='developer']">
+        <xsl:element name="developer">
+            <xsl:value-of select="."/>
+        </xsl:element>
+    </xsl:template>
     <xsl:template match="*[name()='publisher']">
         <xsl:element name="publisher">
             <xsl:value-of select="."/>
         </xsl:element>
     </xsl:template>
+
+    <xsl:template name="devloperPublisher">
+        <xsl:element name="devloperPublisher">
+            <xsl:value-of select="*[name() = 'publisher']"/>
+        </xsl:element>
+    </xsl:template>
+
+
     <xsl:template match="*[name()='rating']">
         <xsl:element name="rating">
             <xsl:element name="source">

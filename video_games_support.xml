@@ -2,16 +2,17 @@
     <raport>
         <description>Spis gier</description>
         <gameList>
+                        
             <game>
                 <title language="angielski">God of War III</title>
                 <price>239.90 zł</price>
                 <genre>hack and slash</genre>
                 <releaseDate>16 Marzec 2010</releaseDate>
-                <developer>SCE Santa Monica Studio</developer>
                 <platforms>
                     <item>PlayStation 3</item>
                     <item>PlayStation 4</item>
                 </platforms>
+                <developer>SCE Santa Monica Studio</developer>
                 <publisher>Sony Computer Entertainment</publisher>
                 <rating>
                     <source>Gry-Online</source>
@@ -25,17 +26,18 @@
                 </PEGI>
                 <coverArt>./coverart/id1.jpg</coverArt>
             </game>
+                        
             <game>
                 <title language="angielski">Hitman 2</title>
                 <price>249.00 zł</price>
                 <genre>skradanka</genre>
                 <releaseDate>13 Listopad 2018</releaseDate>
-                <developer>IO Interactive</developer>
                 <platforms>
                     <item>PlayStation 4</item>
                     <item>Microsoft Windows</item>
                     <item>Xbox One</item>
                 </platforms>
+                <developer>IO Interactive</developer>
                 <publisher>Warner Bros. Interactive Entertainment</publisher>
                 <rating>
                     <source>Gry-Online</source>
@@ -50,18 +52,18 @@
                 </PEGI>
                 <coverArt>./coverart/id2.jpg</coverArt>
             </game>
+                        
             <game>
                 <title language="angielski">Minecraft: Java Edition</title>
                 <price>99.99 zł</price>
                 <genre>survival</genre>
                 <releaseDate>18 Listopad 2011</releaseDate>
-                <developer>Mojang</developer>
                 <platforms>
                     <item>Microsoft Windows</item>
                     <item>macOS</item>
                     <item>Linux</item>
                 </platforms>
-                <publisher>Mojang</publisher>
+                <devloperPublisher>Mojang</devloperPublisher>
                 <rating>
                     <source>Metacritics</source>
                     <percentageRating>76</percentageRating>
@@ -76,17 +78,18 @@
                 </PEGI>
                 <coverArt>./coverart/id3.jpg</coverArt>
             </game>
+                        
             <game>
                 <title language="angielski">Garry's Mod</title>
                 <price>35.99 zł</price>
                 <genre>piaskownica</genre>
                 <releaseDate>24 Grudzień 2004</releaseDate>
-                <developer>Facepunch Studios</developer>
                 <platforms>
                     <item>Microsoft Windows</item>
                     <item>macOS</item>
                     <item>Linux</item>
                 </platforms>
+                <developer>Facepunch Studios</developer>
                 <publisher>Valve Corporation</publisher>
                 <rating>
                     <source>Gry-Online</source>
@@ -98,15 +101,16 @@
                 </PEGI>
                 <coverArt>./coverart/id4.jpg</coverArt>
             </game>
+                        
             <game>
                 <title language="angielski">John Wick Hex</title>
                 <price>69.00 zł</price>
                 <genre>strategia</genre>
                 <releaseDate>8 Październik 2019</releaseDate>
-                <developer>Bithell Games</developer>
                 <platforms>
                     <item>Microsoft Windows</item>
                 </platforms>
+                <developer>Bithell Games</developer>
                 <publisher>Good Shepherd Entertainment / Gambitious</publisher>
                 <rating>
                     <source>IGN Entertainment</source>
@@ -118,12 +122,12 @@
                 </PEGI>
                 <coverArt>./coverart/id5.jpg</coverArt>
             </game>
+                        
             <game>
                 <title language="angielski">Doom</title>
                 <price>30.99 zł</price>
                 <genre>strzelanka</genre>
                 <releaseDate>10 Grudzień 1993</releaseDate>
-                <developer>id Software</developer>
                 <platforms>
                     <item>Microsoft Windows</item>
                     <item>PlayStation 4</item>
@@ -132,7 +136,7 @@
                     <item>Xbox 360</item>
                     <item>Nintendo Switch</item>
                 </platforms>
-                <publisher>id Software</publisher>
+                <devloperPublisher>id Software</devloperPublisher>
                 <rating>
                     <source>Metacritics</source>
                     <percentageRating>84</percentageRating>
@@ -146,16 +150,17 @@
                 </PEGI>
                 <coverArt>./coverart/id6.jpg</coverArt>
             </game>
+                        
             <game>
                 <title language="angielski">Forza Horizon 4</title>
                 <price>199.00 zł</price>
                 <genre>wyścigi</genre>
                 <releaseDate>2 Październik 2018</releaseDate>
-                <developer>Playground Games</developer>
                 <platforms>
                     <item>Microsoft Windows</item>
                     <item>Xbox One</item>
                 </platforms>
+                <developer>Playground Games</developer>
                 <publisher>Xbox Game Studios / Microsoft Studios</publisher>
                 <rating>
                     <source>Gry-Online</source>
@@ -167,17 +172,17 @@
                 </PEGI>
                 <coverArt>./coverart/id7.jpg</coverArt>
             </game>
+                        
             <game>
                 <title language="angielski">The Forest</title>
                 <price>71.99 zł</price>
                 <genre>survival</genre>
                 <releaseDate>16 Marzec 2010</releaseDate>
-                <developer>Endnight Games</developer>
                 <platforms>
                     <item>Microsoft Windows</item>
                     <item>PlayStation 4</item>
                 </platforms>
-                <publisher>Endnight Games</publisher>
+                <devloperPublisher>Endnight Games</devloperPublisher>
                 <rating>
                     <source>Metacritics</source>
                     <percentageRating>73</percentageRating>
@@ -190,15 +195,15 @@
                 </PEGI>
                 <coverArt>./coverart/id8.jpg</coverArt>
             </game>
+                        
             <game>
                 <title language="angielski">RoboCraft</title>
                 <genre>MMO</genre>
                 <releaseDate>19 Grudzień 2013</releaseDate>
-                <developer>Freejam</developer>
                 <platforms>
                     <item>Microsoft Windows</item>
                 </platforms>
-                <publisher>Freejam</publisher>
+                <devloperPublisher>Freejam</devloperPublisher>
                 <rating>
                     <source>Steam</source>
                     <percentageRating>70</percentageRating>
@@ -209,17 +214,18 @@
                 </PEGI>
                 <coverArt>./coverart/id9.jpg</coverArt>
             </game>
+                        
             <game>
                 <title language="angielski">Half-Life 2</title>
                 <price>139.90 zł</price>
                 <genre>strzelanka</genre>
                 <releaseDate>16 Listopad 2004</releaseDate>
-                <developer>Valve Software</developer>
                 <platforms>
                     <item>Microsoft Windows</item>
                     <item>Xbox</item>
                     <item>Android</item>
                 </platforms>
+                <developer>Valve Software</developer>
                 <publisher>Sierra</publisher>
                 <rating>
                     <source>Steam</source>
@@ -233,17 +239,18 @@
                 </PEGI>
                 <coverArt>./coverart/id10.jpg</coverArt>
             </game>
+                        
             <game>
                 <title language="angielski">Crysis 3</title>
                 <price>149.90 zł</price>
                 <genre>strzelanka</genre>
                 <releaseDate>19 Luty 2013</releaseDate>
-                <developer>Crytek</developer>
                 <platforms>
                     <item>Microsoft Windows</item>
                     <item>PlayStation 3</item>
                     <item>Xbox 360</item>
                 </platforms>
+                <developer>Crytek</developer>
                 <publisher> Electronic Arts Inc. </publisher>
                 <rating>
                     <source>Metacritics</source>
@@ -259,18 +266,18 @@
                 </PEGI>
                 <coverArt>./coverart/id11.jpg</coverArt>
             </game>
+                        
             <game>
                 <title language="angielski">Far Cry 3</title>
                 <price>139.90 zł</price>
                 <genre>piaskownica</genre>
                 <releaseDate>29 Listopad 2012</releaseDate>
-                <developer>Ubisoft</developer>
                 <platforms>
                     <item>Microsoft Windows</item>
                     <item>PlayStation 4</item>
                     <item>Xbox One</item>
                 </platforms>
-                <publisher>Ubisoft</publisher>
+                <devloperPublisher>Ubisoft</devloperPublisher>
                 <rating>
                     <source>Gry-Online</source>
                     <percentageRating>88.00000000000001</percentageRating>
@@ -286,18 +293,18 @@
                 </PEGI>
                 <coverArt>./coverart/id12.jpg</coverArt>
             </game>
+                        
             <game>
                 <title language="angielski">Assassin's Creed: Odyssey</title>
                 <price>98.79 zł</price>
                 <genre>skradanka</genre>
                 <releaseDate>5 Październik 2018</releaseDate>
-                <developer>Ubisoft</developer>
                 <platforms>
                     <item>Microsoft Windows</item>
                     <item>PlayStation 4</item>
                     <item>Xbox One</item>
                 </platforms>
-                <publisher>Ubisoft</publisher>
+                <devloperPublisher>Ubisoft</devloperPublisher>
                 <rating>
                     <source>Gry-Online</source>
                     <percentageRating>72</percentageRating>
@@ -312,18 +319,18 @@
                 </PEGI>
                 <coverArt>./coverart/id13.jpg</coverArt>
             </game>
+                        
             <game>
                 <title language="angielski">The Elder Scrolls V: Skyrim</title>
                 <price>98.79 zł</price>
                 <genre>RPG</genre>
                 <releaseDate>16 Marzec 2010</releaseDate>
-                <developer>Bethesda Softworks</developer>
                 <platforms>
                     <item>Microsoft Windows</item>
                     <item>PlayStation 3</item>
                     <item>Xbox 360</item>
                 </platforms>
-                <publisher>Bethesda Softworks</publisher>
+                <devloperPublisher>Bethesda Softworks</devloperPublisher>
                 <rating>
                     <source>Steam</source>
                     <percentageRating>90</percentageRating>
@@ -336,18 +343,18 @@
                 </PEGI>
                 <coverArt>./coverart/id14.jpg</coverArt>
             </game>
+                        
             <game>
                 <title language="polski">Wiedźmin 3: Dziki Gon</title>
                 <price>152.59 zł</price>
                 <genre>RPG</genre>
                 <releaseDate>19 Maj 2015</releaseDate>
-                <developer>CD Projekt RED</developer>
                 <platforms>
                     <item>Microsoft Windows</item>
                     <item>PlayStation 4</item>
                     <item>Xbox One</item>
                 </platforms>
-                <publisher>CD Projekt RED</publisher>
+                <devloperPublisher>CD Projekt RED</devloperPublisher>
                 <rating>
                     <source>Gry-Online</source>
                     <percentageRating>91.99999999999999</percentageRating>
@@ -363,18 +370,18 @@
                 </PEGI>
                 <coverArt>./coverart/id15.jpg</coverArt>
             </game>
+                        
             <game>
                 <title language="angielski">Grand Theft Auto: San Andreas</title>
                 <price>35.00 zł</price>
                 <genre>akcji</genre>
                 <releaseDate>25 Październik 2004</releaseDate>
-                <developer>Rockstar Games</developer>
                 <platforms>
                     <item>Microsoft Windows</item>
                     <item>PlayStation 2</item>
                     <item>Xbox</item>
                 </platforms>
-                <publisher>Rockstar Games</publisher>
+                <devloperPublisher>Rockstar Games</devloperPublisher>
                 <rating>
                     <source>Common Sense Media</source>
                     <percentageRating>80</percentageRating>
@@ -388,16 +395,17 @@
                 </PEGI>
                 <coverArt>./coverart/id16.jpg</coverArt>
             </game>
+                        
             <game>
                 <title language="angielski">The Last of Us</title>
                 <price>67.00 zł</price>
                 <genre>akcji</genre>
                 <releaseDate>14 Czerwca 2013</releaseDate>
-                <developer>Naughty Dog</developer>
                 <platforms>
                     <item>PlayStation 3</item>
                     <item>PlayStation 4</item>
                 </platforms>
+                <developer>Naughty Dog</developer>
                 <publisher>Sony Interactive Entertainment</publisher>
                 <rating>
                     <source>Metacritics</source>
@@ -413,17 +421,18 @@
                 </PEGI>
                 <coverArt>./coverart/id17.jpg</coverArt>
             </game>
+                        
             <game>
                 <title language="angielski">The Sims 4</title>
                 <price>82.35 zł</price>
                 <genre>symulacja</genre>
                 <releaseDate>2 Września 2014</releaseDate>
-                <developer>EA Maxis</developer>
                 <platforms>
                     <item>Microsoft Windows</item>
                     <item>PlayStation 4</item>
                     <item>Xbox One</item>
                 </platforms>
+                <developer>EA Maxis</developer>
                 <publisher>Electronic Arts Inc.</publisher>
                 <rating>
                     <source>Metacritics</source>
@@ -438,17 +447,18 @@
                 </PEGI>
                 <coverArt>./coverart/id18.jpg</coverArt>
             </game>
+                        
             <game>
                 <title language="angielski">Shadow of the Tomb Raider</title>
                 <price>132.90 zł</price>
                 <genre>akcji</genre>
                 <releaseDate>14 Września 2018</releaseDate>
-                <developer>Eidos Montreal</developer>
                 <platforms>
                     <item>Microsoft Windows</item>
                     <item>PlayStation 4</item>
                     <item>Xbox One</item>
                 </platforms>
+                <developer>Eidos Montreal</developer>
                 <publisher>Square-Enix</publisher>
                 <rating>
                     <source>Gry-Online</source>
@@ -463,17 +473,18 @@
                 </PEGI>
                 <coverArt>./coverart/id19.jpg</coverArt>
             </game>
+                        
             <game>
                 <title language="polski">Dragon Age: Inkwizycja</title>
                 <price>41.80 zł</price>
                 <genre>RPG</genre>
                 <releaseDate>18 Listopad 2014</releaseDate>
-                <developer>BioWare Corporation</developer>
                 <platforms>
                     <item>Microsoft Windows</item>
                     <item>PlayStation 4</item>
                     <item>Xbox One</item>
                 </platforms>
+                <developer>BioWare Corporation</developer>
                 <publisher>Electronic Arts Inc.</publisher>
                 <rating>
                     <source>Metacritics</source>
@@ -489,6 +500,7 @@
                 </PEGI>
                 <coverArt>./coverart/id20.jpg</coverArt>
             </game>
+                    
         </gameList>
         <authors>
             <person/>
