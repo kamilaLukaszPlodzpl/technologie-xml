@@ -78,22 +78,40 @@
                         <xsl:value-of select="*[name()='releaseDate']"/>
                     </xsl:element>
                 </xsl:element>
-                <xsl:element name="tr">
-                    <xsl:element name="td">
-                       Wydawca:
-                    </xsl:element>
-                    <xsl:element name="td">
-                        <xsl:value-of select="*[name()='publisher']"/>
-                    </xsl:element>
-                </xsl:element>
-                <xsl:element name="tr">
-                    <xsl:element name="td">
-                        Producent:
-                    </xsl:element>
-                    <xsl:element name="td">
-                        <xsl:value-of select="*[name()='developer']"/>
-                    </xsl:element>
-                </xsl:element>
+
+                <xsl:variable name="developer" select="*[name()='developer'] | *[name()='devloperPublisher']"/>
+                <xsl:variable name="publisher" select="*[name()='publisher'] | *[name()='devloperPublisher']"/>
+                <xsl:variable name="devloperPublisher" select="*[name()='devloperPublisher']"/>
+                <xsl:choose>
+                    <xsl:when test="$developer = $publisher">
+                        <xsl:element name="tr">
+                            <xsl:element name="td">
+                                Wydawca/Producent:
+                            </xsl:element>
+                            <xsl:element name="td">
+                                <xsl:value-of select="$devloperPublisher"/>
+                            </xsl:element>
+                        </xsl:element>
+                    </xsl:when>
+                    <xsl:otherwise>
+                        <xsl:element name="tr">
+                            <xsl:element name="td">
+                                Wydawca:
+                            </xsl:element>
+                            <xsl:element name="td">
+                                <xsl:value-of select="$publisher"/>
+                            </xsl:element>
+                        </xsl:element>
+                        <xsl:element name="tr">
+                            <xsl:element name="td">
+                                Producent:
+                            </xsl:element>
+                            <xsl:element name="td">
+                                <xsl:value-of select="$developer"/>
+                            </xsl:element>
+                        </xsl:element>
+                    </xsl:otherwise>
+                </xsl:choose>
                 <xsl:element name="tr">
                     <xsl:element name="td">
                         Platformy:
@@ -102,6 +120,7 @@
                         <xsl:value-of select="*[name()='platforms']"/>
                     </xsl:element>
                 </xsl:element>
+
                 <xsl:element name="tr">
                     <xsl:element name="td">
                         <xsl:value-of select="concat('Ocena przez ',*[name()='rating']/*[name()='source'],':')"/>
