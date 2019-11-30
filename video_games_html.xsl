@@ -14,7 +14,8 @@
 
             <xsl:element name="body">
                 <xsl:attribute name="style">
-                    font-size:18px
+                    font-size:18px;
+                    background: linear-gradient(to top left, #52B788 0%, #B2D3A8 100%)
                 </xsl:attribute>
                 <xsl:call-template name="gameList"/>
                 <xsl:call-template name="stats"/>
@@ -28,7 +29,7 @@
             <xsl:element name="div">
                 <xsl:attribute name="style">display:block;text-align:center;</xsl:attribute>
                 <xsl:apply-templates select="//*[name()='game']">
-                    <xsl:sort select="*[name()='genre']"/>
+                    <xsl:sort select="*[name()='title']"/>
                 </xsl:apply-templates>
             </xsl:element>
         </xsl:element>
@@ -36,7 +37,7 @@
 
     <xsl:template match="//*[name()='game']">
         <xsl:element name="table">
-            <xsl:attribute name="style">background:#deeaee;display:inline-block;width:65%</xsl:attribute>
+            <xsl:attribute name="style">background:#EDE5A6;display:inline-block;width:65%</xsl:attribute>
             <xsl:attribute name="border">1</xsl:attribute>
             <xsl:element name="thead">
                 <xsl:call-template name="tableHead"/>
@@ -50,7 +51,7 @@
     <!-- Nagłówek tabeli-->
     <xsl:template name="tableHead">
         <xsl:element name="tr">
-            <xsl:attribute name="style">text-align:center;background-color:#f7786b;width:100%</xsl:attribute>
+            <xsl:attribute name="style">text-align:center;background-color:#592941;width:100%</xsl:attribute>
             <xsl:element name="th">
                 <xsl:attribute name="colspan">3</xsl:attribute>
                 <xsl:value-of select="*[name()='title']"/>
