@@ -1,7 +1,7 @@
 <xsl:stylesheet version="2.0"
                 xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
 >
-    <xsl:output method="xml" doctype-system="http://www.w3.org/tr/xhtml1/dtd/xhtml1-strict.dtd" version="1.0" encoding="UTF-8" indent="yes"/>
+    <xsl:output method="xml" doctype-public="http://www.w3.org/tr/xhtml1/dtd/xhtml1-strict.dtd" version="1.0" encoding="UTF-8" indent="yes"/>
 
     <xsl:template match="/">
         <xsl:element name="html" >
@@ -15,29 +15,26 @@
             <xsl:element name="body">
                 <xsl:attribute name="style">
                     font-size:18px;
-                    background: linear-gradient(to top left, #52B788 0%, #B2D3A8 100%)
+                    background:#592941
                 </xsl:attribute>
-                <xsl:call-template name="gameList"/>
-                <xsl:call-template name="stats"/>
+                <xsl:apply-templates select="//*[name()='gameList']"/>
             </xsl:element>
 
         </xsl:element>
     </xsl:template>
 
-    <xsl:template name="gameList">
+    <xsl:template match="//*[name()='gameList']">
         <xsl:element name="div">
-            <xsl:element name="div">
-                <xsl:attribute name="style">display:block;text-align:center;</xsl:attribute>
-                <xsl:apply-templates select="//*[name()='game']">
-                    <xsl:sort select="*[name()='title']"/>
-                </xsl:apply-templates>
-            </xsl:element>
+            <xsl:attribute name="style">display:block;text-align:center;</xsl:attribute>
+            <xsl:apply-templates select="//*[name()='game']">
+                <xsl:sort select="*[name()='title']"/>
+            </xsl:apply-templates>
         </xsl:element>
     </xsl:template>
 
     <xsl:template match="//*[name()='game']">
         <xsl:element name="table">
-            <xsl:attribute name="style">background:#EDE5A6;display:inline-block;width:65%</xsl:attribute>
+            <xsl:attribute name="style">background:#B2D3A8;display:inline-block;width:65%</xsl:attribute>
             <xsl:attribute name="border">1</xsl:attribute>
             <xsl:element name="thead">
                 <xsl:call-template name="tableHead"/>
@@ -49,9 +46,9 @@
     </xsl:template>
 
     <!-- Nagłówek tabeli-->
-    <xsl:template name="tableHead">
+    <xsl:template name="tableHead">  
         <xsl:element name="tr">
-            <xsl:attribute name="style">text-align:center;background-color:#592941;width:100%</xsl:attribute>
+            <xsl:attribute name="style">background-color:#52B788;width:100%;color:#ccffcc</xsl:attribute>
             <xsl:element name="th">
                 <xsl:attribute name="colspan">3</xsl:attribute>
                 <xsl:value-of select="*[name()='title']"/>
@@ -69,6 +66,9 @@
                     <xsl:attribute name="height">200px</xsl:attribute>
                     <xsl:attribute name="src">
                         <xsl:value-of select="*[name()='coverArt']"/>
+                    </xsl:attribute>
+                    <xsl:attribute name="alt">
+                        <xsl:value-of select="concat('Okładka Gry ',*[name()='title'])"/>
                     </xsl:attribute>
                 </xsl:element>
             </xsl:element>
@@ -151,10 +151,6 @@
                 </xsl:element>
             </xsl:otherwise>
         </xsl:choose>
-    </xsl:template>
-
-    <xsl:template name="stats">
-
     </xsl:template>
 
 </xsl:stylesheet>
