@@ -144,7 +144,8 @@
             <xsl:element name="percentageRating">
                 <xsl:variable name="maxRating" select="@max"/>
                 <xsl:variable name="rating" select="."/>
-                <xsl:value-of select="($rating * 100) div $maxRating"/>
+                <xsl:variable name="ratingPercentage" select="($rating * 100) div $maxRating"/>
+                <xsl:value-of select="format-number($ratingPercentage,'###')"/>
             </xsl:element>
         </xsl:element>
     </xsl:template>

@@ -1,25 +1,25 @@
 <xsl:stylesheet version="2.0"
                 xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
+                xmlns="http://www.w3.org/1999/xhtml"
 >
-    <xsl:output method="xml" doctype-public="http://www.w3.org/tr/xhtml1/dtd/xhtml1-strict.dtd" version="1.0" encoding="UTF-8" indent="yes"/>
+    <xsl:output method="xml"
+                doctype-public="-//W3C//DTD XHTML 1.1//EN"
+                doctype-system="http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd" version="1.0" encoding="UTF-8" indent="yes"/>
 
     <xsl:template match="/">
-        <xsl:element name="html" >
-
+        <xsl:element name="html" namespace="http://www.w3.org/1999/xhtml">
             <xsl:element name="head">
+                <xsl:element name="meta">
+                    <xsl:attribute name="content">text/html; charset=utf-8</xsl:attribute>
+                </xsl:element>
                 <xsl:element name="title">
                     <xsl:value-of select="//*[name()='description']"/>
                 </xsl:element>
             </xsl:element>
-
             <xsl:element name="body">
-                <xsl:attribute name="style">
-                    font-size:18px;
-                    background:#592941
-                </xsl:attribute>
+                <xsl:attribute name="style">font-size:18px;background:#592941</xsl:attribute>
                 <xsl:apply-templates select="//*[name()='gameList']"/>
             </xsl:element>
-
         </xsl:element>
     </xsl:template>
 
@@ -73,11 +73,13 @@
                 </xsl:element>
             </xsl:element>
             <xsl:element name="td">
-                <xsl:attribute name="width">40%</xsl:attribute>
+                <!--<xsl:attribute name="width">40%</xsl:attribute>-->
+                <xsl:attribute name="style">width: 40%</xsl:attribute>
                 Cena:
             </xsl:element>
             <xsl:element name="td">
-                <xsl:attribute name="width">50%</xsl:attribute>
+                <!--<xsl:attribute name="width">50%</xsl:attribute>-->
+                <xsl:attribute name="style">width: 50%</xsl:attribute>
                 <xsl:value-of select="*[name()='price']"/>
             </xsl:element>
         </xsl:element>

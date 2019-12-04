@@ -1,4 +1,7 @@
-<?xml version="1.0" encoding="UTF-8"?><root>
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="video_games_txt.xsl"?>
+
+<root>
     <raport>
         <description>Spis gier</description>
         <gameList>
@@ -280,7 +283,7 @@
                 <devloperPublisher>Ubisoft</devloperPublisher>
                 <rating>
                     <source>Gry-Online</source>
-                    <percentageRating>88.00000000000001</percentageRating>
+                    <percentageRating>88</percentageRating>
                 </rating>
                 <PEGI>
                     <label>18</label>
@@ -357,7 +360,7 @@
                 <devloperPublisher>CD Projekt RED</devloperPublisher>
                 <rating>
                     <source>Gry-Online</source>
-                    <percentageRating>91.99999999999999</percentageRating>
+                    <percentageRating>92</percentageRating>
                 </rating>
                 <PEGI>
                     <label>18</label>
