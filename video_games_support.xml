@@ -1,4 +1,7 @@
-<?xml version="1.0" encoding="UTF-8"?><root>
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="video_games_txt.xsl"?>
+
+<root>
     <raport>
         <description>Spis gier</description>
         <gameList>
