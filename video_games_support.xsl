@@ -1,11 +1,10 @@
 <xsl:stylesheet version="2.0"
-                xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:xsL="http://www.w3.org/1999/XSL/Transform"
->
-<xsl:output method="xml" version="1.0" encoding="UTF-8" indent="yes"/>
+                xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
+    <xsl:output method="xml" version="1.0" encoding="UTF-8" indent="yes"/>
 
-    <xsl:key name="keyPEGI" match="*[name()='pegiDescriptor']" use="@id" />
-    <xsl:key name="keyGenre" match="*[name()='genre']" use="@id" />
-    <xsl:key name="keyPlatform" match="*[name()='platform']" use="@id" />
+    <xsl:key name="keyPEGI" match="*[name()='pegiDescriptor']" use="@id"/>
+    <xsl:key name="keyGenre" match="*[name()='genre']" use="@id"/>
+    <xsl:key name="keyPlatform" match="*[name()='platform']" use="@id"/>
 
     <xsl:template match="/">
         <xsl:element name="root">
@@ -17,14 +16,20 @@
     <!-- Statystyki -->
     <xsl:template name="stats">
         <xsl:element name="stats">
+            <xsl:variable name="priceSum"  select="sum(//*[name()='games']/*[name()='game']/*[name()='price'])"/>
+            <xsl:variable name="priceMax"  select="max(//*[name()='games']/*[name()='game']/*[name()='price'])"/>
+            <xsl:variable name="gameCount"  select="count(//*[name()='games']/*[name()='game'])"/>
             <xsl:element name="gameCount">
-                <xsl:value-of select="count(//*[name()='games']/*[name()='game'])"/>
+                <xsl:value-of select="$gameCount"/>
             </xsl:element>
             <xsl:element name="platformCount">
                 <xsl:value-of select="count(//*[name()='platforms']/*[name()='platform'])"/>
             </xsl:element>
             <xsl:element name="genreCount">
                 <xsl:value-of select="count(//*[name()='genres']/*[name()='genre'])"/>
+            </xsl:element>
+            <xsl:element name="avgPrice">
+                <xsl:value-of select="$priceSum div $gameCount"/>
             </xsl:element>
         </xsl:element>
     </xsl:template>
@@ -157,14 +162,15 @@
                 <xsl:value-of select="$label"/>
             </xsl:element>
             <xsl:element name="list">
-            <xsl:for-each select="*">
-                <xsl:variable name="id" select="@id"/>
-                <xsl:for-each select="key('keyPEGI',$id)">
-                    <xsl:element name="item">
-                        <xsl:value-of select="."/>
-                    </xsl:element>
+                <xsl:for-each select="*">
+                    <xsl:variable name="id" select="@id"/>
+                    <xsl:for-each select="key('keyPEGI',$id)">
+                        <xsl:element name="item">
+                            <xsl:value-of select="."/>
+                        </xsl:element>
+                    </xsl:for-each>
                 </xsl:for-each>
-            </xsl:for-each></xsl:element>
+            </xsl:element>
         </xsl:element>
     </xsl:template>
 

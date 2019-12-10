@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="92d1b73f-7b3b-4149-a75f-fa7f364c2d3a" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/video_games.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/video_games_txt.xsl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/video_games_support.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/video_games_support.xsl" beforeDir="false" afterPath="$PROJECT_DIR$/video_games_support.xsl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/xslt_generator/generate.xsl" beforeDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="XSLT Stylesheet" />
+        <option value="HTML File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="ROOT_SYNC" value="DONT_SYNC" />
+  </component>
+  <component name="ProjectId" id="1SjqzGNF6iI7bxwC5r5uZ4nQeCo" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="C:/saxon/xslt.bat" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Shell Script.support">
+    <list>
+      <item itemvalue="Shell Script.support" />
+      <item itemvalue="XSLT.video_games_html.xsl" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="XSLT.video_games_html.xsl" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="92d1b73f-7b3b-4149-a75f-fa7f364c2d3a" name="Default Changelist" comment="" />
+      <created>1572087614276</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1572087614276</updated>
+      <workItem from="1572087618091" duration="161000" />
+      <workItem from="1572174748291" duration="177000" />
+      <workItem from="1572247767848" duration="2369000" />
+      <workItem from="1573054601095" duration="5440000" />
+      <workItem from="1573237169443" duration="61000" />
+      <workItem from="1573566721917" duration="1133000" />
+      <workItem from="1573593333078" duration="11378000" />
+      <workItem from="1573630122808" duration="5167000" />
+      <workItem from="1573659107459" duration="13611000" />
+      <workItem from="1574062770803" duration="2140000" />
+      <workItem from="1574440862635" duration="6418000" />
+      <workItem from="1574460690583" duration="8995000" />
+      <workItem from="1574497382932" duration="9166000" />
+      <workItem from="1574523908992" duration="35000" />
+      <workItem from="1574523990298" duration="376000" />
+      <workItem from="1574555525192" duration="1239000" />
+      <workItem from="1574666622599" duration="5691000" />
+      <workItem from="1574761988753" duration="3321000" />
+      <workItem from="1574940679327" duration="771000" />
+      <workItem from="1574941467794" duration="610000" />
+      <workItem from="1574942094251" duration="35000" />
+      <workItem from="1575144771465" duration="1481000" />
+      <workItem from="1575236050807" duration="3372000" />
+      <workItem from="1575373911723" duration="1056000" />
+      <workItem from="1575465469612" duration="3888000" />
+      <workItem from="1575985566057" duration="3320000" />
+      <workItem from="1575992862039" duration="789000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="XPathView.XPathProjectComponent">
+    <history>
+      <element expression="/root">
+        <namespace prefix="xsi" uri="http://www.w3.org/2001/XMLSchema-instance" />
+        <namespace prefix="" uri="video_games" />
+      </element>
+    </history>
+    <find-history />
+  </component>
+</project>
