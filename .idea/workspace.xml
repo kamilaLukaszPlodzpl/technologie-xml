@@ -2,13 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="92d1b73f-7b3b-4149-a75f-fa7f364c2d3a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/video_games.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/video_games_txt.xsl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/video_games_support.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/video_games_support.xsl" beforeDir="false" afterPath="$PROJECT_DIR$/video_games_support.xsl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/xslt_generator/generate.xsl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/runConfigurations/support.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/runConfigurations/support.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/video_games_support.xml" beforeDir="false" afterPath="$PROJECT_DIR$/video_games_support.xml" afterDir="false" />
     </list>
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -31,33 +28,37 @@
   <component name="PropertiesComponent">
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="C:/saxon/xslt.bat" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
   </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
-      <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
-      </list>
-    </option>
-  </component>
   <component name="RunManager" selected="Shell Script.support">
+    <configuration default="true" type="ShConfigurationType">
+      <option name="SCRIPT_PATH" value="" />
+      <option name="SCRIPT_OPTIONS" value="" />
+      <option name="SCRIPT_WORKING_DIRECTORY" value="" />
+      <option name="INTERPRETER_PATH" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <method v="2" />
+    </configuration>
     <list>
       <item itemvalue="Shell Script.support" />
       <item itemvalue="XSLT.video_games_html.xsl" />
     </list>
-    <recent_temporary>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
       <list>
-        <item itemvalue="XSLT.video_games_html.xsl" />
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
       </list>
-    </recent_temporary>
+    </option>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -96,6 +97,8 @@
       <workItem from="1575465469612" duration="3888000" />
       <workItem from="1575985566057" duration="3320000" />
       <workItem from="1575992862039" duration="789000" />
+      <workItem from="1575994180731" duration="172000" />
+      <workItem from="1575994375349" duration="146000" />
     </task>
     <servers />
   </component>
@@ -114,6 +117,20 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="223" y="66" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1575994552499">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="223" y="66" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.824@0.0.1536.824" timestamp="1575994552499" />
+    <state x="496" y="133" key="#support" timestamp="1575994201453">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="496" y="133" key="#support/0.0.1536.824@0.0.1536.824" timestamp="1575994201453" />
+    <state x="128" y="101" key="FileChooserDialogImpl" timestamp="1575994267700">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="128" y="101" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1575994267700" />
   </component>
   <component name="XPathView.XPathProjectComponent">
     <history>
