@@ -491,6 +491,54 @@
       <gameCount>20</gameCount>
       <platformCount>11</platformCount>
       <genreCount>11</genreCount>
-      <avgPrice>106.739</avgPrice>
+      <priveAvg>106.739</priveAvg>
+      <priceMax>249</priceMax>
+      <priceMin>30.99</priceMin>
+      <gameInGenre>
+         <genre>
+            <count>1</count>
+            <name>hack and slash</name>
+         </genre>
+         <genre>
+            <count>2</count>
+            <name>skradanka</name>
+         </genre>
+         <genre>
+            <count>2</count>
+            <name>survival</name>
+         </genre>
+         <genre>
+            <count>2</count>
+            <name>piaskownica</name>
+         </genre>
+         <genre>
+            <count>1</count>
+            <name>strategia</name>
+         </genre>
+         <genre>
+            <count>3</count>
+            <name>strzelanka</name>
+         </genre>
+         <genre>
+            <count>1</count>
+            <name>wyścigi</name>
+         </genre>
+         <genre>
+            <count>1</count>
+            <name>MMO</name>
+         </genre>
+         <genre>
+            <count>1</count>
+            <name>symulacja</name>
+         </genre>
+         <genre>
+            <count>3</count>
+            <name>akcji</name>
+         </genre>
+         <genre>
+            <count>3</count>
+            <name>RPG</name>
+         </genre>
+      </gameInGenre>
    </stats>
 </root>

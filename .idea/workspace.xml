@@ -2,9 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="92d1b73f-7b3b-4149-a75f-fa7f364c2d3a" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/runConfigurations/support.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/runConfigurations/support.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/runConfigurations/svg.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/video_games_svg.xsl" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/video_games_support.xml" beforeDir="false" afterPath="$PROJECT_DIR$/video_games_support.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/video_games_support.xsl" beforeDir="false" afterPath="$PROJECT_DIR$/video_games_support.xsl" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -14,8 +16,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="XSLT Stylesheet" />
         <option value="HTML File" />
+        <option value="XSLT Stylesheet" />
       </list>
     </option>
   </component>
@@ -25,26 +27,34 @@
   </component>
   <component name="ProjectId" id="1SjqzGNF6iI7bxwC5r5uZ4nQeCo" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
   <component name="PropertiesComponent">
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="js.buildTools.grunt.grunt-cli.package" value="$PROJECT_DIR$/node_modules/grunt" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/video_games.svg" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
   </component>
-  <component name="RunManager" selected="Shell Script.support">
-    <configuration default="true" type="ShConfigurationType">
-      <option name="SCRIPT_PATH" value="" />
-      <option name="SCRIPT_OPTIONS" value="" />
-      <option name="SCRIPT_WORKING_DIRECTORY" value="" />
-      <option name="INTERPRETER_PATH" value="" />
-      <option name="INTERPRETER_OPTIONS" value="" />
+  <component name="RunManager" selected="Grunt.js.Watch svg">
+    <configuration default="true" type="js.build_tools.grunt">
+      <node-interpreter value="project" />
+      <gruntfile value="$PROJECT_DIR$/Gruntfile.js" />
+      <envs />
       <method v="2" />
     </configuration>
     <list>
+      <item itemvalue="Grunt.js.Watch svg" />
+      <item itemvalue="Grunt.js.Watch" />
       <item itemvalue="Shell Script.support" />
+      <item itemvalue="Shell Script.svg" />
       <item itemvalue="XSLT.video_games_html.xsl" />
     </list>
   </component>
@@ -99,6 +109,11 @@
       <workItem from="1575992862039" duration="789000" />
       <workItem from="1575994180731" duration="172000" />
       <workItem from="1575994375349" duration="146000" />
+      <workItem from="1575995930211" duration="446000" />
+      <workItem from="1575996438201" duration="8227000" />
+      <workItem from="1576056002109" duration="1562000" />
+      <workItem from="1576058787721" duration="99000" />
+      <workItem from="1576060028004" duration="91000" />
     </task>
     <servers />
   </component>
@@ -119,18 +134,44 @@
     </option>
   </component>
   <component name="WindowStateProjectService">
-    <state x="223" y="66" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1575994552499">
-      <screen x="0" y="0" width="1536" height="824" />
+    <state x="552" y="177" key="#Images" timestamp="1576056231602">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="552" y="177" key="#Images/0.0.1920.1040@0.0.1920.1040" timestamp="1576056231602" />
+    <state x="417" y="86" key="#Web_Browsers" timestamp="1576056268932">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="417" y="86" key="#Web_Browsers/0.0.1920.1040@0.0.1920.1040" timestamp="1576056268932" />
+    <state x="279" y="83" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1576060113152">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="223" y="66" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.824@0.0.1536.824" timestamp="1575994552499" />
+    <state x="279" y="83" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1576060113152" />
     <state x="496" y="133" key="#support" timestamp="1575994201453">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="496" y="133" key="#support/0.0.1536.824@0.0.1536.824" timestamp="1575994201453" />
-    <state x="128" y="101" key="FileChooserDialogImpl" timestamp="1575994267700">
-      <screen x="0" y="0" width="1536" height="824" />
+    <state x="160" y="127" key="FileChooserDialogImpl" timestamp="1576056126402">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="128" y="101" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1575994267700" />
+    <state x="160" y="127" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1576056126402" />
+    <state width="1899" height="283" key="GridCell.Tab.0.bottom" timestamp="1576058886652">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1899" height="283" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1576058886652" />
+    <state width="1899" height="283" key="GridCell.Tab.0.center" timestamp="1576058886652">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1899" height="283" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1576058886652" />
+    <state width="1899" height="283" key="GridCell.Tab.0.left" timestamp="1576058886652">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1899" height="283" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1576058886652" />
+    <state width="1899" height="283" key="GridCell.Tab.0.right" timestamp="1576058886652">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1899" height="283" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1576058886652" />
   </component>
   <component name="XPathView.XPathProjectComponent">
     <history>

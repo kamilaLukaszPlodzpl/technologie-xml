@@ -1,0 +1,21 @@
+{
+  "name": "technologie-xml",
+  "version": "1.0.0",
+  "description": "",
+  "main": "-",
+  "scripts": {
+    "watch": "grunt watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@bitbucket.org/kamila_lukasz_plodzpl/technologie-xml.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "homepage": "https://bitbucket.org/kamila_lukasz_plodzpl/technologie-xml#readme",
+  "devDependencies": {
+    "grunt": "^1.0.4",
+    "grunt-contrib-watch": "^1.1.0",
+    "grunt-exec": "^3.0.0"
+  }
+}

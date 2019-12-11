@@ -18,6 +18,7 @@
         <xsl:element name="stats">
             <xsl:variable name="priceSum"  select="sum(//*[name()='games']/*[name()='game']/*[name()='price'])"/>
             <xsl:variable name="priceMax"  select="max(//*[name()='games']/*[name()='game']/*[name()='price'])"/>
+            <xsl:variable name="priceMin"  select="min(//*[name()='games']/*[name()='game']/*[name()='price'])"/>
             <xsl:variable name="gameCount"  select="count(//*[name()='games']/*[name()='game'])"/>
             <xsl:element name="gameCount">
                 <xsl:value-of select="$gameCount"/>
@@ -28,8 +29,28 @@
             <xsl:element name="genreCount">
                 <xsl:value-of select="count(//*[name()='genres']/*[name()='genre'])"/>
             </xsl:element>
-            <xsl:element name="avgPrice">
+            <xsl:element name="priveAvg">
                 <xsl:value-of select="$priceSum div $gameCount"/>
+            </xsl:element>
+            <xsl:element name="priceMax">
+                <xsl:value-of select="$priceMax"/>
+            </xsl:element>
+            <xsl:element name="priceMin">
+                <xsl:value-of select="$priceMin"/>
+            </xsl:element>
+            <xsl:element name="gameInGenre">
+                <xsl:for-each select="//*[name()='genres']/*[name()='genre']">
+                    <xsl:variable name="id" select="./@id"/>
+                    <xsl:variable name="count" select="count(//*[name()='games']/*[name()='game']/*[@id=$id])"/>
+                    <xsl:element name="genre">
+                        <xsl:element name="count">
+                            <xsl:value-of select="$count"/>
+                        </xsl:element>
+                        <xsl:element name="name">
+                            <xsl:value-of select="."/>
+                        </xsl:element>
+                    </xsl:element>
+                </xsl:for-each>
             </xsl:element>
         </xsl:element>
     </xsl:template>

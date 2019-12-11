@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
+   <g transform="translate(0,0)">
+      <rect width="200" height="100" x="0" y="0" fill="black"/>
+      <rect width="195" height="95" x="2.5" y="2.5" fill="white"/>
+      <line x1="20" y1="85" x2="185" y2="85" stroke="black"/>
+      <line x1="20" y1="5" x2="20" y2="85" stroke="black"/>
+      <text x="5" y="15" style="font-size: 0.5em">100</text>
+      <text x="5" y="80" style="font-size: 0.5em">0</text>
+   </g>
+   <g transform="translate(0,0)">
+      <g transform="translate(0,0)">
+         <rect width="10" height="50" x="0" y="0" fill="black"/>
+      </g>
+   </g>
+</svg>
