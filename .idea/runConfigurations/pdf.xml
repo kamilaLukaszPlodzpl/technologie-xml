@@ -1,9 +1,9 @@
 <component name="ProjectRunConfigurationManager">
-  <configuration default="false" name="Watch" type="js.build_tools.grunt">
+  <configuration default="false" name="pdf" type="js.build_tools.grunt">
     <node-interpreter value="project" />
     <gruntfile value="$PROJECT_DIR$/Gruntfile.js" />
     <tasks>
-      <task value="watch" />
+      <task value="exec:pdf" />
     </tasks>
     <envs />
     <method v="2" />

@@ -5,7 +5,7 @@
       <rect width="195" height="95" x="2.5" y="2.5" fill="white"/>
       <line x1="20" y1="85" x2="185" y2="85" stroke="black"/>
       <line x1="20" y1="5" x2="20" y2="85" stroke="black"/>
-      <text x="5" y="15" style="font-size: 0.5em">100</text>
+      <text x="5" y="15" style="font-size: 0.5em">112312</text>
       <text x="5" y="80" style="font-size: 0.5em">0</text>
    </g>
    <g transform="translate(0,0)">

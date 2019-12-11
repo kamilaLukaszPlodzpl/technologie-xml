@@ -1,10 +1,11 @@
 <component name="ProjectRunConfigurationManager">
-  <configuration default="false" name="svg" type="ShConfigurationType" activateToolWindowBeforeRun="false">
-    <option name="SCRIPT_PATH" value="C:/saxon/xslt.bat" />
-    <option name="SCRIPT_OPTIONS" value="video_games_svg.xsl video_games_support.xsl video_games.svg" />
-    <option name="SCRIPT_WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-    <option name="INTERPRETER_PATH" value="" />
-    <option name="INTERPRETER_OPTIONS" value="" />
+  <configuration default="false" name="svg" type="js.build_tools.grunt">
+    <node-interpreter value="project" />
+    <gruntfile value="$PROJECT_DIR$/Gruntfile.js" />
+    <tasks>
+      <task value="exec:svg" />
+    </tasks>
+    <envs />
     <method v="2" />
   </configuration>
 </component>

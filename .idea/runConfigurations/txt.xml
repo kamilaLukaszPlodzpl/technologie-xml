@@ -1,9 +1,9 @@
 <component name="ProjectRunConfigurationManager">
-  <configuration default="false" name="support" type="js.build_tools.grunt">
+  <configuration default="false" name="txt" type="js.build_tools.grunt">
     <node-interpreter value="project" />
     <gruntfile value="$PROJECT_DIR$/Gruntfile.js" />
     <tasks>
-      <task value="exec:support" />
+      <task value="exec:txt" />
     </tasks>
     <envs />
     <method v="2" />
