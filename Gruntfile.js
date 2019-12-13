@@ -7,6 +7,12 @@ module.exports = function(grunt) {
             pdf: {
                 cmd: 'xsltfopdf video_games_pdf.xsl video_games_support.xml video_games.pdf'
             },
+            fo_pdf: {
+                cmd: 'fopdf video_games.fo video_games.pdf'
+            },
+            fo: {
+                cmd: 'xslt video_games_pdf.xsl video_games_support.xml video_games.fo'
+            },
             svg: {
                 cmd: 'xslt video_games_svg.xsl video_games_support.xml video_games.svg'
             },
@@ -25,6 +31,22 @@ module.exports = function(grunt) {
                 files: ['**/video_games_pdf.xsl'],
                 tasks: ['exec:pdf'],
                 options: {
+                    livereload: false
+                },
+            },
+            fo_pdf: {
+                files: ['**/video_games_pdf.xsl'],
+                tasks: ['exec:fo_pdf'],
+                options: {
+                    spawn: false,
+                    livereload: false
+                },
+            },
+            fo: {
+                files: ['**/video_games_pdf.xsl'],
+                tasks: ['exec:fo'],
+                options: {
+                    spawn: false,
                     livereload: false
                 },
             },
@@ -53,6 +75,14 @@ module.exports = function(grunt) {
                 files: ['**/video_games_support.xsl'],
                 tasks: ['exec:support'],
                 options: {
+                    livereload: false
+                },
+            },
+            xslt_fo_pdf: {
+                files: ['**/video_games_pdf.xsl'],
+                tasks: ['exec:fo','exec:fo_pdf'],
+                options: {
+                    spawn: false,
                     livereload: false
                 },
             },
