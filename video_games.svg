@@ -1,16 +1,124 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
-   <g transform="translate(0,0)">
-      <rect width="200" height="100" x="0" y="0" fill="black"/>
-      <rect width="195" height="95" x="2.5" y="2.5" fill="white"/>
-      <line x1="20" y1="85" x2="185" y2="85" stroke="black"/>
-      <line x1="20" y1="5" x2="20" y2="85" stroke="black"/>
-      <text x="5" y="15" style="font-size: 0.5em">112312</text>
-      <text x="5" y="80" style="font-size: 0.5em">0</text>
-   </g>
-   <g transform="translate(0,0)">
-      <g transform="translate(0,0)">
-         <rect width="10" height="50" x="0" y="0" fill="black"/>
+<svg xmlns:xlink="http://www.w3.org/1999/xlink"
+     xmlns="http://www.w3.org/2000/svg"
+     viewBox="0 0 200 200">
+   <rect x="0" y="0" width="100%" height="100%" fill="#5287cc"/>
+   <style type="text/css">
+            
+            @import url('https://fonts.googleapis.com/css?family=Roboto&amp;display=swap');
+            @import url('https://fonts.googleapis.com/css?family=Caveat&amp;display=swap');
+            </style>
+   <rect width="99%" height="30%" x="0.5%" y="1" fill="#ffcfbf"/>
+   <line x1="0.5%"
+         x2="99.5%"
+         y1="60"
+         y2="60"
+         stroke="#5184AF"
+         stroke-width="2"
+         stroke-linecap="square"
+         stroke-dasharray="1, 5"/>
+   <line x1="0.5%"
+         x2="99.5%"
+         y1="2"
+         y2="2"
+         stroke="#5184AF"
+         stroke-width="2"
+         stroke-linecap="square"
+         stroke-dasharray="1, 5"/>
+   <text x="36%" y="1em" style="font-family: 'Caveat', cursive;">Spis gier</text>
+   <rect id="BtnNext"
+         width="10%"
+         height="30"
+         x="4%"
+         y="1.5em"
+         fill="#5287cc"
+         rx="4"
+         ry="4"/>
+   <rect id="BtnPrev"
+         width="10%"
+         height="30"
+         x="86%"
+         y="1.5em"
+         fill="#5287cc"
+         rx="4"
+         ry="4"/>
+   <rect width="70%"
+         height="30"
+         x="15%"
+         y="1.5em"
+         fill="#5287cc"
+         rx="4"
+         ry="4"/>
+   <clipPath id="clipPages">
+      <rect width="100%" height="69%" x="0" y="31%"/>
+   </clipPath>
+   <g clip-path="url(#clipPages)">
+      <g class="page">
+         <rect width="100%" height="100%" x="0" y="31%" fill="black"/>
+         <animateTransform begin="indefinite"
+                           id="hideAnimationNext"
+                           attributeName="transform"
+                           attributeType="XML"
+                           from="0,0"
+                           to="-200,0"
+                           dur="2s"/>
+         <animateTransform begin="indefinite"
+                           id="showAnimationNext"
+                           attributeName="transform"
+                           attributeType="XML"
+                           from="200,0"
+                           to="0,0"
+                           dur="2s"/>
+         <animateTransform begin="indefinite"
+                           id="hideAnimationPrev"
+                           attributeName="transform"
+                           attributeType="XML"
+                           from="0,0"
+                           to="200,0"
+                           dur="2s"/>
+         <animateTransform begin="indefinite"
+                           id="showAnimationPrev"
+                           attributeName="transform"
+                           attributeType="XML"
+                           from="-200,0"
+                           to="0,0"
+                           dur="2s"/>
       </g>
+      <rect class="page"
+            width="100%"
+            height="100%"
+            x="0"
+            y="31%"
+            fill="green">
+         <animateTransform begin="indefinite"
+                           id="hideAnimationNext"
+                           attributeName="transform"
+                           attributeType="XML"
+                           from="0,0"
+                           to="-200,0"
+                           dur="2s"/>
+         <animateTransform begin="indefinite"
+                           id="showAnimationNext"
+                           attributeName="transform"
+                           attributeType="XML"
+                           from="200,0"
+                           to="0,0"
+                           dur="2s"/>
+         <animateTransform begin="indefinite"
+                           id="hideAnimationPrev"
+                           attributeName="transform"
+                           attributeType="XML"
+                           from="0,0"
+                           to="200,0"
+                           dur="2s"/>
+         <animateTransform begin="indefinite"
+                           id="showAnimationPrev"
+                           attributeName="transform"
+                           attributeType="XML"
+                           from="-200,0"
+                           to="0,0"
+                           dur="2s"/>
+      </rect>
    </g>
+   <script type="text/javascript" href="svg.js"/>
 </svg>
