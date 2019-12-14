@@ -10,24 +10,27 @@
     </xsl:template>
 
     <xsl:template match="//*[name()='gameList']/*[name()='game']">
-        <xsl:value-of select="concat('Tytuł: ',*[name()='title'])"/>
+        Tytuł:<xsl:value-of select="*[name()='title']"/>
         <xsl:text>&#xa;</xsl:text>
-        <xsl:value-of select="concat('Cena:',*[name()='price'])"/>
+        <xsl:value-of select="*[name()='price']"/>
         <xsl:text>&#xa;</xsl:text>
-        <xsl:value-of select="concat('Gatunek:',*[name()='genre'])"/>
+        <xsl:value-of select="*[name()='genre']"/>
         <xsl:text>&#xa;</xsl:text>
-        <xsl:value-of select="concat('Data Wydania:',*[name()='releaseDate'])"/>
+        <xsl:value-of select="*[name()='releaseDate']"/>
         <xsl:text>&#xa;</xsl:text>
-        <xsl:text>Platformy:</xsl:text>
-        <xsl:apply-templates select="*[name()='platform']/*[name()='item']"/>
+        <xsl:value-of select="*[name()='platforms']/*[name()='item']"/>
         <xsl:text>&#xa;</xsl:text>
-        <xsl:value-of select="concat('Ocena według ',*[name()='rating'] / *[name() = 'source'],':',*[name()='rating'] / *[name() = 'percentageRating'])"/>
+        <xsl:value-of select="*[name()='rating'] / *[name() = 'source'],':',*[name()='rating'] / *[name() = 'percentageRating']"/>
         <xsl:text>&#xa;</xsl:text>
         <xsl:text>&#xa;</xsl:text>
         <xsl:text>&#xa;</xsl:text>
     </xsl:template>
 
-    <xsl:template match="*[name()='platform']/*[name()='item']">
-        <xsl:value-of select="concat(*[name()],',')"/>"
+    <xsl:template name="space">
+        <xsl:param name="length"/>
+        <xsl:value-of select="' '"/>
+        <xsl:call-template name="space">
+            <xsl:with-param name="length" select="$length - 1"/>
+        </xsl:call-template>
     </xsl:template>
 </xsl:stylesheet>
