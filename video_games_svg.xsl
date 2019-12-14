@@ -9,6 +9,7 @@
     <xsl:variable name="viewportY" select="200"/>
     <xsl:variable name="background" select="'#5287cc'"/>
     <xsl:variable name="background-header" select="'#ffcfbf'"/>
+    <xsl:variable name="background-btn" select="'#4FB6E3'"/>
     
     <xsl:template match="/">
         <xsl:element name="svg" namespace="http://www.w3.org/2000/svg">
@@ -37,30 +38,30 @@
     </xsl:template>
 
     <xsl:template name="header">
-        <rect width="99%" height="30%" x="0.5%" y="1" fill="{$background-header}"/>
-        <line x1="0.5%" x2="99.5%" y1="60" y2="60" stroke="#5184AF" stroke-width="2" stroke-linecap="square" stroke-dasharray="1, 5"/>
+        <rect width="99%" height="20%" x="0.5%" y="1" fill="{$background-header}"/>
+        <line x1="0.5%" x2="99.5%" y1="20%" y2="20%" stroke="#5184AF" stroke-width="2" stroke-linecap="square" stroke-dasharray="1, 5"/>
         <line x1="0.5%" x2="99.5%" y1="2" y2="2" stroke="#5184AF" stroke-width="2" stroke-linecap="square" stroke-dasharray="1, 5"/>
-        <text x="36%" y="1em">
-            <xsl:attribute name="style">font-family: 'Caveat', cursive;</xsl:attribute>
+        <text x="32%" y="1em">
+            <xsl:attribute name="style">font-family: 'Caveat', cursive;font-size: 1.5em;</xsl:attribute>
             <xsl:value-of select="//raport/description"/>
         </text>
-        <rect id="BtnNext" width="10%" height="30" x="4%" y="1.5em" fill="{$background}" rx="4" ry="4"/>
-        <rect id="BtnPrev" width="10%" height="30" x="86%" y="1.5em" fill="{$background}" rx="4" ry="4"/>
-        <rect width="70%" height="30" x="15%" y="1.5em" fill="{$background}" rx="4" ry="4"/>
+        <rect id="BtnNext" width="10%" height="30" x="4%" y="0.4em" fill="{$background-btn}" rx="4" ry="4"/>
+        <rect id="BtnPrev" width="10%" height="30" x="86%" y="0.4em" fill="{$background-btn}" rx="4" ry="4"/>
     </xsl:template>
 
     <xsl:template name="content">
         <clipPath id="clipPages">
-            <rect width="100%" height="69%" x="0" y="31%"/>
+            <rect width="100%" height="89%" x="0" y="21%"/>
         </clipPath>
         <g clip-path="url(#clipPages)">
-            <g class="page">
-                <rect width="100%" height="100%" x="0" y="31%" fill="black"/>
+            <g class="page" transform="translate(0,21%)">
+                <rect width="100%" height="100%" x="0" y="0" fill="green"/>
                 <xsl:call-template name="animationsPage"/>
             </g>
-            <rect class="page" width="100%" height="100%" x="0" y="31%" fill="green">
+            <g class="page" transform="translate(0%,21%)">
+                <xsl:call-template name="gameList"/>
                 <xsl:call-template name="animationsPage"/>
-            </rect>
+            </g>
         </g>
     </xsl:template>
 
@@ -69,5 +70,13 @@
         <animateTransform begin="indefinite" id="showAnimationNext" attributeName="transform" attributeType="XML" from="{$viewportX},0" to="0,0" dur="2s"/>
         <animateTransform begin="indefinite" id="hideAnimationPrev" attributeName="transform" attributeType="XML" from="0,0" to="{$viewportX},0" dur="2s"/>
         <animateTransform begin="indefinite" id="showAnimationPrev" attributeName="transform" attributeType="XML" from="-{$viewportX},0" to="0,0" dur="2s"/>
+    </xsl:template>
+
+    <xsl:template name="gameList">
+        <rect id="BtnNextGame" onclick="BtnNextGame_clicked()" width="50%" height="12" x="25%" y="93%" fill="{$background-btn}" rx="4" ry="4"/>
+        <text x="40%" y="97.5%" onclick="BtnNextGame_clicked()">
+            <xsl:attribute name="style">font-family: 'Caveat', cursive;font-size: 0.6em;</xsl:attribute>
+            <xsl:value-of select="'Następna'"/>
+        </text>
     </xsl:template>
 </xsl:stylesheet>

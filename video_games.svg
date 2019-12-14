@@ -8,11 +8,11 @@
             @import url('https://fonts.googleapis.com/css?family=Roboto&amp;display=swap');
             @import url('https://fonts.googleapis.com/css?family=Caveat&amp;display=swap');
             </style>
-   <rect width="99%" height="30%" x="0.5%" y="1" fill="#ffcfbf"/>
+   <rect width="99%" height="20%" x="0.5%" y="1" fill="#ffcfbf"/>
    <line x1="0.5%"
          x2="99.5%"
-         y1="60"
-         y2="60"
+         y1="20%"
+         y2="20%"
          stroke="#5184AF"
          stroke-width="2"
          stroke-linecap="square"
@@ -25,36 +25,31 @@
          stroke-width="2"
          stroke-linecap="square"
          stroke-dasharray="1, 5"/>
-   <text x="36%" y="1em" style="font-family: 'Caveat', cursive;">Spis gier</text>
+   <text x="32%"
+         y="1em"
+         style="font-family: 'Caveat', cursive;font-size: 1.5em;">Spis gier</text>
    <rect id="BtnNext"
          width="10%"
          height="30"
          x="4%"
-         y="1.5em"
-         fill="#5287cc"
+         y="0.4em"
+         fill="#4FB6E3"
          rx="4"
          ry="4"/>
    <rect id="BtnPrev"
          width="10%"
          height="30"
          x="86%"
-         y="1.5em"
-         fill="#5287cc"
-         rx="4"
-         ry="4"/>
-   <rect width="70%"
-         height="30"
-         x="15%"
-         y="1.5em"
-         fill="#5287cc"
+         y="0.4em"
+         fill="#4FB6E3"
          rx="4"
          ry="4"/>
    <clipPath id="clipPages">
-      <rect width="100%" height="69%" x="0" y="31%"/>
+      <rect width="100%" height="89%" x="0" y="21%"/>
    </clipPath>
    <g clip-path="url(#clipPages)">
-      <g class="page">
-         <rect width="100%" height="100%" x="0" y="31%" fill="black"/>
+      <g class="page" transform="translate(0,21%)">
+         <rect width="100%" height="100%" x="0" y="0" fill="green"/>
          <animateTransform begin="indefinite"
                            id="hideAnimationNext"
                            attributeName="transform"
@@ -84,12 +79,20 @@
                            to="0,0"
                            dur="2s"/>
       </g>
-      <rect class="page"
-            width="100%"
-            height="100%"
-            x="0"
-            y="31%"
-            fill="green">
+      <g class="page" transform="translate(0%,21%)">
+         <rect id="BtnNextGame"
+               onclick="BtnNextGame_clicked()"
+               width="50%"
+               height="12"
+               x="25%"
+               y="93%"
+               fill="#4FB6E3"
+               rx="4"
+               ry="4"/>
+         <text x="40%"
+               y="97.5%"
+               onclick="BtnNextGame_clicked()"
+               style="font-family: 'Caveat', cursive;font-size: 0.6em;">Następna</text>
          <animateTransform begin="indefinite"
                            id="hideAnimationNext"
                            attributeName="transform"
@@ -118,7 +121,7 @@
                            from="-200,0"
                            to="0,0"
                            dur="2s"/>
-      </rect>
+      </g>
    </g>
    <script type="text/javascript" href="svg.js"/>
 </svg>
