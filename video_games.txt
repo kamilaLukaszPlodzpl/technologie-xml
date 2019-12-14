@@ -1,162 +1,26 @@
 Spis gier
 
-Tytuł: God of War III
-Cena:239.90 zł
-Gatunek:hack and slash
-Data Wydania:16 Marzec 2010
-Platformy:
-Ocena według Gry-Online:91
-
-
-Tytuł: Hitman 2
-Cena:249.00 zł
-Gatunek:skradanka
-Data Wydania:13 Listopad 2018
-Platformy:
-Ocena według Gry-Online:76
-
-
-Tytuł: Minecraft: Java Edition
-Cena:99.99 zł
-Gatunek:survival
-Data Wydania:18 Listopad 2011
-Platformy:
-Ocena według Metacritics:76
-
-
-Tytuł: Garry's Mod
-Cena:35.99 zł
-Gatunek:piaskownica
-Data Wydania:24 Grudzień 2004
-Platformy:
-Ocena według Gry-Online:91
-
-
-Tytuł: John Wick Hex
-Cena:69.00 zł
-Gatunek:strategia
-Data Wydania:8 Październik 2019
-Platformy:
-Ocena według IGN Entertainment:68
-
-
-Tytuł: Doom
-Cena:30.99 zł
-Gatunek:strzelanka
-Data Wydania:10 Grudzień 1993
-Platformy:
-Ocena według Metacritics:84
-
-
-Tytuł: Forza Horizon 4
-Cena:199.00 zł
-Gatunek:wyścigi
-Data Wydania:2 Październik 2018
-Platformy:
-Ocena według Gry-Online:85
-
-
-Tytuł: The Forest
-Cena:71.99 zł
-Gatunek:survival
-Data Wydania:16 Marzec 2010
-Platformy:
-Ocena według Metacritics:73
-
-
-Tytuł: RoboCraft
-Cena:
-Gatunek:MMO
-Data Wydania:19 Grudzień 2013
-Platformy:
-Ocena według Steam:70
-
-
-Tytuł: Half-Life 2
-Cena:139.90 zł
-Gatunek:strzelanka
-Data Wydania:16 Listopad 2004
-Platformy:
-Ocena według Steam:100
-
-
-Tytuł: Crysis 3
-Cena:149.90 zł
-Gatunek:strzelanka
-Data Wydania:19 Luty 2013
-Platformy:
-Ocena według Metacritics:66
-
-
-Tytuł: Far Cry 3
-Cena:139.90 zł
-Gatunek:piaskownica
-Data Wydania:29 Listopad 2012
-Platformy:
-Ocena według Gry-Online:88
-
-
-Tytuł: Assassin's Creed: Odyssey
-Cena:98.79 zł
-Gatunek:skradanka
-Data Wydania:5 Październik 2018
-Platformy:
-Ocena według Gry-Online:72
-
-
-Tytuł: The Elder Scrolls V: Skyrim
-Cena:98.79 zł
-Gatunek:RPG
-Data Wydania:16 Marzec 2010
-Platformy:
-Ocena według Steam:90
-
-
-Tytuł: Wiedźmin 3: Dziki Gon
-Cena:152.59 zł
-Gatunek:RPG
-Data Wydania:19 Maj 2015
-Platformy:
-Ocena według Gry-Online:92
-
-
-Tytuł: Grand Theft Auto: San Andreas
-Cena:35.00 zł
-Gatunek:akcji
-Data Wydania:25 Październik 2004
-Platformy:
-Ocena według Common Sense Media:80
-
-
-Tytuł: The Last of Us
-Cena:67.00 zł
-Gatunek:akcji
-Data Wydania:14 Czerwca 2013
-Platformy:
-Ocena według Metacritics:91
-
-
-Tytuł: The Sims 4
-Cena:82.35 zł
-Gatunek:symulacja
-Data Wydania:2 Września 2014
-Platformy:
-Ocena według Metacritics:37
-
-
-Tytuł: Shadow of the Tomb Raider
-Cena:132.90 zł
-Gatunek:akcji
-Data Wydania:14 Września 2018
-Platformy:
-Ocena według Gry-Online:91
-
-
-Tytuł: Dragon Age: Inkwizycja
-Cena:41.80 zł
-Gatunek:RPG
-Data Wydania:18 Listopad 2014
-Platformy:
-Ocena według Metacritics:74
-
-
+---------------------------------------------------------------------------------
+| Tytuł                        | Cena     | Gatunek       | Data wydania        |
+---------------------------------------------------------------------------------
+| God of War III               | 239.90 zł| hack and slash| 16 Marzec 2010      |
+| Hitman 2                     | 249.00 zł| skradanka     | 13 Listopad 2018    |
+| Minecraft: Java Edition      | 99.99 zł | survival      | 18 Listopad 2011    |
+| Garry's Mod                  | 35.99 zł | piaskownica   | 24 Grudzień 2004    |
+| John Wick Hex                | 69.00 zł | strategia     | 8 Październik 2019  |
+| Doom                         | 30.99 zł | strzelanka    | 10 Grudzień 1993    |
+| Forza Horizon 4              | 199.00 zł| wyścigi       | 2 Październik 2018  |
+| The Forest                   | 71.99 zł | survival      | 16 Marzec 2010      |
+| RoboCraft                    |          | MMO           | 19 Grudzień 2013    |
+| Half-Life 2                  | 139.90 zł| strzelanka    | 16 Listopad 2004    |
+| Crysis 3                     | 149.90 zł| strzelanka    | 19 Luty 2013        |
+| Far Cry 3                    | 139.90 zł| piaskownica   | 29 Listopad 2012    |
+| Assassin's Creed: Odyssey    | 98.79 zł | skradanka     | 5 Październik 2018  |
+| The Elder Scrolls V: Skyrim  | 98.79 zł | RPG           | 16 Marzec 2010      |
+| Wiedźmin 3: Dziki Gon        | 152.59 zł| RPG           | 19 Maj 2015         |
+| Grand Theft Auto: San Andreas| 35.00 zł | akcji         | 25 Październik 2004 |
+| The Last of Us               | 67.00 zł | akcji         | 14 Czerwca 2013     |
+| The Sims 4                   | 82.35 zł | symulacja     | 2 Września 2014     |
+| Shadow of the Tomb Raider    | 132.90 zł| akcji         | 14 Września 2018    |
+| Dragon Age: Inkwizycja       | 41.80 zł | RPG           | 18 Listopad 2014    |
+---------------------------------------------------------------------------------
