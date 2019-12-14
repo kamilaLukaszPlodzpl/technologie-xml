@@ -31,7 +31,6 @@ module.exports = function(grunt) {
                 files: ['**/video_games_pdf.xsl'],
                 tasks: ['exec:pdf'],
                 options: {
-                    spawn: false,
                     livereload: false
                 },
             },
@@ -52,10 +51,9 @@ module.exports = function(grunt) {
                 },
             },
             svg: {
-                files: ['**/video_games_svg.xsl'],
+                files: ['**/video_games_svg.xsl','**/svg.js'],
                 tasks: ['exec:svg'],
                 options: {
-                    spawn: false,
                     livereload: false
                 },
             },
@@ -63,7 +61,6 @@ module.exports = function(grunt) {
                 files: ['**/video_games_txt.xsl'],
                 tasks: ['exec:txt'],
                 options: {
-                    spawn: false,
                     livereload: false
                 },
             },
@@ -71,7 +68,6 @@ module.exports = function(grunt) {
                 files: ['**/video_games_html.xsl'],
                 tasks: ['exec:html'],
                 options: {
-                    spawn: false,
                     livereload: false
                 },
             },
@@ -79,7 +75,6 @@ module.exports = function(grunt) {
                 files: ['**/video_games_support.xsl'],
                 tasks: ['exec:support'],
                 options: {
-                    spawn: false,
                     livereload: false
                 },
             },
