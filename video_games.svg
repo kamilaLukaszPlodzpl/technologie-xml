@@ -596,5 +596,35 @@
                            to="0,21"
                            dur="1s"/>
       </g>
+      <g class="page" transform="translate(0,21)">
+         <animateTransform begin="indefinite"
+                           id="hideAnimationNext"
+                           attributeName="transform"
+                           attributeType="XML"
+                           from="0,21"
+                           to="-100,21"
+                           dur="1s"/>
+         <animateTransform begin="indefinite"
+                           id="showAnimationNext"
+                           attributeName="transform"
+                           attributeType="XML"
+                           from="100,21"
+                           to="0,21"
+                           dur="1s"/>
+         <animateTransform begin="indefinite"
+                           id="hideAnimationPrev"
+                           attributeName="transform"
+                           attributeType="XML"
+                           from="0,21"
+                           to="100,21"
+                           dur="1s"/>
+         <animateTransform begin="indefinite"
+                           id="showAnimationPrev"
+                           attributeName="transform"
+                           attributeType="XML"
+                           from="-100,21"
+                           to="0,21"
+                           dur="1s"/>
+      </g>
    </g>
 </svg>

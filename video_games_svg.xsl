@@ -74,6 +74,10 @@
                 <xsl:call-template name="countGamesInGenre"/>
                 <xsl:call-template name="animationsPage"/>
             </g>
+            <g class="page" transform="translate(0,21)">
+                <xsl:call-template name="circleGraph"/>
+                <xsl:call-template name="animationsPage"/>
+            </g>
         </g>
     </xsl:template>
 
@@ -184,4 +188,9 @@
         </xsl:for-each-group>
 
     </xsl:template>
+
+    <xsl:template name="circleGraph">
+        <!-- TODO to co tu nie powinoo robić problemu -->
+    </xsl:template>
+
 </xsl:stylesheet>
