@@ -189,8 +189,30 @@
 
     </xsl:template>
 
+    <xsl:variable name="circumference" select="2*13.25*3.14"/>
+
     <xsl:template name="circleGraph">
-        <!-- TODO to co tu nie powinoo robić problemu -->
+        <rect x="5" y="5" width="90" height="70" fill="white" rx="5" ry="5"/>
+        <xsl:call-template name="baseGraphDescription">
+            <xsl:with-param name="desc" select="'Ilość gier według platform'"/>
+        </xsl:call-template>
+        <circle r="26.5" cx="50" cy="37" fill="{$background}" />
+        
+        <circle r="13.25" cx="50" cy="37" fill="transparent"
+                stroke="red" stroke-width="26.5" stroke-dasharray="calc(50*{$circumference}/100) {$circumference}"
+                transform="rotate(-90 50 37)"/>
+        <circle r="13.25" cx="50" cy="37" fill="transparent"
+                stroke="green" stroke-width="26.5" stroke-dasharray="calc(25*{$circumference}/100) {$circumference}"
+                transform="rotate(90 50 37)" />
+        <circle r="13.25" cx="50" cy="37" fill="transparent"
+                stroke="yellow" stroke-width="26.5" stroke-dasharray="calc(25*{$circumference}/100) {$circumference}"
+                transform="rotate(180 50 37)" />
+
+        <!-- TODO to co tu nie powinoo robić problemu-->
+    </xsl:template>
+
+    <xsl:template name = "onePiece">
+
     </xsl:template>
 
 </xsl:stylesheet>

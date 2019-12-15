@@ -597,6 +597,41 @@
                            dur="1s"/>
       </g>
       <g class="page" transform="translate(0,21)">
+         <rect x="5"
+               y="5"
+               width="90"
+               height="70"
+               fill="white"
+               rx="5"
+               ry="5"/>
+         <text x="20"
+               y="70"
+               style="font-family: 'Exo', sans-serif;font-size: 0.3em;">Ilość gier według platform</text>
+         <circle r="26.5" cx="50" cy="37" fill="#5287cc"/>
+         <circle r="13.25"
+                 cx="50"
+                 cy="37"
+                 fill="transparent"
+                 stroke="red"
+                 stroke-width="26.5"
+                 stroke-dasharray="calc(50*83.21/100) 83.21"
+                 transform="rotate(-90 50 37)"/>
+         <circle r="13.25"
+                 cx="50"
+                 cy="37"
+                 fill="transparent"
+                 stroke="green"
+                 stroke-width="26.5"
+                 stroke-dasharray="calc(25*83.21/100) 83.21"
+                 transform="rotate(90 50 37)"/>
+         <circle r="13.25"
+                 cx="50"
+                 cy="37"
+                 fill="transparent"
+                 stroke="yellow"
+                 stroke-width="26.5"
+                 stroke-dasharray="calc(25*83.21/100) 83.21"
+                 transform="rotate(180 50 37)"/>
          <animateTransform begin="indefinite"
                            id="hideAnimationNext"
                            attributeName="transform"
