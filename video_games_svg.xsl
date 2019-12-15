@@ -71,11 +71,11 @@
                 <xsl:call-template name="animationsPage"/>
             </g>
             <g class="page" transform="translate(0,21)">
-                <xsl:call-template name="countGamesInGenre"/>
+                <xsl:call-template name="circleGraph"/>
                 <xsl:call-template name="animationsPage"/>
             </g>
             <g class="page" transform="translate(0,21)">
-                <xsl:call-template name="circleGraph"/>
+                <xsl:call-template name="countGamesInGenre"/>
                 <xsl:call-template name="animationsPage"/>
             </g>
         </g>
@@ -153,11 +153,16 @@
             <xsl:attribute name="style">font-family: 'Exo', sans-serif;font-size: 0.3em;</xsl:attribute>
             <xsl:value-of select="$max"/>
         </text>
+        <text x="7" y="37.7">
+            <xsl:attribute name="style">font-family: 'Exo', sans-serif;font-size: 0.3em;</xsl:attribute>
+            <xsl:value-of select="sum($max,$min) div 2"/>
+        </text>
         <text x="7" y="62.2">
             <xsl:attribute name="style">font-family: 'Exo', sans-serif;font-size: 0.3em;</xsl:attribute>
             <xsl:value-of select="$min"/>
         </text>
         <line x1="18" x2="20" y1="60" y2="60" stroke-width="0.5" stroke="black"/>
+        <line x1="18" x2="20" y1="36" y2="36" stroke-width="0.5" stroke="black"/>
         <line x1="18" x2="20" y1="12" y2="12" stroke-width="0.5" stroke="black"/>
     </xsl:template>
     <xsl:template name="baseGraphDescription">
@@ -168,25 +173,55 @@
         </text>
     </xsl:template>
     <xsl:template name="baseGraphBar">
-        <!-- TODO -->
+        <xsl:param name="pos"/>
+        <xsl:param name="countAllColumns"/>
+        <xsl:param name="max"/>
+        <xsl:param name="min"/>
+        <xsl:param name="value"/>
+        <xsl:param name="text"/>
+        <xsl:variable name="spaceForColumns" select="65"/>
+        <xsl:variable name="columnWidth" select="$spaceForColumns div $countAllColumns"/>
+        <xsl:variable name="percentage" select="(($value - $min) * 100) div ($max - $min)"/>
+        <g>
+            <rect x="{($pos*$columnWidth)}" y="59.75" width="{$columnWidth}" height="{$percentage * 0.48}" fill="yellow"
+                  transform="rotate(180 {10.5+($pos*$columnWidth)} 59.75)"
+                  stroke-width="0.1"
+                  stroke="black"
+            />
+            <text x="{($pos*$columnWidth)-35}" y="{$spaceForColumns - 2*$columnWidth}"
+                  transform="rotate(90 {10.5+($pos*$columnWidth)} 59.75)"
+            >
+                <xsl:attribute name="style">font-family: 'Exo', sans-serif;font-size: 0.3em;</xsl:attribute>
+                <xsl:value-of select="$text"/>
+            </text>
+        </g>
     </xsl:template>
 
     <xsl:template name="countGamesInGenre">
         <g>
+            <xsl:variable name="max" select="4"/>
             <xsl:call-template name="baseGraph"/>
             <xsl:call-template name="baseGraphNumberLabelY">
-                <xsl:with-param name="max" select="'50'"/>
-                <xsl:with-param name="min" select="'10'"/>
+                <xsl:with-param name="max" select="$max"/>
+                <xsl:with-param name="min" select="'0'"/>
             </xsl:call-template>
             <xsl:call-template name="baseGraphDescription">
                 <xsl:with-param name="desc" select="'Ilość gier według gatunku'"/>
             </xsl:call-template>
+            <xsl:variable name="columnNames" select="distinct-values(//gameList/game/genre)"/>
+            <xsl:variable name="columnCount" select="count($columnNames)"/>
+            <xsl:for-each-group select="//gameList/game" group-by="genre">
+                <xsl:variable name="genre" select="current-grouping-key()"/>
+                <xsl:call-template name="baseGraphBar">
+                    <xsl:with-param name="value" select="count(//gameList/game[genre=$genre])"/>
+                    <xsl:with-param name="countAllColumns" select="$columnCount"/>
+                    <xsl:with-param name="pos" select="position()"/>
+                    <xsl:with-param name="min" select="0"/>
+                    <xsl:with-param name="max" select="$max"/>
+                    <xsl:with-param name="text" select="$genre"/>
+                </xsl:call-template>
+            </xsl:for-each-group>
         </g>
-        <xsl:for-each-group select="//gameList/game" group-by="genre">
-            <xsl:variable name="genre" select="current-grouping-key()"/>
-            <xsl:variable name="genreCounter" select="count(//gameList/game[genre=$genre])"/>
-        </xsl:for-each-group>
-
     </xsl:template>
 
     <xsl:template name="circleGraph">
