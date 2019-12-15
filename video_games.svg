@@ -1,127 +1,600 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <svg xmlns:xlink="http://www.w3.org/1999/xlink"
      xmlns="http://www.w3.org/2000/svg"
-     viewBox="0 0 200 200">
+     viewBox="0 0 100 100">
    <rect x="0" y="0" width="100%" height="100%" fill="#5287cc"/>
    <style type="text/css">
             
             @import url('https://fonts.googleapis.com/css?family=Roboto&amp;display=swap');
             @import url('https://fonts.googleapis.com/css?family=Caveat&amp;display=swap');
+            @import url('https://fonts.googleapis.com/css?family=Exo&amp;display=swap');
             </style>
-   <rect width="99%" height="20%" x="0.5%" y="1" fill="#ffcfbf"/>
-   <line x1="0.5%"
-         x2="99.5%"
-         y1="20%"
-         y2="20%"
+   <script type="text/javascript" href="svg.js"/>
+   <rect width="99" height="20" x="0.5" y="0.5" fill="#ffcfbf"/>
+   <line x1="0.5"
+         x2="99.5"
+         y1="20"
+         y2="20"
          stroke="#5184AF"
-         stroke-width="2"
+         stroke-width="1"
          stroke-linecap="square"
          stroke-dasharray="1, 5"/>
-   <line x1="0.5%"
-         x2="99.5%"
-         y1="2"
-         y2="2"
+   <line x1="0.5"
+         x2="99.5"
+         y1="1"
+         y2="1"
          stroke="#5184AF"
-         stroke-width="2"
+         stroke-width="1"
          stroke-linecap="square"
          stroke-dasharray="1, 5"/>
-   <text x="32%"
+   <text x="32"
          y="1em"
-         style="font-family: 'Caveat', cursive;font-size: 1.5em;">Spis gier</text>
+         style="font-family: 'Caveat', cursive;font-size: 0.75em;">Spis gier</text>
+   <rect width="10"
+         height="15"
+         x="4"
+         y="0.2em"
+         fill="#4FB6E3"
+         rx="2"
+         ry="2"/>
+   <rect width="10"
+         height="15"
+         x="86"
+         y="0.2em"
+         fill="#4FB6E3"
+         rx="2"
+         ry="2"/>
+   <text x="5" y="1.2em" style="font-size: 0.75em;">⏴</text>
+   <text x="83.8" y="1.2em" style="font-size: 0.75em;">⏵</text>
    <rect id="BtnNext"
-         width="10%"
-         height="30"
-         x="4%"
-         y="0.4em"
-         fill="#4FB6E3"
-         rx="4"
-         ry="4"/>
+         width="10"
+         height="15"
+         x="4"
+         y="0.2em"
+         fill="red"
+         rx="2"
+         ry="2"
+         opacity="0"/>
    <rect id="BtnPrev"
-         width="10%"
-         height="30"
-         x="86%"
-         y="0.4em"
-         fill="#4FB6E3"
-         rx="4"
-         ry="4"/>
+         width="10"
+         height="15"
+         x="86"
+         y="0.2em"
+         fill="red"
+         rx="2"
+         ry="2"
+         opacity="0"/>
    <clipPath id="clipPages">
-      <rect width="100%" height="89%" x="0" y="21%"/>
+      <rect width="100" height="89" x="0" y="21"/>
    </clipPath>
    <g clip-path="url(#clipPages)">
-      <g class="page" transform="translate(0,21%)">
-         <rect width="100%" height="100%" x="0" y="0" fill="green"/>
-         <animateTransform begin="indefinite"
-                           id="hideAnimationNext"
-                           attributeName="transform"
-                           attributeType="XML"
-                           from="0,0"
-                           to="-200,0"
-                           dur="2s"/>
-         <animateTransform begin="indefinite"
-                           id="showAnimationNext"
-                           attributeName="transform"
-                           attributeType="XML"
-                           from="200,0"
-                           to="0,0"
-                           dur="2s"/>
-         <animateTransform begin="indefinite"
-                           id="hideAnimationPrev"
-                           attributeName="transform"
-                           attributeType="XML"
-                           from="0,0"
-                           to="200,0"
-                           dur="2s"/>
-         <animateTransform begin="indefinite"
-                           id="showAnimationPrev"
-                           attributeName="transform"
-                           attributeType="XML"
-                           from="-200,0"
-                           to="0,0"
-                           dur="2s"/>
-      </g>
-      <g class="page" transform="translate(0%,21%)">
-         <rect id="BtnNextGame"
-               onclick="BtnNextGame_clicked()"
-               width="50%"
-               height="12"
-               x="25%"
-               y="93%"
+      <g class="page" transform="translate(0,21)">
+         <rect x="1"
+               y="1"
+               width="98"
+               height="77"
+               fill="white"
+               rx="5"
+               ry="5"/>
+         <g class="game" transform="translate(3,25)">
+            <g transform="translate(25,0)">
+               <text x="0"
+                     y="5"
+                     style="font-family: 'Exo', sans-serif;font-size: 0.25em;">Tytuł: God of War III</text>
+               <text x="0"
+                     y="10"
+                     style="font-family: 'Exo', sans-serif;font-size: 0.25em;">Cena: Darmowe</text>
+               <text x="0"
+                     y="15"
+                     style="font-family: 'Exo', sans-serif;font-size: 0.25em;">Gatunek: hack and slash</text>
+               <text x="0"
+                     y="20"
+                     style="font-family: 'Exo', sans-serif;font-size: 0.25em;">Data wydania: 16 Marzec 2010</text>
+               <text x="0"
+                     y="25"
+                     style="font-family: 'Exo', sans-serif;font-size: 0.25em;">Gry-Online: 91 %</text>
+            </g>
+            <image x="0" y="0" width="20" href="./coverart/id1.jpg"/>
+         </g>
+         <g class="game" transform="translate(3,25)">
+            <g transform="translate(25,0)">
+               <text x="0"
+                     y="5"
+                     style="font-family: 'Exo', sans-serif;font-size: 0.25em;">Tytuł: Hitman 2</text>
+               <text x="0"
+                     y="10"
+                     style="font-family: 'Exo', sans-serif;font-size: 0.25em;">Cena: Darmowe</text>
+               <text x="0"
+                     y="15"
+                     style="font-family: 'Exo', sans-serif;font-size: 0.25em;">Gatunek: skradanka</text>
+               <text x="0"
+                     y="20"
+                     style="font-family: 'Exo', sans-serif;font-size: 0.25em;">Data wydania: 13 Listopad 2018</text>
+               <text x="0"
+                     y="25"
+                     style="font-family: 'Exo', sans-serif;font-size: 0.25em;">Gry-Online: 76 %</text>
+            </g>
+            <image x="0" y="0" width="20" href="./coverart/id2.jpg"/>
+         </g>
+         <g class="game" transform="translate(3,25)">
+            <g transform="translate(25,0)">
+               <text x="0"
+                     y="5"
+                     style="font-family: 'Exo', sans-serif;font-size: 0.25em;">Tytuł: Minecraft: Java Edition</text>
+               <text x="0"
+                     y="10"
+                     style="font-family: 'Exo', sans-serif;font-size: 0.25em;">Cena: Darmowe</text>
+               <text x="0"
+                     y="15"
+                     style="font-family: 'Exo', sans-serif;font-size: 0.25em;">Gatunek: survival</text>
+               <text x="0"
+                     y="20"
+                     style="font-family: 'Exo', sans-serif;font-size: 0.25em;">Data wydania: 18 Listopad 2011</text>
+               <text x="0"
+                     y="25"
+                     style="font-family: 'Exo', sans-serif;font-size: 0.25em;">Metacritics: 76 %</text>
+            </g>
+            <image x="0" y="0" width="20" href="./coverart/id3.jpg"/>
+         </g>
+         <g class="game" transform="translate(3,25)">
+            <g transform="translate(25,0)">
+               <text x="0"
+                     y="5"
+                     style="font-family: 'Exo', sans-serif;font-size: 0.25em;">Tytuł: Garry's Mod</text>
+               <text x="0"
+                     y="10"
+                     style="font-family: 'Exo', sans-serif;font-size: 0.25em;">Cena: Darmowe</text>
+               <text x="0"
+                     y="15"
+                     style="font-family: 'Exo', sans-serif;font-size: 0.25em;">Gatunek: piaskownica</text>
+               <text x="0"
+                     y="20"
+                     style="font-family: 'Exo', sans-serif;font-size: 0.25em;">Data wydania: 24 Grudzień 2004</text>
+               <text x="0"
+                     y="25"
+                     style="font-family: 'Exo', sans-serif;font-size: 0.25em;">Gry-Online: 91 %</text>
+            </g>
+            <image x="0" y="0" width="20" href="./coverart/id4.jpg"/>
+         </g>
+         <g class="game" transform="translate(3,25)">
+            <g transform="translate(25,0)">
+               <text x="0"
+                     y="5"
+                     style="font-family: 'Exo', sans-serif;font-size: 0.25em;">Tytuł: John Wick Hex</text>
+               <text x="0"
+                     y="10"
+                     style="font-family: 'Exo', sans-serif;font-size: 0.25em;">Cena: Darmowe</text>
+               <text x="0"
+                     y="15"
+                     style="font-family: 'Exo', sans-serif;font-size: 0.25em;">Gatunek: strategia</text>
+               <text x="0"
+                     y="20"
+                     style="font-family: 'Exo', sans-serif;font-size: 0.25em;">Data wydania: 8 Październik 2019</text>
+               <text x="0"
+                     y="25"
+                     style="font-family: 'Exo', sans-serif;font-size: 0.25em;">IGN Entertainment: 68 %</text>
+            </g>
+            <image x="0" y="0" width="20" href="./coverart/id5.jpg"/>
+         </g>
+         <g class="game" transform="translate(3,25)">
+            <g transform="translate(25,0)">
+               <text x="0"
+                     y="5"
+                     style="font-family: 'Exo', sans-serif;font-size: 0.25em;">Tytuł: Doom</text>
+               <text x="0"
+                     y="10"
+                     style="font-family: 'Exo', sans-serif;font-size: 0.25em;">Cena: Darmowe</text>
+               <text x="0"
+                     y="15"
+                     style="font-family: 'Exo', sans-serif;font-size: 0.25em;">Gatunek: strzelanka</text>
+               <text x="0"
+                     y="20"
+                     style="font-family: 'Exo', sans-serif;font-size: 0.25em;">Data wydania: 10 Grudzień 1993</text>
+               <text x="0"
+                     y="25"
+                     style="font-family: 'Exo', sans-serif;font-size: 0.25em;">Metacritics: 84 %</text>
+            </g>
+            <image x="0" y="0" width="20" href="./coverart/id6.jpg"/>
+         </g>
+         <g class="game" transform="translate(3,25)">
+            <g transform="translate(25,0)">
+               <text x="0"
+                     y="5"
+                     style="font-family: 'Exo', sans-serif;font-size: 0.25em;">Tytuł: Forza Horizon 4</text>
+               <text x="0"
+                     y="10"
+                     style="font-family: 'Exo', sans-serif;font-size: 0.25em;">Cena: Darmowe</text>
+               <text x="0"
+                     y="15"
+                     style="font-family: 'Exo', sans-serif;font-size: 0.25em;">Gatunek: wyścigi</text>
+               <text x="0"
+                     y="20"
+                     style="font-family: 'Exo', sans-serif;font-size: 0.25em;">Data wydania: 2 Październik 2018</text>
+               <text x="0"
+                     y="25"
+                     style="font-family: 'Exo', sans-serif;font-size: 0.25em;">Gry-Online: 85 %</text>
+            </g>
+            <image x="0" y="0" width="20" href="./coverart/id7.jpg"/>
+         </g>
+         <g class="game" transform="translate(3,25)">
+            <g transform="translate(25,0)">
+               <text x="0"
+                     y="5"
+                     style="font-family: 'Exo', sans-serif;font-size: 0.25em;">Tytuł: The Forest</text>
+               <text x="0"
+                     y="10"
+                     style="font-family: 'Exo', sans-serif;font-size: 0.25em;">Cena: Darmowe</text>
+               <text x="0"
+                     y="15"
+                     style="font-family: 'Exo', sans-serif;font-size: 0.25em;">Gatunek: survival</text>
+               <text x="0"
+                     y="20"
+                     style="font-family: 'Exo', sans-serif;font-size: 0.25em;">Data wydania: 16 Marzec 2010</text>
+               <text x="0"
+                     y="25"
+                     style="font-family: 'Exo', sans-serif;font-size: 0.25em;">Metacritics: 73 %</text>
+            </g>
+            <image x="0" y="0" width="20" href="./coverart/id8.jpg"/>
+         </g>
+         <g class="game" transform="translate(3,25)">
+            <g transform="translate(25,0)">
+               <text x="0"
+                     y="5"
+                     style="font-family: 'Exo', sans-serif;font-size: 0.25em;">Tytuł: RoboCraft</text>
+               <text x="0"
+                     y="10"
+                     style="font-family: 'Exo', sans-serif;font-size: 0.25em;">Cena: Darmowe</text>
+               <text x="0"
+                     y="15"
+                     style="font-family: 'Exo', sans-serif;font-size: 0.25em;">Gatunek: MMO</text>
+               <text x="0"
+                     y="20"
+                     style="font-family: 'Exo', sans-serif;font-size: 0.25em;">Data wydania: 19 Grudzień 2013</text>
+               <text x="0"
+                     y="25"
+                     style="font-family: 'Exo', sans-serif;font-size: 0.25em;">Steam: 70 %</text>
+            </g>
+            <image x="0" y="0" width="20" href="./coverart/id9.jpg"/>
+         </g>
+         <g class="game" transform="translate(3,25)">
+            <g transform="translate(25,0)">
+               <text x="0"
+                     y="5"
+                     style="font-family: 'Exo', sans-serif;font-size: 0.25em;">Tytuł: Half-Life 2</text>
+               <text x="0"
+                     y="10"
+                     style="font-family: 'Exo', sans-serif;font-size: 0.25em;">Cena: Darmowe</text>
+               <text x="0"
+                     y="15"
+                     style="font-family: 'Exo', sans-serif;font-size: 0.25em;">Gatunek: strzelanka</text>
+               <text x="0"
+                     y="20"
+                     style="font-family: 'Exo', sans-serif;font-size: 0.25em;">Data wydania: 16 Listopad 2004</text>
+               <text x="0"
+                     y="25"
+                     style="font-family: 'Exo', sans-serif;font-size: 0.25em;">Steam: 100 %</text>
+            </g>
+            <image x="0" y="0" width="20" href="./coverart/id10.jpg"/>
+         </g>
+         <g class="game" transform="translate(3,25)">
+            <g transform="translate(25,0)">
+               <text x="0"
+                     y="5"
+                     style="font-family: 'Exo', sans-serif;font-size: 0.25em;">Tytuł: Crysis 3</text>
+               <text x="0"
+                     y="10"
+                     style="font-family: 'Exo', sans-serif;font-size: 0.25em;">Cena: Darmowe</text>
+               <text x="0"
+                     y="15"
+                     style="font-family: 'Exo', sans-serif;font-size: 0.25em;">Gatunek: strzelanka</text>
+               <text x="0"
+                     y="20"
+                     style="font-family: 'Exo', sans-serif;font-size: 0.25em;">Data wydania: 19 Luty 2013</text>
+               <text x="0"
+                     y="25"
+                     style="font-family: 'Exo', sans-serif;font-size: 0.25em;">Metacritics: 66 %</text>
+            </g>
+            <image x="0" y="0" width="20" href="./coverart/id11.jpg"/>
+         </g>
+         <g class="game" transform="translate(3,25)">
+            <g transform="translate(25,0)">
+               <text x="0"
+                     y="5"
+                     style="font-family: 'Exo', sans-serif;font-size: 0.25em;">Tytuł: Far Cry 3</text>
+               <text x="0"
+                     y="10"
+                     style="font-family: 'Exo', sans-serif;font-size: 0.25em;">Cena: Darmowe</text>
+               <text x="0"
+                     y="15"
+                     style="font-family: 'Exo', sans-serif;font-size: 0.25em;">Gatunek: piaskownica</text>
+               <text x="0"
+                     y="20"
+                     style="font-family: 'Exo', sans-serif;font-size: 0.25em;">Data wydania: 29 Listopad 2012</text>
+               <text x="0"
+                     y="25"
+                     style="font-family: 'Exo', sans-serif;font-size: 0.25em;">Gry-Online: 88 %</text>
+            </g>
+            <image x="0" y="0" width="20" href="./coverart/id12.jpg"/>
+         </g>
+         <g class="game" transform="translate(3,25)">
+            <g transform="translate(25,0)">
+               <text x="0"
+                     y="5"
+                     style="font-family: 'Exo', sans-serif;font-size: 0.25em;">Tytuł: Assassin's Creed: Odyssey</text>
+               <text x="0"
+                     y="10"
+                     style="font-family: 'Exo', sans-serif;font-size: 0.25em;">Cena: Darmowe</text>
+               <text x="0"
+                     y="15"
+                     style="font-family: 'Exo', sans-serif;font-size: 0.25em;">Gatunek: skradanka</text>
+               <text x="0"
+                     y="20"
+                     style="font-family: 'Exo', sans-serif;font-size: 0.25em;">Data wydania: 5 Październik 2018</text>
+               <text x="0"
+                     y="25"
+                     style="font-family: 'Exo', sans-serif;font-size: 0.25em;">Gry-Online: 72 %</text>
+            </g>
+            <image x="0" y="0" width="20" href="./coverart/id13.jpg"/>
+         </g>
+         <g class="game" transform="translate(3,25)">
+            <g transform="translate(25,0)">
+               <text x="0"
+                     y="5"
+                     style="font-family: 'Exo', sans-serif;font-size: 0.25em;">Tytuł: The Elder Scrolls V: Skyrim</text>
+               <text x="0"
+                     y="10"
+                     style="font-family: 'Exo', sans-serif;font-size: 0.25em;">Cena: Darmowe</text>
+               <text x="0"
+                     y="15"
+                     style="font-family: 'Exo', sans-serif;font-size: 0.25em;">Gatunek: RPG</text>
+               <text x="0"
+                     y="20"
+                     style="font-family: 'Exo', sans-serif;font-size: 0.25em;">Data wydania: 16 Marzec 2010</text>
+               <text x="0"
+                     y="25"
+                     style="font-family: 'Exo', sans-serif;font-size: 0.25em;">Steam: 90 %</text>
+            </g>
+            <image x="0" y="0" width="20" href="./coverart/id14.jpg"/>
+         </g>
+         <g class="game" transform="translate(3,25)">
+            <g transform="translate(25,0)">
+               <text x="0"
+                     y="5"
+                     style="font-family: 'Exo', sans-serif;font-size: 0.25em;">Tytuł: Wiedźmin 3: Dziki Gon</text>
+               <text x="0"
+                     y="10"
+                     style="font-family: 'Exo', sans-serif;font-size: 0.25em;">Cena: Darmowe</text>
+               <text x="0"
+                     y="15"
+                     style="font-family: 'Exo', sans-serif;font-size: 0.25em;">Gatunek: RPG</text>
+               <text x="0"
+                     y="20"
+                     style="font-family: 'Exo', sans-serif;font-size: 0.25em;">Data wydania: 19 Maj 2015</text>
+               <text x="0"
+                     y="25"
+                     style="font-family: 'Exo', sans-serif;font-size: 0.25em;">Gry-Online: 92 %</text>
+            </g>
+            <image x="0" y="0" width="20" href="./coverart/id15.jpg"/>
+         </g>
+         <g class="game" transform="translate(3,25)">
+            <g transform="translate(25,0)">
+               <text x="0"
+                     y="5"
+                     style="font-family: 'Exo', sans-serif;font-size: 0.25em;">Tytuł: Grand Theft Auto: San Andreas</text>
+               <text x="0"
+                     y="10"
+                     style="font-family: 'Exo', sans-serif;font-size: 0.25em;">Cena: Darmowe</text>
+               <text x="0"
+                     y="15"
+                     style="font-family: 'Exo', sans-serif;font-size: 0.25em;">Gatunek: akcji</text>
+               <text x="0"
+                     y="20"
+                     style="font-family: 'Exo', sans-serif;font-size: 0.25em;">Data wydania: 25 Październik 2004</text>
+               <text x="0"
+                     y="25"
+                     style="font-family: 'Exo', sans-serif;font-size: 0.25em;">Common Sense Media: 80 %</text>
+            </g>
+            <image x="0" y="0" width="20" href="./coverart/id16.jpg"/>
+         </g>
+         <g class="game" transform="translate(3,25)">
+            <g transform="translate(25,0)">
+               <text x="0"
+                     y="5"
+                     style="font-family: 'Exo', sans-serif;font-size: 0.25em;">Tytuł: The Last of Us</text>
+               <text x="0"
+                     y="10"
+                     style="font-family: 'Exo', sans-serif;font-size: 0.25em;">Cena: Darmowe</text>
+               <text x="0"
+                     y="15"
+                     style="font-family: 'Exo', sans-serif;font-size: 0.25em;">Gatunek: akcji</text>
+               <text x="0"
+                     y="20"
+                     style="font-family: 'Exo', sans-serif;font-size: 0.25em;">Data wydania: 14 Czerwca 2013</text>
+               <text x="0"
+                     y="25"
+                     style="font-family: 'Exo', sans-serif;font-size: 0.25em;">Metacritics: 91 %</text>
+            </g>
+            <image x="0" y="0" width="20" href="./coverart/id17.jpg"/>
+         </g>
+         <g class="game" transform="translate(3,25)">
+            <g transform="translate(25,0)">
+               <text x="0"
+                     y="5"
+                     style="font-family: 'Exo', sans-serif;font-size: 0.25em;">Tytuł: The Sims 4</text>
+               <text x="0"
+                     y="10"
+                     style="font-family: 'Exo', sans-serif;font-size: 0.25em;">Cena: Darmowe</text>
+               <text x="0"
+                     y="15"
+                     style="font-family: 'Exo', sans-serif;font-size: 0.25em;">Gatunek: symulacja</text>
+               <text x="0"
+                     y="20"
+                     style="font-family: 'Exo', sans-serif;font-size: 0.25em;">Data wydania: 2 Września 2014</text>
+               <text x="0"
+                     y="25"
+                     style="font-family: 'Exo', sans-serif;font-size: 0.25em;">Metacritics: 37 %</text>
+            </g>
+            <image x="0" y="0" width="20" href="./coverart/id18.jpg"/>
+         </g>
+         <g class="game" transform="translate(3,25)">
+            <g transform="translate(25,0)">
+               <text x="0"
+                     y="5"
+                     style="font-family: 'Exo', sans-serif;font-size: 0.25em;">Tytuł: Shadow of the Tomb Raider</text>
+               <text x="0"
+                     y="10"
+                     style="font-family: 'Exo', sans-serif;font-size: 0.25em;">Cena: Darmowe</text>
+               <text x="0"
+                     y="15"
+                     style="font-family: 'Exo', sans-serif;font-size: 0.25em;">Gatunek: akcji</text>
+               <text x="0"
+                     y="20"
+                     style="font-family: 'Exo', sans-serif;font-size: 0.25em;">Data wydania: 14 Września 2018</text>
+               <text x="0"
+                     y="25"
+                     style="font-family: 'Exo', sans-serif;font-size: 0.25em;">Gry-Online: 91 %</text>
+            </g>
+            <image x="0" y="0" width="20" href="./coverart/id19.jpg"/>
+         </g>
+         <g class="game" transform="translate(3,25)">
+            <g transform="translate(25,0)">
+               <text x="0"
+                     y="5"
+                     style="font-family: 'Exo', sans-serif;font-size: 0.25em;">Tytuł: Dragon Age: Inkwizycja</text>
+               <text x="0"
+                     y="10"
+                     style="font-family: 'Exo', sans-serif;font-size: 0.25em;">Cena: Darmowe</text>
+               <text x="0"
+                     y="15"
+                     style="font-family: 'Exo', sans-serif;font-size: 0.25em;">Gatunek: RPG</text>
+               <text x="0"
+                     y="20"
+                     style="font-family: 'Exo', sans-serif;font-size: 0.25em;">Data wydania: 18 Listopad 2014</text>
+               <text x="0"
+                     y="25"
+                     style="font-family: 'Exo', sans-serif;font-size: 0.25em;">Metacritics: 74 %</text>
+            </g>
+            <image x="0" y="0" width="20" href="./coverart/id20.jpg"/>
+         </g>
+         <rect width="50"
+               height="6"
+               x="25"
+               y="70"
                fill="#4FB6E3"
-               rx="4"
-               ry="4"/>
-         <text x="40%"
-               y="97.5%"
-               onclick="BtnNextGame_clicked()"
-               style="font-family: 'Caveat', cursive;font-size: 0.6em;">Następna</text>
+               rx="2"
+               ry="2"/>
+         <text x="40"
+               y="74.5"
+               style="font-family: 'Exo', sans-serif;font-size: 0.3em;">Następna</text>
+         <rect id="BtnNextGame"
+               width="50"
+               height="6"
+               x="25"
+               y="70"
+               fill="red"
+               rx="2"
+               ry="2"
+               opacity="0"/>
          <animateTransform begin="indefinite"
                            id="hideAnimationNext"
                            attributeName="transform"
                            attributeType="XML"
-                           from="0,0"
-                           to="-200,0"
-                           dur="2s"/>
+                           from="0,21"
+                           to="-100,21"
+                           dur="1s"/>
          <animateTransform begin="indefinite"
                            id="showAnimationNext"
                            attributeName="transform"
                            attributeType="XML"
-                           from="200,0"
-                           to="0,0"
-                           dur="2s"/>
+                           from="100,21"
+                           to="0,21"
+                           dur="1s"/>
          <animateTransform begin="indefinite"
                            id="hideAnimationPrev"
                            attributeName="transform"
                            attributeType="XML"
-                           from="0,0"
-                           to="200,0"
-                           dur="2s"/>
+                           from="0,21"
+                           to="100,21"
+                           dur="1s"/>
          <animateTransform begin="indefinite"
                            id="showAnimationPrev"
                            attributeName="transform"
                            attributeType="XML"
-                           from="-200,0"
-                           to="0,0"
-                           dur="2s"/>
+                           from="-100,21"
+                           to="0,21"
+                           dur="1s"/>
+      </g>
+      <g class="page" transform="translate(0,21)">
+         <g>
+            <rect x="5"
+                  y="5"
+                  width="90"
+                  height="70"
+                  fill="white"
+                  rx="5"
+                  ry="5"/>
+            <line x1="20"
+                  x2="90"
+                  y1="60"
+                  y2="60"
+                  stroke-width="0.5"
+                  stroke="black"/>
+            <line x1="20"
+                  x2="20"
+                  y1="10"
+                  y2="60"
+                  stroke-width="0.5"
+                  stroke="black"/>
+            <text x="7"
+                  y="13.2"
+                  style="font-family: 'Exo', sans-serif;font-size: 0.3em;">50</text>
+            <text x="7"
+                  y="62.2"
+                  style="font-family: 'Exo', sans-serif;font-size: 0.3em;">10</text>
+            <line x1="18"
+                  x2="20"
+                  y1="60"
+                  y2="60"
+                  stroke-width="0.5"
+                  stroke="black"/>
+            <line x1="18"
+                  x2="20"
+                  y1="12"
+                  y2="12"
+                  stroke-width="0.5"
+                  stroke="black"/>
+            <text x="20"
+                  y="70"
+                  style="font-family: 'Exo', sans-serif;font-size: 0.3em;">Ilość gier według gatunku</text>
+         </g>
+         <animateTransform begin="indefinite"
+                           id="hideAnimationNext"
+                           attributeName="transform"
+                           attributeType="XML"
+                           from="0,21"
+                           to="-100,21"
+                           dur="1s"/>
+         <animateTransform begin="indefinite"
+                           id="showAnimationNext"
+                           attributeName="transform"
+                           attributeType="XML"
+                           from="100,21"
+                           to="0,21"
+                           dur="1s"/>
+         <animateTransform begin="indefinite"
+                           id="hideAnimationPrev"
+                           attributeName="transform"
+                           attributeType="XML"
+                           from="0,21"
+                           to="100,21"
+                           dur="1s"/>
+         <animateTransform begin="indefinite"
+                           id="showAnimationPrev"
+                           attributeName="transform"
+                           attributeType="XML"
+                           from="-100,21"
+                           to="0,21"
+                           dur="1s"/>
       </g>
    </g>
-   <script type="text/javascript" href="svg.js"/>
 </svg>
