@@ -1,6 +1,7 @@
 <xsl:stylesheet version="2.0"
                 xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
-                xmlns="http://www.w3.org/2000/svg"
+                xmlns="http://www.w3.org/2000/svg" xmlns:xls="http://www.w3.org/1999/XSL/Transform"
+                xmlns:f="data:,f"
 >
 
     <xsl:output method="xml" version="1.0" encoding="UTF-8" indent="yes"/>
@@ -71,11 +72,11 @@
                 <xsl:call-template name="animationsPage"/>
             </g>
             <g class="page" transform="translate(0,21)">
-                <xsl:call-template name="circleGraph"/>
+                <xsl:call-template name="countGamesInGenre"/>
                 <xsl:call-template name="animationsPage"/>
             </g>
             <g class="page" transform="translate(0,21)">
-                <xsl:call-template name="countGamesInGenre"/>
+                <xsl:call-template name="circleGraph"/>
                 <xsl:call-template name="animationsPage"/>
             </g>
         </g>
@@ -224,30 +225,131 @@
         </g>
     </xsl:template>
 
-    <xsl:variable name="circumference" select="2*13.25*3.14"/>
+    <xsl:template name="circleGraphPiece">
+        <xsl:param name="percentage"/>
+        <xsl:param name="color"/>
+        <xsl:param name="rotate"/>
+        <xsl:param name="id"/>
+        <xsl:param name="desc"/>
 
+        <xsl:variable name="R" select="13"/>
+        <xsl:variable name="cx" select="50"/>
+        <xsl:variable name="cy" select="37"/>
+        <xsl:variable name="circumference" select="2 * $R * 3.14"/>
+        <circle id="{$id}" r="{$R}" cx="{$cx}" cy="{$cy}" fill="transparent"
+                stroke="{$color}" stroke-width="{$R*2}" stroke-dasharray="{$percentage * $circumference div 100} {$circumference}"
+                transform="rotate({$rotate} {$cx} {$cy})">
+        </circle>
+        <text x="10" y="10" opacity="0">
+            <xsl:attribute name="style">font-family: 'Exo', sans-serif;font-size: 0.3em;</xsl:attribute>
+            <xsl:value-of select="$desc"/>
+            <animate attributeType="xml" attributeName="opacity" from="0" to="1"
+                     begin="{$id}.mouseover" end="{$id}.mouseout" dur="0.5s"/>
+            <animate attributeType="xml" attributeName="opacity" from="1" to="0"
+                     begin="{$id}.mouseout" end="{$id}.mouseover" dur="0.5s"/>
+        </text>
+    </xsl:template>
     <xsl:template name="circleGraph">
         <rect x="5" y="5" width="90" height="70" fill="white" rx="5" ry="5"/>
-        <xsl:call-template name="baseGraphDescription">
-            <xsl:with-param name="desc" select="'Ilość gier według platform'"/>
+
+        <xsl:variable name="columnNames" select="distinct-values(//gameList/game/PEGI/label)"/>
+        <xsl:variable name="columnCount" select="count($columnNames)"/>
+        <xsl:variable name="gameCount" select="count(//gameList/game)"/>
+
+        <xsl:variable name="rotate" select="0"/>
+        <xsl:variable name="pegiLabel" select="current-grouping-key()"/>
+        <xsl:variable name="pegiLabelCount" select="count(//gameList/game/PEGI[label='odpowiednia dla każdego wieku'])"/>
+        <xsl:variable name="pos" select="position()"/>
+        <xsl:variable name="pegiLabelPercentage" select="$pegiLabelCount * 100 div $gameCount"/>
+        <xsl:call-template name="circleGraphPiece">
+            <xsl:with-param name="rotate" select="$rotate"/>
+            <xsl:with-param name="percentage" select="$pegiLabelPercentage"/>
+            <xsl:with-param name="color" select="'red'"/>
+            <xsl:with-param name="desc" select="'wszyscy'"/>
+            <xsl:with-param name="id" select="'forAll'"/>
         </xsl:call-template>
-        <circle r="26.5" cx="50" cy="37" fill="{$background}" />
-        
-        <circle r="13.25" cx="50" cy="37" fill="transparent"
-                stroke="red" stroke-width="26.5" stroke-dasharray="{50*$circumference div 100} {$circumference}"
-                transform="rotate(-90 50 37)"/>
-        <circle r="13.25" cx="50" cy="37" fill="transparent"
-                stroke="green" stroke-width="26.5" stroke-dasharray="{25*$circumference div 100} {$circumference}"
-                transform="rotate(90 50 37)" />
-        <circle r="13.25" cx="50" cy="37" fill="transparent"
-                stroke="yellow" stroke-width="26.5" stroke-dasharray="{25*$circumference div 100} {$circumference}"
-                transform="rotate(180 50 37)" />
 
-        <!-- TODO to co tu nie powinoo robić problemu-->
+        <xsl:variable name="rotate" select="$rotate + (360 * $pegiLabelPercentage div 100)"/>
+        <xsl:variable name="pegiLabel" select="current-grouping-key()"/>
+        <xsl:variable name="pegiLabelCount" select="count(//gameList/game/PEGI[label='3'])"/>
+        <xsl:variable name="pos" select="position()"/>
+        <xsl:variable name="pegiLabelPercentage" select="$pegiLabelCount * 100 div $gameCount"/>
+        <xsl:call-template name="circleGraphPiece">
+            <xsl:with-param name="rotate" select="$rotate"/>
+            <xsl:with-param name="percentage" select="$pegiLabelPercentage"/>
+            <xsl:with-param name="color" select="'green'"/>
+            <xsl:with-param name="desc" select="'od  3 roku życia'"/>
+            <xsl:with-param name="id" select="'for3'"/>
+        </xsl:call-template>
+
+        <xsl:variable name="rotate" select="$rotate + (360 * $pegiLabelPercentage div 100)"/>
+        <xsl:variable name="pegiLabel" select="current-grouping-key()"/>
+        <xsl:variable name="pegiLabelCount" select="count(//gameList/game/PEGI[label='7'])"/>
+        <xsl:variable name="pos" select="position()"/>
+        <xsl:variable name="pegiLabelPercentage" select="$pegiLabelCount * 100 div $gameCount"/>
+        <xsl:call-template name="circleGraphPiece">
+            <xsl:with-param name="rotate" select="$rotate"/>
+            <xsl:with-param name="percentage" select="$pegiLabelPercentage"/>
+            <xsl:with-param name="color" select="'blue'"/>
+            <xsl:with-param name="desc" select="'od  7 roku życia'"/>
+            <xsl:with-param name="id" select="'for7'"/>
+        </xsl:call-template>
+
+        <xsl:variable name="rotate" select="$rotate + (360 * $pegiLabelPercentage div 100)"/>
+        <xsl:variable name="pegiLabel" select="current-grouping-key()"/>
+        <xsl:variable name="pegiLabelCount" select="count(//gameList/game/PEGI[label='12'])"/>
+        <xsl:variable name="pos" select="position()"/>
+        <xsl:variable name="pegiLabelPercentage" select="$pegiLabelCount * 100 div $gameCount"/>
+        <xsl:call-template name="circleGraphPiece">
+            <xsl:with-param name="rotate" select="$rotate"/>
+            <xsl:with-param name="percentage" select="$pegiLabelPercentage"/>
+            <xsl:with-param name="color" select="'yellow'"/>
+            <xsl:with-param name="desc" select="'od 12 roku życia'"/>
+            <xsl:with-param name="id" select="'for12'"/>
+        </xsl:call-template>
+
+        <xsl:variable name="rotate" select="$rotate + (360 * $pegiLabelPercentage div 100)"/>
+        <xsl:variable name="pegiLabel" select="current-grouping-key()"/>
+        <xsl:variable name="pegiLabelCount" select="count(//gameList/game/PEGI[label='16'])"/>
+        <xsl:variable name="pos" select="position()"/>
+        <xsl:variable name="pegiLabelPercentage" select="$pegiLabelCount * 100 div $gameCount"/>
+        <xsl:call-template name="circleGraphPiece">
+            <xsl:with-param name="rotate" select="$rotate"/>
+            <xsl:with-param name="percentage" select="$pegiLabelPercentage"/>
+            <xsl:with-param name="color" select="'#ff00ff'"/>
+            <xsl:with-param name="desc" select="'od 16 roku życia'"/>
+            <xsl:with-param name="id" select="'for16'"/>
+        </xsl:call-template>
+
+        <xsl:variable name="rotate" select="$rotate + (360 * $pegiLabelPercentage div 100)"/>
+        <xsl:variable name="pegiLabel" select="current-grouping-key()"/>
+        <xsl:variable name="pegiLabelCount" select="count(//gameList/game/PEGI[label='18'])"/>
+        <xsl:variable name="pos" select="position()"/>
+        <xsl:variable name="pegiLabelPercentage" select="$pegiLabelCount * 100 div $gameCount"/>
+        <xsl:call-template name="circleGraphPiece">
+            <xsl:with-param name="rotate" select="$rotate"/>
+            <xsl:with-param name="percentage" select="$pegiLabelPercentage"/>
+            <xsl:with-param name="color" select="'#000fff'"/>
+            <xsl:with-param name="desc" select="'od 18 roku życia'"/>
+            <xsl:with-param name="id" select="'for18'"/>
+        </xsl:call-template>
+
+        <xsl:variable name="rotate" select="$rotate + (360 * $pegiLabelPercentage div 100)"/>
+        <xsl:variable name="pegiLabel" select="current-grouping-key()"/>
+        <xsl:variable name="pegiLabelCount" select="count(//gameList/game/PEGI[label='brak danych'])"/>
+        <xsl:variable name="pos" select="position()"/>
+        <xsl:variable name="pegiLabelPercentage" select="$pegiLabelCount * 100 div $gameCount"/>
+        <xsl:call-template name="circleGraphPiece">
+            <xsl:with-param name="rotate" select="$rotate"/>
+            <xsl:with-param name="percentage" select="$pegiLabelPercentage"/>
+            <xsl:with-param name="color" select="'#F0F0F0'"/>
+            <xsl:with-param name="desc" select="'brak danych'"/>
+            <xsl:with-param name="id" select="'forNone'"/>
+        </xsl:call-template>
+        <circle r="13" cx="50" cy="37" fill="white"/>
+        <!-- To jest ok -->
+        <xsl:call-template name="baseGraphDescription">
+            <xsl:with-param name="desc" select="'Gry według klasyfikacji PEGI'"/>
+        </xsl:call-template>
     </xsl:template>
-
-    <xsl:template name = "onePiece">
-
-    </xsl:template>
-
 </xsl:stylesheet>

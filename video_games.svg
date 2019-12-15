@@ -2,16 +2,27 @@
 <svg xmlns:xlink="http://www.w3.org/1999/xlink"
      xmlns="http://www.w3.org/2000/svg"
      viewBox="0 0 100 100">
-   <rect x="0" y="0" width="100%" height="100%" fill="#5287cc"/>
-   <style type="text/css">
+   <rect xmlns:f="data:,f"
+         x="0"
+         y="0"
+         width="100%"
+         height="100%"
+         fill="#5287cc"/>
+   <style xmlns:f="data:,f" type="text/css">
             
             @import url('https://fonts.googleapis.com/css?family=Roboto&amp;display=swap');
             @import url('https://fonts.googleapis.com/css?family=Caveat&amp;display=swap');
             @import url('https://fonts.googleapis.com/css?family=Exo&amp;display=swap');
             </style>
    <script type="text/javascript" href="svg.js"/>
-   <rect width="99" height="20" x="0.5" y="0.5" fill="#ffcfbf"/>
-   <line x1="0.5"
+   <rect xmlns:f="data:,f"
+         width="99"
+         height="20"
+         x="0.5"
+         y="0.5"
+         fill="#ffcfbf"/>
+   <line xmlns:f="data:,f"
+         x1="0.5"
          x2="99.5"
          y1="20"
          y2="20"
@@ -19,7 +30,8 @@
          stroke-width="1"
          stroke-linecap="square"
          stroke-dasharray="1, 5"/>
-   <line x1="0.5"
+   <line xmlns:f="data:,f"
+         x1="0.5"
          x2="99.5"
          y1="1"
          y2="1"
@@ -27,26 +39,30 @@
          stroke-width="1"
          stroke-linecap="square"
          stroke-dasharray="1, 5"/>
-   <text x="32"
+   <text xmlns:f="data:,f"
+         x="32"
          y="1em"
          style="font-family: 'Caveat', cursive;font-size: 0.75em;">Spis gier</text>
-   <rect width="10"
+   <rect xmlns:f="data:,f"
+         width="10"
          height="15"
          x="4"
          y="0.2em"
          fill="#4FB6E3"
          rx="2"
          ry="2"/>
-   <rect width="10"
+   <rect xmlns:f="data:,f"
+         width="10"
          height="15"
          x="86"
          y="0.2em"
          fill="#4FB6E3"
          rx="2"
          ry="2"/>
-   <text x="5" y="1.2em" style="font-size: 0.75em;">⏴</text>
-   <text x="83.8" y="1.2em" style="font-size: 0.75em;">⏵</text>
-   <rect id="BtnNext"
+   <text xmlns:f="data:,f" x="5" y="1.2em" style="font-size: 0.75em;">⏴</text>
+   <text xmlns:f="data:,f" x="83.8" y="1.2em" style="font-size: 0.75em;">⏵</text>
+   <rect xmlns:f="data:,f"
+         id="BtnNext"
          width="10"
          height="15"
          x="4"
@@ -55,7 +71,8 @@
          rx="2"
          ry="2"
          opacity="0"/>
-   <rect id="BtnPrev"
+   <rect xmlns:f="data:,f"
+         id="BtnPrev"
          width="10"
          height="15"
          x="86"
@@ -64,10 +81,10 @@
          rx="2"
          ry="2"
          opacity="0"/>
-   <clipPath id="clipPages">
+   <clipPath xmlns:f="data:,f" id="clipPages">
       <rect width="100" height="89" x="0" y="21"/>
    </clipPath>
-   <g clip-path="url(#clipPages)">
+   <g xmlns:f="data:,f" clip-path="url(#clipPages)">
       <g class="page" transform="translate(0,21)">
          <rect x="1"
                y="1"
@@ -525,71 +542,6 @@
                            dur="1s"/>
       </g>
       <g class="page" transform="translate(0,21)">
-         <rect x="5"
-               y="5"
-               width="90"
-               height="70"
-               fill="white"
-               rx="5"
-               ry="5"/>
-         <text x="20"
-               y="70"
-               style="font-family: 'Exo', sans-serif;font-size: 0.3em;">Ilość gier według platform</text>
-         <circle r="26.5" cx="50" cy="37" fill="#5287cc"/>
-         <circle r="13.25"
-                 cx="50"
-                 cy="37"
-                 fill="transparent"
-                 stroke="red"
-                 stroke-width="26.5"
-                 stroke-dasharray="41.605 83.21"
-                 transform="rotate(-90 50 37)"/>
-         <circle r="13.25"
-                 cx="50"
-                 cy="37"
-                 fill="transparent"
-                 stroke="green"
-                 stroke-width="26.5"
-                 stroke-dasharray="20.8025 83.21"
-                 transform="rotate(90 50 37)"/>
-         <circle r="13.25"
-                 cx="50"
-                 cy="37"
-                 fill="transparent"
-                 stroke="yellow"
-                 stroke-width="26.5"
-                 stroke-dasharray="20.8025 83.21"
-                 transform="rotate(180 50 37)"/>
-         <animateTransform begin="indefinite"
-                           id="hideAnimationNext"
-                           attributeName="transform"
-                           attributeType="XML"
-                           from="0,21"
-                           to="-100,21"
-                           dur="1s"/>
-         <animateTransform begin="indefinite"
-                           id="showAnimationNext"
-                           attributeName="transform"
-                           attributeType="XML"
-                           from="100,21"
-                           to="0,21"
-                           dur="1s"/>
-         <animateTransform begin="indefinite"
-                           id="hideAnimationPrev"
-                           attributeName="transform"
-                           attributeType="XML"
-                           from="0,21"
-                           to="100,21"
-                           dur="1s"/>
-         <animateTransform begin="indefinite"
-                           id="showAnimationPrev"
-                           attributeName="transform"
-                           attributeType="XML"
-                           from="-100,21"
-                           to="0,21"
-                           dur="1s"/>
-      </g>
-      <g class="page" transform="translate(0,21)">
          <g>
             <rect x="5"
                   y="5"
@@ -795,6 +747,236 @@
                      style="font-family: 'Exo', sans-serif;font-size: 0.3em;">symulacja</text>
             </g>
          </g>
+         <animateTransform begin="indefinite"
+                           id="hideAnimationNext"
+                           attributeName="transform"
+                           attributeType="XML"
+                           from="0,21"
+                           to="-100,21"
+                           dur="1s"/>
+         <animateTransform begin="indefinite"
+                           id="showAnimationNext"
+                           attributeName="transform"
+                           attributeType="XML"
+                           from="100,21"
+                           to="0,21"
+                           dur="1s"/>
+         <animateTransform begin="indefinite"
+                           id="hideAnimationPrev"
+                           attributeName="transform"
+                           attributeType="XML"
+                           from="0,21"
+                           to="100,21"
+                           dur="1s"/>
+         <animateTransform begin="indefinite"
+                           id="showAnimationPrev"
+                           attributeName="transform"
+                           attributeType="XML"
+                           from="-100,21"
+                           to="0,21"
+                           dur="1s"/>
+      </g>
+      <g class="page" transform="translate(0,21)">
+         <rect x="5"
+               y="5"
+               width="90"
+               height="70"
+               fill="white"
+               rx="5"
+               ry="5"/>
+         <circle id="forAll"
+                 r="13"
+                 cx="50"
+                 cy="37"
+                 fill="transparent"
+                 stroke="red"
+                 stroke-width="26"
+                 stroke-dasharray="8.164 81.64"
+                 transform="rotate(0 50 37)"/>
+         <text x="10"
+               y="10"
+               opacity="0"
+               style="font-family: 'Exo', sans-serif;font-size: 0.3em;">wszyscy<animate attributeType="xml"
+                     attributeName="opacity"
+                     from="0"
+                     to="1"
+                     begin="forAll.mouseover"
+                     end="forAll.mouseout"
+                     dur="0.5s"/>
+            <animate attributeType="xml"
+                     attributeName="opacity"
+                     from="1"
+                     to="0"
+                     begin="forAll.mouseout"
+                     end="forAll.mouseover"
+                     dur="0.5s"/>
+         </text>
+         <circle id="for3"
+                 r="13"
+                 cx="50"
+                 cy="37"
+                 fill="transparent"
+                 stroke="green"
+                 stroke-width="26"
+                 stroke-dasharray="4.082 81.64"
+                 transform="rotate(36 50 37)"/>
+         <text x="10"
+               y="10"
+               opacity="0"
+               style="font-family: 'Exo', sans-serif;font-size: 0.3em;">od  3 roku życia<animate attributeType="xml"
+                     attributeName="opacity"
+                     from="0"
+                     to="1"
+                     begin="for3.mouseover"
+                     end="for3.mouseout"
+                     dur="0.5s"/>
+            <animate attributeType="xml"
+                     attributeName="opacity"
+                     from="1"
+                     to="0"
+                     begin="for3.mouseout"
+                     end="for3.mouseover"
+                     dur="0.5s"/>
+         </text>
+         <circle id="for7"
+                 r="13"
+                 cx="50"
+                 cy="37"
+                 fill="transparent"
+                 stroke="blue"
+                 stroke-width="26"
+                 stroke-dasharray="4.082 81.64"
+                 transform="rotate(54 50 37)"/>
+         <text x="10"
+               y="10"
+               opacity="0"
+               style="font-family: 'Exo', sans-serif;font-size: 0.3em;">od  7 roku życia<animate attributeType="xml"
+                     attributeName="opacity"
+                     from="0"
+                     to="1"
+                     begin="for7.mouseover"
+                     end="for7.mouseout"
+                     dur="0.5s"/>
+            <animate attributeType="xml"
+                     attributeName="opacity"
+                     from="1"
+                     to="0"
+                     begin="for7.mouseout"
+                     end="for7.mouseover"
+                     dur="0.5s"/>
+         </text>
+         <circle id="for12"
+                 r="13"
+                 cx="50"
+                 cy="37"
+                 fill="transparent"
+                 stroke="yellow"
+                 stroke-width="26"
+                 stroke-dasharray="4.082 81.64"
+                 transform="rotate(72 50 37)"/>
+         <text x="10"
+               y="10"
+               opacity="0"
+               style="font-family: 'Exo', sans-serif;font-size: 0.3em;">od 12 roku życia<animate attributeType="xml"
+                     attributeName="opacity"
+                     from="0"
+                     to="1"
+                     begin="for12.mouseover"
+                     end="for12.mouseout"
+                     dur="0.5s"/>
+            <animate attributeType="xml"
+                     attributeName="opacity"
+                     from="1"
+                     to="0"
+                     begin="for12.mouseout"
+                     end="for12.mouseover"
+                     dur="0.5s"/>
+         </text>
+         <circle id="for16"
+                 r="13"
+                 cx="50"
+                 cy="37"
+                 fill="transparent"
+                 stroke="#ff00ff"
+                 stroke-width="26"
+                 stroke-dasharray="8.164 81.64"
+                 transform="rotate(90 50 37)"/>
+         <text x="10"
+               y="10"
+               opacity="0"
+               style="font-family: 'Exo', sans-serif;font-size: 0.3em;">od 16 roku życia<animate attributeType="xml"
+                     attributeName="opacity"
+                     from="0"
+                     to="1"
+                     begin="for16.mouseover"
+                     end="for16.mouseout"
+                     dur="0.5s"/>
+            <animate attributeType="xml"
+                     attributeName="opacity"
+                     from="1"
+                     to="0"
+                     begin="for16.mouseout"
+                     end="for16.mouseover"
+                     dur="0.5s"/>
+         </text>
+         <circle id="for18"
+                 r="13"
+                 cx="50"
+                 cy="37"
+                 fill="transparent"
+                 stroke="#000fff"
+                 stroke-width="26"
+                 stroke-dasharray="48.984 81.64"
+                 transform="rotate(126 50 37)"/>
+         <text x="10"
+               y="10"
+               opacity="0"
+               style="font-family: 'Exo', sans-serif;font-size: 0.3em;">od 18 roku życia<animate attributeType="xml"
+                     attributeName="opacity"
+                     from="0"
+                     to="1"
+                     begin="for18.mouseover"
+                     end="for18.mouseout"
+                     dur="0.5s"/>
+            <animate attributeType="xml"
+                     attributeName="opacity"
+                     from="1"
+                     to="0"
+                     begin="for18.mouseout"
+                     end="for18.mouseover"
+                     dur="0.5s"/>
+         </text>
+         <circle id="forNone"
+                 r="13"
+                 cx="50"
+                 cy="37"
+                 fill="transparent"
+                 stroke="#F0F0F0"
+                 stroke-width="26"
+                 stroke-dasharray="4.082 81.64"
+                 transform="rotate(342 50 37)"/>
+         <text x="10"
+               y="10"
+               opacity="0"
+               style="font-family: 'Exo', sans-serif;font-size: 0.3em;">brak danych<animate attributeType="xml"
+                     attributeName="opacity"
+                     from="0"
+                     to="1"
+                     begin="forNone.mouseover"
+                     end="forNone.mouseout"
+                     dur="0.5s"/>
+            <animate attributeType="xml"
+                     attributeName="opacity"
+                     from="1"
+                     to="0"
+                     begin="forNone.mouseout"
+                     end="forNone.mouseover"
+                     dur="0.5s"/>
+         </text>
+         <circle r="13" cx="50" cy="37" fill="white"/>
+         <text x="20"
+               y="70"
+               style="font-family: 'Exo', sans-serif;font-size: 0.3em;">Gry według klasyfikacji PEGI</text>
          <animateTransform begin="indefinite"
                            id="hideAnimationNext"
                            attributeName="transform"
