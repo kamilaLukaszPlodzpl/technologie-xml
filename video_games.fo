@@ -11,318 +11,462 @@
    <fo:page-sequence master-reference="A4-portrait">
       <fo:flow flow-name="xsl-region-body">
          <fo:block>
-      Spis gier
-            God of War III
-            239.90 zł
-            hack and slash
-            16 Marzec 2010
+            <fo:block font-family="Caveat"
+                      font-size="18"
+                      font-weight="500"
+                      text-align="center">Spis gier</fo:block>
+            <fo:block font-family="Roboto"
+                      font-size="12"
+                      font-weight="500"
+                      text-align="center">
+               <fo:table table-layout="fixed" width="100%">
+                  <fo:table-body>
+                     <fo:table-row>
+                        <fo:table-cell>
+                           <fo:block>
+                    Tytuł
+                </fo:block>
+                        </fo:table-cell>
+                        <fo:table-cell>
+                           <fo:block>
+                    Cena
+                </fo:block>
+                        </fo:table-cell>
+                        <fo:table-cell>
+                           <fo:block>
+                    Gatunek
+                </fo:block>
+                        </fo:table-cell>
+                        <fo:table-cell>
+                           <fo:block>
+                    Data wydania
+                </fo:block>
+                        </fo:table-cell>
+                        <fo:table-cell>
+                           <fo:block>
+                    Platformy
+                </fo:block>
+                        </fo:table-cell>
+                     </fo:table-row>
+                     <fo:table-row>
+                        <fo:table-cell>
+                           <fo:block>God of War III</fo:block>
+                        </fo:table-cell>
+                        <fo:table-cell>
+                           <fo:block>239.90 zł</fo:block>
+                        </fo:table-cell>
+                        <fo:table-cell>
+                           <fo:block>hack and slash</fo:block>
+                        </fo:table-cell>
+                        <fo:table-cell>
+                           <fo:block>16 Marzec 2010</fo:block>
+                        </fo:table-cell>
+                        <fo:table-cell>
+                           <fo:block>
                PlayStation 3
                PlayStation 4
-            SCE Santa Monica Studio
-            Sony Computer Entertainment
-               Gry-Online
-               91
-               18
-                  przemoc
-            ./coverart/id1.jpg
-            Hitman 2
-            249.00 zł
-            skradanka
-            13 Listopad 2018
+            </fo:block>
+                        </fo:table-cell>
+                     </fo:table-row>
+                     <fo:table-row>
+                        <fo:table-cell>
+                           <fo:block>Hitman 2</fo:block>
+                        </fo:table-cell>
+                        <fo:table-cell>
+                           <fo:block>249.00 zł</fo:block>
+                        </fo:table-cell>
+                        <fo:table-cell>
+                           <fo:block>skradanka</fo:block>
+                        </fo:table-cell>
+                        <fo:table-cell>
+                           <fo:block>13 Listopad 2018</fo:block>
+                        </fo:table-cell>
+                        <fo:table-cell>
+                           <fo:block>
                PlayStation 4
                Microsoft Windows
                Xbox One
-            IO Interactive
-            Warner Bros. Interactive Entertainment
-               Gry-Online
-               76
-               18
-                  przemoc
-                  wulgarny język
-            ./coverart/id2.jpg
-            Minecraft: Java Edition
-            99.99 zł
-            survival
-            18 Listopad 2011
+            </fo:block>
+                        </fo:table-cell>
+                     </fo:table-row>
+                     <fo:table-row>
+                        <fo:table-cell>
+                           <fo:block>Minecraft: Java Edition</fo:block>
+                        </fo:table-cell>
+                        <fo:table-cell>
+                           <fo:block>99.99 zł</fo:block>
+                        </fo:table-cell>
+                        <fo:table-cell>
+                           <fo:block>survival</fo:block>
+                        </fo:table-cell>
+                        <fo:table-cell>
+                           <fo:block>18 Listopad 2011</fo:block>
+                        </fo:table-cell>
+                        <fo:table-cell>
+                           <fo:block>
                Microsoft Windows
                macOS
                Linux
-            Mojang
-               Metacritics
-               76
-               7
-                  strach
-                  przemoc
-                  online
-            ./coverart/id3.jpg
-            Garry's Mod
-            35.99 zł
-            piaskownica
-            24 Grudzień 2004
+            </fo:block>
+                        </fo:table-cell>
+                     </fo:table-row>
+                     <fo:table-row>
+                        <fo:table-cell>
+                           <fo:block>Garry's Mod</fo:block>
+                        </fo:table-cell>
+                        <fo:table-cell>
+                           <fo:block>35.99 zł</fo:block>
+                        </fo:table-cell>
+                        <fo:table-cell>
+                           <fo:block>piaskownica</fo:block>
+                        </fo:table-cell>
+                        <fo:table-cell>
+                           <fo:block>24 Grudzień 2004</fo:block>
+                        </fo:table-cell>
+                        <fo:table-cell>
+                           <fo:block>
                Microsoft Windows
                macOS
                Linux
-            Facepunch Studios
-            Valve Corporation
-               Gry-Online
-               91
-               odpowiednia dla każdego wieku
-            ./coverart/id4.jpg
-            John Wick Hex
-            69.00 zł
-            strategia
-            8 Październik 2019
+            </fo:block>
+                        </fo:table-cell>
+                     </fo:table-row>
+                     <fo:table-row>
+                        <fo:table-cell>
+                           <fo:block>John Wick Hex</fo:block>
+                        </fo:table-cell>
+                        <fo:table-cell>
+                           <fo:block>69.00 zł</fo:block>
+                        </fo:table-cell>
+                        <fo:table-cell>
+                           <fo:block>strategia</fo:block>
+                        </fo:table-cell>
+                        <fo:table-cell>
+                           <fo:block>8 Październik 2019</fo:block>
+                        </fo:table-cell>
+                        <fo:table-cell>
+                           <fo:block>
                Microsoft Windows
-            Bithell Games
-            Good Shepherd Entertainment / Gambitious
-               IGN Entertainment
-               68
-               brak danych
-            ./coverart/id5.jpg
-            Doom
-            30.99 zł
-            strzelanka
-            10 Grudzień 1993
+            </fo:block>
+                        </fo:table-cell>
+                     </fo:table-row>
+                     <fo:table-row>
+                        <fo:table-cell>
+                           <fo:block>Doom</fo:block>
+                        </fo:table-cell>
+                        <fo:table-cell>
+                           <fo:block>30.99 zł</fo:block>
+                        </fo:table-cell>
+                        <fo:table-cell>
+                           <fo:block>strzelanka</fo:block>
+                        </fo:table-cell>
+                        <fo:table-cell>
+                           <fo:block>10 Grudzień 1993</fo:block>
+                        </fo:table-cell>
+                        <fo:table-cell>
+                           <fo:block>
                Microsoft Windows
                PlayStation 4
                PlayStation 3
                Xbox One
                Xbox 360
                Nintendo Switch
-            id Software
-               Metacritics
-               84
-               18
-                  przemoc
-                  wulgarny język
-            ./coverart/id6.jpg
-            Forza Horizon 4
-            199.00 zł
-            wyścigi
-            2 Październik 2018
+            </fo:block>
+                        </fo:table-cell>
+                     </fo:table-row>
+                     <fo:table-row>
+                        <fo:table-cell>
+                           <fo:block>Forza Horizon 4</fo:block>
+                        </fo:table-cell>
+                        <fo:table-cell>
+                           <fo:block>199.00 zł</fo:block>
+                        </fo:table-cell>
+                        <fo:table-cell>
+                           <fo:block>wyścigi</fo:block>
+                        </fo:table-cell>
+                        <fo:table-cell>
+                           <fo:block>2 Październik 2018</fo:block>
+                        </fo:table-cell>
+                        <fo:table-cell>
+                           <fo:block>
                Microsoft Windows
                Xbox One
-            Playground Games
-            Xbox Game Studios / Microsoft Studios
-               Gry-Online
-               85
-               3
-            ./coverart/id7.jpg
-            The Forest
-            71.99 zł
-            survival
-            16 Marzec 2010
+            </fo:block>
+                        </fo:table-cell>
+                     </fo:table-row>
+                     <fo:table-row>
+                        <fo:table-cell>
+                           <fo:block>The Forest</fo:block>
+                        </fo:table-cell>
+                        <fo:table-cell>
+                           <fo:block>71.99 zł</fo:block>
+                        </fo:table-cell>
+                        <fo:table-cell>
+                           <fo:block>survival</fo:block>
+                        </fo:table-cell>
+                        <fo:table-cell>
+                           <fo:block>16 Marzec 2010</fo:block>
+                        </fo:table-cell>
+                        <fo:table-cell>
+                           <fo:block>
                Microsoft Windows
                PlayStation 4
-            Endnight Games
-               Metacritics
-               73
-               18
-                  przemoc
-            ./coverart/id8.jpg
-            RoboCraft
-            MMO
-            19 Grudzień 2013
+            </fo:block>
+                        </fo:table-cell>
+                     </fo:table-row>
+                     <fo:table-row>
+                        <fo:table-cell>
+                           <fo:block>RoboCraft</fo:block>
+                        </fo:table-cell>
+                        <fo:table-cell>
+                           <fo:block/>
+                        </fo:table-cell>
+                        <fo:table-cell>
+                           <fo:block>MMO</fo:block>
+                        </fo:table-cell>
+                        <fo:table-cell>
+                           <fo:block>19 Grudzień 2013</fo:block>
+                        </fo:table-cell>
+                        <fo:table-cell>
+                           <fo:block>
                Microsoft Windows
-            Freejam
-               Steam
-               70
-               odpowiednia dla każdego wieku
-            ./coverart/id9.jpg
-            Half-Life 2
-            139.90 zł
-            strzelanka
-            16 Listopad 2004
+            </fo:block>
+                        </fo:table-cell>
+                     </fo:table-row>
+                     <fo:table-row>
+                        <fo:table-cell>
+                           <fo:block>Half-Life 2</fo:block>
+                        </fo:table-cell>
+                        <fo:table-cell>
+                           <fo:block>139.90 zł</fo:block>
+                        </fo:table-cell>
+                        <fo:table-cell>
+                           <fo:block>strzelanka</fo:block>
+                        </fo:table-cell>
+                        <fo:table-cell>
+                           <fo:block>16 Listopad 2004</fo:block>
+                        </fo:table-cell>
+                        <fo:table-cell>
+                           <fo:block>
                Microsoft Windows
                Xbox
                Android
-            Valve Software
-            Sierra
-               Steam
-               100
-               16
-                  przemoc
-            ./coverart/id10.jpg
-            Crysis 3
-            149.90 zł
-            strzelanka
-            19 Luty 2013
+            </fo:block>
+                        </fo:table-cell>
+                     </fo:table-row>
+                     <fo:table-row>
+                        <fo:table-cell>
+                           <fo:block>Crysis 3</fo:block>
+                        </fo:table-cell>
+                        <fo:table-cell>
+                           <fo:block>149.90 zł</fo:block>
+                        </fo:table-cell>
+                        <fo:table-cell>
+                           <fo:block>strzelanka</fo:block>
+                        </fo:table-cell>
+                        <fo:table-cell>
+                           <fo:block>19 Luty 2013</fo:block>
+                        </fo:table-cell>
+                        <fo:table-cell>
+                           <fo:block>
                Microsoft Windows
                PlayStation 3
                Xbox 360
-            Crytek
-             Electronic Arts Inc. 
-               Metacritics
-               66
-               16
-                  przemoc
-                  wulgarny język
-                  online
-            ./coverart/id11.jpg
-            Far Cry 3
-            139.90 zł
-            piaskownica
-            29 Listopad 2012
+            </fo:block>
+                        </fo:table-cell>
+                     </fo:table-row>
+                     <fo:table-row>
+                        <fo:table-cell>
+                           <fo:block>Far Cry 3</fo:block>
+                        </fo:table-cell>
+                        <fo:table-cell>
+                           <fo:block>139.90 zł</fo:block>
+                        </fo:table-cell>
+                        <fo:table-cell>
+                           <fo:block>piaskownica</fo:block>
+                        </fo:table-cell>
+                        <fo:table-cell>
+                           <fo:block>29 Listopad 2012</fo:block>
+                        </fo:table-cell>
+                        <fo:table-cell>
+                           <fo:block>
                Microsoft Windows
                PlayStation 4
                Xbox One
-            Ubisoft
-               Gry-Online
-               88
-               18
-                  przemoc
-                  wulgarny język
-                  hazard
-                  online
-            ./coverart/id12.jpg
-            Assassin's Creed: Odyssey
-            98.79 zł
-            skradanka
-            5 Październik 2018
+            </fo:block>
+                        </fo:table-cell>
+                     </fo:table-row>
+                     <fo:table-row>
+                        <fo:table-cell>
+                           <fo:block>Assassin's Creed: Odyssey</fo:block>
+                        </fo:table-cell>
+                        <fo:table-cell>
+                           <fo:block>98.79 zł</fo:block>
+                        </fo:table-cell>
+                        <fo:table-cell>
+                           <fo:block>skradanka</fo:block>
+                        </fo:table-cell>
+                        <fo:table-cell>
+                           <fo:block>5 Październik 2018</fo:block>
+                        </fo:table-cell>
+                        <fo:table-cell>
+                           <fo:block>
                Microsoft Windows
                PlayStation 4
                Xbox One
-            Ubisoft
-               Gry-Online
-               72
-               18
-                  przemoc
-                  wulgarny język
-                  seks
-            ./coverart/id13.jpg
-            The Elder Scrolls V: Skyrim
-            98.79 zł
-            RPG
-            16 Marzec 2010
+            </fo:block>
+                        </fo:table-cell>
+                     </fo:table-row>
+                     <fo:table-row>
+                        <fo:table-cell>
+                           <fo:block>The Elder Scrolls V: Skyrim</fo:block>
+                        </fo:table-cell>
+                        <fo:table-cell>
+                           <fo:block>98.79 zł</fo:block>
+                        </fo:table-cell>
+                        <fo:table-cell>
+                           <fo:block>RPG</fo:block>
+                        </fo:table-cell>
+                        <fo:table-cell>
+                           <fo:block>16 Marzec 2010</fo:block>
+                        </fo:table-cell>
+                        <fo:table-cell>
+                           <fo:block>
                Microsoft Windows
                PlayStation 3
                Xbox 360
-            Bethesda Softworks
-               Steam
-               90
-               18
-                  przemoc
-            ./coverart/id14.jpg
-            Wiedźmin 3: Dziki Gon
-            152.59 zł
-            RPG
-            19 Maj 2015
+            </fo:block>
+                        </fo:table-cell>
+                     </fo:table-row>
+                     <fo:table-row>
+                        <fo:table-cell>
+                           <fo:block>Wiedźmin 3: Dziki Gon</fo:block>
+                        </fo:table-cell>
+                        <fo:table-cell>
+                           <fo:block>152.59 zł</fo:block>
+                        </fo:table-cell>
+                        <fo:table-cell>
+                           <fo:block>RPG</fo:block>
+                        </fo:table-cell>
+                        <fo:table-cell>
+                           <fo:block>19 Maj 2015</fo:block>
+                        </fo:table-cell>
+                        <fo:table-cell>
+                           <fo:block>
                Microsoft Windows
                PlayStation 4
                Xbox One
-            CD Projekt RED
-               Gry-Online
-               92
-               18
-                  przemoc
-                  wulgarny język
-                  hazard
-                  seks
-            ./coverart/id15.jpg
-            Grand Theft Auto: San Andreas
-            35.00 zł
-            akcji
-            25 Październik 2004
+            </fo:block>
+                        </fo:table-cell>
+                     </fo:table-row>
+                     <fo:table-row>
+                        <fo:table-cell>
+                           <fo:block>Grand Theft Auto: San Andreas</fo:block>
+                        </fo:table-cell>
+                        <fo:table-cell>
+                           <fo:block>35.00 zł</fo:block>
+                        </fo:table-cell>
+                        <fo:table-cell>
+                           <fo:block>akcji</fo:block>
+                        </fo:table-cell>
+                        <fo:table-cell>
+                           <fo:block>25 Październik 2004</fo:block>
+                        </fo:table-cell>
+                        <fo:table-cell>
+                           <fo:block>
                Microsoft Windows
                PlayStation 2
                Xbox
-            Rockstar Games
-               Common Sense Media
-               80
-               18
-                  przemoc
-                  wulgarny język
-            ./coverart/id16.jpg
-            The Last of Us
-            67.00 zł
-            akcji
-            14 Czerwca 2013
+            </fo:block>
+                        </fo:table-cell>
+                     </fo:table-row>
+                     <fo:table-row>
+                        <fo:table-cell>
+                           <fo:block>The Last of Us</fo:block>
+                        </fo:table-cell>
+                        <fo:table-cell>
+                           <fo:block>67.00 zł</fo:block>
+                        </fo:table-cell>
+                        <fo:table-cell>
+                           <fo:block>akcji</fo:block>
+                        </fo:table-cell>
+                        <fo:table-cell>
+                           <fo:block>14 Czerwca 2013</fo:block>
+                        </fo:table-cell>
+                        <fo:table-cell>
+                           <fo:block>
                PlayStation 3
                PlayStation 4
-            Naughty Dog
-            Sony Interactive Entertainment
-               Metacritics
-               91
-               18
-                  przemoc
-                  wulgarny język
-                  online
-            ./coverart/id17.jpg
-            The Sims 4
-            82.35 zł
-            symulacja
-            2 Września 2014
+            </fo:block>
+                        </fo:table-cell>
+                     </fo:table-row>
+                     <fo:table-row>
+                        <fo:table-cell>
+                           <fo:block>The Sims 4</fo:block>
+                        </fo:table-cell>
+                        <fo:table-cell>
+                           <fo:block>82.35 zł</fo:block>
+                        </fo:table-cell>
+                        <fo:table-cell>
+                           <fo:block>symulacja</fo:block>
+                        </fo:table-cell>
+                        <fo:table-cell>
+                           <fo:block>2 Września 2014</fo:block>
+                        </fo:table-cell>
+                        <fo:table-cell>
+                           <fo:block>
                Microsoft Windows
                PlayStation 4
                Xbox One
-            EA Maxis
-            Electronic Arts Inc.
-               Metacritics
-               37
-               12
-                  wulgarny język
-                  seks
-            ./coverart/id18.jpg
-            Shadow of the Tomb Raider
-            132.90 zł
-            akcji
-            14 Września 2018
+            </fo:block>
+                        </fo:table-cell>
+                     </fo:table-row>
+                     <fo:table-row>
+                        <fo:table-cell>
+                           <fo:block>Shadow of the Tomb Raider</fo:block>
+                        </fo:table-cell>
+                        <fo:table-cell>
+                           <fo:block>132.90 zł</fo:block>
+                        </fo:table-cell>
+                        <fo:table-cell>
+                           <fo:block>akcji</fo:block>
+                        </fo:table-cell>
+                        <fo:table-cell>
+                           <fo:block>14 Września 2018</fo:block>
+                        </fo:table-cell>
+                        <fo:table-cell>
+                           <fo:block>
                Microsoft Windows
                PlayStation 4
                Xbox One
-            Eidos Montreal
-            Square-Enix
-               Gry-Online
-               91
-               18
-                  przemoc
-                  wulgarny język
-            ./coverart/id19.jpg
-            Dragon Age: Inkwizycja
-            41.80 zł
-            RPG
-            18 Listopad 2014
+            </fo:block>
+                        </fo:table-cell>
+                     </fo:table-row>
+                     <fo:table-row>
+                        <fo:table-cell>
+                           <fo:block>Dragon Age: Inkwizycja</fo:block>
+                        </fo:table-cell>
+                        <fo:table-cell>
+                           <fo:block>41.80 zł</fo:block>
+                        </fo:table-cell>
+                        <fo:table-cell>
+                           <fo:block>RPG</fo:block>
+                        </fo:table-cell>
+                        <fo:table-cell>
+                           <fo:block>18 Listopad 2014</fo:block>
+                        </fo:table-cell>
+                        <fo:table-cell>
+                           <fo:block>
                Microsoft Windows
                PlayStation 4
                Xbox One
-            BioWare Corporation
-            Electronic Arts Inc.
-               Metacritics
-               74
-               18
-                  przemoc
-                  wulgarny język
-                  online
-            ./coverart/id20.jpg
-      20
-      11
-      11
-      106.739
-      249
-      30.99
-            1
-            hack and slash
-            2
-            skradanka
-            2
-            survival
-            2
-            piaskownica
-            1
-            strategia
-            3
-            strzelanka
-            1
-            wyścigi
-            1
-            MMO
-            1
-            symulacja
-            3
-            akcji
-            3
-            RPG
-</fo:block>
+            </fo:block>
+                        </fo:table-cell>
+                     </fo:table-row>
+                  </fo:table-body>
+               </fo:table>
+            </fo:block>
+         </fo:block>
       </fo:flow>
    </fo:page-sequence>
 </fo:root>

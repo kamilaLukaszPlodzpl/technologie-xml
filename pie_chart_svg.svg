@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
+    <circle r="50" cx="100" cy="100" fill="green" />
+    <circle r="25" cx="100" cy="100" fill="transparent" stroke="red" stroke-width="50" stroke-dasharray="60 100" />
+    <!-- tutaj strzelałam w te liczby dasharray wypadałoby je liczyć ale nie wiem jaki wzor, pierwsza liczba-gruposc wycinka druga- odlegolsc miedzy wycinkami-->
+    <circle r="25" cx="100" cy="100" fill="transparent" stroke="blue" stroke-width="50" stroke-dasharray="60 100" transform="rotate(-90)"/>
+    <!--nieszczesne rotate ktore nie dziala-->
+</svg>
