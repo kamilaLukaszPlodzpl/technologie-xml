@@ -33,6 +33,12 @@ function Hide(element) {
 function Show(element) {
     element.style.display = "initial";
 }
+function HidePage(element) {
+    element.transform.baseVal[0].setTranslate(-100,21);
+}
+function ShowPage(element) {
+    element.transform.baseVal[0].setTranslate(0,21);
+}
 //Main slider
 var page = -1;
 var pagerBtnDisabled = true;
@@ -45,8 +51,8 @@ function InitializePager() {
 
     for(let i = 0; i < pages.length; i++)
     {
-        if(page === i) Show(pages[i]);
-        else Hide(pages[i]);
+        if(page === i) ShowPage(pages[i]);
+        else HidePage(pages[i]);
     }
     document.getElementById("BtnNext").addEventListener("click",BtnNext_clicked);
     document.getElementById("BtnPrev").addEventListener("click",BtnPrev_clicked);
@@ -60,7 +66,7 @@ function InitializePager() {
                 {
                     animations[j].addEventListener("end",function (evt) {
                         console.log("animation hide end");
-                        Hide(pages[i]);
+                        HidePage(pages[i]);
                         pagerBtnDisabled = false;
                     })
                 }
@@ -68,7 +74,7 @@ function InitializePager() {
                 {
                     animations[j].addEventListener("end",function (evt) {
                         console.log("animation show end");
-                        Show(pages[i]);
+                        ShowPage(pages[i]);
                         pagerBtnDisabled = false;
                     })
                 }
@@ -89,8 +95,8 @@ function NextPage() {
     let newPageElement = pages[page];
     if(shouldRunMinimal())
     {
-        Hide(oldPageElement);
-        Show(newPageElement);
+        HidePage(oldPageElement);
+        ShowPage(newPageElement);
     }
     else
     {
@@ -113,10 +119,11 @@ function NextPage() {
             }
         }
 
-        Show(oldPageElement);
-        Show(newPageElement);
+        ShowPage(oldPageElement);
+        ShowPage(newPageElement);
 
         oldPageElementHideAnimation.beginElement();
+        HidePage(oldPageElement);
         newPageElementShowAnimation.beginElement();
     }
 }
@@ -131,8 +138,8 @@ function PrevPage() {
     let newPageElement = pages[page];
     if(shouldRunMinimal())
     {
-        Hide(oldPageElement);
-        Show(newPageElement);
+        HidePage(oldPageElement);
+        ShowPage(newPageElement);
     }
     else
     {
@@ -154,10 +161,11 @@ function PrevPage() {
                 break;
             }
         }
-        Show(oldPageElement);
-        Show(newPageElement);
+        ShowPage(oldPageElement);
+        ShowPage(newPageElement);
 
         oldPageElementHideAnimation.beginElement();
+        HidePage(oldPageElement);
         newPageElementShowAnimation.beginElement();
     }
 }
