@@ -1,7 +1,6 @@
 <xsl:stylesheet version="2.0"
                 xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
                 xmlns="http://www.w3.org/2000/svg" xmlns:xls="http://www.w3.org/1999/XSL/Transform"
-                xmlns:f="data:,f"
 >
 
     <xsl:output method="xml" version="1.0" encoding="UTF-8" indent="yes"/>
@@ -346,6 +345,7 @@
             <xsl:with-param name="desc" select="'brak danych'"/>
             <xsl:with-param name="id" select="'forNone'"/>
         </xsl:call-template>
+
         <circle r="13" cx="50" cy="37" fill="white"/>
         <!-- To jest ok -->
         <xsl:call-template name="baseGraphDescription">
