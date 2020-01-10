@@ -16,7 +16,7 @@ export class GameApiService {
   constructor(private httpClient:HttpClient) {
     this.loadXML();
   }
-  private gameList: Array<Game>;
+  public gameList: Array<Game>;
   private loadXML(): void
   {
     this.gameList = [];
@@ -26,6 +26,9 @@ export class GameApiService {
         
       }
       );
+  }
+  public getGameList(): Array<Game> {
+    return this.gameList;
   }
 
   private parseXML(data){
