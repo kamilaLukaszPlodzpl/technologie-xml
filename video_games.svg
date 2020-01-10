@@ -2,27 +2,16 @@
 <svg xmlns:xlink="http://www.w3.org/1999/xlink"
      xmlns="http://www.w3.org/2000/svg"
      viewBox="0 0 100 100">
-   <rect xmlns:f="data:,f"
-         x="0"
-         y="0"
-         width="100%"
-         height="100%"
-         fill="#5287cc"/>
-   <style xmlns:f="data:,f" type="text/css">
+   <rect x="0" y="0" width="100%" height="100%" fill="#5287cc"/>
+   <style type="text/css">
             
             @import url('https://fonts.googleapis.com/css?family=Roboto&amp;display=swap');
             @import url('https://fonts.googleapis.com/css?family=Caveat&amp;display=swap');
             @import url('https://fonts.googleapis.com/css?family=Exo&amp;display=swap');
             </style>
    <script type="text/javascript" href="svg.js"/>
-   <rect xmlns:f="data:,f"
-         width="99"
-         height="20"
-         x="0.5"
-         y="0.5"
-         fill="#ffcfbf"/>
-   <line xmlns:f="data:,f"
-         x1="0.5"
+   <rect width="99" height="20" x="0.5" y="0.5" fill="#ffcfbf"/>
+   <line x1="0.5"
          x2="99.5"
          y1="20"
          y2="20"
@@ -30,8 +19,7 @@
          stroke-width="1"
          stroke-linecap="square"
          stroke-dasharray="1, 5"/>
-   <line xmlns:f="data:,f"
-         x1="0.5"
+   <line x1="0.5"
          x2="99.5"
          y1="1"
          y2="1"
@@ -39,30 +27,26 @@
          stroke-width="1"
          stroke-linecap="square"
          stroke-dasharray="1, 5"/>
-   <text xmlns:f="data:,f"
-         x="32"
+   <text x="32"
          y="1em"
          style="font-family: 'Caveat', cursive;font-size: 0.75em;">Spis gier</text>
-   <rect xmlns:f="data:,f"
-         width="10"
+   <rect width="10"
          height="15"
          x="4"
          y="0.2em"
          fill="#4FB6E3"
          rx="2"
          ry="2"/>
-   <rect xmlns:f="data:,f"
-         width="10"
+   <rect width="10"
          height="15"
          x="86"
          y="0.2em"
          fill="#4FB6E3"
          rx="2"
          ry="2"/>
-   <text xmlns:f="data:,f" x="5" y="1.2em" style="font-size: 0.75em;">⏴</text>
-   <text xmlns:f="data:,f" x="83.8" y="1.2em" style="font-size: 0.75em;">⏵</text>
-   <rect xmlns:f="data:,f"
-         id="BtnNext"
+   <text x="5" y="1.2em" style="font-size: 0.75em;">⏴</text>
+   <text x="83.8" y="1.2em" style="font-size: 0.75em;">⏵</text>
+   <rect id="BtnNext"
          width="10"
          height="15"
          x="4"
@@ -71,8 +55,7 @@
          rx="2"
          ry="2"
          opacity="0"/>
-   <rect xmlns:f="data:,f"
-         id="BtnPrev"
+   <rect id="BtnPrev"
          width="10"
          height="15"
          x="86"
@@ -81,10 +64,10 @@
          rx="2"
          ry="2"
          opacity="0"/>
-   <clipPath xmlns:f="data:,f" id="clipPages">
+   <clipPath id="clipPages">
       <rect width="100" height="89" x="0" y="21"/>
    </clipPath>
-   <g xmlns:f="data:,f" clip-path="url(#clipPages)">
+   <g clip-path="url(#clipPages)">
       <g class="page" transform="translate(0,21)">
          <rect x="1"
                y="1"
