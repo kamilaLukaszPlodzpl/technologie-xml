@@ -1,0 +1,533 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<?xml-stylesheet href="style.css" type="text/css;charset=UTF-8"?>
+<?xml-stylesheet href="style.css" type="text/css"?>
+<?xml-stylesheet type="text/xsl" href="video_games_support.xsl"?>
+
+<root
+    xmlns="video_games"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="video_games video_games.xsd"
+>
+
+    <description>Spis gier</description>
+
+    <data dataSource="https://www.gry-online.pl/gry/">
+        <platforms>
+            <platform id="p1">PlayStation 3</platform>
+            <platform id="p2">PlayStation 4</platform>
+            <platform id="p3">PlayStation 2</platform>
+            <platform id="p4">Microsoft Windows</platform>
+            <platform id="p5">Xbox One</platform>
+            <platform id="p6">macOS</platform>
+            <platform id="p7">Linux</platform>
+            <platform id="p8">Xbox 360</platform>
+            <platform id="p9">Nintendo Switch</platform>
+            <platform id="p10">Xbox</platform>
+            <platform id="p11">Android</platform>
+        </platforms>
+        <genres>
+            <genre id="g1">hack and slash</genre>
+            <genre id="g2">skradanka</genre>
+            <genre id="g3">survival</genre>
+            <genre id="g4">piaskownica</genre>
+            <genre id="g5">strategia</genre>
+            <genre id="g6">strzelanka</genre>
+            <genre id="g7">wyścigi</genre>
+            <genre id="g8">MMO</genre> 
+            <genre id="g9">symulacja</genre> 
+            <genre id="g10">akcji</genre>
+            <genre id="g11">RPG</genre>
+        </genres>
+		<pegiDescriptors>
+			<pegiDescriptor id="d1">przemoc</pegiDescriptor>
+			<pegiDescriptor id="d2">wulgarny język</pegiDescriptor>
+			<pegiDescriptor id="d3">strach</pegiDescriptor>
+			<pegiDescriptor id="d4">hazard</pegiDescriptor>
+			<pegiDescriptor id="d5">seks</pegiDescriptor>
+            <pegiDescriptor id="d6">online</pegiDescriptor>
+		</pegiDescriptors>
+		
+        <games>
+            <game id="game1">
+                <title language="angielski">God of War III</title>
+                <price currency="zł">239.90</price>
+                <relatedGenre id="g1"/>
+                <releaseDate>
+                    <day>16</day>
+                    <month>Marzec</month>
+                    <year>2010</year>
+                </releaseDate>
+                <developer>SCE Santa Monica Studio</developer>
+                <relatedPlatforms>
+                    <relatedPlatform id="p1"/>
+                    <relatedPlatform id="p2"/>
+                </relatedPlatforms>
+                <publisher>Sony Computer Entertainment</publisher>
+				<rating source="Gry-Online" max="10">9.1</rating>
+				<PEGI label="18"> 
+                    <relatedPegi id="d1"/>
+				</PEGI>
+                <coverArt src="id1.jpg"/>
+            </game>
+
+            <game id="game2">
+                <title language="angielski">Hitman 2</title>
+                <price currency="zł">249.00</price>
+                <relatedGenre id="g2"/>
+                <releaseDate>
+                    <day>13</day>
+                    <month>Listopad</month>
+                    <year>2018</year>
+                </releaseDate>
+                <developer>IO Interactive</developer>
+                <relatedPlatforms>
+                    <relatedPlatform id="p2"/>
+                    <relatedPlatform id="p4"/>
+                    <relatedPlatform id="p5"/>
+                </relatedPlatforms>
+                <publisher>Warner Bros. Interactive Entertainment</publisher>
+				<rating source="Gry-Online" max="10">7.6</rating>
+				<PEGI label="18"> 
+                    <relatedPegi id="d1"/>
+                    <relatedPegi id="d2"/>
+				</PEGI>
+                <coverArt src="id2.jpg"/>
+            </game>
+
+            <game id="game3">
+                <title language="angielski">Minecraft: Java Edition</title>
+                <price currency="zł">99.99</price>
+                <relatedGenre id="g3"/>
+                <releaseDate>
+                    <day>18</day>
+                    <month>Listopad</month>
+                    <year>2011</year>
+                </releaseDate>
+                <developer>Mojang</developer>
+                <relatedPlatforms>
+                    <relatedPlatform id="p4"/>
+                    <relatedPlatform id="p6"/> 
+                    <relatedPlatform id="p7"/> 
+                </relatedPlatforms>
+                <publisher>Mojang</publisher>
+				<rating source="Metacritics" max="10">7.6</rating>
+				<PEGI label="7"> 
+                    <relatedPegi id="d3"/>
+                    <relatedPegi id="d1"/>
+                    <relatedPegi id="d6"/>
+				</PEGI>
+                <coverArt src="id3.jpg"/>
+            </game>
+
+            <game id="game4">
+                <title language="angielski">Garry's Mod</title>
+                <price currency="zł">35.99</price>
+                <relatedGenre id="g4"/>
+                <releaseDate>
+                    <day>24</day>
+                    <month>Grudzień</month>
+                    <year>2004</year>
+                </releaseDate>
+                <developer>Facepunch Studios</developer>
+                <relatedPlatforms> 
+                    <relatedPlatform id="p4"/>
+                    <relatedPlatform id="p6"/> 
+                    <relatedPlatform id="p7"/>
+                </relatedPlatforms>
+                <publisher>Valve Corporation</publisher>
+				<rating source="Gry-Online" max="10">9.1</rating>
+				<PEGI label="odpowiednia dla każdego wieku"> 
+				</PEGI>
+                <coverArt src="id4.jpg"/>
+            </game>
+
+            <game id="game5">
+                <title language="angielski">John Wick Hex</title>
+                <price currency="zł">69.00</price>
+                <relatedGenre id="g5"/>
+                <releaseDate>
+                    <day>8</day>
+                    <month>Październik</month>
+                    <year>2019</year>
+                </releaseDate>
+                <developer>Bithell Games</developer>
+                <relatedPlatforms>
+                    <relatedPlatform id="p4"/>
+                </relatedPlatforms>
+                <publisher>Good Shepherd Entertainment / Gambitious</publisher>
+				<rating source="IGN Entertainment" max="10">6.8</rating>
+				<PEGI label="brak danych"/> 
+                <coverArt src="id5.jpg"/>
+            </game>
+
+            <game id="game6">
+                <title language="angielski">Doom</title>
+                <price currency="zł">30.99</price>
+                <relatedGenre id="g6"/>
+                <releaseDate>
+                    <day>10</day>
+                    <month>Grudzień</month>
+                    <year>1993</year>
+                </releaseDate>
+                <developer>id Software</developer>
+                <relatedPlatforms>
+                    <relatedPlatform id="p4"/>
+                    <relatedPlatform id="p2"/>
+                    <relatedPlatform id="p1"/>
+                    <relatedPlatform id="p5"/>
+                    <relatedPlatform id="p8"/>
+                    <relatedPlatform id="p9"/>
+                </relatedPlatforms>
+                <publisher>id Software</publisher>
+				<rating source="Metacritics" max="10">8.4</rating>
+				<PEGI label="18"> 
+                    <relatedPegi id="d1"/>
+                    <relatedPegi id="d2"/>
+				</PEGI>
+                <coverArt src="id6.jpg"/>
+            </game>
+
+            <game id="game7">
+                <title language="angielski">Forza Horizon 4</title>
+                <price currency="zł">199.00</price>
+                <relatedGenre id="g7"/>
+                <releaseDate>
+                    <day>2</day>
+                    <month>Październik</month>
+                    <year>2018</year>
+                </releaseDate>
+                <developer>Playground Games</developer>
+                <relatedPlatforms>
+                    <relatedPlatform id="p4"/>
+                    <relatedPlatform id="p5"/>
+                </relatedPlatforms>
+                <publisher>Xbox Game Studios / Microsoft Studios</publisher>
+				<rating source="Gry-Online" max="10">8.5</rating>
+				<PEGI label="3"/> 
+                <coverArt src="id7.jpg"/>
+            </game>
+
+            <game id="game8">
+                <title language="angielski">The Forest</title>
+                <price currency="zł">71.99</price>
+                <relatedGenre id="g3"/>
+                <releaseDate>
+                    <day>16</day>
+                    <month>Marzec</month>
+                    <year>2010</year>
+                </releaseDate>
+                <developer>Endnight Games</developer>
+                <relatedPlatforms>
+                    <relatedPlatform id="p4"/>
+                    <relatedPlatform id="p2"/>
+                </relatedPlatforms>
+                <publisher>Endnight Games</publisher>
+				<rating source="Metacritics" max="10">7.3</rating>
+				<PEGI label="18"> 
+                    <relatedPegi id="d1"/>
+				</PEGI>
+                <coverArt src="id8.jpg"/>
+            </game>
+
+            <game id="game9">
+                <title language="angielski">RoboCraft</title>
+                <relatedGenre id="g8"/>
+                <releaseDate>
+                    <day>19</day>
+                    <month>Grudzień</month>
+                    <year>2013</year>
+                </releaseDate>
+                <developer>Freejam</developer>
+                <relatedPlatforms>
+                    <relatedPlatform id="p4"/>
+                </relatedPlatforms>
+                <publisher>Freejam</publisher>
+				<rating source="Steam" max="10">7.0</rating>
+				<PEGI label="odpowiednia dla każdego wieku"/> 
+                <coverArt src="id9.jpg"/>
+            </game>
+
+            <game id="game10">
+                <title language="angielski">Half-Life 2</title>
+                <price currency="zł">139.90</price>
+                <relatedGenre id="g6"/>
+                <releaseDate>
+                    <day>16</day>
+                    <month>Listopad</month>
+                    <year>2004</year>
+                </releaseDate>
+                <developer>Valve Software</developer>
+                <relatedPlatforms> 
+                    <relatedPlatform id="p4"/> 
+                    <relatedPlatform id="p10"/> 
+                    <relatedPlatform id="p11"/> 
+                </relatedPlatforms>
+                <publisher>Sierra</publisher>
+				<rating source="Steam" max="10">10.0</rating>
+				<PEGI label="16"> 
+                    <relatedPegi id="d1"/>
+				</PEGI>
+                <coverArt src="id10.jpg"/>
+            </game>
+
+            <game id="game11">
+                <title language="angielski">Crysis 3</title>
+                <price currency="zł">149.90</price>
+                <relatedGenre id="g6"/>
+                <releaseDate>
+                    <day>19</day>
+                    <month>Luty</month>
+                    <year>2013</year>
+                </releaseDate>
+                <developer>Crytek</developer>
+                <relatedPlatforms>
+                    <relatedPlatform id="p4"/>
+                    <relatedPlatform id="p1"/>
+                    <relatedPlatform id="p8"/> 
+                </relatedPlatforms>
+                <publisher> Electronic Arts Inc. </publisher>
+				<rating source="Metacritics" max="10">6.6</rating>
+				<PEGI label="16"> 
+                    <relatedPegi id="d1"/>
+                    <relatedPegi id="d2"/>
+                    <relatedPegi id="d6"/>
+				</PEGI>
+                <coverArt src="id11.jpg"/>
+            </game>
+
+            <game id="game12">
+                <title language="angielski">Far Cry 3</title>
+                <price currency="zł">139.90</price>
+                <relatedGenre id="g4"/>
+                <releaseDate>
+                    <day>29</day>
+                    <month>Listopad</month>
+                    <year>2012</year>
+                </releaseDate>
+                <developer>Ubisoft</developer>
+                <relatedPlatforms>
+                    <relatedPlatform id="p4"/>
+                    <relatedPlatform id="p2"/>
+                    <relatedPlatform id="p5"/>
+                </relatedPlatforms>
+                <publisher>Ubisoft</publisher>
+				<rating source="Gry-Online" max="10">8.8</rating>
+				<PEGI label="18"> 
+                    <relatedPegi id="d1"/>
+                    <relatedPegi id="d2"/>
+                    <relatedPegi id="d4"/>
+                    <relatedPegi id="d6"/>
+				</PEGI>
+                <coverArt src="id12.jpg"/>
+            </game>
+
+            <game id="game13">
+                <title language="angielski">Assassin's Creed: Odyssey</title>
+                <price currency="zł">98.79</price>
+                <relatedGenre id="g2"/>
+                <releaseDate>
+                    <day>5</day>
+                    <month>Październik</month>
+                    <year>2018</year>
+                </releaseDate>
+                <developer>Ubisoft</developer>
+                <relatedPlatforms>
+                    <relatedPlatform id="p4"/>
+                    <relatedPlatform id="p2"/>
+                    <relatedPlatform id="p5"/>
+                </relatedPlatforms>
+                <publisher>Ubisoft</publisher>
+				<rating source="Gry-Online" max="10">7.2</rating>
+				<PEGI label="18">
+                    <relatedPegi id="d1"/>
+                    <relatedPegi id="d2"/>
+                    <relatedPegi id="d5"/>
+				</PEGI>
+                <coverArt src="id13.jpg"/>
+            </game>
+
+            <game id="game14">
+                <title language="angielski">The Elder Scrolls V: Skyrim</title>
+                <price currency="zł">98.79</price>
+                <relatedGenre id="g11"/>
+                <releaseDate>
+                    <day>16</day>
+                    <month>Marzec</month>
+                    <year>2010</year>
+                </releaseDate>
+                <developer>Bethesda Softworks</developer>
+                <relatedPlatforms>
+                    <relatedPlatform id="p4"/>
+                    <relatedPlatform id="p1"/>
+                    <relatedPlatform id="p8"/>
+                </relatedPlatforms>
+                <publisher>Bethesda Softworks</publisher>
+				<rating source="Steam" max="10">9.0</rating>
+				<PEGI label="18"> 
+                    <relatedPegi id="d1"/>
+				</PEGI>
+                <coverArt src="id14.jpg"/>
+            </game>
+
+            <game id="game15">
+                <title language="polski">Wiedźmin 3: Dziki Gon</title>
+                <price currency="zł">152.59</price>
+                <relatedGenre id="g11"/>
+                <releaseDate>
+                    <day>19</day>
+                    <month>Maj</month>
+                    <year>2015</year>
+                </releaseDate>
+                <developer>CD Projekt RED</developer>
+                <relatedPlatforms>
+                    <relatedPlatform id="p4"/>
+                    <relatedPlatform id="p2"/>
+                    <relatedPlatform id="p5"/>
+                </relatedPlatforms>
+                <publisher>CD Projekt RED</publisher>
+				<rating source="Gry-Online" max="10">9.2</rating>
+				<PEGI label="18">
+                    <relatedPegi id="d1"/>
+                    <relatedPegi id="d2"/>
+                    <relatedPegi id="d4"/>
+                    <relatedPegi id="d5"/>
+				</PEGI>
+                <coverArt src="id15.jpg"/>
+            </game>
+
+            <game id="game16">
+                <title language="angielski">Grand Theft Auto: San Andreas</title>
+                <price currency="zł">35.00</price>
+                <relatedGenre id="g10"/>
+                <releaseDate>
+                    <day>25</day>
+                    <month>Październik</month>
+                    <year>2004</year>
+                </releaseDate>
+                <developer>Rockstar Games</developer>
+                <relatedPlatforms>
+                    <relatedPlatform id="p4"/>
+                    <relatedPlatform id="p3"/>
+                    <relatedPlatform id="p10"/>
+                </relatedPlatforms>
+                <publisher>Rockstar Games</publisher>
+				<rating source="Common Sense Media" max="5">4</rating>
+				<PEGI label="18"> 
+                    <relatedPegi id="d1"/>
+                    <relatedPegi id="d2"/>
+				</PEGI>
+                <coverArt src="id16.jpg"/>
+            </game>
+
+            <game id="game17">
+                <title language="angielski">The Last of Us</title>
+                <price currency="zł">67.00</price>
+                <relatedGenre id="g10"/>
+                <releaseDate>
+                    <day>14</day>
+                    <month>Czerwca</month>
+                    <year>2013</year>
+                </releaseDate>
+                <developer>Naughty Dog</developer>
+                <relatedPlatforms>
+                    <relatedPlatform id="p1"/>
+                    <relatedPlatform id="p2"/>
+                </relatedPlatforms>
+                <publisher>Sony Interactive Entertainment</publisher>
+				<rating source="Metacritics" max="10">9.1</rating>
+				<PEGI label="18"> 
+                    <relatedPegi id="d1"/>
+                    <relatedPegi id="d2"/>
+                    <relatedPegi id="d6"/>
+				</PEGI>
+                <coverArt src="id17.jpg"/>
+            </game>
+
+            <game id="game18">
+                <title language="angielski">The Sims 4</title>
+                <price currency="zł">82.35</price>
+                <relatedGenre id="g9"/>
+                <releaseDate>
+                    <day>2</day>
+                    <month>Września</month>
+                    <year>2014</year>
+                </releaseDate>
+                <developer>EA Maxis</developer>
+                <relatedPlatforms>
+                    <relatedPlatform id="p4"/>
+                    <relatedPlatform id="p2"/>
+                    <relatedPlatform id="p5"/>
+                </relatedPlatforms>
+                <publisher>Electronic Arts Inc.</publisher>
+				<rating source="Metacritics" max="10">3.7</rating>
+				<PEGI label="12"> 
+                    <relatedPegi id="d2"/>
+                    <relatedPegi id="d5"/>
+				</PEGI>
+                <coverArt src="id18.jpg"/>
+            </game>
+
+            <game id="game19">
+                <title language="angielski">Shadow of the Tomb Raider</title>
+                <price currency="zł">132.90</price>
+                <relatedGenre id="g10"/>
+                <releaseDate>
+                    <day>14</day>
+                    <month>Września</month>
+                    <year>2018</year>
+                </releaseDate>
+                <developer>Eidos Montreal</developer>
+                <relatedPlatforms>
+                    <relatedPlatform id="p4"/>
+                    <relatedPlatform id="p2"/>
+                    <relatedPlatform id="p5"/>
+                </relatedPlatforms>
+                <publisher>Square-Enix</publisher>
+				<rating source="Gry-Online" max="10">9.1</rating>
+				<PEGI label="18"> 
+                    <relatedPegi id="d1"/>
+                    <relatedPegi id="d2"/>
+				</PEGI>
+                <coverArt src="id19.jpg"/>
+            </game>
+
+            <game id="game20">
+                <title language="polski">Dragon Age: Inkwizycja</title>
+                <price currency="zł">41.80</price>
+                <relatedGenre id="g11"/>
+                <releaseDate>
+                    <day>18</day>
+                    <month>Listopad</month>
+                    <year>2014</year>
+                </releaseDate>
+                <developer>BioWare Corporation</developer>
+                <relatedPlatforms>
+                    <relatedPlatform id="p4"/>
+                    <relatedPlatform id="p2"/>
+                    <relatedPlatform id="p5"/>
+                </relatedPlatforms>
+                <publisher>Electronic Arts Inc.</publisher>
+				<rating source="Metacritics" max="10">7.4</rating>
+				<PEGI label="18">
+                    <relatedPegi id="d1"/>
+                    <relatedPegi id="d2"/>
+                    <relatedPegi id="d6"/>
+				</PEGI>
+                <coverArt src="id20.jpg"/>
+            </game>
+        </games>
+    </data>
+    <authors>
+        <person>
+            <name>Kamila</name>
+            <surname>Kossyn</surname>
+            <index>224338</index>
+        </person>
+        <person>
+            <name>Łukasz</name>
+            <surname>Narloch</surname>
+            <index>224384</index>
+        </person>
+    </authors>
+
+</root>

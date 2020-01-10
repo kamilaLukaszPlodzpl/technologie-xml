@@ -76,9 +76,9 @@
         <!-- Generowanie tabelki -->
         <!-- Wiersz z ramką -->
         <xsl:call-template name="repeat">
-            <xsl:with-param name="value" select="'-'"/>
-            <xsl:with-param name="length" select="$width"/>
-        </xsl:call-template>
+        <xsl:with-param name="value" select="'-'"/>
+        <xsl:with-param name="length" select="$width"/>
+    </xsl:call-template>
         <!-- Wiersz z nagłówkami -->
         <xsl:text>&#xa;| </xsl:text>
         <xsl:value-of select="$titleColumnName"/>
