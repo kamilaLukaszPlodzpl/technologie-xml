@@ -4,6 +4,8 @@ import { HttpClient, HttpHeaders } from '@angular/common/http';
 import * as xml2js from 'xml2js';
 import { Game } from '../model/Game';
 import { Date } from '../model/Date';
+import { Rating } from '../model/Rating';
+import { Pegi } from '../model/Pegi';
 
 
 @Injectable({
@@ -21,6 +23,7 @@ export class GameApiService {
     this.httpClient.get("/assets/video_games.xml",{responseType: 'text'}).subscribe(
       (data)=>{
         this.parseXML(data);
+        
       }
       );
   }
@@ -58,7 +61,21 @@ export class GameApiService {
           obj.relatedPlatforms_id.push(relatedPlatform.$.id);
         }
         obj.publisher = game.publisher[0];
-        console.log(obj);
+        obj.rating = new Rating(
+          game.rating[0].$.source,
+          game.rating[0]._,
+          game.rating[0].$.max
+        );
+        let relatedPegi: Array<string> = new Array<string>();
+        
+        if('relatedPegi' in game.PEGI[0])
+          for(let r of game.PEGI[0].relatedPegi)
+          {
+            relatedPegi.push(r.$.id);
+          }
+        obj.pegi = new Pegi(game.PEGI[0].$.label,relatedPegi);
+        obj.coverArt = game.coverArt[0].$.src;
+        this.gameList.push(obj);
       }
     });
   }
