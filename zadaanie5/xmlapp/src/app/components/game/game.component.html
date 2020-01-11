@@ -1,11 +1,18 @@
 <div class="root">
-    <img src="/assets/coverart/{{g.coverArt}}"/>
-    <div>
-        <h1>{{g.title}}</h1>
-        <p *ngIf="g.price > 0 "> {{g.price}} {{g.price_currency}} </p>
-        <p *ngIf="g.price == 0">darmowe</p>
+    <div #data class="data">
+        <img src="/assets/coverart/{{g.coverArt}}"/>
+        <div>
+            <h1>{{g.title}}</h1>
+            <p *ngIf="g.price > 0 "> {{g.price}} {{g.price_currency}} </p>
+            <p *ngIf="g.price == 0">darmowe</p>
+        </div>
     </div>
-</div>
-<div class="fullDescription" *ngIf="openFull">
-    
+    <div #descr class="fullDescription" *ngIf="openFull">
+        <p>Gatunek: {{g.relatedGenre_id | genre}} </p>
+        <p>Wersja językowa: {{g.language}} </p>
+        <p>Producent: {{g.developer}} </p>
+        <p>Wydawca: {{g.publisher}} </p>
+        <p>Ocena według {{g.rating.source}}: {{g.rating.value}} / {{g.rating.max}} </p>
+        <p>Data premiery: {{g.releaseDate}} </p>
+    </div>
 </div>

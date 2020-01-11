@@ -1,10 +1,12 @@
-@import url('https://fonts.googleapis.com/css?family=Baskervville|Raleway&display=swap');
-
-.root{
-    display:block;
-    width: 250px;
+.root
+{
+    display: flex;
+    flex-direction: row;
+}
+.data{
+    display:inline-block;
     text-align: center;
-    margin: 0 0 35px 35px;
+    margin: 0 0px 45px 40px;
     :hover{
         color: blue;
         filter: brightness(0.8);
@@ -13,18 +15,25 @@
         width:250px;
         max-height: 285px;
     }
-    h1{
-        margin:4px;
-        font-family: 'Baskervville', serif;
-        font-size: 20px;
-    }
-    p{
-        margin:4px;
-        font-family: 'Raleway', sans-serif;
-        font-size: 16px;
-    }
+        h1{
+            margin:4px;
+            font-family: 'Baskervville', serif;
+            font-size: 20px;
+        }
+        p{
+            margin:4px 4px 15px 4px;
+            font-family: 'Raleway', sans-serif;
+            font-size: 16px;
+        }
+    
 }
 .fullDescription
 {
-    
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    border-style: solid;
+    padding:5px 10px 5px 10px;
+    margin: 0 0px 45px 0px;
+
 }
