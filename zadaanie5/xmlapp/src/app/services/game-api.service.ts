@@ -13,25 +13,42 @@ import { Pegi } from '../model/Pegi';
 })
 export class GameApiService {
 
+  private gameList: Array<Game>;  
+  private genreList: Map<string,string>;
+  private platformList: Map<string, string>;
+  private pegiDescriptorList: Map<string, string>;
+
+  
   constructor(private httpClient:HttpClient) {
-    this.loadXML();
+    this.loadGamesList();
   }
-  private gameList: Array<Game>;
-  private loadXML(): void
+  private loadGamesList(): void
   {
     this.gameList = [];
+    this.genreList = new Map<string,string>();
+    this.platformList = new Map<string,string>();
+    this.pegiDescriptorList = new Map<string,string>();
     this.httpClient.get("/assets/video_games.xml",{responseType: 'text'}).subscribe(
       (data)=>{
-        this.parseXML(data);
-        
-      }
-      );
+        this.parseGamesList(data);
+      });
   }
-
-  private parseXML(data){
+  private parseGamesList(data){
     let parser = new xml2js.Parser();
     parser.parseString(data,(err,result)=>{
       let data = result.root.data[0];
+      for(let pegiDescriptor of data.pegiDescriptors[0].pegiDescriptor)
+      {
+        this.pegiDescriptorList.set(pegiDescriptor.$.id,pegiDescriptor._);
+      }
+      for(let platform of data.platforms[0].platform)
+      {
+        this.platformList.set(platform.$.id,platform._);
+      }
+      for(let genre of data.genres[0].genre)
+      {
+        this.genreList.set(genre.$.id,genre._);
+      }
       let games = data.games[0].game;
       for(let game of games)
       {
@@ -79,5 +96,4 @@ export class GameApiService {
       }
     });
   }
-
 }
