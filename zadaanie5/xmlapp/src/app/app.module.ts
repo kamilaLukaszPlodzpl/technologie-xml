@@ -22,7 +22,7 @@ import { DatePipe } from './pipes/date.pipe';
     GenrePipe,
     PlatformsPipe,
     SetPlatformFilterDirective,
-    SearchBoxComponent
+    SearchBoxComponent,
     DatePipe
   ],
   imports: [
