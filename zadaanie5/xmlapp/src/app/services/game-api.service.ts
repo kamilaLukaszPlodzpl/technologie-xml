@@ -1,11 +1,8 @@
-import { Injectable } from '@angular/core';
+import { Injectable, EventEmitter } from '@angular/core';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
-//import { xml2js } from 'xml2js';
 import * as xml2js from 'xml2js';
-import { Game } from '../model/Game';
-import { Date } from '../model/Date';
-import { Rating } from '../model/Rating';
-import { Pegi } from '../model/Pegi';
+import { Game, Date, Pegi, Rating } from '../model/model';
+import { Observable } from 'rxjs';
 
 
 @Injectable({
@@ -17,9 +14,19 @@ export class GameApiService {
   private genreList: Map<string,string>;
   private platformList: Map<string, string>;
   private pegiDescriptorList: Map<string, string>;
-
+  private gameListUpdate: EventEmitter<Array<Game>>;
+  
+  public getGameList(): Array<Game>
+  {
+      return this.gameList;
+  }
+  public getGameListUpdate(): Observable<Array<Game>>
+  {
+      return this.gameListUpdate;
+  }
   
   constructor(private httpClient:HttpClient) {
+    this.gameListUpdate = new EventEmitter<Array<Game>>(true);
     this.loadGamesList();
   }
   private loadGamesList(): void
@@ -28,6 +35,7 @@ export class GameApiService {
     this.genreList = new Map<string,string>();
     this.platformList = new Map<string,string>();
     this.pegiDescriptorList = new Map<string,string>();
+    this.gameListUpdate.next(this.getGameList());
     this.httpClient.get("/assets/video_games.xml",{responseType: 'text'}).subscribe(
       (data)=>{
         this.parseGamesList(data);
@@ -94,6 +102,7 @@ export class GameApiService {
         obj.coverArt = game.coverArt[0].$.src;
         this.gameList.push(obj);
       }
+      this.gameListUpdate.next(this.getGameList());
     });
   }
 }

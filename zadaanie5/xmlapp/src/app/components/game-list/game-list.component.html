@@ -1,1 +1,4 @@
-<p>game-list works!</p>
+
+<div class = "flexbox " *ngFor="let game of gameList">
+    <app-game [g]="game"></app-game>
+</div>
