@@ -10,6 +10,7 @@ import { GameComponent } from './components/game/game.component';
 import { GenrePipe } from './pipes/genre.pipe';
 import { PlatformsPipe } from './pipes/platforms.pipe';
 import { SetPlatformFilterDirective } from './directives/set-platform-filter.directive';
+import { SearchBoxComponent } from './components/search-box/search-box.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { SetPlatformFilterDirective } from './directives/set-platform-filter.dir
     GameComponent,
     GenrePipe,
     PlatformsPipe,
-    SetPlatformFilterDirective
+    SetPlatformFilterDirective,
+    SearchBoxComponent
   ],
   imports: [
     BrowserModule,

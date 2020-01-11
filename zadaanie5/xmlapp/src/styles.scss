@@ -8,3 +8,16 @@ html,body
     margin: 0;
     font-family: 'Baskervville', serif;
 }
+
+%selection {
+    background-color: #323234;
+    color: white;
+}
+*::selection
+{
+    @extend %selection;   
+}
+*::-moz-selection
+{
+    @extend %selection;
+}

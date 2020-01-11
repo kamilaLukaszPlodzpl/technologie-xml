@@ -4,10 +4,14 @@
     height: 100px;
     color: white;
     font-family: 'Montserrat', sans-serif;
-    background-color: #000000;
+    background-color: #323234;
     margin-bottom: 10px;
     padding-left: 0px 10px;
-    .btn
+    .input-style:hover
+    {
+        background-color: lighten(black,25);
+    }
+    .input
     {
         display: inline-flex;
         flex-wrap: nowrap;
@@ -23,10 +27,6 @@
         {
             vertical-align: middle;
             padding: 5px;
-        }
-        :hover
-        {
-            background-color: lighten(black,25);
         }
     }
 }
