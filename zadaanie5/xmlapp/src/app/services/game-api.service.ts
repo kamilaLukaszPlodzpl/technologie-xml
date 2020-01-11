@@ -1,11 +1,8 @@
-import { Injectable } from '@angular/core';
+import { Injectable, EventEmitter } from '@angular/core';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
-//import { xml2js } from 'xml2js';
 import * as xml2js from 'xml2js';
-import { Game } from '../model/Game';
-import { Date } from '../model/Date';
-import { Rating } from '../model/Rating';
-import { Pegi } from '../model/Pegi';
+import { Game, Date, Pegi, Rating } from '../model/model';
+import { Observable } from 'rxjs';
 
 
 @Injectable({
@@ -13,28 +10,53 @@ import { Pegi } from '../model/Pegi';
 })
 export class GameApiService {
 
-  constructor(private httpClient:HttpClient) {
-    this.loadXML();
+  private gameList: Array<Game>;  
+  private genreList: Map<string,string>;
+  private platformList: Map<string, string>;
+  private pegiDescriptorList: Map<string, string>;
+  private gameListUpdate: EventEmitter<Array<Game>>;
+  
+  public getGameList(): Array<Game>
+  {
+      return this.gameList;
   }
-  public gameList: Array<Game>;
-  private loadXML(): void
+  public getGameListUpdate(): Observable<Array<Game>>
+  {
+      return this.gameListUpdate;
+  }
+  
+  constructor(private httpClient:HttpClient) {
+    this.gameListUpdate = new EventEmitter<Array<Game>>(true);
+    this.loadGamesList();
+  }
+  private loadGamesList(): void
   {
     this.gameList = [];
+    this.genreList = new Map<string,string>();
+    this.platformList = new Map<string,string>();
+    this.pegiDescriptorList = new Map<string,string>();
+    this.gameListUpdate.next(this.getGameList());
     this.httpClient.get("/assets/video_games.xml",{responseType: 'text'}).subscribe(
       (data)=>{
-        this.parseXML(data);
-        
-      }
-      );
+        this.parseGamesList(data);
+      });
   }
-  public getGameList(): Array<Game> {
-    return this.gameList;
-  }
-
-  private parseXML(data){
+  private parseGamesList(data){
     let parser = new xml2js.Parser();
     parser.parseString(data,(err,result)=>{
       let data = result.root.data[0];
+      for(let pegiDescriptor of data.pegiDescriptors[0].pegiDescriptor)
+      {
+        this.pegiDescriptorList.set(pegiDescriptor.$.id,pegiDescriptor._);
+      }
+      for(let platform of data.platforms[0].platform)
+      {
+        this.platformList.set(platform.$.id,platform._);
+      }
+      for(let genre of data.genres[0].genre)
+      {
+        this.genreList.set(genre.$.id,genre._);
+      }
       let games = data.games[0].game;
       for(let game of games)
       {
@@ -80,7 +102,7 @@ export class GameApiService {
         obj.coverArt = game.coverArt[0].$.src;
         this.gameList.push(obj);
       }
+      this.gameListUpdate.next(this.getGameList());
     });
   }
-
 }

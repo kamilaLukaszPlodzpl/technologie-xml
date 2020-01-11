@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { GameApiService } from 'src/app/services/game-api.service';
-import { Game } from 'src/app/model/Game';
+import { GameApiService } from '../../services/game-api.service';
+import { Game } from '../../model/model';
 
 @Component({
   selector: 'app-game-list',
@@ -9,9 +9,10 @@ import { Game } from 'src/app/model/Game';
 })
 export class GameListComponent implements OnInit {
 
-  constructor(private gameApi: GameApiService) { }
-public gameList : Array<Game>;
-  ngOnInit() {
-   // this.gameList = this.gameApi.getGameList();
+  public gameList : Array<Game>;
+  constructor(private gameApi: GameApiService) {
+    this.gameList = this.gameApi.getGameList();
+    this.gameApi.getGameListUpdate().subscribe((o)=>{ this.gameList = o; });
   }
+  ngOnInit() {}
 }
