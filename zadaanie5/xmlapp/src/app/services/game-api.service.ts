@@ -3,6 +3,7 @@ import { HttpClient, HttpHeaders } from '@angular/common/http';
 import * as xml2js from 'xml2js';
 import { Game, Date, Pegi, Rating } from '../model/model';
 import { Observable } from 'rxjs';
+import { Filter } from '../model/Filter';
 
 
 @Injectable({
@@ -15,15 +16,32 @@ export class GameApiService {
   private platformList: Map<string, string>;
   private pegiDescriptorList: Map<string, string>;
   private gameListUpdate: EventEmitter<Array<Game>>;
+  private filter:Filter = new Filter();
   public getGenreList(): Map<string,string> { return this.genreList; }
   public getPlatformList(): Map<string,string> { return this.platformList; }
   public getPegiDescriptorList(): Map<string,string> { return this.pegiDescriptorList; }
-  public getGameList(): Array<Game>{ return this.gameList; }
+  public getGameList(): Array<Game>{
+    if(this.filter.platforms.length == 0){
+      return this.gameList;
+    }
+    return this.gameList.filter((game)=>{
+     for(let platform of this.filter.platforms){
+       if(game.relatedPlatforms_id.findIndex((item)=>{return item==platform}) != -1){
+         return true;
+       }
+     }
+     return false;
+    });
+   }
   public getGameListUpdate(): Observable<Array<Game>> { return this.gameListUpdate; }
-  
+  public getFilter(): Filter {return this.filter;}
   constructor(private httpClient:HttpClient) {
     this.gameListUpdate = new EventEmitter<Array<Game>>(true);
     this.loadGamesList();
+  }
+  public setFilter(filter:Filter){
+    this.filter = filter;
+    this.gameListUpdate.next(this.getGameList());
   }
   private loadGamesList(): void
   {

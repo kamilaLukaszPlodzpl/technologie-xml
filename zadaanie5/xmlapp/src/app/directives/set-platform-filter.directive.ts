@@ -10,7 +10,14 @@ export class SetPlatformFilterDirective {
   @Input('appSetPlatformFilter') value:string;
   @HostListener('click') public onClick(): void
   {
-    let platforms: Array<string> = this.value.split(",");
+    let platforms: Array<string>;
+    if(this.value=="")
+      platforms = new Array<string>();
+    else
+      platforms = this.value.split(",");
+    let newFilter = this.gameApi.getFilter();
+    newFilter.platforms = platforms;
+    this.gameApi.setFilter(newFilter);
   }
 
 }
