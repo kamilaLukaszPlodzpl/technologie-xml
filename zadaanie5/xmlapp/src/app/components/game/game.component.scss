@@ -1,16 +1,24 @@
+@import url('https://fonts.googleapis.com/css?family=Baskervville|Raleway&display=swap');
+
 .root{
     display:block;
-    width: 390px;
-    background-color: red;
+    width: 250px;
+    text-align: center;
+    margin: 0 0 35px 35px;
 }
 img{
-    width:390px;
+    width:250px;
+    max-height: 285px;
 }
 h1{
-    font-size: 25px;
+    margin:4px;
+    font-family: 'Baskervville', serif;
+    font-size: 20px;
 }
 p{
-    font-size: 20px;
+    margin:4px;
+    font-family: 'Raleway', sans-serif;
+    font-size: 16px;
 }
 div:hover{
     color: blue;
