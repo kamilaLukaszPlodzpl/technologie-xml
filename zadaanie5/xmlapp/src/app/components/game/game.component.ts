@@ -1,4 +1,4 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, OnInit, Input, HostListener } from '@angular/core';
 
 @Component({
   selector: 'app-game',
@@ -6,8 +6,14 @@ import { Component, OnInit, Input } from '@angular/core';
   styleUrls: ['./game.component.scss']
 })
 export class GameComponent implements OnInit {
+  private openFull: boolean = false;
+  constructor() {
+  }
   @Input () g;
-  constructor() { }
+  @HostListener("click") public onGameClick(): void
+  {
+    this.openFull = !this.openFull;
+  }
 
   ngOnInit() {
   }
