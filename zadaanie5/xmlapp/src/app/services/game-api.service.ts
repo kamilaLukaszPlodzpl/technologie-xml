@@ -15,15 +15,11 @@ export class GameApiService {
   private platformList: Map<string, string>;
   private pegiDescriptorList: Map<string, string>;
   private gameListUpdate: EventEmitter<Array<Game>>;
-  
-  public getGameList(): Array<Game>
-  {
-      return this.gameList;
-  }
-  public getGameListUpdate(): Observable<Array<Game>>
-  {
-      return this.gameListUpdate;
-  }
+  public getGenreList(): Map<string,string> { return this.genreList; }
+  public getPlatformList(): Map<string,string> { return this.platformList; }
+  public getPegiDescriptorList(): Map<string,string> { return this.pegiDescriptorList; }
+  public getGameList(): Array<Game>{ return this.gameList; }
+  public getGameListUpdate(): Observable<Array<Game>> { return this.gameListUpdate; }
   
   constructor(private httpClient:HttpClient) {
     this.gameListUpdate = new EventEmitter<Array<Game>>(true);
