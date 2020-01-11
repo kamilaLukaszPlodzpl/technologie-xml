@@ -13,6 +13,10 @@
         <p>Producent: {{g.developer}} </p>
         <p>Wydawca: {{g.publisher}} </p>
         <p>Ocena według {{g.rating.source}}: {{g.rating.value}} / {{g.rating.max}} </p>
-        <p>Data premiery: {{g.releaseDate}} </p>
+        <p>Data premiery: {{g.releaseDate | date }} </p>
+        <p *ngIf="g.pegi.label > 0"> Ograniczenia wiekowe: od {{g.pegi.label}} lat</p>
+        <div *ngFor="let item of g.pegi.related">
+            <img class="pegi" src="/assets/pegi/{{item}}.webp"/>
+        </div>
     </div>
 </div>

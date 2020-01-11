@@ -11,6 +11,7 @@ import { GenrePipe } from './pipes/genre.pipe';
 import { PlatformsPipe } from './pipes/platforms.pipe';
 import { SetPlatformFilterDirective } from './directives/set-platform-filter.directive';
 import { SearchBoxComponent } from './components/search-box/search-box.component';
+import { DatePipe } from './pipes/date.pipe';
 
 @NgModule({
   declarations: [
@@ -22,6 +23,7 @@ import { SearchBoxComponent } from './components/search-box/search-box.component
     PlatformsPipe,
     SetPlatformFilterDirective,
     SearchBoxComponent
+    DatePipe
   ],
   imports: [
     BrowserModule,
