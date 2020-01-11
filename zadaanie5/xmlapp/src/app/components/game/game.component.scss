@@ -4,6 +4,7 @@
     flex-direction: row;
 }
 .data{
+    width:250px;
     display:inline-block;
     text-align: center;
     margin: 0 0px 45px 40px;
@@ -29,11 +30,22 @@
 }
 .fullDescription
 {
-    width: 250px;
-    display: flex;
-    flex-direction: column;
+    font-size:16px;
+    width:250px;
+    display:inline-block;
     border-style: solid;
     padding:5px 10px 5px 10px;
     margin: 0 0px 45px 0px;
-
+    div{
+        padding:2px;
+        text-align: center;
+        display:inline-flex;
+        flex-direction: row;
+        .pegi{
+            border: 1px solid;
+            display:block;
+            height:50px;
+        }
+    }
+    
 }
