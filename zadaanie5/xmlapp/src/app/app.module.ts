@@ -8,6 +8,8 @@ import { GameListComponent } from './components/game-list/game-list.component';
 import { HttpClientModule } from '@angular/common/http';
 import { GameComponent } from './components/game/game.component';
 import { GenrePipe } from './pipes/genre.pipe';
+import { PlatformsPipe } from './pipes/platforms.pipe';
+import { SetPlatformFilterDirective } from './directives/set-platform-filter.directive';
 
 @NgModule({
   declarations: [
@@ -15,7 +17,9 @@ import { GenrePipe } from './pipes/genre.pipe';
     HeaderComponent,
     GameListComponent,
     GameComponent,
-    GenrePipe
+    GenrePipe,
+    PlatformsPipe,
+    SetPlatformFilterDirective
   ],
   imports: [
     BrowserModule,

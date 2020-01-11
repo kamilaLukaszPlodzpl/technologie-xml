@@ -1,0 +1,32 @@
+.root
+{
+    width: 100%;
+    height: 100px;
+    color: #ff0000;
+    font-family: 'Baskervville', serif;
+    background-color: #000000;
+    margin-bottom: 10px;
+    padding-left: 0px 10px;
+    .btn
+    {
+        display: inline-flex;
+        flex-wrap: nowrap;
+        justify-content: flex-start;
+        align-items: center;
+        font-size: 50px;
+        div
+        {
+            padding: 5px;
+            height: 90px;
+        }
+        span
+        {
+            vertical-align: middle;
+            padding: 5px;
+        }
+        :hover
+        {
+            background-color: lighten(black,25);
+        }
+    }
+}
