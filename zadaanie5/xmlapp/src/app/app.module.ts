@@ -13,6 +13,7 @@ import { PlatformsPipe } from './pipes/platforms.pipe';
 import { SetPlatformFilterDirective } from './directives/set-platform-filter.directive';
 import { SearchBoxComponent } from './components/search-box/search-box.component';
 import { DatePipe } from './pipes/date.pipe';
+import { GameModalViewComponent } from './components/game-modal-view/game-modal-view.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { DatePipe } from './pipes/date.pipe';
     PlatformsPipe,
     SetPlatformFilterDirective,
     SearchBoxComponent,
-    DatePipe
+    DatePipe,
+    GameModalViewComponent
   ],
   imports: [
     BrowserModule,
