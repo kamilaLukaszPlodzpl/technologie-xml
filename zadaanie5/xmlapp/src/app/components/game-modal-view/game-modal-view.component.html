@@ -1,1 +1,25 @@
-<p>game-modal-view works!</p>
+<!--
+<div class="root">
+  
+</div>
+-->
+<div class="modal-header">
+    <h4 class="modal-title">{{g.title}}</h4>
+</div>
+<div class="modal-body">
+    <div #descr class="fullDescription">
+        <p>Gatunek: {{g.relatedGenre_id | genre}} </p>
+        <p>Wersja językowa: {{g.language}} </p>
+        <p>Lista dostępnych platform: {{g.relatedPlatforms_id | platforms}}</p>
+        <p>Producent: {{g.developer}} </p>
+        <p>Wydawca: {{g.publisher}} </p>
+        <p>Ocena według {{g.rating.source}}: {{g.rating.value}} / {{g.rating.max}} </p>
+        <p>Data premiery: {{g.releaseDate | date }} </p>
+        <p *ngIf="g.pegi.label > 0"> Ograniczenia wiekowe: od {{g.pegi.label}} lat</p>
+        <div *ngFor="let item of g.pegi.related">
+            <img class="pegi" src="/assets/pegi/{{item}}.webp"/>
+        </div>
+    </div>
+</div>
+<div class="modal-footer">
+</div>

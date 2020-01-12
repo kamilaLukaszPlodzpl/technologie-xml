@@ -1,4 +1,5 @@
 /* You can add global styles to this file, and also import other style files */
+@import './../node_modules/bootstrap/dist/css/bootstrap.css';
 @import url('https://fonts.googleapis.com/css?family=Baskervville|Raleway&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
 html,body
@@ -21,3 +22,28 @@ html,body
 {
     @extend %selection;
 }
+
+/*
+.modalGame
+{
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1050;
+    outline: 0;
+    justify-content: center;
+    background-color: rgba(black, $alpha: 0.5);
+    .modal-dialog
+    {
+        position: relative;
+        left: 25%;
+        top:10em;
+        background: white;
+        border-radius: 15px;
+        border-style: solid;
+        border-color: lighten(black, 20);
+        width: 50%;
+    }
+}*/

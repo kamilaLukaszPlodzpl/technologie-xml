@@ -1,4 +1,7 @@
 import { Component, OnInit, Input, HostListener, ViewChild, ElementRef } from '@angular/core';
+import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
+import { GameModalViewComponent } from '../game-modal-view/game-modal-view.component';
+import { Game } from 'src/app/model/Game';
 
 @Component({
   selector: 'app-game',
@@ -7,14 +10,19 @@ import { Component, OnInit, Input, HostListener, ViewChild, ElementRef } from '@
 })
 export class GameComponent implements OnInit {
   private openFull: boolean = false;
-  constructor() {
+  constructor(private modalService: NgbModal) {
   }
   @Input () g;
   @HostListener("click") public onGameClick(): void
   {
-    this.setDescriptionHeight();
-    this.openFull = !this.openFull;
-    this.setDescriptionHeight();
+    
+    const modalRef = this.modalService.open(GameModalViewComponent,{
+      windowClass: "modalGame"
+    });
+    ((modalRef.componentInstance) as GameComponent).g = this.g;
+    //this.setDescriptionHeight();
+    //this.openFull = !this.openFull;
+    //this.setDescriptionHeight();
   }
   @ViewChild('data',{static:false}) rootDiv: ElementRef;
   @ViewChild('descr',{static:false}) full: ElementRef;
