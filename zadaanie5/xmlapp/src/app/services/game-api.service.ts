@@ -57,7 +57,14 @@ export class GameApiService {
         if(this.getGenreList().get(game.relatedGenre_id).search(regex) != -1)
         {
           return true;
-        } 
+        }
+        for(let platform_id of game.relatedPlatforms_id)
+        {
+          let p = this.getPlatformList().get(platform_id);
+          if(p.search(regex) != -1)
+            return true; 
+        }
+        return false;
       });
     }
     return list;

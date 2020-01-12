@@ -15,7 +15,7 @@ export class SearchBoxComponent implements OnInit {
   private inputBox:string;
   @HostListener('keyup') onClick():void {
     let filter = this.gamepApi.getFilter();
-    filter.other = this.inputBox;
+    filter.other = this.inputBox.trim();
     this.gamepApi.setFilter(filter);
   }
   ngOnInit(): void {
