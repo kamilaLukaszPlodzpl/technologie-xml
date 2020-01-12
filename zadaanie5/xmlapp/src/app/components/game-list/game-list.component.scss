@@ -1,4 +1,18 @@
 .flexbox{
     display: inline-flex;
     flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    > *
+    {
+        display: flex;
+        justify-content: flex-start;
+        align-self: center;
+    }
+}
+.list
+{
+    
+    margin-top: 10px;
 }

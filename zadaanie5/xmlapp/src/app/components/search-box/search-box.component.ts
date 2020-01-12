@@ -12,7 +12,7 @@ export class SearchBoxComponent implements OnInit {
 
   constructor(private gamepApi:GameApiService) {}
   @ViewChild('inputBoxCtrl',{static:false}) private inputBoxCtrl: NgControl;
-  private inputBox:string;
+  public inputBox:string;
   @HostListener('keyup') onClick():void {
     let filter = this.gamepApi.getFilter();
     filter.other = this.inputBox.trim();

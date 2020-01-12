@@ -5,11 +5,12 @@
     color: white;
     font-family: 'Montserrat', sans-serif;
     background-color: #323234;
-    margin-bottom: 10px;
-    padding-left: 0px 10px;
+    padding-bottom: 10px;
+    padding: 0px 10px 0px 10px;;
+    
     .input-style:hover
     {
-        background-color: lighten(black,25);
+        background-color: #802114;
     }
     .input
     {
@@ -17,11 +18,10 @@
         flex-wrap: nowrap;
         justify-content: flex-start;
         align-items: center;
-        font-size: 50px;
+        font-size: 30px;
         div
         {
             padding: 5px;
-            height: 90px;
         }
         span
         {
@@ -29,32 +29,12 @@
             padding: 5px;
         }
     }
-}
-@media all and (min-width:0px)
-{
-    .root {  
-        height: 500px;
+    @media all and(min-width: 970px) {
+        .to-right
+        {
+            float: right;
+            position: relative;
+            top: 4px;
+        }
     }
-
-}
-@media all and (min-width:490px)
-{
-    .root {    
-        height: 300px;
-    }
-
-}
-@media all and (min-width:660px)
-{
-    .root {    
-        height: 200px;
-    }
-
-}
-@media all and (min-width:1260px)
-{
-    .root {    
-        height: 100px;
-    }
-
 }

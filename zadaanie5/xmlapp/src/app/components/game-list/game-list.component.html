@@ -1,4 +1,6 @@
 
-<div class = "flexbox " *ngFor="let game of gameList">
-    <app-game [g]="game"></app-game>
+<div class="list flexbox">
+    <div *ngFor="let game of gameList">
+        <app-game [g]="game"></app-game>
+    </div>
 </div>
