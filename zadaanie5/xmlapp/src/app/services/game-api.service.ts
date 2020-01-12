@@ -1,9 +1,8 @@
 import { Injectable, EventEmitter } from '@angular/core';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 import * as xml2js from 'xml2js';
-import { Game, Date, Pegi, Rating } from '../model/model';
+import { Game, Date, Pegi, Rating, Filter } from '../model/model';
 import { Observable } from 'rxjs';
-import { Filter } from '../model/Filter';
 
 
 @Injectable({
@@ -21,22 +20,53 @@ export class GameApiService {
   public getPlatformList(): Map<string,string> { return this.platformList; }
   public getPegiDescriptorList(): Map<string,string> { return this.pegiDescriptorList; }
   public getGameList(): Array<Game>{
-    if(this.filter.platforms.length == 0){
+    let nothing: boolean = false;
+    nothing = ((this.filter.platforms.length == 0) && (this.filter.other == ""));
+    if(nothing)
       return this.gameList;
+    //filter gameList
+    let list: Array<Game> = this.gameList;
+    if(this.filter.platforms.length != 0)
+    {
+      list = list.filter((game)=>{
+        for(let platform of this.filter.platforms){
+          if(game.relatedPlatforms_id.findIndex((item)=>{return item==platform}) != -1){
+            return true;
+          }
+        }
+        return false;
+      });
     }
-    return this.gameList.filter((game)=>{
-     for(let platform of this.filter.platforms){
-       if(game.relatedPlatforms_id.findIndex((item)=>{return item==platform}) != -1){
-         return true;
-       }
-     }
-     return false;
-    });
-   }
+
+    if(this.filter.other != "")
+    {
+      list = list.filter((game)=>{
+        let regex = new RegExp(this.filter.other,'gi');
+        if(game.title.search(regex) != -1 )
+        {
+          return true;
+        }
+        if(game.publisher.search(regex) != -1 )
+        {
+          return true;
+        }
+        if(game.developer.search(regex) != -1 )
+        {
+          return true;
+        }
+        if(this.getGenreList().get(game.relatedGenre_id).search(regex) != -1)
+        {
+          return true;
+        } 
+      });
+    }
+    return list;
+  }
   public getGameListUpdate(): Observable<Array<Game>> { return this.gameListUpdate; }
   public getFilter(): Filter {return this.filter;}
   constructor(private httpClient:HttpClient) {
     this.gameListUpdate = new EventEmitter<Array<Game>>(true);
+    this.gameListUpdate.subscribe(x=>{console.log("Update game list"); console.log(this.getFilter());});
     this.loadGamesList();
   }
   public setFilter(filter:Filter){

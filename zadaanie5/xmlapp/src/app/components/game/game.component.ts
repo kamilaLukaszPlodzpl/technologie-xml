@@ -1,5 +1,4 @@
 import { Component, OnInit, Input, HostListener, ViewChild, ElementRef } from '@angular/core';
-import { THIS_EXPR } from '@angular/compiler/src/output/output_ast';
 
 @Component({
   selector: 'app-game',
@@ -26,7 +25,6 @@ export class GameComponent implements OnInit {
   public setDescriptionHeight() : void {
     if(this.openFull)
     {
-      console.log(this.rootDiv);
       if('nativeElement' in this.rootDiv)
       {
         let h =  this.rootDiv.nativeElement.offsetHeight + "px";
