@@ -22,7 +22,10 @@ html,body
 {
     @extend %selection;
 }
-
+.modal-open
+{
+    overflow:auto !important;
+}
 /*
 .modalGame
 {
