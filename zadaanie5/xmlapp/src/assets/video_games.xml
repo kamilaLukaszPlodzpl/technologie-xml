@@ -515,6 +515,262 @@
 				</PEGI>
                 <coverArt src="id20.jpg"/>
             </game>
+            <!--
+Frostpunk
+Gothic II
+Bloodborne
+Diablo III
+Euro Truck Simulator 2
+Might & Magic: Heroes VII
+SimCity
+Mafia II
+Horizon: Zero Dawn
+Resident Evil 2
+Watch Dogs 2
+Uncharted: Fortuna Drake'a
+Tom Clancy's Ghost Recon: Wildlands
+Destiny 2
+Tekken 7
+
+
+
+            <platform id="p3">PlayStation 2</platform>
+            <platform id="p6">macOS</platform>
+            <platform id="p7">Linux</platform>
+            <platform id="p9">Nintendo Switch</platform>
+            <platform id="p10">Xbox</platform>
+            <platform id="p11">Android</platform>
+
+
+
+            
+            <genre id="g1">hack and slash</genre>
+            <genre id="g2">skradanka</genre>
+            <genre id="g3">survival</genre>
+            <genre id="g4">piaskownica</genre>
+            <genre id="g8">MMO</genre> 
+            <genre id="g11">RPG</genre>
+
+
+
+            
+			<pegiDescriptor id="d3">strach</pegiDescriptor>
+			<pegiDescriptor id="d4">hazard</pegiDescriptor>
+            -->
+            <!-- -->
+            <game id="game36">
+                <title language="angielski">Transport Fever 2</title>
+                <price currency="zł">161.99</price>
+                <relatedGenre id="g5"/>
+                <releaseDate>
+                    <day>11</day>
+                    <month>Grudzień</month>
+                    <year>2019</year>
+                </releaseDate>
+                <developer>Urban Games</developer>
+                <relatedPlatforms>
+                    <relatedPlatform id="p4"/>
+                </relatedPlatforms>
+                <publisher>Good Shepherd Entertainment / Gambitious</publisher>
+				<rating source="Gry-Online" max="10">6.6</rating>
+				<PEGI label="3">
+				</PEGI>
+                <coverArt src="id36.jpg"/>
+            </game>
+            <game id="game37">
+                <title language="angielski">Tetris Effect</title>
+                <price currency="zł">139.00</price>
+                <relatedGenre id="g5"/>
+                <releaseDate>
+                    <day>9</day>
+                    <month>Listopad</month>
+                    <year>2018</year>
+                </releaseDate>
+                <developer>Resonair / Monstars</developer>
+                <relatedPlatforms>
+                    <relatedPlatform id="p4"/>
+                    <relatedPlatform id="p2"/>
+                </relatedPlatforms>
+                <publisher>Enhance Games</publisher>
+				<rating source="Gry-Online" max="10">2.9</rating>
+				<PEGI label="3">
+				</PEGI>
+                <coverArt src="id37.jpg"/>
+            </game>
+            <game id="game38">
+                <title language="angielski">Quake II</title>
+                <price currency="zł">189.90</price>
+                <relatedGenre id="g6"/>
+                <releaseDate>
+                    <day>7</day>
+                    <month>Grudzień</month>
+                    <year>1997</year>
+                </releaseDate>
+                <developer>id Software</developer>
+                <relatedPlatforms>
+                    <relatedPlatform id="p4"/>
+                    <relatedPlatform id="p8"/>
+                </relatedPlatforms>
+                <publisher>Activision Blizzard</publisher>
+				<rating source="Gry-Online" max="10">8.2</rating>
+				<PEGI label="16">
+                    <relatedPegi id="d1"/>
+				</PEGI>
+                <coverArt src="id38.jpg"/>
+            </game>
+            <game id="game39">
+                <title language="polski">Farming Simulator 2013</title>
+                <price currency="zł">69.90</price>
+                <relatedGenre id="g9"/>
+                <releaseDate>
+                    <day>25</day>
+                    <month>Październik</month><!--TODO-->
+                    <year>2012</year>
+                </releaseDate>
+                <developer>GIANTS Software</developer>
+                <relatedPlatforms>
+                    <relatedPlatform id="p4"/>
+                    <relatedPlatform id="p8"/>
+                    <relatedPlatform id="p1"/>
+                </relatedPlatforms>
+                <publisher>Atari / Infogrames</publisher>
+				<rating source="Gry-Online" max="10">8.2</rating>
+				<PEGI label="3">
+				</PEGI>
+                <coverArt src="id39.jpg"/><!--TODO-->
+            </game>
+            <game id="game40">
+                <title language="polski">Need for Speed: Heat</title>
+                <price currency="zł">199.90</price>
+                <relatedGenre id="g7"/>
+                <releaseDate>
+                    <day>8</day>
+                    <month>Listopad</month><!--TODO-->
+                    <year>2019</year>
+                </releaseDate>
+                <developer>Ghost Games</developer>
+                <relatedPlatforms>
+                    <relatedPlatform id="p4"/>
+                    <relatedPlatform id="p2"/>
+                    <relatedPlatform id="p5"/>
+                </relatedPlatforms>
+                <publisher>Electronic Arts Inc.</publisher>
+				<rating source="Gry-Online" max="10">6.7</rating>
+				<PEGI label="16">
+                    <relatedPegi id="d1"/>
+				</PEGI>
+                <coverArt src="id40.jpg"/><!--TODO-->
+            </game>
+            <!--<game id="game41">
+                <title language="polski">Need for Speed: Heat</title>
+                <price currency="zł">199.90</price>
+                <relatedGenre id="g7"/>
+                <releaseDate>
+                    <day>8</day>
+                    <month>Listopad</month>
+                    <year>2019</year>
+                </releaseDate>
+                <developer>Ghost Games</developer>
+                <relatedPlatforms>
+                    <relatedPlatform id="p4"/>
+                    <relatedPlatform id="p2"/>
+                    <relatedPlatform id="p5"/>
+                </relatedPlatforms>
+                <publisher>Electronic Arts Inc.</publisher>
+				<rating source="Gry-Online" max="10">6.7</rating>
+				<PEGI label="16">
+                    <relatedPegi id="d1"/>
+				</PEGI>
+                <coverArt src="id41.jpg"/>TODO
+            </game>-->
+            <game id="game42">
+                <title language="polski">The Crew 2</title>
+                <price currency="zł">249.90</price>
+                <relatedGenre id="g7"/>
+                <releaseDate>
+                    <day>29</day>
+                    <month>Czerwca</month><!--TODO-->
+                    <year>2018</year>
+                </releaseDate>
+                <developer>Ivory Tower</developer>
+                <relatedPlatforms>
+                    <relatedPlatform id="p4"/>
+                    <relatedPlatform id="p2"/>
+                    <relatedPlatform id="p5"/>
+                </relatedPlatforms>
+                <publisher>Ubisoft</publisher>
+				<rating source="Gry-Online" max="10">5.6</rating>
+				<PEGI label="12">
+                    <relatedPegi id="d1"/>
+                    <relatedPegi id="d5"/>
+				</PEGI>
+                <coverArt src="id42.jpg"/>
+            </game>
+            <game id="game43">
+                <title language="angielski">War Thunder</title>
+                <relatedGenre id="g9"/>
+                <releaseDate>
+                    <day>29</day>
+                    <month>Listopad</month><!--TODO-->
+                    <year>2013</year>
+                </releaseDate>
+                <developer>Gaijin Entertainment</developer>
+                <relatedPlatforms>
+                    <relatedPlatform id="p4"/>
+                    <relatedPlatform id="p2"/>
+                    <relatedPlatform id="p5"/>
+                </relatedPlatforms>
+                <publisher>Gaijin Entertainment</publisher>
+				<rating source="Gry-Online" max="10">7.5</rating>
+				<PEGI label="12">
+                    <relatedPegi id="d1"/>
+                    <relatedPegi id="d6"/>
+				</PEGI>
+                <coverArt src="id43.jpg"/>
+            </game>
+            <game id="game44">
+                <title language="angielski">Age of Empires III</title>
+                <price currency="zł">129.90</price>
+                <relatedGenre id="g5"/>
+                <releaseDate>
+                    <day>18</day>
+                    <month>Październik</month>
+                    <year>2005</year>
+                </releaseDate>
+                <developer>Ensemble Studios</developer>
+                <relatedPlatforms>
+                    <relatedPlatform id="p4"/>
+                </relatedPlatforms>
+                <publisher>Xbox Game Studios / Microsoft Studios</publisher>
+				<rating source="Gry-Online" max="10">8.6</rating>
+				<PEGI label="12">
+                    <relatedPegi id="d1"/>
+				</PEGI>
+                <coverArt src="id44.jpg"/>
+            </game>
+            <game id="game45">
+                <title language="angielski">Grand Theft Auto IV</title>
+                <price currency="zł">159.90</price>
+                <relatedGenre id="g10"/>
+                <releaseDate>
+                    <day>29</day>
+                    <month>Kwiecień</month>
+                    <year>2008</year>
+                </releaseDate>
+                <developer>Rockstar Games</developer>
+                <relatedPlatforms>
+                    <relatedPlatform id="p4"/>
+                    <relatedPlatform id="p1"/>
+                    <relatedPlatform id="p8"/>
+                </relatedPlatforms>
+                <publisher>Rockstar Games</publisher>
+				<rating source="Gry-Online" max="10">8.1</rating>
+				<PEGI label="18">
+                    <relatedPegi id="d1"/>
+                    <relatedPegi id="d2"/>
+				</PEGI>
+                <coverArt src="id45.jpg"/>
+            </game>
         </games>
     </data>
     <authors>

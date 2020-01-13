@@ -87,7 +87,7 @@ export class GameApiService {
     this.platformList = new Map<string,string>();
     this.pegiDescriptorList = new Map<string,string>();
     this.gameListUpdate.next(this.getGameList());
-    this.httpClient.get("/assets/video_games.xml",{responseType: 'text'}).subscribe(
+    this.httpClient.get("./assets/video_games.xml",{responseType: 'text'}).subscribe(
       (data)=>{
         this.parseGamesList(data);
       });

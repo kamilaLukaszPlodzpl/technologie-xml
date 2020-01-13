@@ -1,6 +1,0 @@
-export { Game } from './Game';
-export { Date } from './Date';
-export { Pegi } from './Pegi';
-export { Rating } from './Rating';
-export { Filter } from './Filter';
-//# sourceMappingURL=model.js.map
